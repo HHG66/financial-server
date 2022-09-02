@@ -6,7 +6,7 @@ const Routers = [
     title: '消费类型',
     icon: '',
     subs: [
-      { key: '/consumptiontype/management', title: '消费类型管理', component: 'ConsumptionManagement' },
+      { key: '/consumptiontype/management', title: '消费类型管理', component: '<ConsumptionManagement/>' },
       { key: '/consumptiontype/associated', title: '关联账单消费名称', component: 'ConsumpAssociated' },
     ],
   },
@@ -28,7 +28,7 @@ const Routers = [
       { key: '/balancepayments/exportbill', title: '导出账单', component: 'ExportBill' },
     ],
   },
-  { key: '/paymentplanmanagement',  title: '收支计划管理', icon: '',component: 'CheckInFormation' },
+  { key: '/paymentplanmanagement',  title: '收支计划管理', icon: '',component: 'PaymentplanManagement' },
   { key: '/checkInformation',  title: '对账信息', icon: '',component: 'CheckInFormation' },
   { key: '/investmentmanagement',  title: '投资信息管理', icon: '',component: 'InvestmentManagement' },
   { key: '/assetstatistics',  title: '资产统计', icon: '',component: 'AssetStatistics' },
