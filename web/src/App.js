@@ -6,7 +6,7 @@ import AppRouter from '@/Router'
 // import NoFound from '@/pages/NoFound';
 // import Login from '@/pages/Login'
 // import Home from '@/pages/Home'
- 
+
 function App() {
   return (
      <BrowserRouter  style={{height:"100%",width:"100%"}}>

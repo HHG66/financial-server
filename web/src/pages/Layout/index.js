@@ -1,4 +1,4 @@
-import {Outlet,Route,Switch} from 'react-router-dom'
+import {Outlet} from 'react-router-dom'
 // import {DesktopOutlined, FileOutlined, PieChartOutlined, TeamOutlined,UserOutlined,} from '@ant-design/icons';
 import { Breadcrumb, Layout,  } from 'antd';
 import React, { useEffect } from 'react';
