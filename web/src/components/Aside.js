@@ -1,15 +1,15 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-01 10:58:19
- * @LastEditTime: 2022-09-02 09:27:59
+ * @LastEditTime: 2022-09-04 23:38:35
  * @LastEditors: 韩宏广
- * @FilePath: \my-financial\web\src\components\Aside.js
+ * @FilePath: /个人财务/web/src/components/Aside.js
  * @文件说明: 
  */
 import {  Layout, Menu } from 'antd';
 import React, { useEffect, useState } from 'react'
 import {Link} from 'react-router-dom'
-import Routers from '@/Router/routers';
+import Routers from '@/router/routers';
 const {  Sider } = Layout;
 
 const rootSubmenuKeys = ['/consumptiontype', '/incometype', '/balancepayments'];
@@ -46,6 +46,7 @@ const Aside=()=>{
       Router.push({
         label: <Link to={item.key}>{item.title}</Link>,
         key:item.key,
+        icon:item.icon,
       })
     }
     return Router

@@ -1,6 +1,7 @@
 import 'antd/dist/antd.min.css'
 import {BrowserRouter} from 'react-router-dom'
-import AppRouter from '@/Router'
+import AppRouter from '@/router'
+import './styles/index.less'
 // import {Routes,Route,BrowserRouter} from 'react-router-dom'
 // import Layouts from '@/pages/Layout';
 // import NoFound from '@/pages/NoFound';

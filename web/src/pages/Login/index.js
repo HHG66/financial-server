@@ -1,4 +1,4 @@
-import { Form, Input, Button, message } from 'antd';
+import { Form, Input, Button } from 'antd';
 import { UserOutlined, LockOutlined } from '@ant-design/icons';
 import {reqLogin}from '@/api/login'
 import './index.less'
@@ -89,8 +89,7 @@ const Login = () => {
           </Form>
         </section>
       </div>
->>>>>>> f647809c1fdf5976faec5a1f20c07a3ba8cda9ae
-    </>
+      </>
   )
 }
 export default Login

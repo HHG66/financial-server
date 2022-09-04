@@ -9,13 +9,14 @@ import PaymentplanManagement from '@/pages/PaymentplanManagement'
 import CheckInFormation from '@/pages/CheckInFormation'
 import InvestmentManagement from '@/pages/InvestmentManagement'
 import AssetStatistics from '@/pages/AssetStatistics'
+import { HomeOutlined} from '@ant-design/icons';
 const Routers = [
   // 菜单相关路由
-  { key: '/home', title: '首页', icon: 'mobile',component:<Home/>},
+  { key: '/home', title: '首页', icon: <HomeOutlined/>,component:<Home/>},
   {
     key: '/consumptiontype',
     title: '消费类型',
-    icon: '',
+    icon: <HomeOutlined/>,
     subs: [
       { key: '/consumptiontype/management', title: '消费类型管理', component: <ConsumptionManagement/> },
       { key: '/consumptiontype/associated', title: '关联账单消费名称', component: <ConsumpAssociated/> },
