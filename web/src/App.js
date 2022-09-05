@@ -1,7 +1,11 @@
 import 'antd/dist/antd.min.css'
-import {BrowserRouter} from 'react-router-dom'
+import { BrowserRouter } from 'react-router-dom'
 import AppRouter from '@/router'
 import './styles/index.less'
+
+
+import '@/icon/index'
+
 // import {Routes,Route,BrowserRouter} from 'react-router-dom'
 // import Layouts from '@/pages/Layout';
 // import NoFound from '@/pages/NoFound';
@@ -10,13 +14,15 @@ import './styles/index.less'
 
 function App() {
   return (
-     <BrowserRouter  style={{height:"100%",width:"100%"}}>
-      <AppRouter/>
-       {/* <Routes>
+  
+      <BrowserRouter style={{ height: "100%", width: "100%" }}>
+        <AppRouter />
+        {/* <Routes>
           <Route path='/' element={
              <Layouts/>
        </Routes> */}
-     </BrowserRouter>
+      </BrowserRouter>
+ 
   );
 }
 

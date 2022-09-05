@@ -4,7 +4,38 @@ module.exports ={
   webpack:{
     alias:{
       '@':path.resolve(__dirname,'src')
-    }
+    },
+    configure: (webpackConfig, { env, paths }) => {
+      webpackConfig.module.rules[1].oneOf = [
+          ...[
+              {
+                  test: /\.svg$/,
+                  // include: [path.resolve('src/icon')],
+                  include: [path.resolve(__dirname,'src/icon')],
+                 
+                  use: [
+                      { loader: 'svg-sprite-loader', options: {} },
+                      {
+                          loader: 'svgo-loader',
+                          options: {
+                              plugins: [
+                                  // 插件名字必须加
+                                  {
+                                      name: 'removeAttrs',
+                                      params: {
+                                          attrs: '(fill|stroke)',
+                                      },
+                                  },
+                              ],
+                          },
+                      },
+                  ],
+              },
+          ],
+          ...webpackConfig.module.rules[1].oneOf,
+      ];
+      return webpackConfig;
+  }, 
   },
   plugins: [
     {
