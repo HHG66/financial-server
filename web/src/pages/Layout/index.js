@@ -65,19 +65,9 @@ const Layouts = () => {
             padding: 0,
           }}
         >   
-        <div className='userInfo'>
-          <span>用户名：</span>
-          <span>144444</span>
-        </div>
-        </Header>
-        <Content
-          style={{
-            margin: '0 16px',
-          }}
-        >
           <Breadcrumb
             style={{
-              margin: '16px 0',
+              // margin: '16px 0',
             }}
           >
             {
@@ -86,6 +76,17 @@ const Layouts = () => {
               })
             }
           </Breadcrumb>
+        <div className='userInfo'>
+          <span>用户名：</span>
+          <span>144444</span>
+        </div>
+        </Header>
+        <Content
+          style={{
+            // margin: '0 16px',
+          }}
+        >
+        
           <div
             className="site-layout-background"
             style={{

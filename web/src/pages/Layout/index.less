@@ -1,18 +1,40 @@
-#components-layout-demo-side .logo {
+ .logo {
   height: 32px;
   margin: 16px;
-  background: rgba(255, 255, 255, 0.3);
+  background:rgb(200,200,200)
+  // background: url("../../assets/images/logo.png");
+  // background: url("../../assets/images/微信图片_20220907084824_163x82.jpg");
+  // background: url("../../assets/images/透明底反黑图.svg");
+  // background-image:url("../../assets/images/logo.png");
 }
 
 .site-layout .site-layout-background {
   background: #fff;
 }
 .userInfo{
-  display: flex;
+  // display: flex;
   // flex-direction: column;
-  justify-content: flex-end;
-  margin-right: 10px;
+  // justify-content: flex-end;
+  // margin-right: 10px;
   span{
     height: 20px;
+    margin-right: 15px;
+  }
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .ant-breadcrumb{
+    margin: 20px 0;
+    margin-left: 15px;
+  }
+}
+main{
+  margin:0 16px;
+  margin-top: 10px;
+  .site-layout-background{
+    height: 100%;
   }
 }
