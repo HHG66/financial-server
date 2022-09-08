@@ -9,7 +9,9 @@ import PaymentplanManagement from '@/pages/PaymentplanManagement'
 import CheckInFormation from '@/pages/CheckInFormation'
 import InvestmentManagement from '@/pages/InvestmentManagement'
 import AssetStatistics from '@/pages/AssetStatistics'
-
+import {
+  HomeOutlined,
+} from '@ant-design/icons';
 import SvgIcon from '@/components/Icon'
 
 const Routers = [
@@ -23,7 +25,7 @@ const Routers = [
       { key: '/consumptiontype/management', title: '消费类型管理', component: <ConsumptionManagement /> },
       { key: '/consumptiontype/associated', title: '关联账单消费名称', component: <ConsumpAssociated /> },
     ],
-  },
+  },  
   {
     key: '/incometype',
     title: '收入类型',
