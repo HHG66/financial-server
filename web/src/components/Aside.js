@@ -1,18 +1,17 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-01 10:58:19
- * @LastEditTime: 2022-09-08 13:30:38
+ * @LastEditTime: 2022-09-10 19:43:23
  * @LastEditors: 韩宏广
- * @FilePath: \my-financial\web\src\components\Aside.js
+ * @FilePath: /个人财务/web/src/components/Aside.js
  * @文件说明: 
  */
 import { Layout, Menu } from 'antd';
 import React, { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import Routers from '@/router/routers';
+import Routers from '@/routers';
 import { setLocalStorage, getLocalStorage } from '@/utils'
 const { Sider } = Layout;
-
 const rootSubmenuKeys = ['/consumptiontype', '/incometype', '/balancepayments'];
 
 const Aside = () => {
@@ -22,6 +21,8 @@ const Aside = () => {
   const [defaultSelectedKeys, setdefaultSelectedKeys] = useState(['']);
   const { pathname } = useLocation()
 
+  //注意不要使用openKeys这个api，因为为了解决导航菜单收回的时候无法同时收回二级菜单。
+  const defaultProps = collapsed ? {} : { openKeys: openKeys };
   //将路由表转化成要使用的格式，组Aside
   useEffect(() => {
     // console.log(Routers);
@@ -33,7 +34,7 @@ const Aside = () => {
           childrens.push({
             label: <Link to={children.key}>{children.title}</Link>,
             key: children.key,
-            icon: children.icon
+            icon: children.icon,
           })
           return childrens
         })
@@ -42,25 +43,23 @@ const Aside = () => {
           key: item.key,
           icon: item.icon,
           children: childrens,
+          className: "aside-icon"
         })
       } else {
         Router.push({
           label: <Link to={item.key}>{item.title}</Link>,
           key: item.key,
           icon: item.icon,
+          className: "aside-icon"
         })
       }
       return Router
     })
-    // console.log(Router);
     setRouterItem(Router)
-    // setOpenKeys(getLocalStorage('OpenKeys'));
-    // debugger
   }, [])
 
   //根据当前路由设置选中导航菜单
   useEffect(() => {
-    console.log(pathname);
     setdefaultSelectedKeys([pathname])
   }, [pathname])
 
@@ -70,15 +69,19 @@ const Aside = () => {
       //坑,注意一定是数组
       setOpenKeys([openKeys === '' ? openKeys : getLocalStorage('OpenKeys')]);
     }
-  }, [openKeys, pathname])
+  }, [pathname])
 
-  //这个地方是只展开一个父级菜单，onOpenChange只在打开有子级导航的时候会触发。
+  //这个地方是只展开一个父级菜单，onOpenChange只在打开有子级导航的时候,以及收回侧边栏会触发。
   const onOpenChange = (keys) => {
-    console.log(keys);
+    console.log('执行了子菜单收回');
+    // console.log(keys);
+    // console.log(openKeys);
     const latestOpenKey = keys.find((key) => openKeys.indexOf(key) === -1);
     if (rootSubmenuKeys.indexOf(latestOpenKey) === -1) {
-      setOpenKeys(keys);
-      setLocalStorage("OpenKeys", keys)
+      if (collapsed === false) {
+        setOpenKeys(keys);
+        setLocalStorage("OpenKeys", keys)
+      }
     } else {
       setOpenKeys(latestOpenKey ? [latestOpenKey] : []);
       setLocalStorage("OpenKeys", latestOpenKey ? [latestOpenKey] : [])
@@ -91,11 +94,14 @@ const Aside = () => {
       setOpenKeys([])
     }
   }
+
   return (
     <>
       <Sider collapsible collapsed={collapsed} onCollapse={(value) => { setCollapsed(value) }}>
         {/* <div className="logo" > </div> */}
-        <Menu theme="dark" defaultSelectedKeys={'/home'} selectedKeys={defaultSelectedKeys} mode="inline" items={routerItem} onClick={onClick} openKeys={openKeys} onOpenChange={onOpenChange} />
+        <Menu theme="dark" defaultSelectedKeys={'/home'} selectedKeys={defaultSelectedKeys} mode="inline" items={routerItem} onClick={onClick} onOpenChange={onOpenChange} 
+        // 为了解决二级菜单展开无法展开的问题
+        {...defaultProps} />
       </Sider>
     </>
   )

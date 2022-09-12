@@ -6,7 +6,7 @@ const SvgIcon = ({ iconClass, className, style }) => {
   const iconName = `#${iconClass}`;
   return (
     <>
-      <svg className={svgClass} aria-hidden="true" style={style } >
+     <svg className={svgClass} aria-hidden="true" style={style } >
         <use xlinkHref={iconName} fill={style.color||"white"}  />
       </svg>
     </>
