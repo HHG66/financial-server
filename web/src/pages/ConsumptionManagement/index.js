@@ -1,12 +1,14 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-01 17:01:17
- * @LastEditTime: 2022-09-10 11:15:44
+ * @LastEditTime: 2022-09-13 21:29:29
  * @LastEditors: 韩宏广
  * @FilePath: /个人财务/web/src/pages/ConsumptionManagement/index.js
  * @文件说明: 
  */
 import { Table } from 'antd'
+import {getConsumptionTypeList}from '@/api/consumptiontype'
+import { useEffect } from 'react';
 const ConsumptionManagement = () => {
   const dataSource = [
     {
@@ -40,9 +42,25 @@ const ConsumptionManagement = () => {
       key: 'address',
     },
   ];
+  const pagination = {
+    position: ["bottomRight"],
+    total: 100,
+    onChange:(page, pageSize)=>{getconsumptiontypelist(page, pageSize)},
+    // onShowSizeChange:(current,pageSize)=>{getconsumptiontypelist(current,pageSize)},
+  }
+  //分页改变
+  const getconsumptiontypelist=(current,pageSize)=>{
+    console.log(current,pageSize);
+  }
+  
+  useEffect(()=>{
+    getConsumptionTypeList().then((res)=>{
+      console.log(res);
+    })
+  },[])
   return (
     <>
-      <Table dataSource={dataSource} columns={columns} />
+      <Table dataSource={dataSource} columns={columns} pagination={pagination} />
     </>
   )
 }

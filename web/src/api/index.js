@@ -1,9 +1,9 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-02 13:13:54
- * @LastEditTime: 2022-09-02 16:51:42
+ * @LastEditTime: 2022-09-13 21:32:28
  * @LastEditors: 韩宏广
- * @FilePath: \my-financial\web\src\api\index.js
+ * @FilePath: /个人财务/web/src/api/index.js
  * @文件说明: 
  */
 
@@ -12,7 +12,8 @@ import {  notification } from 'antd';
 
 
 let request=axios.create({
-  baseURL:"http://49.234.54.90:3001/mock/33/api",
+  // baseURL:"http://49.234.54.90:3001/mock/33/api",
+  baseURL:"http://127.0.0.1:4523/m1/1605761-0-default",
   timeout: 1000
 })
 
