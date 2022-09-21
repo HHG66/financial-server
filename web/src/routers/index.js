@@ -10,9 +10,9 @@ import CheckInFormation from '@/pages/CheckInFormation'
 import InvestmentManagement from '@/pages/InvestmentManagement'
 import AssetStatistics from '@/pages/AssetStatistics'
 import SvgIcon from '@/components/Icon'
-import {
-  HomeOutlined,
-} from '@ant-design/icons';
+// import {
+//   HomeOutlined,
+// } from '@ant-design/icons';
 const Routers = [
   // 菜单相关路由
   {

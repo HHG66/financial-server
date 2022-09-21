@@ -1,26 +1,26 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-02 13:13:54
- * @LastEditTime: 2022-09-13 21:32:28
+ * @LastEditTime: 2022-09-19 09:23:38
  * @LastEditors: 韩宏广
- * @FilePath: /个人财务/web/src/api/index.js
+ * @FilePath: \my-financial\web\src\api\index.js
  * @文件说明: 
  */
 
 import axios from "axios";
-import {  notification } from 'antd';
+import { notification, message } from 'antd';
 
 
-let request=axios.create({
+let request = axios.create({
   // baseURL:"http://49.234.54.90:3001/mock/33/api",
-  baseURL:"http://127.0.0.1:4523/m1/1605761-0-default",
+  baseURL: "http://127.0.0.1:4523/m1/1605761-0-default/",
   timeout: 1000
 })
 
 //请求先拦截器
 request.interceptors.request.use(function (config) {
   // 在发送请求之前做些什么
-  config.headers['auth-token']='123'
+  config.headers['auth-token'] = '123'
   return config;
 }, function (error) {
   // 对请求错误做些什么
@@ -30,7 +30,10 @@ request.interceptors.request.use(function (config) {
 // 添加响应拦截器
 request.interceptors.response.use(function (response) {
   // 2xx 范围内的状态码都会触发该函数。
-  if(response.data.code==="00000" && response.desc==="success"){
+  if (response.data.code === "00000" && response.data.desc === "success") {
+    return response.data
+  } else if (response.data.code === "00000" && response.data.desc === "error") {
+    message.error(response.data.message);
     return response.data
   }
   // return response;
@@ -39,19 +42,39 @@ request.interceptors.response.use(function (response) {
   // 超出 2xx 范围的状态码都会触发该函数。
   // 对响应错误做点什么
   //重定向
-  if(error.response.status===401){
-    window.location.href='/login'
-  }else if(error.response.status===502){
-    notification.open({
-      message: '网络错误',
-      type:"error",
-      description:
-        '请检查网络后重试，错误码（502）',
-      onClick: () => {
-        console.log('Notification Clicked!');
-      },
-    });
+  if (error && error.response) {
+    switch (error.response.status) {
+      case 401:
+        window.location.href = '/login'
+        break;
+      case 502:
+        notification.open({
+          message: '网络错误',
+          type: "error",
+          description:
+            '请检查网络后重试，错误码（502）',
+          onClick: () => {
+            console.log('Notification Clicked!');
+          },
+        });
+        break;
+      default:
+        break;
+    }
   }
+  // if (error.response.status === 401) {
+  //   window.location.href = '/login'
+  // } else if (error.response.status === 502) {
+  //   notification.open({
+  //     message: '网络错误',
+  //     type: "error",
+  //     description:
+  //       '请检查网络后重试，错误码（502）',
+  //     onClick: () => {
+  //       console.log('Notification Clicked!');
+  //     },
+  //   });
+  // }
   return Promise.reject(error);
 });
 

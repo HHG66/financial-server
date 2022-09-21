@@ -11,7 +11,7 @@ root.render(
   //下面的这个注掉的原因是react会在StrictMode下执行两次render来监测组件的副作用
   // <React.StrictMode>
   <Provider store={store}>
-    <App />
-   {/* </React.StrictMode>   */}
+      <App/> 
+    {/* </React.StrictMode>   */}
   </Provider>
 );

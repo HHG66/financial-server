@@ -1,14 +1,14 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-01 10:58:19
- * @LastEditTime: 2022-09-10 19:43:23
+ * @LastEditTime: 2022-09-16 17:18:30
  * @LastEditors: 韩宏广
- * @FilePath: /个人财务/web/src/components/Aside.js
+ * @FilePath: \my-financial\web\src\components\Aside.js
  * @文件说明: 
  */
 import { Layout, Menu } from 'antd';
 import React, { useEffect, useState } from 'react'
-import { Link, useLocation } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import Routers from '@/routers';
 import { setLocalStorage, getLocalStorage } from '@/utils'
 const { Sider } = Layout;
@@ -20,6 +20,7 @@ const Aside = () => {
   const [openKeys, setOpenKeys] = useState([]);
   const [defaultSelectedKeys, setdefaultSelectedKeys] = useState(['']);
   const { pathname } = useLocation()
+  // const navigate = useNavigate()
 
   //注意不要使用openKeys这个api，因为为了解决导航菜单收回的时候无法同时收回二级菜单。
   const defaultProps = collapsed ? {} : { openKeys: openKeys };
@@ -56,6 +57,9 @@ const Aside = () => {
       return Router
     })
     setRouterItem(Router)
+    //默认导航到home
+    // navigate('/home')
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   //根据当前路由设置选中导航菜单
@@ -69,6 +73,8 @@ const Aside = () => {
       //坑,注意一定是数组
       setOpenKeys([openKeys === '' ? openKeys : getLocalStorage('OpenKeys')]);
     }
+    //注意，这里不能添加依赖，添加会出现死循环的问题，而不添加eslint会提示警告信息，下面注释为了解决eslint报警信息
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pathname])
 
   //这个地方是只展开一个父级菜单，onOpenChange只在打开有子级导航的时候,以及收回侧边栏会触发。
@@ -99,9 +105,9 @@ const Aside = () => {
     <>
       <Sider collapsible collapsed={collapsed} onCollapse={(value) => { setCollapsed(value) }}>
         {/* <div className="logo" > </div> */}
-        <Menu theme="dark" defaultSelectedKeys={'/home'} selectedKeys={defaultSelectedKeys} mode="inline" items={routerItem} onClick={onClick} onOpenChange={onOpenChange} 
-        // 为了解决二级菜单展开无法展开的问题
-        {...defaultProps} />
+        <Menu theme="dark" defaultSelectedKeys={'/home'} selectedKeys={defaultSelectedKeys} mode="inline" items={routerItem} onClick={onClick} onOpenChange={onOpenChange}
+          // 为了解决二级菜单展开无法展开的问题
+          {...defaultProps} />
       </Sider>
     </>
   )

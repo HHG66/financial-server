@@ -1,12 +1,13 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-10 16:46:32
- * @LastEditTime: 2022-09-10 16:53:35
+ * @LastEditTime: 2022-09-16 17:23:05
  * @LastEditors: 韩宏广
- * @FilePath: /个人财务/web/src/components/Router.js
+ * @FilePath: \my-financial\web\src\components\Router.js
  * @文件说明: 
  */
 import { Routes, Route } from 'react-router-dom'
+import Authorized from '@/components/Authorized'
 import Layouts from '@/pages/Layout'
 import Login from "@/pages/Login"
 import Routers from '@/routers'
@@ -14,33 +15,37 @@ import NoFound from "@/pages/NoFound"
 import { useEffect, useState } from 'react'
 
 const AppRouter = () => {
-  let [router,setRouter]=useState([])
-  useEffect(()=>{
-  let router=  Routers.map((rou) => {
-      let _rou=[]
+  let [router, setRouter] = useState([])
+  useEffect(() => {
+    let router = Routers.map((rou) => {
+      let _rou = []
       if (rou.subs) {
-        rou.subs.map((children)=>{
-        return _rou.push(<Route key={children.key} path={children.key} element={children.component}></Route>)
+        rou.subs.map((children) => {
+          return _rou.push(<Route key={children.key} path={children.key} element={<Authorized>{children.component}</Authorized>}></Route>)
         })
+        //这一级是父级路由所以组件上面不需要权限判断，因为子级路由已经做了判断
         return <Route key={rou.key} path={rou.key} element={rou.component}>{[..._rou]}</Route>
       }
-      return <Route key={rou.key} path={rou.key} element={rou.component}></Route>
+      return <Route key={rou.key} path={rou.key} element={<Authorized>{rou.component}</Authorized>}></Route>
     })
     setRouter(router)
-  },[])
+  }, [])
   return (
     <>
       <Routes>
         <Route path='/' element={
-          <Layouts />
+          <Authorized>
+            <Layouts />
+          </Authorized>
         }>
           {/* 遍历路由表，返回需要的路由列表 */}
           {
-           router
+            router
           }
         </Route>
         <Route path='/login' element={<Login />}></Route>
         <Route path='*' element={<NoFound />}></Route>
+
       </Routes>
     </>
   )

@@ -1,29 +1,34 @@
 import { Form, Input, Button } from 'antd';
+import { useNavigate } from 'react-router-dom';
 import { UserOutlined, LockOutlined } from '@ant-design/icons';
-import {reqLogin}from '@/api/login'
+import { reqLogin } from '@/api/login'
+import { setLocalStorage } from "@/utils"
 import './index.less'
 const Login = () => {
+  const navigate = useNavigate()
+  const onSubmit = values => {
 
- const onSubmit =   values => {
     // 请求登录
     const { username, password } = values
-    reqLogin(username,password).then((res)=>{
-      console.log(res);
+    reqLogin(username, password).then((res) => {
+      if (res.data.token) {
+        setLocalStorage("Token", res.data.token)
+        navigate('/home')
+      }
     })
-
   }
   // 自定义验证密码
   const validatorPwd = async (_, value) => {
-    if(!value) {
+    if (!value) {
       return Promise.reject(new Error('密码必须输入'))
-    } else if(value.length < 4) {
+    } else if (value.length < 4) {
       return Promise.reject(new Error('密码长度不能小于4位!'))
-    } else if(value.length > 16) {
+    } else if (value.length > 16) {
       return Promise.reject(new Error('密码长度不能大于16位!'))
-    } else if(!/^[a-zA-Z0-9_]+$/.test(value)) {
+    } else if (!/^[a-zA-Z0-9_]+$/.test(value)) {
       return Promise.reject(new Error('密码必须是英文、数字、下划线组成!'))
     } else {
-      return Promise.resolve() 
+      return Promise.resolve()
     }
   }
   return (
@@ -65,7 +70,7 @@ const Login = () => {
               validateTrigger="onChange"
               rules={[
                 {
-                  validator:validatorPwd
+                  validator: validatorPwd
                 }
               ]}
             >
@@ -89,7 +94,7 @@ const Login = () => {
           </Form>
         </section>
       </div>
-      </>
+    </>
   )
 }
 export default Login
