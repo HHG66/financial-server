@@ -1,9 +1,9 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-01 17:01:17
- * @LastEditTime: 2022-09-19 09:16:29
+ * @LastEditTime: 2022-09-27 23:34:17
  * @LastEditors: 韩宏广
- * @FilePath: \my-financial\web\src\pages\ConsumptionManagement\index.js
+ * @FilePath: /个人财务/web/src/pages/ConsumptionManagement/index.js
  * @文件说明: 
  */
 import { Table, Form, Input, Row, Col, Button, Space, Dropdown } from 'antd'
@@ -60,11 +60,14 @@ const ConsumptionManagement = () => {
       console.log(res);
     })
   }, [])
-  const onFinish = (values: any) => {
+  const onFinish = (values) => {
     console.log('Success:', values);
   };
-
-  const onFinishFailed = (errorInfo: any) => {
+ function onFinishs (value){
+  console.log(value);
+  };
+  
+  const onFinishFailed = (errorInfo) => {
     console.log('Failed:', errorInfo);
   };
   const showSearch=()=>{
@@ -80,30 +83,30 @@ const ConsumptionManagement = () => {
         onFinishFailed={onFinishFailed}
         autoComplete="off">
         <Row gutter={24}>
-          <Col span={6}>
+          <Col span={6} lg={5}>
             <Form.Item label="Username" name="username" rules={[{ required: true, message: 'Please input your username!' }]} >
               <Input />
             </Form.Item>
           </Col>
 
-          <Col span={6}>
-            <Form.Item label="Username" name="username" rules={[{ required: true, message: 'Please input your username!' }]} >
+          <Col span={6} lg={5}>
+            <Form.Item label="Username" name="username2" rules={[{ required: true, message: 'Please input your username!' }]} >
               <Input />
             </Form.Item>
           </Col>
 
-          <Col span={6}>
-            <Form.Item label="Username" name="username" rules={[{ required: true, message: 'Please input your username!' }]} >
+          <Col span={6} lg={5}>
+            <Form.Item label="Username" name="username3" rules={[{ required: true, message: 'Please input your username!' }]} >
               <Input />
             </Form.Item>
           </Col>
 
-          <Col span={6} className="search-form">
+          <Col span={6}  lg={9} className="search-form">
             <Form.Item >
               <Space>
-                <Button type="primary">Primary Button</Button>
-                <Button   >Primary Button</Button>
-                <Dropdown overlay='' onClick={showSearch()}>
+                <Button onClick={()=>{onFinishs("123")}} type="primary">Primary Button</Button>
+                <Button  onClick={showSearch} >Primary Button</Button>
+                <Dropdown overlay='' onClick={showSearch}>
                   {/* 链接纯粹为了一个样式 */}
                   <a href='##' onClick={e => e.preventDefault()}>
                     <Space>
