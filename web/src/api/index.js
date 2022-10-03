@@ -1,7 +1,7 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-02 13:13:54
- * @LastEditTime: 2022-09-19 09:23:38
+ * @LastEditTime: 2022-09-30 22:07:02
  * @LastEditors: 韩宏广
  * @FilePath: \my-financial\web\src\api\index.js
  * @文件说明: 
@@ -41,7 +41,7 @@ request.interceptors.response.use(function (response) {
   console.log(error);
   // 超出 2xx 范围的状态码都会触发该函数。
   // 对响应错误做点什么
-  //重定向
+ // 请求成功发出且服务器也响应了状态码，但状态代码超出了 2xx 的范围
   if (error && error.response) {
     switch (error.response.status) {
       case 401:
@@ -59,22 +59,28 @@ request.interceptors.response.use(function (response) {
         });
         break;
       default:
+
         break;
     }
+  } else if(error.request){
+    var processingMessage=''
+    var processingDesc=''
+    if(error.code==="ECONNABORTED"){
+      processingMessage= "网络错误"
+      processingDesc="请求超时，请检查网络"
+    }
+    notification.open({
+      message:processingMessage,
+      type: "error",
+      description: processingDesc,
+      onClick: () => {
+        console.log('Notification Clicked!');
+      },
+    });
+  }else {
+    // 发送请求时出了点问题
+    console.log('Error', error.message);
   }
-  // if (error.response.status === 401) {
-  //   window.location.href = '/login'
-  // } else if (error.response.status === 502) {
-  //   notification.open({
-  //     message: '网络错误',
-  //     type: "error",
-  //     description:
-  //       '请检查网络后重试，错误码（502）',
-  //     onClick: () => {
-  //       console.log('Notification Clicked!');
-  //     },
-  //   });
-  // }
   return Promise.reject(error);
 });
 

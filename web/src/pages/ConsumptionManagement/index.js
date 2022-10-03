@@ -1,18 +1,19 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-01 17:01:17
- * @LastEditTime: 2022-09-27 23:34:17
+ * @LastEditTime: 2022-09-30 22:40:07
  * @LastEditors: 韩宏广
- * @FilePath: /个人财务/web/src/pages/ConsumptionManagement/index.js
+ * @FilePath: \my-financial\web\src\pages\ConsumptionManagement\index.js
  * @文件说明: 
  */
 import { Table, Form, Input, Row, Col, Button, Space, Dropdown } from 'antd'
 import { DownOutlined } from '@ant-design/icons';
 import { getConsumptionTypeList } from '@/api/consumptiontype'
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import './index.less'
 const ConsumptionManagement = () => {
-  const dataSource = [
+
+  let [dataSource, setDataSource] = useState([
     {
       key: '1',
       name: '胡彦斌',
@@ -25,7 +26,8 @@ const ConsumptionManagement = () => {
       age: 42,
       address: '西湖区湖底公园1号',
     },
-  ];
+  ])
+
 
   const columns = [
     {
@@ -56,21 +58,31 @@ const ConsumptionManagement = () => {
   }
 
   useEffect(() => {
+    // (async function anyNameFunction() {
+    //   await getConsumptionTypeList().then((res) => {
+    //     console.log(res);
+    //     setDataSource(res.data)
+    //   });
+    // })();
+
     getConsumptionTypeList().then((res) => {
       console.log(res);
-    })
+      setDataSource(res.data)
+    });
   }, [])
+
+
   const onFinish = (values) => {
     console.log('Success:', values);
   };
- function onFinishs (value){
-  console.log(value);
+  function onFinishs(value) {
+    console.log(value);
   };
-  
+
   const onFinishFailed = (errorInfo) => {
     console.log('Failed:', errorInfo);
   };
-  const showSearch=()=>{
+  const showSearch = () => {
     console.log(1);
   }
   return (
@@ -101,11 +113,11 @@ const ConsumptionManagement = () => {
             </Form.Item>
           </Col>
 
-          <Col span={6}  lg={9} className="search-form">
+          <Col span={6} lg={9} className="search-form">
             <Form.Item >
               <Space>
-                <Button onClick={()=>{onFinishs("123")}} type="primary">Primary Button</Button>
-                <Button  onClick={showSearch} >Primary Button</Button>
+                <Button onClick={() => { onFinishs("123") }} type="primary">Primary Button</Button>
+                <Button onClick={showSearch} >Primary Button</Button>
                 <Dropdown overlay='' onClick={showSearch}>
                   {/* 链接纯粹为了一个样式 */}
                   <a href='##' onClick={e => e.preventDefault()}>
