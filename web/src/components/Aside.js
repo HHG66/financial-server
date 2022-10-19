@@ -1,7 +1,7 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-01 10:58:19
- * @LastEditTime: 2022-09-27 23:19:47
+ * @LastEditTime: 2022-10-04 00:15:38
  * @LastEditors: 韩宏广
  * @FilePath: /个人财务/web/src/components/Aside.js
  * @文件说明: 
@@ -12,7 +12,7 @@ import { Link, useLocation } from 'react-router-dom'
 import Routers from '@/routers';
 import { setLocalStorage, getLocalStorage } from '@/utils'
 const { Sider } = Layout;
-const rootSubmenuKeys = ['/consumptiontype', '/incometype', '/balancepayments'];
+const rootSubmenuKeys = ['/consumptiontype', '/incometype', '/balancepayments', '/investmentmanagement', '/checkInformation'];
 
 const Aside = () => {
   const [collapsed, setCollapsed] = useState(false);

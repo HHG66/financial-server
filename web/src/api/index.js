@@ -1,9 +1,9 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-02 13:13:54
- * @LastEditTime: 2022-09-30 22:07:02
+ * @LastEditTime: 2022-10-05 19:43:03
  * @LastEditors: 韩宏广
- * @FilePath: \my-financial\web\src\api\index.js
+ * @FilePath: /个人财务/web/src/api/index.js
  * @文件说明: 
  */
 
@@ -33,7 +33,11 @@ request.interceptors.response.use(function (response) {
   if (response.data.code === "00000" && response.data.desc === "success") {
     return response.data
   } else if (response.data.code === "00000" && response.data.desc === "error") {
+    //当结果不正确的时候 ，或者其他情况下，返回结果需要提示就将desc返回成error
     message.error(response.data.message);
+    // return response.data
+  }else if(response.data.code !== "00000" && response.data.desc === "error"){
+    // 如果想自定义的处理，将返回code返回成非00000状态
     return response.data
   }
   // return response;
@@ -59,7 +63,6 @@ request.interceptors.response.use(function (response) {
         });
         break;
       default:
-
         break;
     }
   } else if(error.request){

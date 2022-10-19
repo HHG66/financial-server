@@ -1,7 +1,7 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-09 11:31:33
- * @LastEditTime: 2022-09-10 16:53:28
+ * @LastEditTime: 2022-10-04 01:05:59
  * @LastEditors: 韩宏广
  * @FilePath: /个人财务/web/src/components/Heade.js
  * @文件说明: 
@@ -83,7 +83,7 @@ const Heade = () => {
           />
         </div>
       </Header>
-        <Drawer title="Basic Drawer" placement="right" onClose={onClose}  visible={open}>
+        <Drawer title="Basic Drawer" placement="right" onClose={onClose}  open={open}>
             <p>Some contents...</p>
             <p>Some contents...</p>
             <p>Some contents...</p>

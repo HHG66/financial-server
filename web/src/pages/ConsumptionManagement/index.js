@@ -1,33 +1,26 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-01 17:01:17
- * @LastEditTime: 2022-09-30 22:40:07
+ * @LastEditTime: 2022-10-04 16:18:27
  * @LastEditors: 韩宏广
- * @FilePath: \my-financial\web\src\pages\ConsumptionManagement\index.js
+ * @FilePath: /个人财务/web/src/pages/ConsumptionManagement/index.js
  * @文件说明: 
  */
-import { Table, Form, Input, Row, Col, Button, Space, Dropdown } from 'antd'
-import { DownOutlined } from '@ant-design/icons';
-import { getConsumptionTypeList } from '@/api/consumptiontype'
+import { Table, Form, Input, Row, Col, Button, Space, Dropdown, Modal, message } from 'antd'
+import { DownOutlined, UpOutlined } from '@ant-design/icons';
+import { getConsumptionTypeList, newConsumptionType } from '@/api/consumptiontype'
 import { useEffect, useState } from 'react';
 import './index.less'
 const ConsumptionManagement = () => {
 
-  let [dataSource, setDataSource] = useState([
-    {
-      key: '1',
-      name: '胡彦斌',
-      age: 32,
-      address: '西湖区湖底公园1号',
-    },
-    {
-      key: '2',
-      name: '胡彦祖',
-      age: 42,
-      address: '西湖区湖底公园1号',
-    },
-  ])
-
+  let [dataSource, setDataSource] = useState([])
+  let [formSearch, setFormSearch] = useState(false)
+  //对话框
+  const [open, setOpen] = useState(false);
+  const [confirmLoading, setConfirmLoading] = useState(false);
+  //表单
+  const [form] = Form.useForm();
+  const [searchform] = Form.useForm();
 
   const columns = [
     {
@@ -46,16 +39,16 @@ const ConsumptionManagement = () => {
       key: 'address',
     },
   ];
-  const pagination = {
-    position: ["bottomRight"],
-    total: 100,
-    onChange: (page, pageSize) => { getconsumptiontypelist(page, pageSize) },
-    // onShowSizeChange:(current,pageSize)=>{getconsumptiontypelist(current,pageSize)},
-  }
+  // const pagination = {
+  //   position: ["bottomRight"],
+  //   total: 100,
+  //   onChange: (page, pageSize) => { getconsumptiontypelists(page, pageSize) },
+  //   // onShowSizeChange:(current,pageSize)=>{getconsumptiontypelist(current,pageSize)},
+  // }
   //分页改变
-  const getconsumptiontypelist = (current, pageSize) => {
-    console.log(current, pageSize);
-  }
+  // const getconsumptiontypelists = (current, pageSize) => {
+  //   console.log(current, pageSize);
+  // }
 
   useEffect(() => {
     // (async function anyNameFunction() {
@@ -65,65 +58,86 @@ const ConsumptionManagement = () => {
     //   });
     // })();
 
-    getConsumptionTypeList().then((res) => {
+    getConsumptionTypeList({}).then((res) => {
       console.log(res);
       setDataSource(res.data)
     });
   }, [])
 
+  const onReset = () => {
+    searchform.resetFields();
+  };
 
   const onFinish = (values) => {
-    console.log('Success:', values);
-  };
-  function onFinishs(value) {
-    console.log(value);
+    getConsumptionTypeList(values).then((res) => {
+      setDataSource(res.data)
+    });
   };
 
-  const onFinishFailed = (errorInfo) => {
-    console.log('Failed:', errorInfo);
-  };
-  const showSearch = () => {
-    console.log(1);
+  const showHideSearch = () => {
+    if (formSearch === true) {
+      setFormSearch(false)
+    } else {
+      setFormSearch(true)
+    }
   }
+
+  //对话框
+  const showModal = () => {
+    console.log(1);
+    setOpen(true);
+  };
+
+  const handleCancel = () => {
+    setOpen(false);
+  };
+  const handleOk = () => {
+    setConfirmLoading(true);
+    //手动调用表单的校验规则，通过后可以提交
+    form.validateFields().then(values => {
+      newConsumptionType(values).then(res => {
+        if (res.code === "00000") {
+          message.success(res.message);
+          setConfirmLoading(false);
+          setOpen(false)
+        }
+      })
+    }).catch(error => {
+      console.log(error);
+    })
+  };
   return (
     <>
+
       <Form name="basic"
-        // labelCol={{ span: 2 }}
-        // wrapperCol={{ span: 5 }}
         initialValues={{ remember: true }}
         onFinish={onFinish}
-        onFinishFailed={onFinishFailed}
+        form={searchform}
         autoComplete="off">
         <Row gutter={24}>
           <Col span={6} lg={5}>
-            <Form.Item label="Username" name="username" rules={[{ required: true, message: 'Please input your username!' }]} >
+            <Form.Item label="类型名称" name="consumptionName"  >
               <Input />
             </Form.Item>
           </Col>
 
-          <Col span={6} lg={5}>
-            <Form.Item label="Username" name="username2" rules={[{ required: true, message: 'Please input your username!' }]} >
+          {/* <Col span={6} lg={5} className={formSearch === true ? 'search-form' : ''}>
+            <Form.Item label="username2" name="username2" rules={[{ required: true, message: 'Please input your username!' }]} >
               <Input />
             </Form.Item>
-          </Col>
+          </Col> */}
 
-          <Col span={6} lg={5}>
-            <Form.Item label="Username" name="username3" rules={[{ required: true, message: 'Please input your username!' }]} >
-              <Input />
-            </Form.Item>
-          </Col>
-
-          <Col span={6} lg={9} className="search-form">
+          <Col span={6} lg={9} >
             <Form.Item >
               <Space>
-                <Button onClick={() => { onFinishs("123") }} type="primary">Primary Button</Button>
-                <Button onClick={showSearch} >Primary Button</Button>
-                <Dropdown overlay='' onClick={showSearch}>
+                <Button type="primary" htmlType="submit">查询</Button>
+                <Button onClick={onReset}>重置</Button>
+                <Dropdown overlay='' onClick={showHideSearch}>
                   {/* 链接纯粹为了一个样式 */}
-                  <a href='##' onClick={e => e.preventDefault()}>
+                  <a href='##'>
                     <Space>
-                      Hover me
-                      <DownOutlined />
+                      {formSearch === true ? "展开" : "收起"}
+                      {formSearch === true ? < DownOutlined /> : < UpOutlined />}
                     </Space>
                   </a>
                 </Dropdown>
@@ -132,7 +146,71 @@ const ConsumptionManagement = () => {
           </Col>
         </Row>
       </Form>
-      <Table dataSource={dataSource} columns={columns} pagination={pagination} />
+
+      <Row gutter={24} className='btn-form'>
+        <Col span={6} lg={5} offset={19}>
+          <Space>
+            <Button type="primary" onClick={() => showModal()}>+ 新建</Button>
+            <Button>设置</Button>
+          </Space>
+        </Col>
+      </Row>
+
+      <Table dataSource={dataSource} columns={columns} />
+
+      <Modal
+        title="Title"
+        className='lili'
+        bodyStyle={{ display: 'block' }}
+        open={open}
+        onOk={handleOk}
+        confirmLoading={confirmLoading}
+        onCancel={handleCancel}
+      >
+        <Form
+          name="basic"
+          form={form}
+          labelCol={{
+            span: 6,
+          }}
+          wrapperCol={{
+            span: 16,
+          }}
+          initialValues={{
+            remember: true,
+          }}
+          autoComplete="off"
+        >
+          <Form.Item
+            label="消费类型名称"
+            name="consumptionName"
+            validateTrigger={['onBlur', 'onSubmit']}
+            rules={[
+              {
+                required: true,
+                message: '请输入消费类型名称',
+              },
+            ]
+            }
+          >
+            <Input />
+          </Form.Item>
+
+          {/* <Form.Item
+            label="Password"
+            name=""
+            rules={[
+              {
+                required: true,
+                message: 'Please input your password!',
+              },
+            ]}
+          >
+            <Input.Password />
+          </Form.Item> */}
+        </Form>
+      </Modal>
+
     </>
   )
 }
