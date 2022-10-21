@@ -1,9 +1,9 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-01 17:01:12
- * @LastEditTime: 2022-10-06 11:18:16
+ * @LastEditTime: 2022-10-20 16:29:20
  * @LastEditors: 韩宏广
- * @FilePath: /个人财务/web/src/pages/ConsumpAssociated/index.js
+ * @FilePath: \my-financial\web\src\pages\ConsumpAssociated\index.js
  * @文件说明: 
  */
 import { Space, Table, Row, Col, Button, Form, Input, Modal, Select, message } from 'antd';
@@ -26,7 +26,7 @@ const ConsumpAssociated = () => {
     getConsumptionTypeList({}).then((res) => {
       var reqConsumptionTypeList = []
       res.data.forEach(element => {
-        reqConsumptionTypeList.push({ "label": element.name, "value": element.age })
+        reqConsumptionTypeList.push({ "label": element.name, "value": element.age ,key:element.name})
       });
       setConsumptionTypeList(reqConsumptionTypeList)
     })

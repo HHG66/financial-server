@@ -13,17 +13,14 @@ import '@/icon/index'
 
 function App() {
   return (
-  
-      <BrowserRouter style={{ height: "100%", width: "100%" }}>
-        {/* <AppRouter /> */}
-        <AppRouter />
-        {/* <Routes>
+    <BrowserRouter style={{ height: "100%", width: "100%" }}>
+      {/* <AppRouter /> */}
+      <AppRouter />
+      {/* <Routes>
           <Route path='/' element={
              <Layouts/>
        </Routes> */}
-     
-      </BrowserRouter>
- 
+    </BrowserRouter>
   );
 }
 

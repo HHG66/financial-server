@@ -1,7 +1,7 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-02 14:37:41
- * @LastEditTime: 2022-09-08 10:01:18
+ * @LastEditTime: 2022-10-20 11:35:40
  * @LastEditors: 韩宏广
  * @FilePath: \my-financial\web\src\utils\index.js
  * @文件说明: 
@@ -9,11 +9,11 @@
 
 //取localstorage
 export function getLocalStorage(key) {
-  return window.localStorage.getItem(key)
+  return JSON.parse(window.localStorage.getItem(key)) 
 }
 //存localstorage
 export function setLocalStorage(key, value) {
-  return window.localStorage.setItem(key, value)
+  return window.localStorage.setItem(key, JSON.stringify(value))
 }
 /**
  * @description: 日期格式化

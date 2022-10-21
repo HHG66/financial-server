@@ -1,17 +1,20 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-09 11:31:33
- * @LastEditTime: 2022-10-04 01:05:59
+ * @LastEditTime: 2022-10-21 12:16:58
  * @LastEditors: 韩宏广
- * @FilePath: /个人财务/web/src/components/Heade.js
+ * @FilePath: \my-financial\web\src\components\Heade.js
  * @文件说明: 
  */
-import { Breadcrumb, Avatar, Layout, Drawer } from 'antd'
+import { Breadcrumb, Avatar, Layout, Drawer,Popover,Button} from 'antd'
 import { useState, useEffect, useRef } from 'react'
 import { useLocation } from 'react-router-dom'
 import SvgIcon from '@/components/Icon'
 import Routers from '@/routers'
-
+import { useSelector,useDispatch } from 'react-redux'
+import { bindActionCreators } from 'redux'
+import { actions } from '@/store/export.js'
+import { useNavigate } from 'react-router-dom'
 const { Header } = Layout
 const Heade = () => {
   const [breadcrumb, setBreadcrumb] = useState([])
@@ -20,6 +23,11 @@ const Heade = () => {
   const [open, setOpen] = useState(false);
   const { pathname } = useLocation();
   const dataRef = useRef()
+  const store = useSelector(store => store.userInfo)
+  console.log(store);
+  const dispatch = useDispatch()
+  const { deleteInfo } = bindActionCreators(actions, dispatch)
+  const navigate = useNavigate()
 
   useEffect(() => {
     function callbreadcrumbNameMap() {
@@ -56,6 +64,10 @@ const Heade = () => {
   const showDrawer = () => {
     setOpen(true);
   }
+  const personalInfo = () => {
+    deleteInfo()
+    navigate('/login')
+  }
   return (
     <>
       <Header
@@ -73,21 +85,23 @@ const Heade = () => {
         </Breadcrumb>
         <div className='userInfo'>
           <span className='notice' onClick={showDrawer}>
-            <div style={{display:'inline-block'}}>
-            <SvgIcon iconClass="notice" style={{ width: "25px", height: "20px", color: "black" }} />
+            <div style={{ display: 'inline-block' }}>
+              <SvgIcon iconClass="notice" style={{ width: "25px", height: "20px", color: "black" }} />
             </div>
           </span>
           <span>用户名：</span>
-          <span>144444</span>
+          <Popover placement="bottom" title={" "} content={ <Button type="link" onClick={personalInfo}>退出</Button>} trigger="click">
+          {/* <span>{store.userinfo.name}</span> */}
+          </Popover>
           <Avatar className='head-portrait' src="https://joeschmoe.io/api/v1/random"
           />
         </div>
       </Header>
-        <Drawer title="Basic Drawer" placement="right" onClose={onClose}  open={open}>
-            <p>Some contents...</p>
-            <p>Some contents...</p>
-            <p>Some contents...</p>
-        </Drawer>
+      <Drawer title="Basic Drawer" placement="right" onClose={onClose} open={open}>
+        <p>Some contents...</p>
+        <p>Some contents...</p>
+        <p>Some contents...</p>
+      </Drawer>
     </>
 
   )
