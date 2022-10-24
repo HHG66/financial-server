@@ -1,9 +1,9 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-09 11:31:33
- * @LastEditTime: 2022-10-21 12:16:58
+ * @LastEditTime: 2022-10-22 12:29:05
  * @LastEditors: 韩宏广
- * @FilePath: \my-financial\web\src\components\Heade.js
+ * @FilePath: /个人财务/web/src/components/Heade.js
  * @文件说明: 
  */
 import { Breadcrumb, Avatar, Layout, Drawer,Popover,Button} from 'antd'
@@ -12,7 +12,7 @@ import { useLocation } from 'react-router-dom'
 import SvgIcon from '@/components/Icon'
 import Routers from '@/routers'
 import { useSelector,useDispatch } from 'react-redux'
-import { bindActionCreators } from 'redux'
+// import { bindActionCreators } from 'redux'
 import { actions } from '@/store/export.js'
 import { useNavigate } from 'react-router-dom'
 const { Header } = Layout
@@ -23,10 +23,11 @@ const Heade = () => {
   const [open, setOpen] = useState(false);
   const { pathname } = useLocation();
   const dataRef = useRef()
-  const store = useSelector(store => store.userInfo)
-  console.log(store);
-  const dispatch = useDispatch()
-  const { deleteInfo } = bindActionCreators(actions, dispatch)
+  const store = useSelector(store => store.Store.UserReducer.userInfo)
+  const store1 = useSelector(store => store )
+  console.log(store1);
+  // const dispatch = useDispatch()
+  // const { deleteInfo } = bindActionCreators(actions, dispatch)
   const navigate = useNavigate()
 
   useEffect(() => {
@@ -65,7 +66,7 @@ const Heade = () => {
     setOpen(true);
   }
   const personalInfo = () => {
-    deleteInfo()
+    // deleteInfo()
     navigate('/login')
   }
   return (
@@ -91,7 +92,7 @@ const Heade = () => {
           </span>
           <span>用户名：</span>
           <Popover placement="bottom" title={" "} content={ <Button type="link" onClick={personalInfo}>退出</Button>} trigger="click">
-          {/* <span>{store.userinfo.name}</span> */}
+          <span>{store.name}</span>
           </Popover>
           <Avatar className='head-portrait' src="https://joeschmoe.io/api/v1/random"
           />

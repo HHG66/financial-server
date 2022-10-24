@@ -72,12 +72,12 @@ const Routers = [
   },
   {
     key: '/checkInformation',
-    title: '对账信息',
+    title: '账单信息',
     icon: <div><SvgIcon iconClass="checkInformation" style={{ width: "17px", height: "17px", marginRight: '13px' }} /></div>,
     // component: <CheckInFormation />
     role: "6",
     subs: [
-      { key: '/checkInformation/summary', title: '对账汇总', component: <Summary />, role: "6-1" },
+      { key: '/checkInformation/summary', title: '账单汇总', component: <Summary />, role: "6-1" },
       { key: '/checkInformation/exportbill', title: '导出账单', component: <ExportBill />, role: "6-2" },
     ],
   },

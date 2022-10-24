@@ -1,7 +1,7 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-01 17:01:17
- * @LastEditTime: 2022-10-04 16:18:27
+ * @LastEditTime: 2022-10-22 12:52:11
  * @LastEditors: 韩宏广
  * @FilePath: /个人财务/web/src/pages/ConsumptionManagement/index.js
  * @文件说明: 
@@ -148,11 +148,11 @@ const ConsumptionManagement = () => {
       </Form>
 
       <Row gutter={24} className='btn-form'>
-        <Col span={6} lg={5} offset={19}>
-          <Space>
+        <Col span={3} lg={3} offset={21}>
+          {/* <Space> */}
             <Button type="primary" onClick={() => showModal()}>+ 新建</Button>
-            <Button>设置</Button>
-          </Space>
+            {/* <Button>设置</Button> */}
+          {/* </Space> */}
         </Col>
       </Row>
 

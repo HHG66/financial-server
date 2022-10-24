@@ -1,15 +1,16 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-02 14:37:41
- * @LastEditTime: 2022-10-20 11:35:40
+ * @LastEditTime: 2022-10-22 00:45:25
  * @LastEditors: 韩宏广
- * @FilePath: \my-financial\web\src\utils\index.js
+ * @FilePath: /个人财务/web/src/utils/index.js
  * @文件说明: 
  */
 
 //取localstorage
 export function getLocalStorage(key) {
-  return JSON.parse(window.localStorage.getItem(key)) 
+   return window.localStorage.getItem(key)
+  // return JSON.parse(window.localStorage.getItem(key))  
 }
 //存localstorage
 export function setLocalStorage(key, value) {

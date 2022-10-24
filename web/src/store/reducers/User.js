@@ -4,14 +4,18 @@ const UserSlice = createSlice({
   name: "userinfo",
   //初始状态
   initialState: {
-    userInfo: {}
+    userInfo: {},
+    Token:''
   },
   reducers: {
-    addInfo: (state,action) => {
-      state.userInfo = action.userInfo
-    }
+    addInfo: (state, action) => {
+      // console.log(action);
+      // console.log(action.payload.userinfo);
+      state.userInfo = action.payload.userinfo
+      state.Token=action.payload.token
+    },
   }
 })
 
-export const {addInfo}=UserSlice.actions
+export const { addInfo } = UserSlice.actions
 export default UserSlice.reducer

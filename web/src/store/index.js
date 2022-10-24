@@ -1,19 +1,24 @@
 /*
  * @Author: HHG
  * @Date: 2022-10-19 22:50:31
- * @LastEditTime: 2022-10-21 12:21:20
+ * @LastEditTime: 2022-10-22 12:31:37
  * @LastEditors: 韩宏广
- * @FilePath: \my-financial\web\src\store\index.js
+ * @FilePath: /个人财务/web/src/store/index.js
  * @文件说明: 
  */
-import { createStore, applyMiddleware, compose } from "redux"
+import { combineReducers } from "redux"
 import { persistStore, persistReducer } from 'redux-persist'
-import storage from 'redux-persist/lib/storage'
-import redecers from "./reducers/index"
-import thunk from "redux-thunk"
+// import storage from 'redux-persist/lib/storage'
+// import redecers from "./reducers/index"
+// import thunk from "redux-thunk"
 //toolkit
 import { configureStore } from "@reduxjs/toolkit"
-import UserSlice from "./reducers/User"
+
+import storage from 'redux-persist/lib/storage';
+import autoMergeLevel2 from 'redux-persist/lib/stateReconciler/autoMergeLevel2';
+
+import UserReducer from "./reducers/User"
+import TestReducer from "./reducers/Test"
 
 // const persistConfig = {
 //   key: 'root',
@@ -35,16 +40,22 @@ import UserSlice from "./reducers/User"
 // )
 // export const persistor = persistStore(store)
 
-
 //redux-toolkit
 const persistConfig = {
   key: 'root',
-  storage,
+  storage: storage,
+  stateReconciler: autoMergeLevel2
 }
-const UserPersistedReducer = persistReducer(persistConfig, UserSlice)
-export const store= configureStore({
-  reducer:{
-    userinfo:UserSlice
+
+const rootReducer = combineReducers({
+  UserReducer,
+  TestReducer
+});
+const PersistedReducer = persistReducer(persistConfig, rootReducer)
+export const store = configureStore({
+  reducer: {
+    Store: PersistedReducer,
+   //如果不需要缓冲，这几把reducer放到这里
   },
   middleware: getDefaultMiddleware => {
     return getDefaultMiddleware({
@@ -59,7 +70,7 @@ export const store= configureStore({
 //   ),//插件调试，未安装会报错
 // )
 
-// export const persistor = persistStore(store)
+export const persistor = persistStore(store)
 
 
 

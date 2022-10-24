@@ -1,9 +1,9 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-13 19:16:40
- * @LastEditTime: 2022-10-19 13:45:02
+ * @LastEditTime: 2022-10-22 19:22:39
  * @LastEditors: 韩宏广
- * @FilePath: \my-financial\web\src\api\consumptiontype.js
+ * @FilePath: /个人财务/web/src/api/consumptiontype.js
  * @文件说明: 
  */
 import request from "./index";
@@ -66,7 +66,7 @@ export function editAssociatedBill(data){
 export function deleteAssociatedBill(id){
   return request({
     method:'POST',
-    url:'/editassociatedbill',
+    url:'/deleteassociatedbill',
     params:{
       id:id,
     }

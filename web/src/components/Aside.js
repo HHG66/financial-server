@@ -1,9 +1,9 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-01 10:58:19
- * @LastEditTime: 2022-10-21 12:18:48
+ * @LastEditTime: 2022-10-22 12:18:25
  * @LastEditors: 韩宏广
- * @FilePath: \my-financial\web\src\components\Aside.js
+ * @FilePath: /个人财务/web/src/components/Aside.js
  * @文件说明: 
  */
 import { Layout, Menu } from 'antd';
@@ -29,7 +29,7 @@ const Aside = () => {
     //   setLocalStorage("asideInfo", store.userInfo)
     //   return store.userInfo
     // }
-    return store 
+    return store.Store.UserReducer.userInfo
 
   })
   // console.log(store);
@@ -121,8 +121,8 @@ const Aside = () => {
         }
       });
       setasyncRouter(asyncRou)
-      setLocalStorage("asideRouter", asyncRou)
-      setLocalStorage("linearAsyncRou", linearAsyncRou)
+      // setLocalStorage("asideRouter", asyncRou)
+      // setLocalStorage("linearAsyncRou", linearAsyncRou)
       console.log(asyncRouter);
       // console.log(asyncRou);
     }
@@ -130,18 +130,18 @@ const Aside = () => {
   }, [store.role])
 
   useEffect(() => {
-    if (Object.keys(openKeys).length === 0) {
-      if (getLocalStorage('OpenKeys')) {
-        setOpenKeys(getLocalStorage('OpenKeys'))
-      }
-    }
+    // if (Object.keys(openKeys).length === 0) {
+    //   if (getLocalStorage('OpenKeys')) {
+    //     setOpenKeys(getLocalStorage('OpenKeys'))
+    //   }
+    // }
   }, [openKeys])
 
   useEffect(() => {
-    if (collapsed === true) {
-      setOpenKeys([]);
-      setLocalStorage("OpenKeys", [])
-    }
+    // if (collapsed === true) {
+    //   setOpenKeys([]);
+    //   setLocalStorage("OpenKeys", [])
+    // }
   }, [collapsed])
 
   //这个地方是只展开一个父级菜单，onOpenChange只在打开有子级导航的时候,以及收回侧边栏会触发。
@@ -155,11 +155,11 @@ const Aside = () => {
       if (collapsed === false) {
         // console.log(keys);
         setOpenKeys(keys);
-        setLocalStorage("OpenKeys", keys)
+        // setLocalStorage("OpenKeys", keys)
       }
     } else {
       setOpenKeys(latestOpenKey ? [latestOpenKey] : []);
-      setLocalStorage("OpenKeys", latestOpenKey ? [latestOpenKey] : [])
+      // setLocalStorage("OpenKeys", latestOpenKey ? [latestOpenKey] : [])
     }
   };
 
@@ -173,21 +173,21 @@ const Aside = () => {
     // console.log({ item, key, keyPath, selectedKeys, domEvent });
     // console.log(selectedKeys);
     // console.log(openKeys);
-    setOpenKeys([])
-    setLocalStorage("OpenKeys", [keyPath[1]])
-    setselectedKeys([key])
+    // setOpenKeys([])
+    // setLocalStorage("OpenKeys", [keyPath[1]])
+    // setselectedKeys([key])
     // debugger
-    if(collapsed==true){
-      setselectedKeys([])
-    setLocalStorage("OpenKeys", [ ])
-    }
+    // if(collapsed==true){
+    //   setselectedKeys([])
+    // setLocalStorage("OpenKeys", [ ])
+    // }
   }
   return (
     <>
       <Sider collapsible collapsed={collapsed} onCollapse={(value) => { setCollapsed(value) }}>
         {/* <div className="logo" > </div> */}
         <Menu theme="dark" defaultSelectedKeys={'/home'} mode="inline" items={routerItem} onClick={onClick} onOpenChange={onOpenChange}
-          openKeys={openKeys}
+          // openKeys={openKeys}
           selectedKeys={selectedKeys}
           onSelect={({ item, key, keyPath, selectedKeys, domEvent }) => { onSelect({ item, key, keyPath, selectedKeys, domEvent }) }}
         // 为了解决二级菜单展开无法展开的问题

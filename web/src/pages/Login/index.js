@@ -9,9 +9,10 @@ import {
 } from '@ant-design/icons';
 // import './index.less'
 import './index2.less'
-import {  useDispatch } from 'react-redux'
-import { bindActionCreators } from 'redux'
+import { useSelector, useDispatch } from 'react-redux'
+// import { bindActionCreators } from 'redux'
 import { actions } from '@/store/export.js'
+import { addInfo } from '@/store/reducers/User';
 const Login = () => {
   const navigate = useNavigate()
   const [loading, setloading] = useState(false)
@@ -30,7 +31,8 @@ const Login = () => {
         setLocalStorage("Token", res.data.token)
         navigate('/home')
         // addInfo(res.data) 
-        dispatch('addInfo')
+        // dispatch('addInfo')
+        dispatch(addInfo(res.data))
       }
     })
   }

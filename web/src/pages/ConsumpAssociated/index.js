@@ -1,14 +1,14 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-01 17:01:12
- * @LastEditTime: 2022-10-20 16:29:20
+ * @LastEditTime: 2022-10-22 20:52:48
  * @LastEditors: 韩宏广
- * @FilePath: \my-financial\web\src\pages\ConsumpAssociated\index.js
+ * @FilePath: /个人财务/web/src/pages/ConsumpAssociated/index.js
  * @文件说明: 
  */
 import { Space, Table, Row, Col, Button, Form, Input, Modal, Select, message } from 'antd';
 import React, { useEffect, useState } from 'react';
-import { getConsumptionTypeList, newAssociatedBillName, getassociatedbill,editAssociatedBill } from '@/api/consumptiontype'
+import { getConsumptionTypeList, newAssociatedBillName, getassociatedbill, editAssociatedBill,deleteAssociatedBill} from '@/api/consumptiontype'
 
 const ConsumpAssociated = () => {
   const [showModal, setshowModal] = useState(false)
@@ -26,7 +26,7 @@ const ConsumpAssociated = () => {
     getConsumptionTypeList({}).then((res) => {
       var reqConsumptionTypeList = []
       res.data.forEach(element => {
-        reqConsumptionTypeList.push({ "label": element.name, "value": element.age ,key:element.name})
+        reqConsumptionTypeList.push({ "label": element.name, "value": element.age, key: element.name })
       });
       setConsumptionTypeList(reqConsumptionTypeList)
     })
@@ -57,7 +57,7 @@ const ConsumpAssociated = () => {
       } else if (modelState === true) {
         setConfirmLoading(false)
         console.log("bianji");
-        editAssociatedBill({editAssociatedBillId,values}).then(res=>{
+        editAssociatedBill({ editAssociatedBillId, values }).then(res => {
           console.log(res);
         })
       }
@@ -73,6 +73,12 @@ const ConsumpAssociated = () => {
     form.setFieldsValue({ consumptionName: rowData.consumptionname, consumptiontype: rowData.consumptiontype })
     setmodelState(true)
     seteditAssociatedBillId(rowData.key)
+  }
+  const deleteAssociated=(rowData)=>{
+    deleteAssociatedBill(rowData.key).then((res)=>{
+      console.log(res);
+      message.success(res.message)
+    })
   }
   const columns = [
     {
@@ -111,23 +117,32 @@ const ConsumpAssociated = () => {
     {
       title: '操作',
       key: 'action',
-      render: (_, record,index) => (
+      render: (_, record, index) => (
         <Space size="middle">
           <a onClick={() => { editAssociatedBillModel(record) }}>编辑</a>
-          <a >删除</a>
+          <a onClick={()=>deleteAssociated(record)}>删除</a>
         </Space>
       ),
     },
   ];
+  const onChange = (value) => {
+    console.log(`selected ${value}`);
+  };
 
+  const onSearch = (value) => {
+    console.log('search:', value);
+  };
+  const filterOption = (input, option) => {
+    return option.label.indexOf(input) !== -1
+  }
   return (
     <>
       <Row gutter={24} className='btn-form'>
-        <Col span={6} lg={5} offset={19}>
-          <Space>
-            <Button type="primary" onClick={() => showAssociatedBillnameModel()}>+ 新建</Button>
-            <Button>设置</Button>
-          </Space>
+        <Col span={3} lg={3} offset={22}>
+          {/* <Space> */}
+          <Button type="primary" onClick={() => showAssociatedBillnameModel()}>+ 新建</Button>
+          {/* <Button>设置</Button> */}
+          {/* </Space> */}
         </Col>
       </Row>
       <Table columns={columns} dataSource={data} />
@@ -138,6 +153,8 @@ const ConsumpAssociated = () => {
         onOk={handleOk}
         confirmLoading={confirmLoading}
         onCancel={handleCancel}
+        okText="确定"
+        cancelText="取消"
       >
         <Form
           name="basic"
@@ -179,9 +196,22 @@ const ConsumpAssociated = () => {
               },
             ]}
           >
-            <Select
+            {/* <Select
               options={consumptionTypeList}
             >
+            </Select> */}
+            <Select
+              showSearch
+              placeholder="Select a person"
+              optionFilterProp="children"
+              onChange={onChange}
+              onSearch={onSearch}
+              options={consumptionTypeList}
+              filterOption={
+                filterOption
+              }
+            >
+
             </Select>
           </Form.Item>
         </Form>
