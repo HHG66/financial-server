@@ -1,7 +1,7 @@
 /*
  * @Author: HHG
  * @Date: 2022-10-19 22:50:31
- * @LastEditTime: 2022-10-22 12:31:37
+ * @LastEditTime: 2022-12-10 21:36:21
  * @LastEditors: 韩宏广
  * @FilePath: /个人财务/web/src/store/index.js
  * @文件说明: 
@@ -55,7 +55,7 @@ const PersistedReducer = persistReducer(persistConfig, rootReducer)
 export const store = configureStore({
   reducer: {
     Store: PersistedReducer,
-   //如果不需要缓冲，这几把reducer放到这里
+   //如果不需要缓冲，就把reducer放到这里
   },
   middleware: getDefaultMiddleware => {
     return getDefaultMiddleware({

@@ -1,14 +1,14 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-01 17:01:12
- * @LastEditTime: 2022-10-22 20:52:48
+ * @LastEditTime: 2022-12-11 19:34:22
  * @LastEditors: 韩宏广
  * @FilePath: /个人财务/web/src/pages/ConsumpAssociated/index.js
  * @文件说明: 
  */
-import { Space, Table, Row, Col, Button, Form, Input, Modal, Select, message } from 'antd';
+import { Space, Table, Row, Col, Button, Form, Input, Modal, Select, message, Popconfirm } from 'antd';
 import React, { useEffect, useState } from 'react';
-import { getConsumptionTypeList, newAssociatedBillName, getassociatedbill, editAssociatedBill,deleteAssociatedBill} from '@/api/consumptiontype'
+import { getConsumptionTypeListApi, newAssociatedBillName, getassociatedbill, editAssociatedBill, deleteAssociatedBill } from '@/api/consumptiontype'
 
 const ConsumpAssociated = () => {
   const [showModal, setshowModal] = useState(false)
@@ -20,21 +20,25 @@ const ConsumpAssociated = () => {
   //true 为编辑模态框 false是新增模态框,模态框使用的一个，所以需要来区分。
   const [modelState, setmodelState] = useState(false)
   const [form] = Form.useForm();
+  const [searchForm] = Form.useForm();
+
   // const { Option } = Select;
 
   useEffect(() => {
-    getConsumptionTypeList({}).then((res) => {
+    getConsumptionTypeList({})
+    getassociatedbill({}).then(res => {
+      setData(res.data)
+    })
+  }, [])
+  const getConsumptionTypeList = (data) => {
+    getConsumptionTypeListApi(data).then((res) => {
       var reqConsumptionTypeList = []
       res.data.forEach(element => {
         reqConsumptionTypeList.push({ "label": element.name, "value": element.age, key: element.name })
       });
       setConsumptionTypeList(reqConsumptionTypeList)
     })
-    getassociatedbill({}).then(res => {
-      setData(res.data)
-    })
-  }, [])
-
+  }
   function showAssociatedBillnameModel() {
     setshowModal(true)
     form.setFieldsValue({ consumptionName: '', consumptiontype: '' })
@@ -74,23 +78,26 @@ const ConsumpAssociated = () => {
     setmodelState(true)
     seteditAssociatedBillId(rowData.key)
   }
-  const deleteAssociated=(rowData)=>{
-    deleteAssociatedBill(rowData.key).then((res)=>{
+  const deleteAssociated = (rowData) => {
+    deleteAssociatedBill(rowData.key).then((res) => {
       console.log(res);
       message.success(res.message)
     })
+  }
+  const confirm = (record) => {
+    deleteAssociated(record)
   }
   const columns = [
     {
       title: '账单消费名称',
       dataIndex: 'consumptionname',
-      key: '',
+      // key: '',
       render: (text) => <a>{text}</a>,
     },
     {
       title: '关联消费类型',
       dataIndex: 'consumptiontype',
-      key: 'age',
+      // key: 'age',
     },
     // {
     //   title: 'Tags',
@@ -120,7 +127,15 @@ const ConsumpAssociated = () => {
       render: (_, record, index) => (
         <Space size="middle">
           <a onClick={() => { editAssociatedBillModel(record) }}>编辑</a>
-          <a onClick={()=>deleteAssociated(record)}>删除</a>
+
+          <Popconfirm
+            title="确定删除吗？"
+            onConfirm={() => confirm(record)}
+            okText="Yes"
+            cancelText="No"
+          >
+            <a >删除</a>
+          </Popconfirm>
         </Space>
       ),
     },
@@ -135,9 +150,45 @@ const ConsumpAssociated = () => {
   const filterOption = (input, option) => {
     return option.label.indexOf(input) !== -1
   }
+  const onFinish = (values) => {
+    console.log('Success:', values);
+    getConsumptionTypeList({ consumptionName: values.billconsumptionname })
+  };
   return (
     <>
       <Row gutter={24} className='btn-form'>
+        <Col span={24}>
+          <Form
+            name="basic"
+            layout="inline"
+            form={searchForm}
+            initialValues={{
+              remember: true,
+            }}
+            onFinish={onFinish}
+            // onFinishFailed={onFinishFailed}
+            autoComplete="off"
+          >
+            <Form.Item
+              label="账单消费名称"
+              name="billconsumptionname"
+            >
+              <Input />
+            </Form.Item>
+            <Form.Item
+            >
+              <Space>
+                <Button type="primary" htmlType="submit">
+                  搜索
+                </Button>
+                <Button type="primary" onClick={() => searchForm.resetFields()}>
+                  重置
+                </Button>
+              </Space>
+            </Form.Item>
+
+          </Form>
+        </Col>
         <Col span={3} lg={3} offset={22}>
           {/* <Space> */}
           <Button type="primary" onClick={() => showAssociatedBillnameModel()}>+ 新建</Button>
@@ -184,7 +235,6 @@ const ConsumpAssociated = () => {
           >
             <Input />
           </Form.Item>
-
           <Form.Item
             label="关联消费类型"
             name="consumptiontype"

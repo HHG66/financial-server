@@ -1,7 +1,7 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-01 10:58:19
- * @LastEditTime: 2022-10-22 12:18:25
+ * @LastEditTime: 2022-12-10 21:22:02
  * @LastEditors: 韩宏广
  * @FilePath: /个人财务/web/src/components/Aside.js
  * @文件说明: 
@@ -10,7 +10,7 @@ import { Layout, Menu } from 'antd';
 import React, { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import Routers from '@/routers';
-import { setLocalStorage, getLocalStorage } from '@/utils'
+// import { setLocalStorage, getLocalStorage } from '@/utils'
 import { useSelector } from 'react-redux';
 const { Sider } = Layout;
 const rootSubmenuKeys = ['/consumptiontype', '/incometype', '/balancepayments', '/investmentmanagement', '/checkInformation'];
@@ -123,7 +123,7 @@ const Aside = () => {
       setasyncRouter(asyncRou)
       // setLocalStorage("asideRouter", asyncRou)
       // setLocalStorage("linearAsyncRou", linearAsyncRou)
-      console.log(asyncRouter);
+      // console.log(asyncRouter);
       // console.log(asyncRou);
     }
     asyncRole(Routers)

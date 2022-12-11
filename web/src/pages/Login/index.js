@@ -9,9 +9,9 @@ import {
 } from '@ant-design/icons';
 // import './index.less'
 import './index2.less'
-import { useSelector, useDispatch } from 'react-redux'
+import { useDispatch } from 'react-redux'
 // import { bindActionCreators } from 'redux'
-import { actions } from '@/store/export.js'
+// import { actions } from '@/store/export.js'
 import { addInfo } from '@/store/reducers/User';
 const Login = () => {
   const navigate = useNavigate()

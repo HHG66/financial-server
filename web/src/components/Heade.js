@@ -1,7 +1,7 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-09 11:31:33
- * @LastEditTime: 2022-10-22 12:29:05
+ * @LastEditTime: 2022-12-09 17:30:26
  * @LastEditors: 韩宏广
  * @FilePath: /个人财务/web/src/components/Heade.js
  * @文件说明: 
@@ -25,7 +25,7 @@ const Heade = () => {
   const dataRef = useRef()
   const store = useSelector(store => store.Store.UserReducer.userInfo)
   const store1 = useSelector(store => store )
-  console.log(store1);
+  // console.log(store1);
   // const dispatch = useDispatch()
   // const { deleteInfo } = bindActionCreators(actions, dispatch)
   const navigate = useNavigate()
@@ -94,8 +94,8 @@ const Heade = () => {
           <Popover placement="bottom" title={" "} content={ <Button type="link" onClick={personalInfo}>退出</Button>} trigger="click">
           <span>{store.name}</span>
           </Popover>
-          <Avatar className='head-portrait' src="https://joeschmoe.io/api/v1/random"
-          />
+          <Avatar className='head-portrait' src=""
+          >123</Avatar>
         </div>
       </Header>
       <Drawer title="Basic Drawer" placement="right" onClose={onClose} open={open}>

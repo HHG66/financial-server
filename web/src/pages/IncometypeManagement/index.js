@@ -1,14 +1,14 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-01 17:01:31
- * @LastEditTime: 2022-10-23 20:57:07
+ * @LastEditTime: 2022-12-10 22:18:57
  * @LastEditors: 韩宏广
  * @FilePath: /个人财务/web/src/pages/IncometypeManagement/index.js
  * @文件说明: 
  */
-import { Row, Space, Table, Tag, Col, Button, Form, Modal, Input, message, Popconfirm } from 'antd';
+import { Row, Space, Table, Col, Button, Form, Modal, Input, message, Popconfirm } from 'antd';
 import { useEffect, useState } from 'react';
-import { newIncometype, deleteIncomeType, getIncomeTypeList } from '@/api/incometype'
+import { newIncometype, deleteIncomeType, getIncomeTypeList,editIncometype } from '@/api/incometype'
 
 const IncometypeManagement = () => {
   const columns = [
@@ -16,46 +16,18 @@ const IncometypeManagement = () => {
       title: '收入类型名称',
       dataIndex: 'incometypename',
       key: 'incometypename',
+      width: 200
       // render: (text) => <a>{text}</a>,
     },
     {
-      title: '创建时间',
-      dataIndex: 'data',
-      key: 'data',
+      title: '备注',
+      dataIndex: 'remarks',
+      key: 'remarks',
     },
-    // {
-    //   title: 'cjia',
-    //   dataIndex: 'age',
-    //   key: 'age',
-    // },
-    // {
-    //   title: 'Address',
-    //   dataIndex: 'address',
-    //   key: 'address',
-    // },
-    // {
-    //   title: 'Tags',
-    //   key: 'tags',
-    //   dataIndex: 'tags',
-    //   render: (_, { tags }) => (
-    //     <>
-    //       {tags.map((tag) => {
-    //         let color = tag.length > 5 ? 'geekblue' : 'green';
-    //         if (tag === 'loser') {
-    //           color = 'volcano';
-    //         }
-    //         return (
-    //           <Tag color={color} key={tag}>
-    //             {tag.toUpperCase()}
-    //           </Tag>
-    //         );
-    //       })}
-    //     </>
-    //   ),
-    // },
     {
-      title: 'Action',
-      key: 'action',
+      title: '操作',
+      key: '操作',
+      width: 200,
       render: (_, record) => (
         <Space size="middle">
           <a onClick={() => { editIncomeType(record) }}>编辑 </a>
@@ -73,35 +45,18 @@ const IncometypeManagement = () => {
       ),
     },
   ];
-  const data = [
-    // {
-    //   key: '1',
-    //   name: 'John Brown',
-    //   age: 32,
-    //   address: 'New York No. 1 Lake Park',
-    //   tags: ['nice', 'developer'],
-    // },
-    // {
-    //   key: '2',
-    //   name: 'Jim Green',
-    //   age: 42,
-    //   address: 'London No. 1 Lake Park',
-    //   tags: ['loser'],
-    // },
-    // {
-    //   key: '3',
-    //   name: 'Joe Black',
-    //   age: 32,
-    //   address: 'Sidney No. 1 Lake Park',
-    //   tags: ['cool', 'teacher'],
-    // },
-  ];
-  const [open, setOpen] = useState(false)
+  const data = [];
+  const [open, setOpen] = useState({
+    open: false,
+    title: '新增',
+    isEdit: false
+  })
+  const [incomeTypeId, setIncomeTypeId] = useState(null)
   const [confirmLoading, setConfirmLoading] = useState(false)
   const [form] = Form.useForm();
   const [formdata, setFormdata] = useState(data)
   useEffect(() => {
-    getIncomeTypeList({ id: 1 }).then((res) => {
+    getIncomeTypeList().then((res) => {
       console.log(res);
       // {
       //   key: '1',
@@ -115,7 +70,8 @@ const IncometypeManagement = () => {
         tabelData.push({
           key: element.id,
           incometypename: element.name,
-          data: element.data
+          date: element.data,
+          remarks:element.remarks
         })
       });
       setFormdata(tabelData)
@@ -123,24 +79,46 @@ const IncometypeManagement = () => {
   }, [])
 
   const showModal = () => {
-    setOpen(true)
+    setOpen({
+      open: true,
+      title: '新增',
+      isEdit: false
+    })
+    form.resetFields()
   }
   const handleOk = () => {
     form.validateFields().then((res) => {
       setConfirmLoading(true)
-      newIncometype(res.incomName).then((res) => {
-        setConfirmLoading(false)
-        setOpen(false)
-        message.success(res.message)
-      })
+      if (open.isEdit !== true) {
+        newIncometype(res).then((res) => {
+          setConfirmLoading(false)
+          setOpen({
+            open: false
+          })
+          message.success(res.message)
+        })
+      }else{
+        editIncometype({id:incomeTypeId,name:res.incomName,remarks:res.remarks}).then((res)=>{
+          setOpen({
+            open: false
+          })
+          message.success(res.message)
+        })
+      }
+
     }).catch((error) => {
       console.log(error);
     })
   }
   const editIncomeType = (rowdata) => {
     console.log(rowdata);
-    setOpen(true)
-    form.setFieldsValue({ incomName: rowdata.incometypename })
+    setOpen({
+      open: true,
+      title: '编辑',
+      isEdit: true
+    })
+    form.setFieldsValue({ incomName: rowdata.incometypename,remarks:rowdata.remarks })
+    setIncomeTypeId(rowdata.key)
   }
   const deleteIncomeTypes = (rowdata) => {
     console.log(rowdata);
@@ -160,10 +138,10 @@ const IncometypeManagement = () => {
 
 
       <Modal
-        title="新建收入类型"
+        title={open.title}
         className='lili'
         bodyStyle={{ display: 'block' }}
-        open={open}
+        open={open.open}
         onOk={handleOk}
         cancelText="取消"
         okText="确定"
@@ -195,6 +173,12 @@ const IncometypeManagement = () => {
               },
             ]
             }
+          >
+            <Input />
+          </Form.Item>
+          <Form.Item
+            label="备注"
+            name="remarks"
           >
             <Input />
           </Form.Item>

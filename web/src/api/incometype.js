@@ -1,7 +1,7 @@
 /*
  * @Author: HHG
  * @Date: 2022-10-22 20:33:04
- * @LastEditTime: 2022-10-23 20:46:46
+ * @LastEditTime: 2022-12-11 22:39:00
  * @LastEditors: 韩宏广
  * @FilePath: /个人财务/web/src/api/incometype.js
  * @文件说明: 
@@ -13,7 +13,20 @@ export const newIncometype = (data) => {
     method: 'POST',
     url: '/newincometype',
     data: {
-      incomename: data
+      incomename: data.incomName,
+      remarks: data.remarks
+    }
+  })
+}
+
+export const editIncometype = (data) => {
+  return request({
+    method: 'POST',
+    url: '/editincometype',
+    data: {
+      incomename: data.name,
+      incomeId: data.id,
+      remarks: data.remarks
     }
   })
 }
@@ -29,11 +42,63 @@ export const deleteIncomeType = (id) => {
 }
 
 export const getIncomeTypeList = (searchform) => {
+  let searchData
+  if (!searchform) {
+    searchData = ''
+  } else {
+    searchData = searchform.incomename
+  }
   return request({
     method: 'GET',
     url: '/getincometypelist',
+    params: {
+      incometypename: searchData
+    }
+  })
+}
+
+//新增关联收入账单名称
+export const newAssociatedIncome = (data) => {
+  return request({
+    method: 'POST',
+    url: '/newassociatedincome',
     data: {
-      incometypename: searchform.incomename
+      billincomename: data.billIncomeName,
+      incomTypeName: data.incomTypeName
+    }
+  })
+}
+//编辑关联收入账单名称
+export const editAssociatedIncomeApi = (data) => {
+  return request({
+    method: 'POST',
+    url: '/editassociatedincome',
+    data: {
+      associatedIncomeId: data.id,
+      billIncomeName: data.billIncomeName,
+      incomTypeName: data.incomTypeName
+    }
+  })
+}
+//删除关联收入账单名称
+export const deleteAssociatedIncomeApi=(data)=>{
+  return request({
+    method:"POST",
+    url:"/deleteassociatedincome",
+    data:{
+      associatedIncomeId:data.id
+    }
+  })
+}
+//获取关联收入账单列表
+export const getAssocicitedIncomeListApi=(params)=>{
+  return request({
+    methed:'GET',
+    url:"/getassociatedincomelist",
+    params:{
+      associatedIncomeName:params.associatedIncomeName||'',
+      remarks:params.remarks||"",
+      incomTypeName:params.incomTypeName||''
     }
   })
 }

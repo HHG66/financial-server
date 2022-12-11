@@ -1,14 +1,14 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-01 17:01:17
- * @LastEditTime: 2022-10-22 12:52:11
+ * @LastEditTime: 2022-12-11 15:00:28
  * @LastEditors: 韩宏广
  * @FilePath: /个人财务/web/src/pages/ConsumptionManagement/index.js
  * @文件说明: 
  */
-import { Table, Form, Input, Row, Col, Button, Space, Dropdown, Modal, message } from 'antd'
+import { Table, Form, Input, Row, Col, Button, Space, Dropdown, Modal, message,Popconfirm } from 'antd'
 import { DownOutlined, UpOutlined } from '@ant-design/icons';
-import { getConsumptionTypeList, newConsumptionType } from '@/api/consumptiontype'
+import { getConsumptionTypeListApi, newConsumptionType, editConsumptionTypeApi, deleteConsumptiontypeApi } from '@/api/consumptiontype'
 import { useEffect, useState } from 'react';
 import './index.less'
 const ConsumptionManagement = () => {
@@ -16,50 +16,57 @@ const ConsumptionManagement = () => {
   let [dataSource, setDataSource] = useState([])
   let [formSearch, setFormSearch] = useState(false)
   //对话框
-  const [open, setOpen] = useState(false);
+  // const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState({
+    state: false,
+    isEdit: false,
+    title: '新增',
+    id: ""
+  });
   const [confirmLoading, setConfirmLoading] = useState(false);
   //表单
   const [form] = Form.useForm();
   const [searchform] = Form.useForm();
+  const confirm=(record)=>{
+    deleteConsumptiontype(record.key)
+  }
 
   const columns = [
     {
-      title: '姓名',
+      title: '消费类型名称',
       dataIndex: 'name',
       key: 'name',
+      width: 200,
     },
     {
-      title: '年龄',
-      dataIndex: 'age',
-      key: 'age',
+      title: '备注',
+      dataIndex: 'remarks',
+      key: 'remarks',
     },
     {
-      title: '住址',
-      dataIndex: 'address',
-      key: 'address',
+      title: '操作',
+      key: 'action',
+      width: 150,
+      render: (_, record) => (
+        <Space size="middle">
+          <a onClick={() => editconsumptiontype(record)}>编辑</a>
+          <Popconfirm
+            title="确定要删除消费类型吗？如果存在关联，需要先删除关联消费账单后再试。"
+            onConfirm={()=>confirm(record)}
+            // onCancel={cancel}
+            okText="Yes"
+            cancelText="No"
+          >
+            <a href="#">删除</a>
+          </Popconfirm>
+          {/* <a onClick={() =>}></a> */}
+        </Space>
+      ),
     },
   ];
-  // const pagination = {
-  //   position: ["bottomRight"],
-  //   total: 100,
-  //   onChange: (page, pageSize) => { getconsumptiontypelists(page, pageSize) },
-  //   // onShowSizeChange:(current,pageSize)=>{getconsumptiontypelist(current,pageSize)},
-  // }
-  //分页改变
-  // const getconsumptiontypelists = (current, pageSize) => {
-  //   console.log(current, pageSize);
-  // }
 
   useEffect(() => {
-    // (async function anyNameFunction() {
-    //   await getConsumptionTypeList().then((res) => {
-    //     console.log(res);
-    //     setDataSource(res.data)
-    //   });
-    // })();
-
-    getConsumptionTypeList({}).then((res) => {
-      console.log(res);
+    getConsumptionTypeListApi({}).then((res) => {
       setDataSource(res.data)
     });
   }, [])
@@ -69,7 +76,7 @@ const ConsumptionManagement = () => {
   };
 
   const onFinish = (values) => {
-    getConsumptionTypeList(values).then((res) => {
+    getConsumptionTypeListApi(values).then((res) => {
       setDataSource(res.data)
     });
   };
@@ -84,28 +91,71 @@ const ConsumptionManagement = () => {
 
   //对话框
   const showModal = () => {
-    console.log(1);
-    setOpen(true);
+    setOpen({
+      state: true,
+      isEdit: false,
+      title: '新增'
+    });
+    form.resetFields()
   };
 
   const handleCancel = () => {
-    setOpen(false);
+    setOpen({
+      open: false
+    });
   };
   const handleOk = () => {
-    setConfirmLoading(true);
     //手动调用表单的校验规则，通过后可以提交
     form.validateFields().then(values => {
-      newConsumptionType(values).then(res => {
-        if (res.code === "00000") {
-          message.success(res.message);
+      setConfirmLoading(true);
+      if (open.isEdit !== true) {
+        newConsumptionType(values).then(res => {
+          if (res.code === "00000") {
+            message.success(res.message);
+            setConfirmLoading(false);
+            setOpen({
+              open: false
+            });
+          }
+        })
+      } else {
+        // console.log("编辑");
+        editConsumptionTypeApi({ ...values, id: open.id }).then((res) => {
           setConfirmLoading(false);
-          setOpen(false)
-        }
-      })
+          message.success(res.message);
+          setOpen({
+            open: false
+          });
+        })
+      }
+
     }).catch(error => {
       console.log(error);
     })
   };
+
+  const editconsumptiontype = (rowdata) => {
+    setOpen({
+      state: true,
+      isEdit: true,
+      title: '编辑',
+      id: rowdata.key
+    });
+    // console.log(form);
+    console.log(rowdata);
+    form.resetFields(["consumptionName"])
+    form.setFieldsValue({
+      "consumptionName": rowdata.name,
+      'remarks':rowdata.remarks
+     })
+  }
+
+  const deleteConsumptiontype = (id) => {
+    deleteConsumptiontypeApi(id).then((res) => {
+      message.success(res.message)
+    })
+  }
+
   return (
     <>
 
@@ -150,8 +200,8 @@ const ConsumptionManagement = () => {
       <Row gutter={24} className='btn-form'>
         <Col span={3} lg={3} offset={21}>
           {/* <Space> */}
-            <Button type="primary" onClick={() => showModal()}>+ 新建</Button>
-            {/* <Button>设置</Button> */}
+          <Button type="primary" onClick={() => showModal()}>+ 新建</Button>
+          {/* <Button>设置</Button> */}
           {/* </Space> */}
         </Col>
       </Row>
@@ -159,10 +209,10 @@ const ConsumptionManagement = () => {
       <Table dataSource={dataSource} columns={columns} />
 
       <Modal
-        title="Title"
+        title={open.title}
         className='lili'
         bodyStyle={{ display: 'block' }}
-        open={open}
+        open={open.state}
         onOk={handleOk}
         confirmLoading={confirmLoading}
         onCancel={handleCancel}
@@ -195,19 +245,13 @@ const ConsumptionManagement = () => {
           >
             <Input />
           </Form.Item>
-
-          {/* <Form.Item
-            label="Password"
-            name=""
-            rules={[
-              {
-                required: true,
-                message: 'Please input your password!',
-              },
-            ]}
+          <Form.Item
+            label="备注"
+            name="remarks"
+            validateTrigger={['onBlur', 'onSubmit']}
           >
-            <Input.Password />
-          </Form.Item> */}
+            <Input />
+          </Form.Item>
         </Form>
       </Modal>
 

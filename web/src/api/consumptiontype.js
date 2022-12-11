@@ -1,14 +1,14 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-13 19:16:40
- * @LastEditTime: 2022-10-22 19:22:39
+ * @LastEditTime: 2022-12-10 22:08:08
  * @LastEditors: 韩宏广
  * @FilePath: /个人财务/web/src/api/consumptiontype.js
- * @文件说明: 
+ * @文件说明: 消费类型的接口
  */
 import request from "./index";
 
-export function getConsumptionTypeList(searchData){
+export function getConsumptionTypeListApi(searchData){
   return request({
     method:'GET',
     url:'/getconsumptiontypelist',
@@ -23,11 +23,31 @@ export function newConsumptionType(consumptiontype){
     method:'POST',
     url:'/newconsumptiontype',
     data:{
-      consumptiontype:consumptiontype.consumptionName
+      consumptiontype:consumptiontype.consumptionName,
+      remarks:consumptiontype.remarks
     }
   })
 }
-
+export function editConsumptionTypeApi(data){
+  return request({
+    method:'POST',
+    url:'/editconsumptiontype',
+    data:{
+      consumptiontypeId:data.id,
+      consumptiontypename:data.consumptionName,
+      remarks:data.remarks
+    }
+  })
+}
+export function deleteConsumptiontypeApi(data){
+  return request({
+    method:'POST',
+    url:'/deleteconsumptiontype',
+    data:{
+      consumptiontypeId:data,
+    }
+  })
+}
 export function newAssociatedBillName(data){
   return request({
     method:'POST',

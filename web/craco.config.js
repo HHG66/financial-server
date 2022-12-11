@@ -1,6 +1,6 @@
 const path = require('path')
 const CracoLessPlugin = require("craco-less");
-console.log(process.env.NODE_ENV);
+// console.log(process.env.NODE_ENV);
 module.exports = {
   eslint: {
     enable: true /* (default value) */,
