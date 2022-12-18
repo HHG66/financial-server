@@ -11,6 +11,7 @@ import Funds from '@/pages/Funds'
 import Stock from '@/pages/Stock'
 import Deposits from '@/pages/Deposits'
 import Summary from '@/pages/Summary'
+import Liabilities from '@/pages/Liabilities'
 
 
 
@@ -69,6 +70,18 @@ const Routers = [
       { key: '/investmentmanagement/stock', title: '股票', component: < Stock />, role: "5-2" },
       { key: '/investmentmanagement/deposits', title: '定期存款', component: <Deposits />, role: "5-3" },
     ],
+  },
+  {
+    key: '/liabilities',
+    title: '负债贷款偿还',
+    icon: <div><SvgIcon iconClass="investmentmanagement" style={{ width: "20px", height: "20px", marginRight: '10px' }} /> </div>,
+    component: <Liabilities />,
+    role: "9",
+    // subs: [
+    //   { key: '/investmentmanagement/funds', title: '基金', component: <Funds />, role: "5-1" },
+    //   { key: '/investmentmanagement/stock', title: '股票', component: < Stock />, role: "5-2" },
+    //   { key: '/investmentmanagement/deposits', title: '定期存款', component: <Deposits />, role: "5-3" },
+    // ],
   },
   {
     key: '/checkInformation',

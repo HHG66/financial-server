@@ -22,7 +22,7 @@ const Layouts = () => {
             className="site-layout-background"
             style={{
               padding: 24,
-              minHeight: 360,
+              minHeight: 250,
             }}
           >
             <Outlet />

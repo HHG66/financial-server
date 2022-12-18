@@ -1,7 +1,7 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-09 11:31:33
- * @LastEditTime: 2022-12-09 17:30:26
+ * @LastEditTime: 2022-12-12 23:43:14
  * @LastEditors: 韩宏广
  * @FilePath: /个人财务/web/src/components/Heade.js
  * @文件说明: 
@@ -11,9 +11,9 @@ import { useState, useEffect, useRef } from 'react'
 import { useLocation } from 'react-router-dom'
 import SvgIcon from '@/components/Icon'
 import Routers from '@/routers'
-import { useSelector,useDispatch } from 'react-redux'
+import { useSelector } from 'react-redux'
 // import { bindActionCreators } from 'redux'
-import { actions } from '@/store/export.js'
+// import { actions } from '@/store/export.js'
 import { useNavigate } from 'react-router-dom'
 const { Header } = Layout
 const Heade = () => {
@@ -24,7 +24,7 @@ const Heade = () => {
   const { pathname } = useLocation();
   const dataRef = useRef()
   const store = useSelector(store => store.Store.UserReducer.userInfo)
-  const store1 = useSelector(store => store )
+  // const store1 = useSelector(store => store )
   // console.log(store1);
   // const dispatch = useDispatch()
   // const { deleteInfo } = bindActionCreators(actions, dispatch)

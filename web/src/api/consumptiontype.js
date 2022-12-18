@@ -1,7 +1,7 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-13 19:16:40
- * @LastEditTime: 2022-12-10 22:08:08
+ * @LastEditTime: 2022-12-13 20:05:29
  * @LastEditors: 韩宏广
  * @FilePath: /个人财务/web/src/api/consumptiontype.js
  * @文件说明: 消费类型的接口
