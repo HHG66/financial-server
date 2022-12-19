@@ -1,9 +1,9 @@
 /*
  * @Author: HHG
  * @Date: 2022-10-03 23:59:38
- * @LastEditTime: 2022-12-18 22:16:42
+ * @LastEditTime: 2022-12-19 17:31:04
  * @LastEditors: 韩宏广
- * @FilePath: /个人财务/web/src/pages/Funds/index.js
+ * @FilePath: \my-financial\web\src\pages\Funds\index.js
  * @文件说明: 
  */
 import React, { Component, useEffect, useState } from 'react'
@@ -24,6 +24,11 @@ export default () => {
       dataIndex: 'fundname',
       key: 'fundname',
       render: (text) => <a>{text}</a>,
+    },
+    {
+      title: '基金代码',
+      dataIndex: 'fundcode',
+      key: 'fundcode',
     },
     {
       title: '板块',
@@ -60,22 +65,27 @@ export default () => {
       ),
     },
     {
-      title: '当前价格',
+      title: '成本',
+      dataIndex: 'costprice',
+      key: 'costprice',
+    },
+    {
+      title: '当日价格（元）',
       dataIndex: 'currentprice',
       key: 'currentprice',
     },
     {
-      title: '盈亏',
+      title: '当日盈亏(%)',
       dataIndex: 'currentearnings',
       key: 'currentearnings',
     },
     {
-      title: '收益(百分比）',
+      title: '盈亏(百分比）',
       dataIndex: 'earningspercentage',
       key: 'earningspercentage',
     },
     {
-      title: '收益（元）',
+      title: '盈亏（元）',
       dataIndex: 'earnings',
       key: 'earnings',
     },

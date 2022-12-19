@@ -1,9 +1,9 @@
 /*
  * @Author: HHG
  * @Date: 2022-10-19 22:50:31
- * @LastEditTime: 2022-12-10 21:36:21
+ * @LastEditTime: 2022-12-19 09:57:49
  * @LastEditors: 韩宏广
- * @FilePath: /个人财务/web/src/store/index.js
+ * @FilePath: \my-financial\web\src\store\index.js
  * @文件说明: 
  */
 import { combineReducers } from "redux"
@@ -42,7 +42,7 @@ import TestReducer from "./reducers/Test"
 
 //redux-toolkit
 const persistConfig = {
-  key: 'root',
+  key: 'redux',
   storage: storage,
   stateReconciler: autoMergeLevel2
 }

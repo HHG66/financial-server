@@ -1,12 +1,12 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-01 17:01:17
- * @LastEditTime: 2022-12-11 15:00:28
+ * @LastEditTime: 2022-12-19 10:25:22
  * @LastEditors: 韩宏广
- * @FilePath: /个人财务/web/src/pages/ConsumptionManagement/index.js
+ * @FilePath: \my-financial\web\src\pages\ConsumptionManagement\index.js
  * @文件说明: 
  */
-import { Table, Form, Input, Row, Col, Button, Space, Dropdown, Modal, message,Popconfirm } from 'antd'
+import { Table, Form, Input, Row, Col, Button, Space, Dropdown, Modal, message, Popconfirm } from 'antd'
 import { DownOutlined, UpOutlined } from '@ant-design/icons';
 import { getConsumptionTypeListApi, newConsumptionType, editConsumptionTypeApi, deleteConsumptiontypeApi } from '@/api/consumptiontype'
 import { useEffect, useState } from 'react';
@@ -27,7 +27,7 @@ const ConsumptionManagement = () => {
   //表单
   const [form] = Form.useForm();
   const [searchform] = Form.useForm();
-  const confirm=(record)=>{
+  const confirm = (record) => {
     deleteConsumptiontype(record.key)
   }
 
@@ -52,7 +52,7 @@ const ConsumptionManagement = () => {
           <a onClick={() => editconsumptiontype(record)}>编辑</a>
           <Popconfirm
             title="确定要删除消费类型吗？如果存在关联，需要先删除关联消费账单后再试。"
-            onConfirm={()=>confirm(record)}
+            onConfirm={() => confirm(record)}
             // onCancel={cancel}
             okText="Yes"
             cancelText="No"
@@ -146,8 +146,8 @@ const ConsumptionManagement = () => {
     form.resetFields(["consumptionName"])
     form.setFieldsValue({
       "consumptionName": rowdata.name,
-      'remarks':rowdata.remarks
-     })
+      'remarks': rowdata.remarks
+    })
   }
 
   const deleteConsumptiontype = (id) => {
@@ -171,6 +171,7 @@ const ConsumptionManagement = () => {
             </Form.Item>
           </Col>
 
+          {/* 展开收入项目，暂时不需要 */}
           {/* <Col span={6} lg={5} className={formSearch === true ? 'search-form' : ''}>
             <Form.Item label="username2" name="username2" rules={[{ required: true, message: 'Please input your username!' }]} >
               <Input />
@@ -182,23 +183,25 @@ const ConsumptionManagement = () => {
               <Space>
                 <Button type="primary" htmlType="submit">查询</Button>
                 <Button onClick={onReset}>重置</Button>
-                <Dropdown overlay='' onClick={showHideSearch}>
-                  {/* 链接纯粹为了一个样式 */}
-                  <a href='##'>
-                    <Space>
-                      {formSearch === true ? "展开" : "收起"}
-                      {formSearch === true ? < DownOutlined /> : < UpOutlined />}
-                    </Space>
-                  </a>
-                </Dropdown>
+                {/* 链接纯粹为了一个样式 */}
+                <div onClick={showHideSearch}>
+                  <div>
+                    <a href='##'>
+                      <Space>
+                        {formSearch === true ? "展开" : "收起"}
+                        {formSearch === true ? < DownOutlined /> : < UpOutlined />}
+                      </Space>
+                    </a>
+                  </div>
+                </div>
               </Space>
             </Form.Item>
           </Col>
         </Row>
       </Form>
 
-      <Row gutter={24} className='btn-form'>
-        <Col span={3} lg={3} offset={21}>
+      <Row gutter={24} className='btn-form' >
+        <Col span={24} className='btn-positon'>
           {/* <Space> */}
           <Button type="primary" onClick={() => showModal()}>+ 新建</Button>
           {/* <Button>设置</Button> */}

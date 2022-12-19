@@ -1,9 +1,9 @@
 /*
  * @Author: HHG
  * @Date: 2022-10-03 23:55:35
- * @LastEditTime: 2022-12-17 13:30:15
+ * @LastEditTime: 2022-12-19 10:34:23
  * @LastEditors: 韩宏广
- * @FilePath: /个人财务/web/src/pages/BalancepaymentsImportBill/index.js
+ * @FilePath: \my-financial\web\src\pages\BalancepaymentsImportBill\index.js
  * @文件说明: 
  */
 import React, { useState, useEffect } from 'react'
@@ -375,9 +375,7 @@ const BalancepaymentsImportBill = () => {
         </Col>
       </Row>
       {/* <Button onClick={addField}>Click </Button> */}
-      <Table columns={columns} dataSource={pres} pagination={
-        tableParams
-      } scroll={{ y: 450 }} />
+      <Table columns={columns} dataSource={pres} pagination={tableParams} scroll={{ y: 450 }} className='tab-box' />
       {/* <table dangerouslySetInnerHTML={{__html: content}}></table> */}
 
       <Drawer width={400} closable={false} placement="right" onClose={onClose} open={open}>
