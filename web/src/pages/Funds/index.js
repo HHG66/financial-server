@@ -1,15 +1,15 @@
 /*
  * @Author: HHG
  * @Date: 2022-10-03 23:59:38
- * @LastEditTime: 2022-12-20 16:53:01
+ * @LastEditTime: 2022-12-20 22:11:13
  * @LastEditors: 韩宏广
- * @FilePath: \my-financial\web\src\pages\Funds\index.js
+ * @FilePath: /个人财务/web/src/pages/Funds/index.js
  * @文件说明: 
  */
 import React, { useEffect, useState } from 'react'
-import { Button, Col, Form, Input, Row, Space, DatePicker, Table, Tag, Select, Modal, InputNumber,Popconfirm} from 'antd';
+import { Button, Col, Form, Input, Row, Space, DatePicker, Table, Tag, Select, Modal, InputNumber, Popconfirm, message } from 'antd';
 import './index.less'
-import { getPositionFundsListApi } from '@/api/funds'
+import { getPositionFundsListApi,deleteFundApi } from '@/api/funds'
 // import { getSineFundInfoApi } from '@/api/other';
 // import { formatSinaStock } from '@/utils/index';
 
@@ -125,7 +125,7 @@ const Funds = () => {
           <a onClick={() => editState()}>编辑状态</a>
           <Popconfirm
             title="确定删除基金?"
-            onConfirm={deletefunds}
+            onConfirm={()=>deletefunds(record)}
             okText="确定"
             cancelText="取消"
           >
@@ -193,10 +193,14 @@ const Funds = () => {
     // console.log("editState");
     setIsModalOpen(true)
     formModel.resetFields(['sellingprice', 'sellingnumber', 'addnumber', 'price'])
+    formModel.setFieldsValue({sellingnumber:1,addnumber:1})
   }
-  const deletefunds = () => {
-    console.log("deletefunds");
-
+  const deletefunds = (rowData) => {
+    // console.log("deletefunds");
+    // console.log(rowData);
+    deleteFundApi(rowData.fundid).then(res=>{
+      message.success(res.message)
+    })
   }
   const showModal = () => {
     setIsModalOpen(true);
@@ -301,7 +305,7 @@ const Funds = () => {
           wrapperCol={{
             span: 16,
           }}
-          initialValues={{sellingnumber:1}}
+          initialValues={{ sellingnumber: 1, addnumber: 1 }}
           form={formModel}
           onFinish={onFinish}
           onFinishFailed={onFinishFailed}
@@ -361,7 +365,7 @@ const Funds = () => {
                   ]}
                 >
                   {/* 数字输入需要动态获取最大数量 max={}  */}
-                  <InputNumber min={1} className="input-number"  />
+                  <InputNumber min={1} className="input-number" />
                 </Form.Item>
               </>
             ) : (
@@ -376,7 +380,8 @@ const Funds = () => {
                     },
                   ]}
                 >
-                  <Input />
+                  {/* <Input /> */}
+                  <InputNumber min={1} className="input-number" />
                 </Form.Item>
                 <Form.Item
                   label="价格"
