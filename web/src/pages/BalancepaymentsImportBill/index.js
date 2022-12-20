@@ -1,7 +1,7 @@
 /*
  * @Author: HHG
  * @Date: 2022-10-03 23:55:35
- * @LastEditTime: 2022-12-19 10:34:23
+ * @LastEditTime: 2022-12-20 13:24:19
  * @LastEditors: 韩宏广
  * @FilePath: \my-financial\web\src\pages\BalancepaymentsImportBill\index.js
  * @文件说明: 
@@ -286,9 +286,7 @@ const BalancepaymentsImportBill = () => {
       <Form
         name="basic"
         form={form}
-        initialValues={{
-          remember: true,
-        }}
+        // initialValues={}
         onFinish={onFinish}
         onFinishFailed={onFinishFailed}
       >

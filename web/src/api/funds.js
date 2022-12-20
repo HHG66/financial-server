@@ -9,3 +9,13 @@ export const getPositionFundsListApi=(params)=>{
     }
   })
 }
+
+export const deleteFundApi=(data)=>{
+  return request({
+    url:'deletefund',
+    method:'POST',
+    data:{
+      fundid:data.id
+    }
+  })
+}

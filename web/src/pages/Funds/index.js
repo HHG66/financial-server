@@ -1,13 +1,13 @@
 /*
  * @Author: HHG
  * @Date: 2022-10-03 23:59:38
- * @LastEditTime: 2022-12-19 22:51:05
+ * @LastEditTime: 2022-12-20 16:53:01
  * @LastEditors: 韩宏广
- * @FilePath: /个人财务/web/src/pages/Funds/index.js
+ * @FilePath: \my-financial\web\src\pages\Funds\index.js
  * @文件说明: 
  */
 import React, { useEffect, useState } from 'react'
-import { Button, Col, Form, Input, Row, Space, DatePicker, Table, Tag, Select, Modal } from 'antd';
+import { Button, Col, Form, Input, Row, Space, DatePicker, Table, Tag, Select, Modal, InputNumber,Popconfirm} from 'antd';
 import './index.less'
 import { getPositionFundsListApi } from '@/api/funds'
 // import { getSineFundInfoApi } from '@/api/other';
@@ -20,7 +20,7 @@ const Funds = () => {
   const [data, setData] = useState([])
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [fundInfo, setFundInfo] = useState(true);
-
+  const [formModel] = Form.useForm()
   const columns = [
     {
       title: '基金名称',
@@ -32,6 +32,16 @@ const Funds = () => {
       title: '基金代码',
       dataIndex: 'fundcode',
       key: 'fundcode',
+    },
+    {
+      title: '投入金额',
+      dataIndex: 'amountinvested',
+      key: 'amountinvested',
+    },
+    {
+      title: '数量',
+      dataIndex: 'amount',
+      key: 'amount',
     },
     {
       title: '板块',
@@ -53,11 +63,7 @@ const Funds = () => {
       dataIndex: 'holdingstate',
       key: 'holdingstate',
     },
-    {
-      title: '投入金额',
-      dataIndex: 'amountinvested',
-      key: 'amountinvested',
-    },
+
     //增加最近操作，只是增加工作，因为不能每次操作都去修改，更多应该关注持有和卖出两个阶段。
     // {
     //   title: '最近操作',
@@ -117,7 +123,15 @@ const Funds = () => {
       render: (_, record) => (
         <Space size="middle">
           <a onClick={() => editState()}>编辑状态</a>
-          <a onClick={() => deletefunds()}>删除</a>
+          <Popconfirm
+            title="确定删除基金?"
+            onConfirm={deletefunds}
+            okText="确定"
+            cancelText="取消"
+          >
+            <a >删除</a>
+          </Popconfirm>
+
         </Space>
       ),
     },
@@ -176,35 +190,40 @@ const Funds = () => {
     console.log('Failed:', errorInfo);
   };
   const editState = () => {
-    console.log("editState");
+    // console.log("editState");
     setIsModalOpen(true)
+    formModel.resetFields(['sellingprice', 'sellingnumber', 'addnumber', 'price'])
   }
   const deletefunds = () => {
     console.log("deletefunds");
+
   }
   const showModal = () => {
     setIsModalOpen(true);
   };
   const handleOk = () => {
-    setIsModalOpen(false);
+    formModel.validateFields().then((values) => {
+      console.log(values);
+      setIsModalOpen(false);
+    }).catch(error => {
+      console.log(error);
+    })
   };
   const handleCancel = () => {
     setIsModalOpen(false);
   };
-  const handleChange=(value)=>{
-    if(parseInt(value)===0){
+  const handleChange = (value) => {
+    if (parseInt(value) === 2) {
       setFundInfo(false)
-    }else{
+    } else {
       setFundInfo(true)
     }
+    formModel.resetFields(['sellingprice', 'sellingnumber', 'addnumber', 'price'])
   }
   return (
     <>
       <Form
         name="basic"
-        initialValues={{
-          remember: true,
-        }}
         form={form}
         // form={form}
         onFinish={onFinish}
@@ -282,9 +301,8 @@ const Funds = () => {
           wrapperCol={{
             span: 16,
           }}
-          initialValues={{
-            remember: true,
-          }}
+          initialValues={{sellingnumber:1}}
+          form={formModel}
           onFinish={onFinish}
           onFinishFailed={onFinishFailed}
           autoComplete="off"
@@ -306,8 +324,8 @@ const Funds = () => {
               onChange={handleChange}
               options={[
                 {
-                  value: '0',
-                  label: '持有',
+                  value: '2',
+                  label: '加仓',
                 },
                 {
                   value: '1',
@@ -318,18 +336,65 @@ const Funds = () => {
           </Form.Item>
 
           {
-          fundInfo ? <Form.Item
-            label="卖出价格"
-            name="sellingprice"
-            rules={[
-              {
-                required: true,
-                message: 'Please input your password!',
-              },
-            ]}
-          >
-            <Input />
-          </Form.Item> : ''
+            fundInfo ? (
+              <>
+                <Form.Item
+                  label="卖出价格"
+                  name="sellingprice"
+                  rules={[
+                    {
+                      required: true,
+                      message: 'Please input your password!',
+                    },
+                  ]}
+                >
+                  <Input />
+                </Form.Item>
+                <Form.Item
+                  label="卖出数量"
+                  name="sellingnumber"
+                  rules={[
+                    {
+                      required: true,
+                      message: 'Please input your password!',
+                    },
+                  ]}
+                >
+                  {/* 数字输入需要动态获取最大数量 max={}  */}
+                  <InputNumber min={1} className="input-number"  />
+                </Form.Item>
+              </>
+            ) : (
+              <>
+                <Form.Item
+                  label="加仓数量"
+                  name="addnumber"
+                  rules={[
+                    {
+                      required: true,
+                      message: 'Please input your password!',
+                    },
+                  ]}
+                >
+                  <Input />
+                </Form.Item>
+                <Form.Item
+                  label="价格"
+                  name="price"
+                  rules={[
+                    {
+                      required: true,
+                      message: 'Please input your password!',
+                    },
+                  ]}
+                >
+                  <Input />
+                </Form.Item>
+              </>
+
+
+            )
+
           }
 
           {/* <Form.Item

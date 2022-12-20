@@ -34,6 +34,8 @@ const Login = () => {
         // dispatch('addInfo')
         dispatch(addInfo(res.data))
       }
+    }).catch(res=>{
+      setloading(false)
     })
   }
   // 自定义验证密码
