@@ -1,9 +1,9 @@
 /*
  * @Author: HHG
  * @Date: 2022-12-13 20:02:38
- * @LastEditTime: 2022-12-17 13:23:54
+ * @LastEditTime: 2022-12-21 13:58:56
  * @LastEditors: 韩宏广
- * @FilePath: /个人财务/web/src/api/balancepayments.js
+ * @FilePath: \my-financial\web\src\api\balancepayments.js
  * @文件说明: 
  */
 import request from './index.js'
@@ -73,4 +73,25 @@ export const getinportbillinfoApi = (params) => {
     batchid:params.batchid
   }
 })
+}
+
+export const newFinancialRecordApi=(data)=>{
+  let type=''
+  if(data.incometype){
+    type=data.incometype
+  }
+  if(data.paymenttype){
+    type=data.paymenttype
+  }
+  return request({
+    url:'/newfinancialrecord',
+    method:'POST',
+    data:{
+      //收入||支出
+      balancepaymenttype:data.balancepaymenttype,
+      type:type,
+      name:data.name,
+      amount:data.amount,
+    }
+  })
 }
