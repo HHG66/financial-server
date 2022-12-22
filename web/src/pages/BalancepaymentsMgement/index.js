@@ -1,12 +1,12 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-01 17:01:04
- * @LastEditTime: 2022-12-21 15:21:49
+ * @LastEditTime: 2022-12-21 21:51:09
  * @LastEditors: 韩宏广
- * @FilePath: \my-financial\web\src\pages\BalancepaymentsMgement\index.js
+ * @FilePath: /个人财务/web/src/pages/BalancepaymentsMgement/index.js
  * @文件说明: 
  */
-import { Calendar, Col, Divider, Drawer, Row, Badge, Space, Button, Modal, Form, Input, Select, message } from 'antd'
+import { Calendar, Col, Divider, Drawer, Row, Badge, Space, Button, Modal, Form, Input, Select, message, DatePicker } from 'antd'
 import { useEffect, useState } from 'react'
 import "./index.less"
 
@@ -20,7 +20,69 @@ const DescriptionItem = ({ title, content }) => (
     {content}
   </div>
 );
-
+const getListData = (value) => {
+  let listData;
+  switch (value.date()) {
+    case 8:
+      listData = [
+        {
+          type: 'warning',
+          content: 'This is warning event.',
+        },
+        {
+          type: 'success',
+          content: 'This is usual event.',
+        },
+      ];
+      break;
+    case 10:
+      listData = [
+        {
+          type: 'warning',
+          content: 'This is warning event.',
+        },
+        {
+          type: 'success',
+          content: 'This is usual event.',
+        },
+        {
+          type: 'error',
+          content: 'This is error event.',
+        },
+      ];
+      break;
+    case 15:
+      listData = [
+        {
+          type: 'warning',
+          content: 'This is warning event',
+        },
+        {
+          type: 'success',
+          content: 'This is very long usual event。。....',
+        },
+        {
+          type: 'error',
+          content: 'This is error event 1.',
+        },
+        {
+          type: 'error',
+          content: 'This is error event 2.',
+        },
+        {
+          type: 'error',
+          content: 'This is error event 3.',
+        },
+        {
+          type: 'error',
+          content: 'This is error event 4.',
+        },
+      ];
+      break;
+    default:
+  }
+  return listData || [];
+};
 const BalancepaymentsMgement = () => {
   const [drawers, setDrawers] = useState(false);
   const [balancepayMents, setBalancepayMents] = useState({ income: [], spending: [] })
@@ -35,11 +97,13 @@ const BalancepaymentsMgement = () => {
     setDrawers(false);
   };
   useEffect(() => {
+    //接口，默认当月的日期，去获取日历当月需要渲染的数据
 
 
   }, [])
 
   const onPanelChange = (value, mode) => {
+    console.log(value, mode)
     console.log(value.format('YYYY-MM-DD'), mode);
   };
   const onSelect = (moment) => {
@@ -51,7 +115,7 @@ const BalancepaymentsMgement = () => {
     })
   }
   const aRecord = () => {
-    console.log('aRecord');
+    // console.log('aRecord');
     setModelInfo({
       ...modelInfo,
       open: true
@@ -89,7 +153,7 @@ const BalancepaymentsMgement = () => {
         res.data.forEach(element => {
           incomePayment.push({
             label: element.name,
-            value: element.key
+            value: element.id
           })
         });
         setincomePayment(incomePayment)
@@ -104,7 +168,7 @@ const BalancepaymentsMgement = () => {
         res.data.forEach(element => {
           incomePayment.push({
             label: element.name,
-            value: element.key
+            value: element.id
           })
         });
         setincomePayment(incomePayment)
@@ -112,25 +176,28 @@ const BalancepaymentsMgement = () => {
     }
   }
   const monthCellRender = (value) => {
-    const num =  ''
-    if (value.month() === 8) {
-      num=1394;
-    }
-    return num ? (
-      <div className="notes-month">
-        <section>{num}</section>
-        <span>Backlog number</span>
-      </div>
-    ) : null;
-  };
 
+  };
+  const dateCellRender = (value) => {
+    // console.log(value);
+    const listData = getListData(value);
+    return (
+      <ul className="events">
+        {listData.map((item) => (
+          <li key={item.content}>
+            <Badge status={item.type} text={item.content} />
+          </li>
+        ))}
+      </ul>
+    );
+  };
   return (
     <>
 
       {/* BalancepaymentsMgement */}
       <div className='calendar'>
         <Button type='primary' onClick={aRecord}>记一笔</Button>
-        <Calendar onPanelChange={onPanelChange} fullscreen={true} onSelect={onSelect} monthCellRender={monthCellRender} />
+        <Calendar onPanelChange={onPanelChange} fullscreen={true} onSelect={onSelect} dateCellRender={dateCellRender} monthCellRender={monthCellRender}  />
         <Drawer width={640} placement="right" closable={false} onClose={onClose} open={drawers}>
           <p
             className="site-description-item-profile-p"
@@ -231,7 +298,7 @@ const BalancepaymentsMgement = () => {
                 <>
                   <Form.Item
                     label="收入类型"
-                    name="incometype"
+                    name="incometypes"
                     rules={[
                       {
                         required: true,
@@ -246,7 +313,15 @@ const BalancepaymentsMgement = () => {
                       // }}
                       // onChange={handleChange}
                       //模拟
-                      options={incomePayment}
+                      options={
+                        incomePayment
+                        // [
+                        //   {
+                        //     label:1,
+                        //     values:1
+                        //   }
+                        // ]
+                      }
                     />
                   </Form.Item>
                   <Form.Item
@@ -310,6 +385,19 @@ const BalancepaymentsMgement = () => {
               ]}
             >
               <Input />
+            </Form.Item>
+            <Form.Item
+              label="日期"
+              name="date"
+              rules={[
+                {
+                  required: true,
+                  // message: 'Please input your password!',
+                },
+              ]}
+            >
+              {/* <Input /> */}
+              <DatePicker className='date-box' />
             </Form.Item>
           </Form>
         </Modal>
