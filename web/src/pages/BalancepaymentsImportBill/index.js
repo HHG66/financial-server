@@ -1,7 +1,7 @@
 /*
  * @Author: HHG
  * @Date: 2022-10-03 23:55:35
- * @LastEditTime: 2022-12-20 13:24:19
+ * @LastEditTime: 2022-12-22 10:03:48
  * @LastEditors: 韩宏广
  * @FilePath: \my-financial\web\src\pages\BalancepaymentsImportBill\index.js
  * @文件说明: 
@@ -290,57 +290,75 @@ const BalancepaymentsImportBill = () => {
         onFinish={onFinish}
         onFinishFailed={onFinishFailed}
       >
-        <Row>
-          <Space>
-            <Col>
-              <Form.Item
-                label="交易时间"
-                name="tradinghours"
-                auto-complete='new-password'
-              >
-                {/* <Input /> */}
-                <DatePicker />
+        <Row gutter={{
+          xs: 8,
+          sm: 10,
+          md: 24,
+          lg: 20,
+        }}>
+          <Col>
+            <Form.Item
+              label="交易时间"
+              name="tradinghours"
+              auto-complete='new-password'
+            >
+              {/* <Input /> */}
+              <DatePicker />
 
-              </Form.Item>
-            </Col>
-            <Col>
-              <Form.Item
-                label="交易类型"
-                name="transactiontype"
-              >
-                <Input />
-              </Form.Item>
-            </Col>
-            <Col>
-              <Form.Item
-                label="收入/支出"
-                name="balancepayments"
-                auto-complete='new-password'
-              >
-                <Input />
-              </Form.Item>
-            </Col>
-            <Col>
-              <Form.Item
-                label="金额"
-                name="amount"
-                auto-complete='new-password'
-              >
-                <Input />
-              </Form.Item>
-            </Col>
-            <Col>
-              <Form.Item
-                label="交易单号"
-                name="id"
-                auto-complete='new-password'
-              >
-                <Input />
-              </Form.Item>
-            </Col>
-          </Space>
+            </Form.Item>
+          </Col>
+          <Col>
+            <Form.Item
+              label="交易类型"
+              name="transactiontype"
+            >
+              <Input />
+            </Form.Item>
+          </Col>
+          <Col>
+            <Form.Item
+              label="收入/支出"
+              name="balancepayments"
+              auto-complete='new-password'
+            >
+              <Input />
+            </Form.Item>
+          </Col>
+          <Col>
+            <Form.Item
+              label="金额"
+              name="amount"
+              auto-complete='new-password'
+            >
+              <Input />
+            </Form.Item>
+          </Col>
+          <Col>
+            <Form.Item
+              label="交易单号"
+              name="id"
+              auto-complete='new-password'
+            >
+              <Input />
+            </Form.Item>
+          </Col>
+          <Col>
+            <Form.Item
+              label="导入时间"
+              name="inporttime"
+              auto-complete='new-password'
+            >
+              <DatePicker picker="month"></DatePicker>
+            </Form.Item>
+          </Col>
+          <Col>
+            <Space>
+              <Button type='primary' htmlType='submit'>提交</Button>
+              <Button type='primary' htmlType='reset'>重置</Button>
+            </Space>
+          </Col>
         </Row>
-        <Row>
+        {/* <Row>
           <Space>
             <Col>
               <Form.Item
@@ -348,7 +366,6 @@ const BalancepaymentsImportBill = () => {
                 name="inporttime"
                 auto-complete='new-password'
               >
-                {/* <Input /> */}
                 <DatePicker picker="month"></DatePicker>
               </Form.Item>
             </Col>
@@ -359,7 +376,7 @@ const BalancepaymentsImportBill = () => {
               </Space>
             </Col>
           </Space>
-        </Row>
+        </Row> */}
       </Form>
 
       <Row>

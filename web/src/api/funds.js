@@ -19,3 +19,18 @@ export const deleteFundApi=(data)=>{
     }
   })
 }
+
+export const editfundinfo=(data)=>{
+  return request({
+    url:"/editfundinfo",
+    method:'POST',
+    data:{
+      fundid:data.fundid,
+      fundstate:data.fundstate,
+      sellingnumber:data.sellingnumber||'',
+      sellingprice:data.sellingprice||'',
+      addnumber:data.addnumber||'',
+      price:data.price||'',
+    }
+  })
+}

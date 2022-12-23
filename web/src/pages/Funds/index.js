@@ -1,15 +1,15 @@
 /*
  * @Author: HHG
  * @Date: 2022-10-03 23:59:38
- * @LastEditTime: 2022-12-20 22:11:13
+ * @LastEditTime: 2022-12-22 11:43:37
  * @LastEditors: 韩宏广
- * @FilePath: /个人财务/web/src/pages/Funds/index.js
+ * @FilePath: \my-financial\web\src\pages\Funds\index.js
  * @文件说明: 
  */
 import React, { useEffect, useState } from 'react'
 import { Button, Col, Form, Input, Row, Space, DatePicker, Table, Tag, Select, Modal, InputNumber, Popconfirm, message } from 'antd';
 import './index.less'
-import { getPositionFundsListApi,deleteFundApi } from '@/api/funds'
+import { getPositionFundsListApi, deleteFundApi, editfundinfo } from '@/api/funds'
 // import { getSineFundInfoApi } from '@/api/other';
 // import { formatSinaStock } from '@/utils/index';
 
@@ -20,6 +20,7 @@ const Funds = () => {
   const [data, setData] = useState([])
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [fundInfo, setFundInfo] = useState(true);
+  const [editfundid, setEditFundid] = useState('')
   const [formModel] = Form.useForm()
   const columns = [
     {
@@ -122,10 +123,10 @@ const Funds = () => {
       fixed: 'right',
       render: (_, record) => (
         <Space size="middle">
-          <a onClick={() => editState()}>编辑状态</a>
+          <a onClick={() => editState(record)}>编辑状态</a>
           <Popconfirm
             title="确定删除基金?"
-            onConfirm={()=>deletefunds(record)}
+            onConfirm={() => deletefunds(record)}
             okText="确定"
             cancelText="取消"
           >
@@ -189,16 +190,17 @@ const Funds = () => {
   const onFinishFailed = (errorInfo) => {
     console.log('Failed:', errorInfo);
   };
-  const editState = () => {
+  const editState = (rowData) => {
+    setEditFundid(rowData.fundid)
     // console.log("editState");
     setIsModalOpen(true)
     formModel.resetFields(['sellingprice', 'sellingnumber', 'addnumber', 'price'])
-    formModel.setFieldsValue({sellingnumber:1,addnumber:1})
+    formModel.setFieldsValue({ sellingnumber: 1, addnumber: 1 })
   }
   const deletefunds = (rowData) => {
     // console.log("deletefunds");
     // console.log(rowData);
-    deleteFundApi(rowData.fundid).then(res=>{
+    deleteFundApi(rowData.fundid).then(res => {
       message.success(res.message)
     })
   }
@@ -207,8 +209,12 @@ const Funds = () => {
   };
   const handleOk = () => {
     formModel.validateFields().then((values) => {
-      console.log(values);
-      setIsModalOpen(false);
+      // console.log(values);
+      editfundinfo({ ...values, fundid: editfundid }).then(res => {
+        // console.log(res);
+        message.success(res.message)
+        setIsModalOpen(false);
+      })
     }).catch(error => {
       console.log(error);
     })

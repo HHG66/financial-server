@@ -1,7 +1,7 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-01 17:01:04
- * @LastEditTime: 2022-12-21 15:21:49
+ * @LastEditTime: 2022-12-23 10:19:12
  * @LastEditors: 韩宏广
  * @FilePath: \my-financial\web\src\pages\BalancepaymentsMgement\index.js
  * @文件说明: 
@@ -20,8 +20,9 @@ const DescriptionItem = ({ title, content }) => (
     {content}
   </div>
 );
-
 const BalancepaymentsMgement = () => {
+  //为解决日历组件切换到日期范围会导致onSelect方法触发
+  let calendarState = ''
   const [drawers, setDrawers] = useState(false);
   const [balancepayMents, setBalancepayMents] = useState({ income: [], spending: [] })
   const [modelInfo, setModelInfo] = useState({
@@ -30,6 +31,7 @@ const BalancepaymentsMgement = () => {
     type: 'income'
   })
   const [incomePayment, setincomePayment] = useState([])
+  // const [calendarState, setCalendarState] = useState('')
   const [form] = Form.useForm()
   const onClose = () => {
     setDrawers(false);
@@ -40,15 +42,19 @@ const BalancepaymentsMgement = () => {
   }, [])
 
   const onPanelChange = (value, mode) => {
-    console.log(value.format('YYYY-MM-DD'), mode);
+    calendarState = 'isPanelChange'
   };
   const onSelect = (moment) => {
+    console.log(calendarState);
+    if (calendarState == "") {
+      setDrawers(true);
+      getBalancepayMentsApi(window.moment(moment._d).format('YYYY-MM-DD')).then(res => {
+        // console.log(res.data);
+        setBalancepayMents(res.data)
+      })
+    }
+    calendarState = ''
     // console.log(window.moment(moment._d).format('YYYY-MM-DD'));
-    setDrawers(true);
-    getBalancepayMentsApi(window.moment(moment._d).format('YYYY-MM-DD')).then(res => {
-      // console.log(res.data);
-      setBalancepayMents(res.data)
-    })
   }
   const aRecord = () => {
     console.log('aRecord');
@@ -112,9 +118,9 @@ const BalancepaymentsMgement = () => {
     }
   }
   const monthCellRender = (value) => {
-    const num =  ''
+    const num = ''
     if (value.month() === 8) {
-      num=1394;
+      num = 1394;
     }
     return num ? (
       <div className="notes-month">
@@ -130,7 +136,7 @@ const BalancepaymentsMgement = () => {
       {/* BalancepaymentsMgement */}
       <div className='calendar'>
         <Button type='primary' onClick={aRecord}>记一笔</Button>
-        <Calendar onPanelChange={onPanelChange} fullscreen={true} onSelect={onSelect} monthCellRender={monthCellRender} />
+        <Calendar   onPanelChange={onPanelChange} fullscreen={true} onSelect={(moment, e) => { onSelect(moment, e) }} monthCellRender={monthCellRender} />
         <Drawer width={640} placement="right" closable={false} onClose={onClose} open={drawers}>
           <p
             className="site-description-item-profile-p"

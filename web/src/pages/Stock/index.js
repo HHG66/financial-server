@@ -1,66 +1,73 @@
 /*
  * @Author: HHG
  * @Date: 2022-10-03 23:59:58
- * @LastEditTime: 2022-12-20 22:21:39
+ * @LastEditTime: 2022-12-22 15:25:29
  * @LastEditors: 韩宏广
- * @FilePath: /个人财务/web/src/pages/Stock/index.js
+ * @FilePath: \my-financial\web\src\pages\Stock\index.js
  * @文件说明: 
  */
-import React, { Component, useState } from 'react'
+import React, { Component, useEffect, useState } from 'react'
 import { Tag, Space, Table, Row, Col, Form, Input, Button, Modal, Select, InputNumber, Popconfirm } from 'antd'
+import { getStockListApi } from '@/api/stock'
 
 const Stock = () => {
   const [showModal, setShowModel] = useState(false)
   const [stockInfo, setStockInfo] = useState(false)
+  const [stockList, setStockList] = useState([])
   const [formModel] = Form.useForm()
   const columns = [
     {
       title: '买入日期',
-      dataIndex: 'name',
-      key: 'name',
-      width:100,
+      dataIndex: 'buydate',
+      key: 'buydate',
+      // width: 100,
       render: (text) => <a>{text}</a>,
     },
     {
       title: '股票代码',
-      dataIndex: 'age',
-      key: 'age',
-      width:100
+      dataIndex: 'stockcode',
+      key: 'stockcode',
+      // width: 100
     },
     {
       title: '名称',
-      dataIndex: 'address',
-      key: 'address',
+      dataIndex: 'stockname',
+      key: 'stockname',
     },
     {
       title: '数量',
-      dataIndex: 'address',
-      key: 'address',
+      dataIndex: 'amount',
+      key: 'amount',
+    },
+    {
+      title: '状态',
+      dataIndex: 'stockstate',
+      key: 'stockstate',
     },
     {
       title: '成本',
-      dataIndex: 'address',
-      key: 'address',
+      dataIndex: 'cost',
+      key: 'cost',
     },
     {
       title: '当前价格',
-      dataIndex: 'address',
-      key: 'address',
+      dataIndex: 'currentprice',
+      key: 'currentprice',
     },
     {
       title: '当前盈亏',
-      dataIndex: 'address',
-      key: 'address',
+      dataIndex: 'currentprofitloss',
+      key: 'currentprofitloss',
     },
     {
       title: '盈亏',
-      dataIndex: 'address',
-      key: 'address',
+      dataIndex: 'profitloss',
+      key: 'profitloss',
     },
     {
       title: '手续费',
-      dataIndex: 'address',
-      key: 'address',
+      dataIndex: 'poundage',
+      key: 'poundage',
     },
     {
       title: '操作',
@@ -104,9 +111,21 @@ const Stock = () => {
       tags: ['cool', 'teacher'],
     },
   ];
-
+  useEffect(() => {
+    getStockListApi({}).then(res => {
+      let list =[]
+      res.data.forEach(element => {
+        element.key=element.id 
+        list.push(element)
+      });
+      setStockList(list)
+    })
+  }, [])
   const onFinish = (values) => {
-    console.log('Success:', values);
+    // console.log('Success:', values);
+    getStockListApi(values).then(res => {
+      setStockList(res.data)
+    })
   };
   const editStock = () => {
     setShowModel(true)
@@ -153,7 +172,7 @@ const Stock = () => {
             <Col>
               <Form.Item
                 label="股票名称"
-                name="username"
+                name="stockname"
               >
                 <Input />
               </Form.Item>
@@ -161,7 +180,7 @@ const Stock = () => {
             <Col>
               <Form.Item
                 label="股票代码"
-                name="password"
+                name="stockcode"
               >
                 <Input />
               </Form.Item>
@@ -175,7 +194,7 @@ const Stock = () => {
           </Space>
         </Form>
       </Row>
-      <Table columns={columns} dataSource={data} />
+      <Table columns={columns} dataSource={stockList} />
 
       <Modal title="操作" open={showModal} onOk={handleOk} onCancel={handleCancel}>
         <Form
