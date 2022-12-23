@@ -1,7 +1,7 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-01 17:01:04
- * @LastEditTime: 2022-12-23 10:38:08
+ * @LastEditTime: 2022-12-23 13:15:31
  * @LastEditors: 韩宏广
  * @FilePath: \my-financial\web\src\pages\BalancepaymentsMgement\index.js
  * @文件说明: 
@@ -10,7 +10,7 @@ import { Calendar, Col, Divider, Drawer, Row, Badge, Space, Button, Modal, Form,
 import { useEffect, useState } from 'react'
 import "./index.less"
 
-import { getBalancepayMentsApi, newFinancialRecordApi } from '@/api/balancepayments'
+import { getBalancepayMentsApi, newFinancialRecordApi, getPeriodTimeBillApi } from '@/api/balancepayments'
 import { getIncomeTypeList } from '@/api/incometype'
 import { getConsumptionTypeListApi } from '@/api/consumptiontype'
 
@@ -20,69 +20,7 @@ const DescriptionItem = ({ title, content }) => (
     {content}
   </div>
 );
-const getListData = (value) => {
-  let listData;
-  switch (value.date()) {
-    case 8:
-      listData = [
-        {
-          type: 'warning',
-          content: 'This is warning event.',
-        },
-        {
-          type: 'success',
-          content: 'This is usual event.',
-        },
-      ];
-      break;
-    case 10:
-      listData = [
-        {
-          type: 'warning',
-          content: 'This is warning event.',
-        },
-        {
-          type: 'success',
-          content: 'This is usual event.',
-        },
-        {
-          type: 'error',
-          content: 'This is error event.',
-        },
-      ];
-      break;
-    case 15:
-      listData = [
-        {
-          type: 'warning',
-          content: 'This is warning event',
-        },
-        {
-          type: 'success',
-          content: 'This is very long usual event。。....',
-        },
-        {
-          type: 'error',
-          content: 'This is error event 1.',
-        },
-        {
-          type: 'error',
-          content: 'This is error event 2.',
-        },
-        {
-          type: 'error',
-          content: 'This is error event 3.',
-        },
-        {
-          type: 'error',
-          content: 'This is error event 4.',
-        },
-      ];
-      break;
-    default:
-  }
-  return listData || [];
-};
+
 const BalancepaymentsMgement = () => {
   //为解决日历组件切换到日期范围会导致onSelect方法触发
   let calendarState = ''
@@ -94,14 +32,19 @@ const BalancepaymentsMgement = () => {
     type: 'income'
   })
   const [incomePayment, setincomePayment] = useState([])
-  // const [calendarState, setCalendarState] = useState('')
+  const [calendarList, setCalendarList] = useState([])
   const [form] = Form.useForm()
   const onClose = () => {
     setDrawers(false);
   };
   useEffect(() => {
     //接口，默认当月的日期，去获取日历当月需要渲染的数据
-
+    let startDate = window.moment(new Date()).subtract(1, 'M').format("YYYY-MM");
+    let endDate = window.moment(new Date()).add(1, 'M').format("YYYY-MM");
+    console.log(startDate);
+    getPeriodTimeBillApi({ startDate, endDate }).then(res => {
+      setCalendarList(res.data)
+    })
 
   }, [])
 
@@ -195,7 +138,93 @@ const BalancepaymentsMgement = () => {
     //   </div>
     // ) : null;
   };
+  const getListData = (value) => {
+    let listData = []
+    let ss = window.moment(value).format("YYYY-MM")
+    let gg = window.moment(value).format("YYYY-MM-DD")
+    // console.log(ss);
+    calendarList.forEach(element => {
+      // console.log(element);
+      if (element.date == ss) {
+        element.list.forEach(ele => {
+          let type;
+          if (ele.date == gg) {
+            if (ele.type == '收入') {
+              type = 'success'
+            } else if (ele.type == '支出') {
+              type = 'warning'
+            }
+            listData.push({
+              key: ele.id,
+              type: type,
+              content: ele.type + '、' + ele.goods,
+            })
+          }
+        });
+      }
+    });
+    // debugger
 
+    // switch (value.date()) {
+    //   case 8:
+    //     listData = [
+    //       {
+    //         type: 'warning',
+    //         content: 'This is warning event.',
+    //       },
+    //       {
+    //         type: 'success',
+    //         content: 'This is usual event.',
+    //       },
+    //     ];
+    //     break;
+    //   case 10:
+    //     listData = [
+    //       {
+    //         type: 'warning',
+    //         content: 'This is warning event.',
+    //       },
+    //       {
+    //         type: 'success',
+    //         content: 'This is usual event.',
+    //       },
+    //       {
+    //         type: 'error',
+    //         content: 'This is error event.',
+    //       },
+    //     ];
+    //     break;
+    //   case 15:
+    //     listData = [
+    //       {
+    //         type: 'warning',
+    //         content: 'This is warning event',
+    //       },
+    //       {
+    //         type: 'success',
+    //         content: 'This is very long usual event。。....',
+    //       },
+    //       {
+    //         type: 'error',
+    //         content: 'This is error event 1.',
+    //       },
+    //       {
+    //         type: 'error',
+    //         content: 'This is error event 2.',
+    //       },
+    //       {
+    //         type: 'error',
+    //         content: 'This is error event 3.',
+    //       },
+    //       {
+    //         type: 'error',
+    //         content: 'This is error event 4.',
+    //       },
+    //     ];
+    //     break;
+    //   default:
+    // }
+    return listData || [];
   };
   const dateCellRender = (value) => {
     // console.log(value);
@@ -203,7 +232,7 @@ const BalancepaymentsMgement = () => {
     return (
       <ul className="events">
         {listData.map((item) => (
-          <li key={item.content}>
+          <li key={item.key}>
             <Badge status={item.type} text={item.content} />
           </li>
         ))}
@@ -212,12 +241,10 @@ const BalancepaymentsMgement = () => {
   };
   return (
     <>
-
       {/* BalancepaymentsMgement */}
       <div className='calendar'>
         <Button type='primary' onClick={aRecord}>记一笔</Button>
-        {/* <Calendar   onPanelChange={onPanelChange} fullscreen={true} onSelect={(moment, e) => { onSelect(moment, e) }} monthCellRender={monthCellRender} /> */}
-        <Calendar onPanelChange={onPanelChange} fullscreen={true} onSelect={onSelect} dateCellRender={dateCellRender} monthCellRender={monthCellRender}  />
+        <Calendar onPanelChange={onPanelChange} fullscreen={true} onSelect={onSelect} dateCellRender={dateCellRender} monthCellRender={monthCellRender} />
         <Drawer width={640} placement="right" closable={false} onClose={onClose} open={drawers}>
           <p
             className="site-description-item-profile-p"

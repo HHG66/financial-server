@@ -1,7 +1,7 @@
 /*
  * @Author: HHG
  * @Date: 2022-12-13 20:02:38
- * @LastEditTime: 2022-12-21 13:58:56
+ * @LastEditTime: 2022-12-23 12:07:40
  * @LastEditors: 韩宏广
  * @FilePath: \my-financial\web\src\api\balancepayments.js
  * @文件说明: 
@@ -92,6 +92,17 @@ export const newFinancialRecordApi=(data)=>{
       type:type,
       name:data.name,
       amount:data.amount,
+    }
+  })
+}
+
+export const getPeriodTimeBillApi=(params)=>{
+  return request({
+    url:'/getperiodtimebill',
+    method:"GET",
+    params:{
+      startdate:params.startDate||'',
+      enddate:params.endDate||''
     }
   })
 }
