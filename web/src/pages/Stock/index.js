@@ -1,17 +1,20 @@
 /*
  * @Author: HHG
  * @Date: 2022-10-03 23:59:58
- * @LastEditTime: 2022-12-23 13:12:59
+ * @LastEditTime: 2023-01-04 16:44:22
  * @LastEditors: 韩宏广
- * @FilePath: \my-financial\web\src\pages\Stock\index.js
+ * @FilePath: \financial\web\src\pages\Stock\index.js
  * @文件说明: 
  */
 import React, { Component, useEffect, useState } from 'react'
-import { Tag, Space, Table, Row, Col, Form, Input, Button, Modal, Select, InputNumber, Popconfirm } from 'antd'
-import { getStockListApi } from '@/api/stock'
+import { Tag, Space, Table, Row, Col, Form, Input, Button, Modal, Select, InputNumber, Popconfirm, message } from 'antd'
+import { getStockListApi,editStockApi,deleteStockApi} from '@/api/stock'
 
 const Stock = () => {
-  const [showModal, setShowModel] = useState(false)
+  const [showModal, setShowModel] = useState({
+    open:false,
+    editId:''
+  })
   const [stockInfo, setStockInfo] = useState(false)
   const [stockList, setStockList] = useState([])
   const [formModel] = Form.useForm()
@@ -75,7 +78,7 @@ const Stock = () => {
       width: 130,
       render: (_, record) => (
         <Space size="middle">
-          <a onClick={() => editStock()}>编辑</a>
+          <a onClick={() => editStock(record)}>编辑</a>
           <Popconfirm
             title="确定删除股票?"
             onConfirm={() => deleteStock(record)}
@@ -127,18 +130,33 @@ const Stock = () => {
       setStockList(res.data)
     })
   };
-  const editStock = () => {
-    setShowModel(true)
+  const editStock = (rowdata) => {
+    // console.log(rowdata);
+    setShowModel({
+      editId:rowdata.id,
+      open:true
+    })
   }
 
   const editOnFinish = () => {
 
   }
   const handleOk = () => {
-
+  formModel.validateFields().then(values=>{
+    editStockApi(values,showModal.editId).then(res=>{
+      message.success(res.message)
+      setShowModel({
+        ...showModal,
+        open:false
+      })
+    })
+   })
   }
   const handleCancel = () => {
-    setShowModel(false)
+    setShowModel({
+      ...showModal,
+      open:false
+    })
   }
   const handleChange = (value) => {
     if (value == 2) {
@@ -147,8 +165,11 @@ const Stock = () => {
       setStockInfo(true)
     }
   }
-  const deleteStock = () => {
-    console.log("deleteStock");
+  const deleteStock = (rowdata) => {
+    deleteStockApi(rowdata.id).then(res=>{
+      message.success(res.message)
+    })
+    // console.log("deleteStock");
   }
   return (
     <>
@@ -196,7 +217,7 @@ const Stock = () => {
       </Row>
       <Table columns={columns} dataSource={stockList} />
 
-      <Modal title="操作" open={showModal} onOk={handleOk} onCancel={handleCancel}>
+      <Modal title="操作" open={showModal.open} onOk={handleOk} onCancel={handleCancel}>
         <Form
           name="basic"
           labelCol={{
@@ -213,7 +234,7 @@ const Stock = () => {
         >
           <Form.Item
             label="状态"
-            name="fundstate"
+            name="stockstate"
             rules={[
               {
                 required: true,
