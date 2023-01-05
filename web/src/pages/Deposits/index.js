@@ -1,14 +1,15 @@
 /*
  * @Author: HHG
  * @Date: 2022-10-04 00:00:16
- * @LastEditTime: 2023-01-05 17:34:33
+ * @LastEditTime: 2023-01-05 21:51:50
  * @LastEditors: 韩宏广
- * @FilePath: \financial\web\src\pages\Deposits\index.js
+ * @FilePath: /个人财务/web/src/pages/Deposits/index.js
  * @文件说明: 
  */
 import React, { Component, useEffect, useState } from 'react'
 import { Statistic, Row, Col, Button, Tag, Space, Table, Modal, Form, Input, Select, DatePicker, message, Popconfirm } from 'antd'
 import { getDepositListApi, editDepositInfoApi, deleteDepositApi } from '@/api/deposits'
+import './index.less'
 
 const Deposits = () => {
   var modelEle
@@ -20,6 +21,7 @@ const Deposits = () => {
   })
   const [actionState, setActionState] = useState("0")
   const [form] = Form.useForm()
+  const [formSearchData] = Form.useForm()
   useEffect(() => {
     // getDepositListApi({}).then(res => {
     //   let data = []
@@ -36,8 +38,8 @@ const Deposits = () => {
   const columns = [
     {
       title: '存款名称',
-      dataIndex: 'name',
-      key: 'name',
+      dataIndex: 'depositname',
+      key: 'depositname',
       render: (text) => <a>{text}</a>,
     },
     {
@@ -64,15 +66,26 @@ const Deposits = () => {
       title: '类型',
       key: 'type',
       dataIndex: 'type',
-      render: (_, { type }) => (
-        <>
-          {
-            <Tag color={'red'} >
-              {"定期存款"}
-            </Tag>
-          }
-        </>
-      ),
+      render: (_, { type }) => {
+        if (type === '定期存款') {
+          return (
+            <>
+              <Tag color={'red'} >
+                {"定期存款"}
+              </Tag>
+            </>
+          )
+        } else if (type === '活期存款') {
+          return (
+            <>
+              <Tag color={'green'} >
+                {"活期存款"}
+              </Tag>
+            </>
+          )
+        }
+
+      }
     },
     {
       title: '操作',
@@ -102,8 +115,8 @@ const Deposits = () => {
     })
   }
   //获取存款单列表
-  const getDepositList = () => {
-    getDepositListApi({}).then(res => {
+  const getDepositList = (data) => {
+    getDepositListApi(data||{}).then(res => {
       let data = []
       res.data.forEach(element => {
         data.push({
@@ -139,7 +152,10 @@ const Deposits = () => {
   const handleChange = (value) => {
     setActionState(value)
   }
-
+  const onFinish = (values) => {
+    console.log(values);
+    getDepositList(values)
+  }
   if (actionState == '0') {
     modelEle = <>  <Form.Item
       label="续存金额"
@@ -192,6 +208,48 @@ const Deposits = () => {
         </Col>
         <Col span={12}>
           说明：总金额计算的是本金，不包含没有结清的利息收入。
+        </Col>
+      </Row>
+      <Row className='form-search'>
+        <Col>
+          <Form
+            name="basic"
+            form={formSearchData}
+            // initialValues={}
+            onFinish={onFinish}
+          >
+            <Row gutter={{
+              xs: 8,
+              sm: 10,
+              md: 24,
+              lg: 20,
+            }}>
+              <Col>
+                <Form.Item
+                  label="存款名称"
+                  name="depositname"
+                  auto-complete='new-password'
+                >
+                  <Input />
+                </Form.Item>
+              </Col>
+              <Col>
+                <Form.Item
+                  label="到期时间"
+                  name="maturitytime"
+                >
+                  <DatePicker />
+                </Form.Item>
+              </Col>
+
+              <Col>
+                <Space>
+                  <Button type='primary' htmlType='submit'>提交</Button>
+                  <Button type='primary' htmlType='reset'>重置</Button>
+                </Space>
+              </Col>
+            </Row>
+          </Form>
         </Col>
       </Row>
       <Table columns={columns} dataSource={tableData} />
