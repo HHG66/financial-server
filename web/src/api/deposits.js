@@ -1,9 +1,9 @@
 /*
  * @Author: HHG
  * @Date: 2023-01-05 08:52:37
- * @LastEditTime: 2023-01-05 21:49:52
+ * @LastEditTime: 2023-01-09 13:50:43
  * @LastEditors: 韩宏广
- * @FilePath: /个人财务/web/src/api/deposits.js
+ * @FilePath: \financial\web\src\api\deposits.js
  * @文件说明: 
  */
 import request from "./index";
@@ -57,3 +57,4 @@ export const deleteDepositApi = (data) => {
     }
   })
 }
+
