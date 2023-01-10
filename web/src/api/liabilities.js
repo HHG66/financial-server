@@ -1,9 +1,9 @@
 /*
  * @Author: HHG
  * @Date: 2023-01-09 09:00:40
- * @LastEditTime: 2023-01-10 10:32:03
+ * @LastEditTime: 2023-01-10 23:00:19
  * @LastEditors: 韩宏广
- * @FilePath: \financial\web\src\api\liabilities.js
+ * @FilePath: /Personal-finance/web/src/api/liabilities.js
  * @文件说明: 
  */
 import request from './index.js'
@@ -65,6 +65,25 @@ export const edtLoanInfo = (data) => {
       currentnumberissues: data.currentnumberissues, //当前期数
       amount: data.amount,//总金额
       residualamount: data.residualamount,//剩余金额
+    }
+  })
+}
+export const editLoanInfoListApi=(data)=>{
+  return request({
+    url:'/editloanInfolist',
+    method:'POST',
+    data:{
+      loaninfoid:data.loaninfoid,
+      loanid:data.loanid,
+      numberperiods:data.numberperiods,
+      repaymentdate:window.moment(data.repaymentdate).format("YYYY-MM-DD"),
+      openingbalance:data.openingbalance,
+      plannedrepayment:data.plannedrepayment,
+      additionalrepayment:data.additionalrepayment,
+      accumulatedinterest:data.accumulatedinterest,
+      principal:data.principal,
+      closingbalance:data.closingbalance,
+      loanstate:data.loanstate,
     }
   })
 }

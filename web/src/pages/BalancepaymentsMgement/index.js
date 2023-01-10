@@ -1,9 +1,9 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-01 17:01:04
- * @LastEditTime: 2022-12-23 13:15:31
+ * @LastEditTime: 2023-01-10 23:17:03
  * @LastEditors: 韩宏广
- * @FilePath: \my-financial\web\src\pages\BalancepaymentsMgement\index.js
+ * @FilePath: /Personal-finance/web/src/pages/BalancepaymentsMgement/index.js
  * @文件说明: 
  */
 import { Calendar, Col, Divider, Drawer, Row, Badge, Space, Button, Modal, Form, Input, Select, message, DatePicker } from 'antd'
@@ -55,7 +55,7 @@ const BalancepaymentsMgement = () => {
   };
   const onSelect = (moment) => {
     console.log(calendarState);
-    if (calendarState == "") {
+    if (calendarState === "") {
       setDrawers(true);
       getBalancepayMentsApi(window.moment(moment._d).format('YYYY-MM-DD')).then(res => {
         // console.log(res.data);
@@ -94,7 +94,7 @@ const BalancepaymentsMgement = () => {
     })
   }
   const handleChange = (value) => {
-    if (value == '1') {
+    if (value === '1') {
       setModelInfo({
         ...modelInfo,
         type: 'payment'
@@ -145,13 +145,13 @@ const BalancepaymentsMgement = () => {
     // console.log(ss);
     calendarList.forEach(element => {
       // console.log(element);
-      if (element.date == ss) {
+      if (element.date === ss) {
         element.list.forEach(ele => {
           let type;
-          if (ele.date == gg) {
-            if (ele.type == '收入') {
+          if (ele.date === gg) {
+            if (ele.type === '收入') {
               type = 'success'
-            } else if (ele.type == '支出') {
+            } else if (ele.type === '支出') {
               type = 'warning'
             }
             listData.push({

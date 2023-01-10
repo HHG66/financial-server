@@ -1,13 +1,13 @@
 /*
  * @Author: HHG
  * @Date: 2022-10-03 23:59:58
- * @LastEditTime: 2023-01-04 16:44:22
+ * @LastEditTime: 2023-01-10 23:12:44
  * @LastEditors: 韩宏广
- * @FilePath: \financial\web\src\pages\Stock\index.js
+ * @FilePath: /Personal-finance/web/src/pages/Stock/index.js
  * @文件说明: 
  */
-import React, { Component, useEffect, useState } from 'react'
-import { Tag, Space, Table, Row, Col, Form, Input, Button, Modal, Select, InputNumber, Popconfirm, message } from 'antd'
+import React, { useEffect, useState } from 'react'
+import { Space, Table, Row, Col, Form, Input, Button, Modal, Select, InputNumber, Popconfirm, message } from 'antd'
 import { getStockListApi,editStockApi,deleteStockApi} from '@/api/stock'
 
 const Stock = () => {
@@ -91,29 +91,6 @@ const Stock = () => {
       ),
     },
   ];
-  const data = [
-    {
-      key: '1',
-      name: 'John Brown',
-      age: 32,
-      address: 'New York No. 1 Lake Park',
-      tags: ['nice', 'developer'],
-    },
-    {
-      key: '2',
-      name: 'Jim Green',
-      age: 42,
-      address: 'London No. 1 Lake Park',
-      tags: ['loser'],
-    },
-    {
-      key: '3',
-      name: 'Joe Black',
-      age: 32,
-      address: 'Sidney No. 1 Lake Park',
-      tags: ['cool', 'teacher'],
-    },
-  ];
   useEffect(() => {
     getStockListApi({}).then(res => {
       let list =[]
@@ -159,7 +136,7 @@ const Stock = () => {
     })
   }
   const handleChange = (value) => {
-    if (value == 2) {
+    if (value === 2) {
       setStockInfo(false)
     } else {
       setStockInfo(true)

@@ -1,12 +1,12 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-01 17:01:17
- * @LastEditTime: 2022-12-19 10:25:22
+ * @LastEditTime: 2023-01-10 23:16:38
  * @LastEditors: 韩宏广
- * @FilePath: \my-financial\web\src\pages\ConsumptionManagement\index.js
+ * @FilePath: /Personal-finance/web/src/pages/ConsumptionManagement/index.js
  * @文件说明: 
  */
-import { Table, Form, Input, Row, Col, Button, Space, Dropdown, Modal, message, Popconfirm } from 'antd'
+import { Table, Form, Input, Row, Col, Button, Space, Modal, message, Popconfirm } from 'antd'
 import { DownOutlined, UpOutlined } from '@ant-design/icons';
 import { getConsumptionTypeListApi, newConsumptionType, editConsumptionTypeApi, deleteConsumptiontypeApi } from '@/api/consumptiontype'
 import { useEffect, useState } from 'react';

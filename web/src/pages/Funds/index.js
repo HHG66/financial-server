@@ -1,13 +1,13 @@
 /*
  * @Author: HHG
  * @Date: 2022-10-03 23:59:38
- * @LastEditTime: 2022-12-22 11:43:37
+ * @LastEditTime: 2023-01-10 23:15:35
  * @LastEditors: 韩宏广
- * @FilePath: \my-financial\web\src\pages\Funds\index.js
+ * @FilePath: /Personal-finance/web/src/pages/Funds/index.js
  * @文件说明: 
  */
 import React, { useEffect, useState } from 'react'
-import { Button, Col, Form, Input, Row, Space, DatePicker, Table, Tag, Select, Modal, InputNumber, Popconfirm, message } from 'antd';
+import { Button, Col, Form, Input, Row, Space, DatePicker, Table, Select, Modal, InputNumber, Popconfirm, message } from 'antd';
 import './index.less'
 import { getPositionFundsListApi, deleteFundApi, editfundinfo } from '@/api/funds'
 // import { getSineFundInfoApi } from '@/api/other';
@@ -204,9 +204,6 @@ const Funds = () => {
       message.success(res.message)
     })
   }
-  const showModal = () => {
-    setIsModalOpen(true);
-  };
   const handleOk = () => {
     formModel.validateFields().then((values) => {
       // console.log(values);

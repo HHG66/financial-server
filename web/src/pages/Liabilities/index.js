@@ -1,14 +1,14 @@
 /*
  * @Author: HHG
  * @Date: 2022-12-18 20:36:35
- * @LastEditTime: 2023-01-10 17:03:54
+ * @LastEditTime: 2023-01-10 23:14:27
  * @LastEditors: 韩宏广
- * @FilePath: \financial\web\src\pages\Liabilities\index.js
+ * @FilePath: /Personal-finance/web/src/pages/Liabilities/index.js
  * @文件说明: 
  */
 import React, { useState, useEffect } from 'react'
-import { Descriptions, Statistic, Tag, Space, Table, Modal, Draggable, Button, Row, Col, Progress, Form, Typography, Popconfirm, InputNumber, Input, message, DatePicker } from 'antd'
-import { getLoanListApi, getLoanInfoListApi, deleteLoanListApi, getLoanInfoApi, edtLoanInfo } from '@/api/liabilities'
+import { Descriptions, Statistic, Tag, Space, Table, Modal, Button, Progress, Form, Typography, Popconfirm, Input, message, DatePicker } from 'antd'
+import { getLoanListApi, getLoanInfoListApi, deleteLoanListApi, getLoanInfoApi, edtLoanInfo, editLoanInfoListApi } from '@/api/liabilities'
 import './index.less'
 
 const Liabilities = () => {
@@ -28,7 +28,14 @@ const Liabilities = () => {
     amount: 15000,//总金额
     residualamount: 9000,//剩余金额
   })
-  const [label, setlabel] = useState({
+  const [loanList, setLoanList] = useState([])
+  const [loanInfoList, setLoanInfoList] = useState([])
+  const [form] = Form.useForm();
+  const [editingKey, setEditingKey] = useState('');
+  const [loanInfoState, setloanInfoState] = useState(false);
+  const [loanId, setLoanId] = useState('')
+  const isEditing = (record) => record.key === editingKey;
+  let label = {
     loanname: {
       label: "贷款名称",
       editable: true
@@ -71,15 +78,7 @@ const Liabilities = () => {
     residualamount: {
       label: '剩余金额',
     },
-  })
-  const [loanList, setLoanList] = useState([])
-  const [loanInfoList, setLoanInfoList] = useState([])
-  const [form] = Form.useForm();
-  const [editingKey, setEditingKey] = useState('');
-  const [loanInfoState, setloanInfoState] = useState(false);
-  const [loanId, setLoanId] = useState('')
-  const [loanInfoForm] = Form.useForm()
-  const isEditing = (record) => record.key === editingKey;
+  }
   const columns = [
     {
       title: '贷款单名称',
@@ -183,6 +182,27 @@ const Liabilities = () => {
       editable: true,
     },
     {
+      title: '状态',
+      dataIndex: 'loanstate',
+      key: 'loanstate',
+      editable: true,
+      render: (_, { loanstate }) => (
+        <>
+          {
+            loanstate === '已还款' ? (
+              <Tag color='green' key={loanstate}>
+                {loanstate}
+              </Tag>
+            ) : (
+              <Tag color='red' key={loanstate}>
+                {loanstate}
+              </Tag>
+            )
+          }
+        </>
+      )
+    },
+    {
       title: '操作',
       key: 'action',
       width: 150,
@@ -260,13 +280,17 @@ const Liabilities = () => {
         newData.splice(index, 1, {
           ...item,
           ...row,
+          repaymentdate: window.moment(row.repaymentdate._d).format('YYYY-MM-DD')
         });
-        // setLoanInfoList(newData)
+        // console.log(item);
+        // console.log(row);
+        setLoanInfoList(newData)
         setEditingKey('');
+        editLoanInfoListApi({ loanid: loanId, loaninfoid: key, ...row }).then(res => {
+        })
       } else {
-        newData.push(row);
-        // setLoanInfoList(newData)
-
+        // newData.push(row);
+        setLoanInfoList(newData)
         setEditingKey('');
       }
     } catch (errInfo) {
@@ -302,11 +326,7 @@ const Liabilities = () => {
     children,
     ...restProps
   }) => {
-    if (editing) {
-      console.log(inputType);
-      // console.log(record);
-      // console.log(title);
-    }
+    // console.log(editing);
     const inputNode = inputType === 'number' ? <DatePicker /> : <Input />;
     return (
       <td {...restProps}>
@@ -373,7 +393,7 @@ const Liabilities = () => {
     // setTimeout(() => {
     //   console.log(liabilitieInfo);
     // }, 1000);
-    if (loanInfoState == !false) {
+    if (loanInfoState === !false) {
       edtLoanInfo({ ...liabilitieInfo, id: loanId }).then(res => {
         message.success(res.message)
       })
@@ -384,7 +404,7 @@ const Liabilities = () => {
     for (const key in liabilitieInfo) {
       if (state) {
         //有可编辑的状态才可以进行编辑
-        if (label[key] && label[key].editable == true) {
+        if (label[key] && label[key].editable === true) {
           // descriptionsInfo.push(<Descriptions.Item key={key} label={label[key].label}><Input defaultValue={liabilitieInfo[key]} /></Descriptions.Item>   
           descriptionsInfo.push(<Descriptions.Item key={key} label={label[key].label}>
             <Input defaultValue={liabilitieInfo[key]} onChange={(e) => setLiabilitieInfo({ ...liabilitieInfo, [key]: e.target.value })} />
@@ -410,12 +430,15 @@ const Liabilities = () => {
       default:
         return "blue"
     }
-    // let color={
-    //   value:30,
-    //   color:"red"
-    // }
-    // ((liabilitieInfo.currentnumberissues) / (liabilitieInfo.totalnumberperiods) * 100) > 40 ? 'green' :'red'
-    return "red"
+  }
+  const calculateHeight = () => {
+    let tabheight
+    if (document.body.scrollHeight < 1000) {
+      tabheight = {
+        y: 240
+      }
+    }
+    return tabheight
   }
   return (
     <>
@@ -479,15 +502,21 @@ const Liabilities = () => {
                 cell: EditableCell,
               },
             }}
+              className='loan-info'
               bordered
-              // dataSource={data}
               dataSource={loanInfoList}
               columns={mergedColumns}
-
               rowClassName="editable-row"
               pagination={{
                 onChange: cancel,
-              }} />
+              }}
+              // scroll={{
+              //   y: 240,
+              // }}
+              scroll={
+                calculateHeight()
+              }
+            />
           </Form>
         </Space>
 

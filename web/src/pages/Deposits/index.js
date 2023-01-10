@@ -1,19 +1,18 @@
 /*
  * @Author: HHG
  * @Date: 2022-10-04 00:00:16
- * @LastEditTime: 2023-01-05 21:51:50
+ * @LastEditTime: 2023-01-10 23:16:03
  * @LastEditors: 韩宏广
- * @FilePath: /个人财务/web/src/pages/Deposits/index.js
+ * @FilePath: /Personal-finance/web/src/pages/Deposits/index.js
  * @文件说明: 
  */
-import React, { Component, useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Statistic, Row, Col, Button, Tag, Space, Table, Modal, Form, Input, Select, DatePicker, message, Popconfirm } from 'antd'
 import { getDepositListApi, editDepositInfoApi, deleteDepositApi } from '@/api/deposits'
 import './index.less'
 
 const Deposits = () => {
   var modelEle
-  const [formSearch, setFormSearch] = useState({})
   const [tableData, settableData] = useState([])
   const [modelData, setModelData] = useState({
     isModalOpen: false,
@@ -156,7 +155,7 @@ const Deposits = () => {
     console.log(values);
     getDepositList(values)
   }
-  if (actionState == '0') {
+  if (actionState === '0') {
     modelEle = <>  <Form.Item
       label="续存金额"
       name="renewalamount"
@@ -176,7 +175,7 @@ const Deposits = () => {
         <DatePicker style={{ width: "100%" }} />
       </Form.Item>
     </>
-  } else if (actionState == '1') {
+  } else if (actionState === '1') {
     modelEle = <>
       <Form.Item
         label="利率"

@@ -1,13 +1,13 @@
 /*
  * @Author: HHG
  * @Date: 2022-10-03 23:55:35
- * @LastEditTime: 2022-12-22 10:03:48
+ * @LastEditTime: 2023-01-10 23:17:15
  * @LastEditors: 韩宏广
- * @FilePath: \my-financial\web\src\pages\BalancepaymentsImportBill\index.js
+ * @FilePath: /Personal-finance/web/src/pages/BalancepaymentsImportBill/index.js
  * @文件说明: 
  */
 import React, { useState, useEffect } from 'react'
-import { Upload, Button, Table, message, Row, Col, Space, Drawer, Timeline, Divider, Form, Input, DatePicker } from 'antd'
+import { Upload, Button, Table, message, Row, Col, Space, Drawer, Timeline, Form, Input, DatePicker } from 'antd'
 import * as XLSX from 'xlsx';
 // import React, { useCallback, useEffect, useState } from "react";
 import { ImportingbillsApi, getdisposebillApi, getImportRecordsApi, getinportbillinfoApi } from '@/api/balancepayments'

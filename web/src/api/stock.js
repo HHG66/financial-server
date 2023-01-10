@@ -1,9 +1,9 @@
 /*
  * @Author: HHG
  * @Date: 2022-12-22 14:28:11
- * @LastEditTime: 2023-01-04 16:43:14
+ * @LastEditTime: 2023-01-10 23:17:37
  * @LastEditors: 韩宏广
- * @FilePath: \financial\web\src\api\stock.js
+ * @FilePath: /Personal-finance/web/src/api/stock.js
  * @文件说明: 
  */
 import request from "./index";
@@ -21,7 +21,7 @@ export const getStockListApi = (params) => {
 export const editStockApi = (data, stockId) => {
   //2加仓，1卖出
   let fomrdata = {}
-  if (data.stockstate == '2') {
+  if (data.stockstate === '2') {
     fomrdata = {
       stockstate: data.stockstate,
       stockid: stockId,
@@ -30,7 +30,7 @@ export const editStockApi = (data, stockId) => {
       sellingnumber: "",
       sellingprice: "",
     }
-  } else if (data.stockstate == '1') {
+  } else if (data.stockstate === '1') {
     fomrdata = {
       stockid: stockId,
       stockstate: data.stockstate,

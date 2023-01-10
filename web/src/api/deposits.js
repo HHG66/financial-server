@@ -1,9 +1,9 @@
 /*
  * @Author: HHG
  * @Date: 2023-01-05 08:52:37
- * @LastEditTime: 2023-01-09 13:50:43
+ * @LastEditTime: 2023-01-10 23:19:45
  * @LastEditors: 韩宏广
- * @FilePath: \financial\web\src\api\deposits.js
+ * @FilePath: /Personal-finance/web/src/api/deposits.js
  * @文件说明: 
  */
 import request from "./index";
@@ -25,7 +25,7 @@ export const getDepositListApi = (params) => {
 
 export const editDepositInfoApi = (data) => {
   let editdata = {}
-  if (data.actiontype == '0') {
+  if (data.actiontype === '0') {
     editdata = {
       actiontype: data.actiontype,
       maturitytime: window.moment(data.actiontype._d).format('YYYY-MM-DD'),
@@ -33,12 +33,12 @@ export const editDepositInfoApi = (data) => {
       renewalrate: data.renewalrate,
     }
   }
-  if (data.actiontype == '1') {
+  if (data.actiontype === '1') {
     editdata = {
       actiontype: data.actiontype,
       gowhere: data.gowhere,//去向
       interest: data.interest, //利息
-      interestrate: new Number(data.interestrate),//利率
+      interestrate: parseInt(data.interestrate),//利率
     }
   }
   return request({
