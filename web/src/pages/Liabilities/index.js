@@ -1,14 +1,14 @@
 /*
  * @Author: HHG
  * @Date: 2022-12-18 20:36:35
- * @LastEditTime: 2023-01-09 23:32:11
+ * @LastEditTime: 2023-01-10 17:03:54
  * @LastEditors: 韩宏广
  * @FilePath: \financial\web\src\pages\Liabilities\index.js
  * @文件说明: 
  */
 import React, { useState, useEffect } from 'react'
 import { Descriptions, Statistic, Tag, Space, Table, Modal, Draggable, Button, Row, Col, Progress, Form, Typography, Popconfirm, InputNumber, Input, message, DatePicker } from 'antd'
-import { getLoanListApi, getLoanInfoListApi } from '@/api/liabilities'
+import { getLoanListApi, getLoanInfoListApi, deleteLoanListApi, getLoanInfoApi, edtLoanInfo } from '@/api/liabilities'
 import './index.less'
 
 const Liabilities = () => {
@@ -63,6 +63,7 @@ const Liabilities = () => {
     },
     currentnumberissues: {
       label: '当前期数',
+      editable: true
     },
     amount: {
       label: '总金额',
@@ -76,6 +77,8 @@ const Liabilities = () => {
   const [form] = Form.useForm();
   const [editingKey, setEditingKey] = useState('');
   const [loanInfoState, setloanInfoState] = useState(false);
+  const [loanId, setLoanId] = useState('')
+  const [loanInfoForm] = Form.useForm()
   const isEditing = (record) => record.key === editingKey;
   const columns = [
     {
@@ -109,10 +112,10 @@ const Liabilities = () => {
       key: 'action',
       render: (_, record) => (
         <Space size="middle">
-          <a onClick={() => { seeLansInfo() }}>查看贷款单</a>
+          <a onClick={() => { seeLansInfo(record) }}>查看贷款单</a>
           <Popconfirm
             title="确定删除?"
-            onConfirm={confirm}
+            onConfirm={() => confirm(record.id)}
             okText="确定"
             cancelText="取消"
           >
@@ -218,8 +221,10 @@ const Liabilities = () => {
     getLoanList({})
   }, [])
 
-  const confirm = () => {
-    message.success("删除成功")
+  const confirm = (id) => {
+    deleteLoanListApi({ id }).then(res => {
+      message.success(res.message)
+    })
   }
   const getLoanList = (params) => {
     getLoanListApi(params).then(res => {
@@ -270,8 +275,8 @@ const Liabilities = () => {
   };
 
 
-  const seeLansInfo = () => {
-    console.log(loanInfoState);
+  const seeLansInfo = (rowdata) => {
+    // console.log(loanInfoState);
     setModelData({
       ...modelData,
       open: true
@@ -282,6 +287,10 @@ const Liabilities = () => {
       })
       setLoanInfoList(res.data)
     })
+    getLoanInfoApi({ id: rowdata.id }).then(res => {
+      setLiabilitieInfo(res.data)
+    })
+    setLoanId(rowdata.id)
   }
   const EditableCell = ({
     editing,
@@ -340,13 +349,14 @@ const Liabilities = () => {
   });
 
   const handleOk = (e) => {
-    console.log(e);
+    console.log(liabilitieInfo);
+    // console.log(e);
     setModelData({
       ...modelData,
       open: false
     });
   };
-  
+
   const handleCancel = (e) => {
     setModelData({
       ...modelData,
@@ -358,6 +368,16 @@ const Liabilities = () => {
 
   const editLoanInfo = () => {
     setloanInfoState(!loanInfoState)
+    //这个地方State是异步的，所以无法马上获取的当前已经修改的状态，而状态只有两种所以可以的取反获取上一次状态。
+
+    // setTimeout(() => {
+    //   console.log(liabilitieInfo);
+    // }, 1000);
+    if (loanInfoState == !false) {
+      edtLoanInfo({ ...liabilitieInfo, id: loanId }).then(res => {
+        message.success(res.message)
+      })
+    }
   }
   const descriptionsList = (state) => {
     let descriptionsInfo = []
@@ -365,7 +385,11 @@ const Liabilities = () => {
       if (state) {
         //有可编辑的状态才可以进行编辑
         if (label[key] && label[key].editable == true) {
-          descriptionsInfo.push(<Descriptions.Item key={key} label={label[key].label}><Input value={liabilitieInfo[key]} /></Descriptions.Item>)
+          // descriptionsInfo.push(<Descriptions.Item key={key} label={label[key].label}><Input defaultValue={liabilitieInfo[key]} /></Descriptions.Item>   
+          descriptionsInfo.push(<Descriptions.Item key={key} label={label[key].label}>
+            <Input defaultValue={liabilitieInfo[key]} onChange={(e) => setLiabilitieInfo({ ...liabilitieInfo, [key]: e.target.value })} />
+          </Descriptions.Item >
+          )
         } else {
           descriptionsInfo.push(<Descriptions.Item key={key} label={label[key].label}>{liabilitieInfo[key]}</Descriptions.Item>)
         }
@@ -374,6 +398,24 @@ const Liabilities = () => {
       }
     }
     return descriptionsInfo
+  }
+
+  const progressColor = () => {
+    let value = (liabilitieInfo.currentnumberissues) / (liabilitieInfo.totalnumberperiods) * 100
+    switch (value) {
+      case (10 < value < 20):
+        return "red"
+      case (20 < value < 30):
+        return "green"
+      default:
+        return "blue"
+    }
+    // let color={
+    //   value:30,
+    //   color:"red"
+    // }
+    // ((liabilitieInfo.currentnumberissues) / (liabilitieInfo.totalnumberperiods) * 100) > 40 ? 'green' :'red'
+    return "red"
   }
   return (
     <>
@@ -405,6 +447,15 @@ const Liabilities = () => {
           column={2}
           extra={loanInfoState ? <Button type="primary" onClick={editLoanInfo}>完成</Button> : <Button type="primary" onClick={editLoanInfo}>编辑</Button>}
         >
+          {/* <Form
+            name="basic"
+            initialValues={{
+            }}
+            form={loanInfoForm}
+            // onFinish={onFinish}
+            // onFinishFailed={onFinishFailed}
+            autoComplete="off"
+          >       </Form> */}
           {
             loanInfoState ? descriptionsList(true) : descriptionsList(false)
           }
@@ -421,7 +472,7 @@ const Liabilities = () => {
           <Descriptions.Item label="当前期数">{liabilitieInfo.currentnumberissues}</Descriptions.Item> */}
         </Descriptions>
         <Space direction="vertical" size='large' style={{ width: "100%" }}>
-          <Progress percent={33} status="active" />
+          <Progress percent={((liabilitieInfo.currentnumberissues) / (liabilitieInfo.totalnumberperiods) * 100)} strokeColor={progressColor()} status="active" />
           <Form form={form} component={false}>
             <Table components={{
               body: {
