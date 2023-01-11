@@ -1,9 +1,9 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-02 13:13:54
- * @LastEditTime: 2022-10-05 19:43:03
+ * @LastEditTime: 2023-01-11 09:28:00
  * @LastEditors: 韩宏广
- * @FilePath: /个人财务/web/src/api/index.js
+ * @FilePath: \financial\web\src\api\index.js
  * @文件说明: 
  */
 
@@ -36,16 +36,17 @@ request.interceptors.response.use(function (response) {
     //当结果不正确的时候 ，或者其他情况下，返回结果需要提示就将desc返回成error
     message.error(response.data.message);
     // return response.data
-  }else if(response.data.code !== "00000" && response.data.desc === "error"){
+  } else if (response.data.code !== "00000" && response.data.desc === "error") {
     // 如果想自定义的处理，将返回code返回成非00000状态
     return response.data
   }
   // return response;
 }, function (error) {
   console.log(error);
+
   // 超出 2xx 范围的状态码都会触发该函数。
   // 对响应错误做点什么
- // 请求成功发出且服务器也响应了状态码，但状态代码超出了 2xx 的范围
+  // 请求成功发出且服务器也响应了状态码，但状态代码超出了 2xx 的范围
   if (error && error.response) {
     switch (error.response.status) {
       case 401:
@@ -62,25 +63,37 @@ request.interceptors.response.use(function (response) {
           },
         });
         break;
+      case 0:
+        if(error.code==='ERR_NETWORK'){
+          notification.open({
+            message: '网络错误！',
+            type: "error",
+            description: "请检查网络连接",
+            onClick: () => {
+              console.log('Notification Clicked!');
+            },
+          });
+        }
+        break;
       default:
         break;
     }
-  } else if(error.request){
-    var processingMessage=''
-    var processingDesc=''
-    if(error.code==="ECONNABORTED"){
-      processingMessage= "网络错误"
-      processingDesc="请求超时，请检查网络"
+  } else if (error.request) {
+    var processingMessage = ''
+    var processingDesc = ''
+    if (error.code === "ECONNABORTED") {
+      processingMessage = "网络错误"
+      processingDesc = "请求超时，请检查网络"
     }
     notification.open({
-      message:processingMessage,
+      message: processingMessage,
       type: "error",
       description: processingDesc,
       onClick: () => {
         console.log('Notification Clicked!');
       },
     });
-  }else {
+  } else {
     // 发送请求时出了点问题
     console.log('Error', error.message);
   }

@@ -1,9 +1,9 @@
 /*
  * @Author: HHG
  * @Date: 2022-12-18 20:36:35
- * @LastEditTime: 2023-01-10 23:14:27
+ * @LastEditTime: 2023-01-11 09:59:16
  * @LastEditors: 韩宏广
- * @FilePath: /Personal-finance/web/src/pages/Liabilities/index.js
+ * @FilePath: \financial\web\src\pages\Liabilities\index.js
  * @文件说明: 
  */
 import React, { useState, useEffect } from 'react'
@@ -326,7 +326,8 @@ const Liabilities = () => {
     children,
     ...restProps
   }) => {
-    // console.log(editing);
+    // console.log(title);
+    // console.log(children);
     const inputNode = inputType === 'number' ? <DatePicker /> : <Input />;
     return (
       <td {...restProps}>
@@ -437,6 +438,10 @@ const Liabilities = () => {
       tabheight = {
         y: 240
       }
+    }else if(document.body.scrollHeight < 1000<document.body.scrollHeight < 2000){
+      tabheight = {
+        y: 400
+      }
     }
     return tabheight
   }
@@ -502,6 +507,7 @@ const Liabilities = () => {
                 cell: EditableCell,
               },
             }}
+            size='small'
               className='loan-info'
               bordered
               dataSource={loanInfoList}
@@ -509,6 +515,7 @@ const Liabilities = () => {
               rowClassName="editable-row"
               pagination={{
                 onChange: cancel,
+                defaultPageSize:12
               }}
               // scroll={{
               //   y: 240,
