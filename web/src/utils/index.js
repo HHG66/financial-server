@@ -1,9 +1,9 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-02 14:37:41
- * @LastEditTime: 2022-12-18 17:47:56
+ * @LastEditTime: 2023-01-11 22:18:21
  * @LastEditors: 韩宏广
- * @FilePath: /个人财务/web/src/utils/index.js
+ * @FilePath: /Personal-finance/web/src/utils/index.js
  * @文件说明: 
  */
 
@@ -72,3 +72,15 @@ export function formatSinaStock(string) {
     'time': sineInfo[31],
   }
 }
+
+// export const dateFormat = (date) => {
+//   let dateString
+//   if (typeof (date) == 'string') {
+//     dateString = date.replace(/\s+/g,"")
+//   }
+//   if (dateString !== undefined && dateString !== null && dateString !== '') {
+//     return window.moment(date).format('YYYY-MM-DD')
+//   } else {
+//     return ''
+//   }
+// }

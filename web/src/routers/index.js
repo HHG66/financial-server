@@ -12,6 +12,7 @@ import Stock from '@/pages/Stock'
 import Deposits from '@/pages/Deposits'
 import Summary from '@/pages/Summary'
 import Liabilities from '@/pages/Liabilities'
+import DepositPlan from '@/pages/DepositPlan'
 
 
 
@@ -98,7 +99,11 @@ const Routers = [
     key: '/paymentplanmanagement',
     title: '收支计划管理',
     icon: <div><SvgIcon iconClass="paymentplanmanagement" style={{ width: "20px", height: "20px", marginRight: '10px' }} /></div>,
-    component: <PaymentplanManagement />,
+    // component: <PaymentplanManagement />,
+    subs: [
+      { key: '/paymentplanmanagement/majorplan', title: '主要计划', component: <PaymentplanManagement />, role: "6-1" },
+      { key: '/paymentplanmanagement/depositplan', title: '存款计划', component: <DepositPlan />, role: "6-2" },
+    ],
     role: "7"
   },
   {
