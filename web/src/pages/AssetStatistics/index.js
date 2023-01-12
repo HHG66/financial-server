@@ -1,9 +1,9 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-01 17:00:51
- * @LastEditTime: 2023-01-12 18:25:54
+ * @LastEditTime: 2023-01-12 21:43:15
  * @LastEditors: 韩宏广
- * @FilePath: \financial\web\src\pages\AssetStatistics\index.js
+ * @FilePath: /Personal-finance/web/src/pages/AssetStatistics/index.js
  * @文件说明: 
  */
 
@@ -37,7 +37,7 @@ const AssetStatistics = () => {
         }
       },
       legend: {
-        data: ['Evaporation', 'Precipitation', 'Temperature']
+        data: ['支出', '收入', '负债']
       },
       xAxis: [
         {
@@ -46,13 +46,13 @@ const AssetStatistics = () => {
             alignWithLabel: true
           },
           // prettier-ignore
-          data: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+          data: ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月']
         }
       ],
       yAxis: [
         {
           type: 'value',
-          name: 'Evaporation',
+          name: '支出',
           position: 'right',
           alignTicks: true,
           axisLine: {
@@ -62,12 +62,12 @@ const AssetStatistics = () => {
             }
           },
           axisLabel: {
-            formatter: '{value} ml'
+            formatter: '{value} ¥'
           }
         },
         {
           type: 'value',
-          name: 'Precipitation',
+          name: '收入',
           position: 'right',
           alignTicks: true,
           offset: 80,
@@ -78,12 +78,12 @@ const AssetStatistics = () => {
             }
           },
           axisLabel: {
-            formatter: '{value} ml'
+            formatter: '{value} ¥'
           }
         },
         {
           type: 'value',
-          name: '温度',
+          name: '负债',
           position: 'left',
           alignTicks: true,
           axisLine: {
@@ -93,20 +93,20 @@ const AssetStatistics = () => {
             }
           },
           axisLabel: {
-            formatter: '{value} °C'
+            formatter: '{value} ¥'
           }
         }
       ],
       series: [
         {
-          name: 'Evaporation',
-          type: 'bar',
+          name: '支出',
+          type: 'line',
           data: [
             2.0, 4.9, 7.0, 23.2, 25.6, 76.7, 135.6, 162.2, 32.6, 20.0, 6.4, 3.3
           ]
         },
         {
-          name: 'Precipitation',
+          name: '收入',
           type: 'bar',
           yAxisIndex: 1,
           data: [
@@ -114,7 +114,7 @@ const AssetStatistics = () => {
           ]
         },
         {
-          name: 'Temperature',
+          name: '负债',
           type: 'line',
           yAxisIndex: 2,
           data: [2.0, 2.2, 3.3, 4.5, 6.3, 10.2, 20.3, 23.4, 23.0, 16.5, 12.0, 6.2]

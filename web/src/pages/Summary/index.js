@@ -1,18 +1,25 @@
 /*
  * @Author: HHG
  * @Date: 2022-10-04 00:02:13
- * @LastEditTime: 2023-01-12 10:16:35
+ * @LastEditTime: 2023-01-12 22:17:22
  * @LastEditors: 韩宏广
- * @FilePath: \financial\web\src\pages\Summary\index.js
+ * @FilePath: /Personal-finance/web/src/pages/Summary/index.js
  * @文件说明: 
  */
 import React, { useEffect, useState } from 'react'
-import { Form, Row, Col, Button, Input, Tag, Space, Table, DatePicker, Modal, message, Popconfirm, Select } from 'antd'
+import { Form, Row, Col, Button, Input, Tag, Space, Table, DatePicker, Modal, message, Popconfirm, Select, Drawer, Divider } from 'antd'
 import { DownOutlined, UpOutlined } from '@ant-design/icons';
 import { getBillSummaryListApi, editSingleBill, deleteSingleBillApi } from '@/api/summary'
 import { getConsumptionTypeListApi } from '@/api/consumptiontype'
 import { getIncomeTypeList } from '@/api/incometype'
 import { dateFormat } from '@/utils/index'
+
+const DescriptionItem = ({ title, content }) => (
+  <div className="site-description-item-profile-wrapper">
+    <p className="site-description-item-profile-p-label">{title}:</p>
+    {content}
+  </div>
+);
 const Summary = () => {
   const [expand, setExpand] = useState(false);
   const [tabData, setTabData] = useState([]);
@@ -21,6 +28,7 @@ const Summary = () => {
   const [incomeExpenditureState, setIncomeExpenditureState] = useState('')
   const [incomeOption, setIncomeOption] = useState([])
   const [spendingOption, setSpendingOption] = useState([])
+  const [open, setOpen] = useState(false);
   const [form] = Form.useForm();
   const [editModelForm] = Form.useForm()
   const onFinish = (values) => {
@@ -88,7 +96,15 @@ const Summary = () => {
   const incomeExpenditureChange = (value) => {
     setIncomeExpenditureState(value)
   }
-
+  const showDrawer = () => {
+    setOpen(true);
+  };
+  const onClose = () => {
+    setOpen(false);
+  };
+  const seeBillSummary=()=>{
+    showDrawer()
+  }
   const columns = [
     {
       title: '名称',
@@ -221,6 +237,9 @@ const Summary = () => {
               textAlign: 'right',
             }}
           >
+            <Button type="primary" onClick={()=>seeBillSummary()} style={{marginRight:'10px'}}>
+              统计详细
+            </Button>
             <Button type="primary" htmlType="submit">
               搜索
             </Button>
@@ -353,6 +372,61 @@ const Summary = () => {
           </Form.Item>
         </Form>
       </Modal>
+
+      <Drawer width={640} placement="right" closable={false} onClose={onClose} open={open}>
+        <p
+          className="site-description-item-profile-p"
+          style={{
+            marginBottom: 24,
+          }}
+        >
+        <b>统计详细</b>
+        </p>
+        <p className="site-description-item-profile-p">收入</p>
+        <Row>
+          <Col span={12}>
+            <DescriptionItem title="总金额" content="1000" />
+          </Col>
+          <Col span={12}>
+            <DescriptionItem title="收入" content="30000" />
+          </Col>
+        </Row>
+        <Row>
+          <Col span={12}>
+            <DescriptionItem title="支出" content="4000" />
+          </Col>
+          <Col span={12}>
+          <DescriptionItem title="做多次交易方" content="食堂" />
+          </Col>
+        </Row>
+        <Row>
+          <Col span={12}>
+            <DescriptionItem title="单笔最大消费名称" content="February" />
+          </Col>
+          <Col span={12}>
+            <DescriptionItem title="单笔最大消费金额" content="2000" />
+          </Col>
+        </Row>
+        {/* <Row>
+          <Col span={12}>
+            <DescriptionItem title="单笔最大消费名称" content="February 2,1900" />
+          </Col>
+          <Col span={12}>
+            <DescriptionItem title="Website" content="-" />
+          </Col>
+        </Row> */}
+        <Row>
+          <Col span={24}>
+            <DescriptionItem
+              title="Message"
+              content="Make things as simple as possible but no simpler."
+            />
+          </Col>
+        </Row>
+        <Divider />
+        {/* <p className="site-description-item-profile-p">Company</p> */}
+        
+      </Drawer>
     </>
   )
 }
