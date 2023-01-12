@@ -1,9 +1,9 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-13 19:16:40
- * @LastEditTime: 2022-12-21 13:43:56
+ * @LastEditTime: 2023-01-12 09:09:42
  * @LastEditors: 韩宏广
- * @FilePath: \my-financial\web\src\api\consumptiontype.js
+ * @FilePath: \financial\web\src\api\consumptiontype.js
  * @文件说明: 消费类型的接口
  */
 import request from "./index";

@@ -1,21 +1,26 @@
 /*
  * @Author: HHG
  * @Date: 2022-10-04 00:02:13
- * @LastEditTime: 2023-01-11 22:22:06
+ * @LastEditTime: 2023-01-12 10:16:35
  * @LastEditors: 韩宏广
- * @FilePath: /Personal-finance/web/src/pages/Summary/index.js
+ * @FilePath: \financial\web\src\pages\Summary\index.js
  * @文件说明: 
  */
 import React, { useEffect, useState } from 'react'
-import { Form, Row, Col, Button, Input, Tag, Space, Table, DatePicker, Modal, message, Popconfirm } from 'antd'
+import { Form, Row, Col, Button, Input, Tag, Space, Table, DatePicker, Modal, message, Popconfirm, Select } from 'antd'
 import { DownOutlined, UpOutlined } from '@ant-design/icons';
 import { getBillSummaryListApi, editSingleBill, deleteSingleBillApi } from '@/api/summary'
+import { getConsumptionTypeListApi } from '@/api/consumptiontype'
+import { getIncomeTypeList } from '@/api/incometype'
 import { dateFormat } from '@/utils/index'
 const Summary = () => {
   const [expand, setExpand] = useState(false);
   const [tabData, setTabData] = useState([]);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [billsummaryid, setBillsummaryid] = useState('');
+  const [incomeExpenditureState, setIncomeExpenditureState] = useState('')
+  const [incomeOption, setIncomeOption] = useState([])
+  const [spendingOption, setSpendingOption] = useState([])
   const [form] = Form.useForm();
   const [editModelForm] = Form.useForm()
   const onFinish = (values) => {
@@ -25,6 +30,20 @@ const Summary = () => {
 
   useEffect(() => {
     getbillsummarylist({})
+    getConsumptionTypeListApi().then(res => {
+      let options = []
+      res.data.forEach(element => {
+        options.push({ label: element.name, value: element.id })
+      })
+      setSpendingOption(options)
+    })
+    getIncomeTypeList().then(res => {
+      let options = []
+      res.data.forEach(element => {
+        options.push({ label: element.name, value: element.id })
+      })
+      setIncomeOption(options)
+    })
   }, [])
   const showModal = () => {
     setIsModalOpen(true);
@@ -61,10 +80,15 @@ const Summary = () => {
     editModelForm.setFieldsValue(rowData)
   }
   const confirm = (id) => {
-    deleteSingleBillApi({summarybillid:id}).then(res=>{
+    deleteSingleBillApi({ summarybillid: id }).then(res => {
       message.success(res.message)
+      getbillsummarylist({})
     })
   }
+  const incomeExpenditureChange = (value) => {
+    setIncomeExpenditureState(value)
+  }
+
   const columns = [
     {
       title: '名称',
@@ -125,7 +149,7 @@ const Summary = () => {
           <a onClick={() => editBill(record)}>编辑</a>
           <Popconfirm
             title="确定要删除账单信息吗?"
-            onConfirm={()=>confirm(record.key)}
+            onConfirm={() => confirm(record.key)}
             okText="确定"
             cancelText="取消"
           >
@@ -178,7 +202,7 @@ const Summary = () => {
             </Form.Item>
           </Col>
           {
-            !expand ? (<>
+            expand ? (<>
               <Col span={6} >
                 <Form.Item
                   name='associationtype'
@@ -218,7 +242,7 @@ const Summary = () => {
                 setExpand(!expand);
               }}
             >
-              {expand ? (<><DownOutlined /> 展开</>) : (<><UpOutlined /> 收回</>)}
+              {expand ? (<><UpOutlined />收回</>) : (<><DownOutlined />展开</>)}
             </a>
           </Col>
         </Row>
@@ -273,7 +297,19 @@ const Summary = () => {
               },
             ]}
           >
-            <Input />
+            <Select
+              onChange={incomeExpenditureChange}
+              options={[
+                {
+                  value: '收入',
+                  label: '收入',
+                },
+                {
+                  value: '支出',
+                  label: '支出',
+                }
+              ]}
+            />
           </Form.Item>
           <Form.Item
             label="金额"
@@ -309,7 +345,11 @@ const Summary = () => {
               },
             ]}
           >
-            <Input />
+            {/* <Input /> */}
+            <Select
+              // onChange={}
+              options={incomeExpenditureState == '收入' ? incomeOption : spendingOption}
+            />
           </Form.Item>
         </Form>
       </Modal>
