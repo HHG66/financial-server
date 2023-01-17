@@ -1,28 +1,51 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-01 17:04:01
- * @LastEditTime: 2023-01-13 10:40:52
+ * @LastEditTime: 2023-01-14 18:54:39
  * @LastEditors: 韩宏广
- * @FilePath: \financial\web\src\pages\PaymentplanManagement\index.js
+ * @FilePath: /Personal-finance/web/src/pages/PaymentplanManagement/index.js
  * @文件说明: 
  */
 import { useEffect, useState } from 'react'
 import { Descriptions, Button, Row, Col, Form, Input, DatePicker } from 'antd'
 import { DownOutlined, UpOutlined } from '@ant-design/icons';
-
+import { getPlanListApi } from '@/api/paymentplanManagement'
 import './index.less'
 
 const PaymentplanManagement = () => {
-  const [form] = Form.useForm()
   const [year, setYear] = useState('2019')
+  const [plan, setPlan] = useState({
+    income: [],
+    consumption: [],
+    other: []
+  })
+  const [description, setDescription] = useState({
+    detailed: 'none',
+    month: '一月份',
+    // name:'收入计划'
+  })
+  const [form] = Form.useForm()
   const onFinish = (values) => {
-    
-    console.log(values);
-    // setYear
+    if (values.annual !== undefined && values.annual !== null && values.annual !== '') {
+      setYear(window.moment(values.annual._d).format('YYYY'))
+    } else {
+      setYear(window.moment(new Date()).format('YYYY'))
+    }
   }
-  useEffect(()=>{
+  useEffect(() => {
     setYear('2023')
-  },[])
+    getPlanListApi({}).then(res => {
+      setPlan(res.data)
+    })
+  }, [])
+
+  const seeMonthPlan = () => {
+    
+    setDescription({
+      ...description,
+      detailed: description.detailed === 'block' ? 'none' : 'block'
+    })
+  }
   return (
     <>
       {/* 主要计划 */}
@@ -69,37 +92,76 @@ const PaymentplanManagement = () => {
           </Col>
         </Row>
       </Form>
-      <Descriptions title={year + '年度收入计划'} extra={<Button type="primary">编辑</Button>} className='descriptions' style={{ marginTop: '8px' }}>
-        <Descriptions.Item label="UserName">Zhou Maomao</Descriptions.Item>
-        <Descriptions.Item label="UserName">Zhou Maomao</Descriptions.Item>
-        <Descriptions.Item label="UserName">Zhou Maomao</Descriptions.Item>
-        <Descriptions.Item label="UserName">Zhou Maomao</Descriptions.Item>
-        <Descriptions.Item label="UserName">Zhou Maomao</Descriptions.Item>
-        <Descriptions.Item label="Telephone">1810000000</Descriptions.Item>
-        <Descriptions.Item label="Live">Hangzhou, Zhejiang</Descriptions.Item>
-        <Descriptions.Item label="Remark">empty</Descriptions.Item>
-        <Descriptions.Item label="Address">
-          No. 18, Wantang Road, Xihu District, Hangzhou, Zhejiang, China
-        </Descriptions.Item>
-      </Descriptions>
-      <Descriptions title={year + '年度支出计划'} extra={<Button type="primary">编辑</Button>} className='descriptions'>
-        <Descriptions.Item label="UserName">Zhou Maomao</Descriptions.Item>
-        <Descriptions.Item label="Telephone">1810000000</Descriptions.Item>
-        <Descriptions.Item label="Live">Hangzhou, Zhejiang</Descriptions.Item>
-        <Descriptions.Item label="Remark">empty</Descriptions.Item>
-        <Descriptions.Item label="Address">
-          No. 18, Wantang Road, Xihu District, Hangzhou, Zhejiang, China
-        </Descriptions.Item>
-      </Descriptions>
-      <Descriptions title={year + '年度其他计划'} extra={<Button type="primary">编辑</Button>} className='descriptions'>
-        <Descriptions.Item label="UserName">Zhou Maomao</Descriptions.Item>
-        <Descriptions.Item label="Telephone">1810000000</Descriptions.Item>
-        <Descriptions.Item label="Live">Hangzhou, Zhejiang</Descriptions.Item>
-        <Descriptions.Item label="Remark">empty</Descriptions.Item>
-        <Descriptions.Item label="Address">
-          No. 18, Wantang Road, Xihu District, Hangzhou, Zhejiang, China
-        </Descriptions.Item>
-      </Descriptions>
+
+      <div style={{ display: (description.detailed == 'none') ? 'none' : 'block' }}>
+        {
+          Object.keys(plan).map(ele => {
+            // debugger
+            // console.log(ele);
+            let title=''
+            if(ele==='income'){
+              title='收入计划'
+            }else if(ele==='consumption'){
+              title='支出计划'
+            }else{
+              title='其他计划'
+            }
+            return (<Descriptions title={year + '年度'+title} extra={<><Button type="primary" style={{ marginRight: '5px' }}>编辑</Button><Button onClick={() => seeMonthPlan()} type="primary">查看详细</Button></>} className='descriptions' style={{ marginTop: '8px' }}>
+              {
+                plan[ele].map((ele1) => {
+                  return <Descriptions.Item key={ele1.id} label={ele1.name}>{ele1.value}</Descriptions.Item>
+                })
+              }
+            </Descriptions>
+            )
+          })
+        }
+      </div>
+
+      <div style={{ display: (description.detailed == 'none') ? 'block' : 'none' }}>
+        <Descriptions title={year + '年度收入计划详细'} extra={<><Button type="primary" style={{ marginRight: '5px' }}>编辑</Button><Button onClick={() => seeMonthPlan()} type="primary">查看详细</Button></>} className='descriptions' style={{ marginTop: '8px' }}>
+          {
+            plan.income.map((ele) => {
+              return <Descriptions.Item key={ele.id} label={ele.name}>{ele.value}</Descriptions.Item>
+            })
+          }
+        </Descriptions>
+      </div>
+
+      {/*       
+      <div style={{ display: (description.detailed == 'none') ? 'none' : 'block' }}>
+        <Descriptions title={year + '年度收入计划'} extra={<><Button type="primary" style={{ marginRight: '5px' }}>编辑</Button><Button onClick={() => seeMonthPlan()} type="primary">查看详细</Button></>} className='descriptions' style={{ marginTop: '8px' }}>
+          {
+            plan.income.map((ele) => {
+              return <Descriptions.Item key={ele.id} label={ele.name}>{ele.value}</Descriptions.Item>
+            })
+          }
+        </Descriptions>
+        <Descriptions title={year + '年度支出计划'} extra={<><Button type="primary" style={{ marginRight: '5px' }}>编辑</Button><Button onClick={() => seeMonthPlan()} type="primary">查看详细</Button></>} className='descriptions'>
+          {
+            plan.consumption.map((ele) => {
+              return <Descriptions.Item key={ele.id} label={ele.name}>{ele.value}</Descriptions.Item>
+            })
+          }
+        </Descriptions>
+        <Descriptions title={year + '年度其他计划'} extra={<><Button type="primary" style={{ marginRight: '5px' }}>编辑</Button><Button onClick={() => seeMonthPlan()} type="primary">查看详细</Button></>} className='descriptions'>
+          {
+            plan.other.map((ele) => {
+              return <Descriptions.Item key={ele.id} label={ele.name}>{ele.value}</Descriptions.Item>
+            })
+          }
+        </Descriptions>
+      </div>
+      <div style={{ display: (description.detailed == 'none') ? 'block' : 'none' }}>
+        <Descriptions title={year + '月度收入计划'} extra={<><Button type="primary" style={{ marginRight: '5px' }}>编辑</Button><Button onClick={() => seeMonthPlan()} type="primary">查看详细</Button></>} className='descriptions' style={{ marginTop: '8px' }}>
+          {
+            plan.income.map((ele) => {
+              return <Descriptions.Item key={ele.id} label={ele.name}>{ele.value}</Descriptions.Item>
+            })
+          }
+        </Descriptions>
+      </div> 
+      */}
     </>
   )
 }
