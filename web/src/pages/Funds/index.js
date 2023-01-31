@@ -1,7 +1,7 @@
 /*
  * @Author: HHG
  * @Date: 2022-10-03 23:59:38
- * @LastEditTime: 2023-01-10 23:15:35
+ * @LastEditTime: 2023-01-31 22:29:31
  * @LastEditors: 韩宏广
  * @FilePath: /Personal-finance/web/src/pages/Funds/index.js
  * @文件说明: 
@@ -297,7 +297,7 @@ const Funds = () => {
       </Form>
 
 
-      <Table columns={columns} dataSource={data} scroll={{ x: 'max-content' }} />;
+      <Table columns={columns} dataSource={data} scroll={{ x: 'max-content' }} />
 
       <Modal title="操作" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
         <Form
@@ -399,10 +399,7 @@ const Funds = () => {
                   <Input />
                 </Form.Item>
               </>
-
-
             )
-
           }
 
           {/* <Form.Item

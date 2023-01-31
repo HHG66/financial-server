@@ -1,7 +1,7 @@
 /*
  * @Author: HHG
  * @Date: 2022-10-03 23:55:35
- * @LastEditTime: 2023-01-10 23:17:15
+ * @LastEditTime: 2023-01-31 23:07:10
  * @LastEditors: 韩宏广
  * @FilePath: /Personal-finance/web/src/pages/BalancepaymentsImportBill/index.js
  * @文件说明: 
@@ -390,7 +390,7 @@ const BalancepaymentsImportBill = () => {
         </Col>
       </Row>
       {/* <Button onClick={addField}>Click </Button> */}
-      <Table columns={columns} dataSource={pres} pagination={tableParams} scroll={{ y: 450 }} className='tab-box' />
+      <Table columns={columns} dataSource={pres} pagination={tableParams} scroll={{ y: 300 }} className='tab-box' />
       {/* <table dangerouslySetInnerHTML={{__html: content}}></table> */}
 
       <Drawer width={400} closable={false} placement="right" onClose={onClose} open={open}>

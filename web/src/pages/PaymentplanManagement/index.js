@@ -1,7 +1,7 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-01 17:04:01
- * @LastEditTime: 2023-01-14 18:54:39
+ * @LastEditTime: 2023-01-31 20:15:50
  * @LastEditors: 韩宏广
  * @FilePath: /Personal-finance/web/src/pages/PaymentplanManagement/index.js
  * @文件说明: 
@@ -40,7 +40,7 @@ const PaymentplanManagement = () => {
   }, [])
 
   const seeMonthPlan = () => {
-    
+
     setDescription({
       ...description,
       detailed: description.detailed === 'block' ? 'none' : 'block'
@@ -98,17 +98,17 @@ const PaymentplanManagement = () => {
           Object.keys(plan).map(ele => {
             // debugger
             // console.log(ele);
-            let title=''
-            if(ele==='income'){
-              title='收入计划'
-            }else if(ele==='consumption'){
-              title='支出计划'
-            }else{
-              title='其他计划'
+            let title = ''
+            if (ele === 'income') {
+              title = '收入计划'
+            } else if (ele === 'consumption') {
+              title = '支出计划'
+            } else {
+              title = '其他计划'
             }
-            return (<Descriptions title={year + '年度'+title} extra={<><Button type="primary" style={{ marginRight: '5px' }}>编辑</Button><Button onClick={() => seeMonthPlan()} type="primary">查看详细</Button></>} className='descriptions' style={{ marginTop: '8px' }}>
+            return (<Descriptions key={ele} title={year + '年度' + title} extra={<><Button type="primary" style={{ marginRight: '5px' }}>编辑</Button><Button onClick={() => seeMonthPlan()} type="primary">查看详细</Button></>} className='descriptions' style={{ marginTop: '8px' }}>
               {
-                plan[ele].map((ele1) => {
+                Array.isArray(plan[ele]) && plan[ele].map((ele1) => {
                   return <Descriptions.Item key={ele1.id} label={ele1.name}>{ele1.value}</Descriptions.Item>
                 })
               }

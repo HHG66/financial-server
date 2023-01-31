@@ -1,17 +1,26 @@
 /*
  * @Author: HHG
- * @Date: 2023-01-12 18:14:52
- * @LastEditTime: 2023-01-17 12:07:36
+ * @Date: 2022-09-01 17:00:51
+ * @LastEditTime: 2023-01-31 20:42:42
  * @LastEditors: 韩宏广
  * @FilePath: /Personal-finance/web/src/pages/AssetStatistics/index.js
  * @文件说明: 
  */
 
 import * as echarts from 'echarts';
-import { useEffect } from 'react';
-import './index.less' 
+import { useEffect, useState } from 'react';
+import { Button, Col, Form, Input, Row, Select } from 'antd'
+import { DownOutlined, UpOutlined } from '@ant-design/icons';
+import './index.less'
 const AssetStatistics = () => {
- 
+  const [expand, setExpand] = useState(false);
+  const [form] = Form.useForm();
+  useEffect(() => {
+    //setTimeout解决echart图表超过宽度
+    setTimeout(() => {
+      echart()
+    }, 100);
+  }, [])
   const echart = () => {
     var chartDom = document.getElementById('echart');
     var myChart = echarts.init(chartDom);
@@ -37,7 +46,7 @@ const AssetStatistics = () => {
         }
       },
       legend: {
-        data: ['Evaporation', 'Precipitation', 'Temperature']
+        data: ['支出', '收入', '负债']
       },
       xAxis: [
         {
@@ -46,13 +55,13 @@ const AssetStatistics = () => {
             alignWithLabel: true
           },
           // prettier-ignore
-          data: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+          data: ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月']
         }
       ],
       yAxis: [
         {
           type: 'value',
-          name: 'Evaporation',
+          name: '支出',
           position: 'right',
           alignTicks: true,
           axisLine: {
@@ -62,12 +71,12 @@ const AssetStatistics = () => {
             }
           },
           axisLabel: {
-            formatter: '{value} ml'
+            formatter: '{value} ¥'
           }
         },
         {
           type: 'value',
-          name: 'Precipitation',
+          name: '收入',
           position: 'right',
           alignTicks: true,
           offset: 80,
@@ -78,12 +87,12 @@ const AssetStatistics = () => {
             }
           },
           axisLabel: {
-            formatter: '{value} ml'
+            formatter: '{value} ¥'
           }
         },
         {
           type: 'value',
-          name: '温度',
+          name: '负债',
           position: 'left',
           alignTicks: true,
           axisLine: {
@@ -93,20 +102,20 @@ const AssetStatistics = () => {
             }
           },
           axisLabel: {
-            formatter: '{value} °C'
+            formatter: '{value} ¥'
           }
         }
       ],
       series: [
         {
-          name: 'Evaporation',
-          type: 'bar',
+          name: '支出',
+          type: 'line',
           data: [
             2.0, 4.9, 7.0, 23.2, 25.6, 76.7, 135.6, 162.2, 32.6, 20.0, 6.4, 3.3
           ]
         },
         {
-          name: 'Precipitation',
+          name: '收入',
           type: 'bar',
           yAxisIndex: 1,
           data: [
@@ -114,26 +123,142 @@ const AssetStatistics = () => {
           ]
         },
         {
-          name: 'Temperature',
+          name: '负债',
           type: 'line',
           yAxisIndex: 2,
           data: [2.0, 2.2, 3.3, 4.5, 6.3, 10.2, 20.3, 23.4, 23.0, 16.5, 12.0, 6.2]
         }
-      ] 
+      ]
     };
-    var echart = document.getElementById("echart");
-    //通过获取echart容器元素宽度减去一定宽度实现动态调整宽度，解决默认宽度超出的问题    
-    var w = echart.offsetWidth;
-    myChart.resize({ width: (w-200) });  
-    option && myChart.setOption(option);    
+    // var echart = document.getElementById("echart");
+    // //通过获取echart容器元素宽度减去一定宽度实现动态调整宽度，解决默认宽度超出的问题    
+    // var w = echart.offsetWidth;
+    // myChart.resize({ width: (w - 200) });
+    option && myChart.setOption(option);
   }
-  useEffect(() => {  
-    echart()
-  }, [])
+  const onFinish = (values) => {
+    console.log('Received values of form: ', values);
+  };
   return (
     <>
       {/* AssetStatistics */}
-
+      <Form
+        form={form}
+        name="advanced_search"
+        className="ant-advanced-search-form"
+        onFinish={onFinish}
+      >
+        <Row gutter={24}>
+          <Col span={8} >
+            <Form.Item
+              name={`fiel`}
+              label={`Field1`}
+              rules={[
+                {
+                  required: true,
+                  message: 'Input something!',
+                },
+              ]}
+            >
+              <Input />
+            </Form.Item>
+          </Col>
+          <Col span={8} >
+            <Form.Item
+              name={`fiel`}
+              label={`Field1`}
+              rules={[
+                {
+                  required: true,
+                  message: 'Input something!',
+                },
+              ]}
+            >
+              <Input />
+            </Form.Item>
+          </Col>
+          <Col span={8} >
+            <Form.Item
+              name={`fiel`}
+              label={`Field1`}
+              rules={[
+                {
+                  required: true,
+                  message: 'Input something!',
+                },
+              ]}
+            >
+              <Input />
+            </Form.Item>
+          </Col>
+          {
+            expand ? (
+              <>
+                <Col span={8} >
+                  <Form.Item
+                    name={`fiel`}
+                    label={`Field000`}
+                    rules={[
+                      {
+                        required: true,
+                        message: 'Input something!',
+                      },
+                    ]}
+                  >
+                    <Input />
+                  </Form.Item>
+                </Col>
+                <Col span={8} >
+                  <Form.Item
+                    name={`fiel`}
+                    label={`Field000`}
+                    rules={[
+                      {
+                        required: true,
+                        message: 'Input something!',
+                      },
+                    ]}
+                  >
+                    <Input />
+                  </Form.Item>
+                </Col>
+              </>
+            ) : ""
+          }
+        </Row>
+        <Row>
+          <Col
+            span={24}
+            style={{
+              textAlign: 'right',
+            }}
+          >
+            <Button type="primary" htmlType="submit">
+              Search
+            </Button>
+            <Button
+              style={{
+                margin: '0 8px',
+              }}
+              onClick={() => {
+                form.resetFields();
+              }}
+            >
+              Clear
+            </Button>
+            <a
+              style={{
+                fontSize: 12,
+              }}
+              onClick={() => {
+                setExpand(!expand);
+              }}
+            >
+              {expand ? <><UpOutlined />收回</> : <><DownOutlined />展开</>}
+            </a>
+          </Col>
+        </Row>
+      </Form>
       <div id='echart' className='echart'></div>
     </>
   )
