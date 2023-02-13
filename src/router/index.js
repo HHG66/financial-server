@@ -1,15 +1,17 @@
 /*
  * @Author: HHG
  * @Date: 2023-02-10 12:07:23
- * @LastEditTime: 2023-02-12 18:13:08
+ * @LastEditTime: 2023-02-13 10:54:59
  * @LastEditors: 韩宏广
- * @FilePath: /koa-cli/src/router/index.js
+ * @FilePath: \financial\src\router\index.js
  * @文件说明: 
  */
 const Router = require('@koa/router');
 const fs = require("fs");
 const path = require('path');
 const requireDirectory = require('require-directory')
+const Boom = require('@hapi/boom');
+
 
 class InitController {
   static InitCore(app) {
@@ -38,7 +40,11 @@ class InitController {
       // 如果是路由就进行注册
       if (obj instanceof Router) {
         InitController.app.use(obj.routes())
-        InitController.app.use(obj.allowedMethods())
+        InitController.app.use(obj.allowedMethods({
+          throw: true,
+          notImplemented: () => Boom.notImplemented('方法没有实现'),
+          methodNotAllowed: () => Boom.methodNotAllowed( '方法没有实现')
+        }))
       }
     }
   }

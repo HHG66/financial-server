@@ -1,4 +1,4 @@
-// const { User } = require('models/user.js');
+const { User } = require('models/user.js');
 const { findOne } = require('../index')
 module.exports = (ctx, next) => {
   console.log('执行调用数据库的方法，包括mongodb，mysql等其他数据库');
@@ -8,7 +8,7 @@ module.exports = (ctx, next) => {
 }
 
 let dataMethod = (ctx) => {
- return new Promise((resolve, reject) => {
+  return new Promise((resolve, reject) => {
     let user = findOne(User, {
       // user_name: username,
       // password: password,

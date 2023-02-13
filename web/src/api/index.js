@@ -1,7 +1,7 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-02 13:13:54
- * @LastEditTime: 2023-01-11 09:28:00
+ * @LastEditTime: 2023-02-13 15:34:44
  * @LastEditors: 韩宏广
  * @FilePath: \financial\web\src\api\index.js
  * @文件说明: 
@@ -13,7 +13,8 @@ import { notification, message } from 'antd';
 
 let request = axios.create({
   // baseURL:"http://49.234.54.90:3001/mock/33/api",
-  baseURL: "http://127.0.0.1:4523/m1/1605761-0-default/",
+  // baseURL: "http://127.0.0.1:4523/m1/1605761-0-default/",
+  baseURL: "http://127.0.0.1:3000/",
   timeout: 1000
 })
 
