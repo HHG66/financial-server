@@ -11,7 +11,8 @@ const Layouts = () => {
   return (
     <Layout
       style={{
-        minHeight: '100vh',
+        minHeight: '100%',
+        height:'100%'
       }}
     >
       <Aside />

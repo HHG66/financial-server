@@ -1,17 +1,26 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-01 17:00:51
- * @LastEditTime: 2023-01-12 21:43:15
+ * @LastEditTime: 2023-01-31 20:42:42
  * @LastEditors: 韩宏广
  * @FilePath: /Personal-finance/web/src/pages/AssetStatistics/index.js
  * @文件说明: 
  */
 
 import * as echarts from 'echarts';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import { Button, Col, Form, Input, Row, Select } from 'antd'
+import { DownOutlined, UpOutlined } from '@ant-design/icons';
 import './index.less'
 const AssetStatistics = () => {
-
+  const [expand, setExpand] = useState(false);
+  const [form] = Form.useForm();
+  useEffect(() => {
+    //setTimeout解决echart图表超过宽度
+    setTimeout(() => {
+      echart()
+    }, 100);
+  }, [])
   const echart = () => {
     var chartDom = document.getElementById('echart');
     var myChart = echarts.init(chartDom);
@@ -127,15 +136,129 @@ const AssetStatistics = () => {
     // myChart.resize({ width: (w - 200) });
     option && myChart.setOption(option);
   }
-  useEffect(() => {
-    //setTimeout解决echart图表超过宽度
-    setTimeout(() => {
-      echart()
-    }, 100);  
-  }, [])  
+  const onFinish = (values) => {
+    console.log('Received values of form: ', values);
+  };
   return (
     <>
       {/* AssetStatistics */}
+      <Form
+        form={form}
+        name="advanced_search"
+        className="ant-advanced-search-form"
+        onFinish={onFinish}
+      >
+        <Row gutter={24}>
+          <Col span={8} >
+            <Form.Item
+              name={`fiel`}
+              label={`Field1`}
+              rules={[
+                {
+                  required: true,
+                  message: 'Input something!',
+                },
+              ]}
+            >
+              <Input />
+            </Form.Item>
+          </Col>
+          <Col span={8} >
+            <Form.Item
+              name={`fiel`}
+              label={`Field1`}
+              rules={[
+                {
+                  required: true,
+                  message: 'Input something!',
+                },
+              ]}
+            >
+              <Input />
+            </Form.Item>
+          </Col>
+          <Col span={8} >
+            <Form.Item
+              name={`fiel`}
+              label={`Field1`}
+              rules={[
+                {
+                  required: true,
+                  message: 'Input something!',
+                },
+              ]}
+            >
+              <Input />
+            </Form.Item>
+          </Col>
+          {
+            expand ? (
+              <>
+                <Col span={8} >
+                  <Form.Item
+                    name={`fiel`}
+                    label={`Field000`}
+                    rules={[
+                      {
+                        required: true,
+                        message: 'Input something!',
+                      },
+                    ]}
+                  >
+                    <Input />
+                  </Form.Item>
+                </Col>
+                <Col span={8} >
+                  <Form.Item
+                    name={`fiel`}
+                    label={`Field000`}
+                    rules={[
+                      {
+                        required: true,
+                        message: 'Input something!',
+                      },
+                    ]}
+                  >
+                    <Input />
+                  </Form.Item>
+                </Col>
+              </>
+            ) : ""
+          }
+        </Row>
+        <Row>
+          <Col
+            span={24}
+            style={{
+              textAlign: 'right',
+            }}
+          >
+            <Button type="primary" htmlType="submit">
+              Search
+            </Button>
+            <Button
+              style={{
+                margin: '0 8px',
+              }}
+              onClick={() => {
+                form.resetFields();
+              }}
+            >
+              Clear
+            </Button>
+            <a
+              style={{
+                fontSize: 12,
+              }}
+              onClick={() => {
+                setExpand(!expand);
+              }}
+            >
+              {expand ? <><UpOutlined />收回</> : <><DownOutlined />展开</>}
+            </a>
+          </Col>
+        </Row>
+      </Form>
       <div id='echart' className='echart'></div>
     </>
   )

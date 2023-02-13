@@ -7,6 +7,10 @@
      // background-image:url("../../assets/images/logo.png");
  }
 
+ .site-layout {
+   height: 100%;
+ }
+
  .site-layout .site-layout-background {
    background: #fff;
  }
@@ -15,13 +19,16 @@
    height: 100%;
    width: 20%;
    text-align: end;
+
    span {
      height: 20px;
      margin-right: 10px;
    }
-   .notice{
-    vertical-align: sub;
+
+   .notice {
+     vertical-align: sub;
    }
+
    .head-portrait {
      width: 23%;
      height: 65%;
@@ -61,16 +68,24 @@
  main {
    margin: 0 16px;
    margin-top: 10px;
+   height: 6%;
 
    .site-layout-background {
      height: 100%;
-     overflow: hidden;
+     overflow: scroll;
    }
  }
 
- .aside-icon{
-  // align-items: baseline;
-  svg{
-    vertical-align: sub;
-  }
+ .aside-icon {
+
+   // align-items: baseline;
+   svg {
+     vertical-align: sub;
+   }
+ }
+
+ .ant-menu {
+   //  position: -webkit-sticky;
+   position: sticky;
+   top: 10px;
  }
