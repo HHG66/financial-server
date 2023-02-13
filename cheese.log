@@ -1,0 +1,421 @@
+[2023-02-13T23:01:22.274] [DEBUG] default - Some debug messages
+[2023-02-13T23:01:29.557] [DEBUG] default - Error: 未知错误
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js:31:9
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at cors (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa2-cors/dist/index.js:91:15)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:34:12
+    at Application.handleRequest (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/application.js:182:12)
+    at Server.handleRequest (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/application.js:157:19)
+    at Server.emit (node:events:526:28)
+    at parserOnIncoming (node:_http_server:951:12)
+    at HTTPParser.parserOnHeadersComplete (node:_http_common:128:17)
+[2023-02-13T23:01:51.677] [DEBUG] default - Some debug messages
+[2023-02-13T23:01:52.551] [DEBUG] default - Error: 未知错误
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js:31:9
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at cors (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa2-cors/dist/index.js:91:15)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:34:12
+    at Application.handleRequest (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/application.js:182:12)
+    at Server.handleRequest (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/application.js:157:19)
+    at Server.emit (node:events:526:28)
+    at parserOnIncoming (node:_http_server:951:12)
+    at HTTPParser.parserOnHeadersComplete (node:_http_common:128:17)
+[2023-02-13T23:02:06.493] [DEBUG] default - Some debug messages
+[2023-02-13T23:02:07.909] [DEBUG] default - Error: cuowu
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/user/index.js:7:7)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/user-router/index.js:12:44
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/@koa/router/lib/router.js:425:16
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/@koa/router/lib/router.js:430:31)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-bodyparser/index.js:95:11)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2023-02-13T23:02:24.370] [DEBUG] default - Some debug messages
+[2023-02-13T23:02:33.054] [DEBUG] default - Some debug messages
+[2023-02-13T23:06:29.634] [DEBUG] default - Some debug messages
+[2023-02-13T23:08:58.627] [DEBUG] default - Some debug messages
+[2023-02-13T23:09:42.948] [DEBUG] default - Some debug messages
+[2023-02-13T23:10:14.424] [DEBUG] default - Some debug messages
+[2023-02-13T23:11:25.379] [DEBUG] default - Some debug messages
+[2023-02-13T23:11:28.359] [DEBUG] default - Some debug messages
+[2023-02-13T23:12:00.849] [DEBUG] default - Some debug messages
+[2023-02-13T23:13:24.108] [DEBUG] default - Some debug messages
+[2023-02-13T23:13:38.633] [DEBUG] default - Some debug messages
+[2023-02-13T23:15:55.227] [DEBUG] default - Some debug messages
+[2023-02-13T23:16:18.354] [DEBUG] default - Some debug messages
+[2023-02-13T23:16:30.134] [DEBUG] default - Some debug messages
+[2023-02-13T23:16:40.016] [DEBUG] default - Some debug messages
+[2023-02-13T23:16:46.638] [DEBUG] default - Some debug messages
+[2023-02-13T23:16:50.398] [DEBUG] default - Some debug messages
+[2023-02-13T23:16:53.763] [DEBUG] default - Some debug messages
+[2023-02-13T23:17:13.155] [DEBUG] default - Some debug messages
+[2023-02-13T23:17:15.200] [DEBUG] default - ReferenceError: Cannot access 'userInfo' before initialization
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/service/user/index.js:8:20)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/user/index.js:11:20)
+    at async /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/user-router/index.js:12:3
+    at async bodyParser (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-bodyparser/index.js:95:5)
+    at async module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/middleware/error.js:13:5)
+    at async cors (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa2-cors/dist/index.js:91:9)
+[2023-02-13T23:17:30.622] [DEBUG] default - Some debug messages
+[2023-02-13T23:17:35.367] [DEBUG] default - Some debug messages
+[2023-02-13T23:17:36.500] [DEBUG] default - ReferenceError: Cannot access 'userInfo' before initialization
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/service/user/index.js:8:20)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/user/index.js:11:20)
+    at async /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/user-router/index.js:12:3
+    at async bodyParser (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-bodyparser/index.js:95:5)
+    at async module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/middleware/error.js:13:5)
+    at async cors (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa2-cors/dist/index.js:91:9)
+[2023-02-13T23:18:01.426] [DEBUG] default - Some debug messages
+[2023-02-13T23:18:03.489] [DEBUG] default - ReferenceError: Cannot access 'userInfo' before initialization
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/service/user/index.js:8:20)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/user/index.js:11:20)
+    at async /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/user-router/index.js:12:3
+    at async bodyParser (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-bodyparser/index.js:95:5)
+    at async module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/middleware/error.js:13:5)
+    at async cors (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa2-cors/dist/index.js:91:9)
+[2023-02-13T23:18:43.510] [DEBUG] default - Some debug messages
+[2023-02-13T23:19:01.931] [DEBUG] default - Some debug messages
+[2023-02-13T23:19:10.797] [DEBUG] default - ReferenceError: Cannot access 'userInfo' before initialization
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/service/user/index.js:8:20)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/user/index.js:11:20)
+    at async /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/user-router/index.js:12:3
+    at async bodyParser (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-bodyparser/index.js:95:5)
+    at async module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/middleware/error.js:13:5)
+    at async cors (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa2-cors/dist/index.js:91:9)
+[2023-02-13T23:19:20.295] [DEBUG] default - Some debug messages
+[2023-02-13T23:19:23.453] [DEBUG] default - ReferenceError: Cannot access 'userInfo' before initialization
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/service/user/index.js:8:20)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/user/index.js:11:20)
+    at async /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/user-router/index.js:12:3
+    at async bodyParser (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-bodyparser/index.js:95:5)
+    at async module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/middleware/error.js:13:5)
+    at async cors (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa2-cors/dist/index.js:91:9)
+[2023-02-13T23:20:03.790] [DEBUG] default - Some debug messages
+[2023-02-13T23:20:06.036] [DEBUG] default - ReferenceError: Cannot access 'userInfo' before initialization
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/service/user/index.js:8:20)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/user/index.js:11:20)
+    at async /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/user-router/index.js:12:3
+    at async bodyParser (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-bodyparser/index.js:95:5)
+    at async module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/middleware/error.js:13:5)
+    at async cors (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa2-cors/dist/index.js:91:9)
+[2023-02-13T23:20:42.438] [DEBUG] default - Some debug messages
+[2023-02-13T23:22:03.147] [DEBUG] default - Some debug messages
+[2023-02-13T23:22:06.497] [DEBUG] default - ReferenceError: result is not defined
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/user/index.js:16:3)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/user-router/index.js:12:3
+    at async bodyParser (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-bodyparser/index.js:95:5)
+    at async module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/middleware/error.js:13:5)
+    at async cors (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa2-cors/dist/index.js:91:9)
+[2023-02-13T23:22:41.637] [DEBUG] default - Some debug messages
+[2023-02-13T23:22:46.012] [DEBUG] default - Some debug messages
+[2023-02-13T23:22:54.864] [DEBUG] default - Some debug messages
+[2023-02-13T23:22:55.957] [DEBUG] default - ReferenceError: result is not defined
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/user/index.js:15:3)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/user-router/index.js:12:3
+    at async bodyParser (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-bodyparser/index.js:95:5)
+    at async module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/middleware/error.js:13:5)
+    at async cors (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa2-cors/dist/index.js:91:9)
+[2023-02-13T23:23:04.808] [DEBUG] default - Some debug messages
+[2023-02-13T23:23:06.037] [DEBUG] default - ReferenceError: result is not defined
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/user/index.js:15:3)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/user-router/index.js:12:44
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/@koa/router/lib/router.js:425:16
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/@koa/router/lib/router.js:430:31)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-bodyparser/index.js:95:11)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2023-02-13T23:23:38.082] [DEBUG] default - Some debug messages
+[2023-02-13T23:23:51.770] [DEBUG] default - Some debug messages
+[2023-02-13T23:24:18.995] [DEBUG] default - TypeError: Cannot read properties of null (reading 'user_name')
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/service/user/index.js:10:22)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/user/index.js:11:20)
+    at async /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/user-router/index.js:12:3
+    at async bodyParser (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-bodyparser/index.js:95:5)
+    at async module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/middleware/error.js:13:5)
+    at async cors (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa2-cors/dist/index.js:91:9)
+[2023-02-13T23:24:57.055] [DEBUG] default - Some debug messages
+[2023-02-13T23:24:58.412] [DEBUG] default - TypeError: Cannot read properties of null (reading 'user_name')
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/service/user/index.js:11:22)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/user/index.js:11:20)
+    at async /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/user-router/index.js:12:3
+    at async bodyParser (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-bodyparser/index.js:95:5)
+    at async module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/middleware/error.js:13:5)
+    at async cors (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa2-cors/dist/index.js:91:9)
+[2023-02-13T23:25:05.187] [DEBUG] default - Some debug messages
+[2023-02-13T23:25:07.668] [DEBUG] default - TypeError: Cannot destructure '(intermediate value)' as it is null.
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/service/user/index.js:8:14)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/user/index.js:11:20)
+    at async /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/user-router/index.js:12:3
+    at async bodyParser (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-bodyparser/index.js:95:5)
+    at async module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/middleware/error.js:13:5)
+    at async cors (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa2-cors/dist/index.js:91:9)
+[2023-02-13T23:25:16.894] [DEBUG] default - Some debug messages
+[2023-02-13T23:26:06.013] [DEBUG] default - Some debug messages
+[2023-02-13T23:26:33.308] [DEBUG] default - Some debug messages
+[2023-02-13T23:27:23.344] [DEBUG] default - Some debug messages
+[2023-02-13T23:28:50.247] [DEBUG] default - Some debug messages
+[2023-02-13T23:29:41.251] [DEBUG] default - Some debug messages
+[2023-02-13T23:29:48.599] [DEBUG] default - Some debug messages
+[2023-02-13T23:29:57.463] [DEBUG] default - Some debug messages
+[2023-02-13T23:30:11.733] [DEBUG] default - Some debug messages
+[2023-02-13T23:30:46.171] [DEBUG] default - Some debug messages
+[2023-02-13T23:30:59.923] [DEBUG] default - Some debug messages
+[2023-02-13T23:31:12.057] [DEBUG] default - Some debug messages
+[2023-02-13T23:31:24.619] [DEBUG] default - Some debug messages
+[2023-02-13T23:33:10.472] [DEBUG] default - Some debug messages
+[2023-02-13T23:34:00.709] [DEBUG] default - Some debug messages
+[2023-02-13T23:36:21.697] [DEBUG] default - Some debug messages
+[2023-02-13T23:36:55.167] [DEBUG] default - Some debug messages
+[2023-02-13T23:37:38.608] [DEBUG] default - Some debug messages
+[2023-02-13T23:37:45.460] [DEBUG] default - Some debug messages
+[2023-02-13T23:38:22.737] [DEBUG] default - Some debug messages
+[2023-02-13T23:38:33.318] [DEBUG] default - Some debug messages
+[2023-02-13T23:38:49.806] [DEBUG] default - Some debug messages
+[2023-02-13T23:38:58.313] [DEBUG] default - Some debug messages
+[2023-02-13T23:39:28.955] [DEBUG] default - Some debug messages
+[2023-02-13T23:39:43.144] [DEBUG] default - Some debug messages
+[2023-02-13T23:39:56.250] [DEBUG] default - Some debug messages
+[2023-02-13T23:40:53.351] [DEBUG] default - Some debug messages
+[2023-02-13T23:48:18.465] [DEBUG] default - Some debug messages
+[2023-02-13T23:49:09.698] [DEBUG] default - Some debug messages
+[2023-02-13T23:49:14.620] [DEBUG] default - Some debug messages
+[2023-02-13T23:49:17.657] [DEBUG] default - UnauthorizedError: Authentication Error
+    at Object.throw (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/context.js:97:11)
+    at jwt (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:23:22)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/middleware/error.js:13:11)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at cors (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa2-cors/dist/index.js:91:15)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:34:12
+    at Application.handleRequest (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/application.js:182:12)
+    at Server.handleRequest (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/application.js:157:19)
+[2023-02-13T23:50:09.347] [DEBUG] default - Some debug messages
+[2023-02-13T23:50:12.320] [DEBUG] default - UnauthorizedError: Authentication Error
+    at Object.throw (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/context.js:97:11)
+    at jwt (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:23:22)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/middleware/error.js:13:11)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at cors (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa2-cors/dist/index.js:91:15)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:34:12
+    at Application.handleRequest (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/application.js:182:12)
+    at Server.handleRequest (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/application.js:157:19)
+[2023-02-13T23:50:53.347] [DEBUG] default - Some debug messages
+[2023-02-13T23:51:01.403] [DEBUG] default - Some debug messages
+[2023-02-13T23:51:03.712] [DEBUG] default - UnauthorizedError: Authentication Error
+    at Object.throw (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/context.js:97:11)
+    at jwt (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:23:22)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/middleware/error.js:13:11)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js:27:10
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at cors (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa2-cors/dist/index.js:91:15)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:34:12
+[2023-02-13T23:51:17.158] [DEBUG] default - Some debug messages
+[2023-02-13T23:51:18.929] [DEBUG] default - UnauthorizedError: Authentication Error
+    at Object.throw (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/context.js:97:11)
+    at jwt (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:23:22)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/middleware/error.js:13:11)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js:27:10
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at cors (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa2-cors/dist/index.js:91:15)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:34:12
+[2023-02-13T23:53:20.877] [DEBUG] default - Some debug messages
+[2023-02-13T23:53:26.333] [DEBUG] default - UnauthorizedError: Authentication Error
+    at Object.throw (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/context.js:97:11)
+    at jwt (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:23:22)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/middleware/error.js:13:11)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js:27:10
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at cors (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa2-cors/dist/index.js:91:15)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:34:12
+[2023-02-13T23:53:38.818] [DEBUG] default - Some debug messages
+[2023-02-13T23:53:43.337] [DEBUG] default - UnauthorizedError: Authentication Error
+    at Object.throw (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/context.js:97:11)
+    at jwt (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:23:22)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/middleware/error.js:13:11)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js:27:10
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at cors (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa2-cors/dist/index.js:91:15)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:34:12
+[2023-02-13T23:53:53.961] [DEBUG] default - Some debug messages
+[2023-02-13T23:54:10.720] [DEBUG] default - Some debug messages
+[2023-02-13T23:55:02.739] [DEBUG] default - Some debug messages
+[2023-02-13T23:55:18.893] [DEBUG] default - Some debug messages
+[2023-02-13T23:55:32.285] [DEBUG] default - Some debug messages
+[2023-02-13T23:55:33.290] [DEBUG] default - UnauthorizedError: Authentication Error
+    at Object.throw (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/context.js:97:11)
+    at jwt (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:23:22)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/middleware/error.js:13:11)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at cors (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa2-cors/dist/index.js:91:15)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:34:12
+    at Application.handleRequest (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/application.js:182:12)
+    at Server.handleRequest (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/application.js:157:19)
+[2023-02-13T23:56:11.673] [DEBUG] default - Some debug messages
+[2023-02-13T23:56:29.819] [DEBUG] default - Some debug messages
+[2023-02-13T23:56:50.064] [DEBUG] default - Some debug messages
+[2023-02-13T23:56:51.230] [DEBUG] default - UnauthorizedError: Authentication Error
+    at Object.throw (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/context.js:97:11)
+    at jwt (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:23:22)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/middleware/error.js:13:11)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at cors (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa2-cors/dist/index.js:91:15)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:34:12
+    at Application.handleRequest (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/application.js:182:12)
+    at Server.handleRequest (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/application.js:157:19)
+[2023-02-13T23:57:39.297] [DEBUG] default - Some debug messages
+[2023-02-13T23:58:55.742] [DEBUG] default - Some debug messages
+[2023-02-13T23:59:29.953] [DEBUG] default - Some debug messages
+[2023-02-13T23:59:32.618] [DEBUG] default - UnauthorizedError: Authentication Error
+    at Object.throw (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/context.js:97:11)
+    at jwt (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:23:22)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/middleware/error.js:13:11)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at cors (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa2-cors/dist/index.js:91:15)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:34:12
+    at Application.handleRequest (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/application.js:182:12)
+    at Server.handleRequest (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/application.js:157:19)
+[2023-02-13T23:59:47.887] [DEBUG] default - Some debug messages
+[2023-02-13T23:59:48.873] [DEBUG] default - UnauthorizedError: Authentication Error
+    at Object.throw (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/context.js:97:11)
+    at jwt (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:23:22)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/middleware/error.js:13:11)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at cors (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa2-cors/dist/index.js:91:15)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:34:12
+    at Application.handleRequest (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/application.js:182:12)
+    at Server.handleRequest (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/application.js:157:19)
+[2023-02-14T00:00:45.659] [DEBUG] default - Some debug messages
+[2023-02-14T00:00:46.613] [DEBUG] default - code:500 UnauthorizedError: Authentication Error
+    at Object.throw (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/context.js:97:11)
+    at jwt (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:23:22)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/middleware/error.js:13:11)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at cors (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa2-cors/dist/index.js:91:15)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:34:12
+    at Application.handleRequest (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/application.js:182:12)
+    at Server.handleRequest (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/application.js:157:19)
+[2023-02-14T00:00:51.847] [DEBUG] default - Some debug messages
+[2023-02-14T00:00:52.994] [DEBUG] default - code:401 UnauthorizedError: Authentication Error
+    at Object.throw (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/context.js:97:11)
+    at jwt (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:23:22)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/middleware/error.js:13:11)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at cors (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa2-cors/dist/index.js:91:15)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:34:12
+    at Application.handleRequest (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/application.js:182:12)
+    at Server.handleRequest (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/application.js:157:19)
+[2023-02-14T00:01:05.704] [DEBUG] default - Some debug messages
+[2023-02-14T00:01:13.258] [DEBUG] default - Some debug messages
+[2023-02-14T00:02:07.810] [DEBUG] default - Some debug messages
+[2023-02-14T00:02:22.258] [DEBUG] default - Some debug messages
+[2023-02-14T00:05:55.260] [DEBUG] default - Some debug messages
+[2023-02-14T00:06:09.527] [DEBUG] default - Some debug messages
+[2023-02-14T00:06:13.742] [DEBUG] default - Some debug messages
+[2023-02-14T00:06:16.909] [DEBUG] default - Some debug messages
+[2023-02-14T00:06:43.811] [DEBUG] default - Some debug messages
+[2023-02-14T00:08:58.781] [DEBUG] default - code:401 UnauthorizedError: Authentication Error
+    at Object.throw (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/context.js:97:11)
+    at jwt (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:66:26)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/middleware/error.js:13:5)
+    at async cors (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa2-cors/dist/index.js:91:9) {
+  originalError: JsonWebTokenError: invalid signature
+      at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/jsonwebtoken/verify.js:171:19
+      at getSecret (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/jsonwebtoken/verify.js:97:14)
+      at Object.module.exports [as verify] (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/jsonwebtoken/verify.js:101:10)
+      at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/verify.js:5:13
+      at new Promise (<anonymous>)
+      at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/verify.js:4:12)
+      at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:38:64
+      at Array.map (<anonymous>)
+      at jwt (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:38:43)
+      at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-unless/index.js:29:12
+}
+[2023-02-14T00:10:34.812] [DEBUG] default - Some debug messages
+[2023-02-14T00:10:39.036] [DEBUG] default - Some debug messages
+[2023-02-14T00:10:51.569] [DEBUG] default - Some debug messages
+[2023-02-14T00:11:18.869] [DEBUG] default - Some debug messages
+[2023-02-14T00:11:26.232] [DEBUG] default - Some debug messages
+[2023-02-14T00:11:54.282] [DEBUG] default - Some debug messages
+[2023-02-14T00:13:02.606] [DEBUG] default - Some debug messages
+[2023-02-14T00:13:03.838] [DEBUG] default - Some debug messages
+[2023-02-14T00:13:33.618] [DEBUG] default - code:401 UnauthorizedError: Authentication Error
+    at Object.throw (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/context.js:97:11)
+    at jwt (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:23:22)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-unless/index.js:29:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/middleware/error.js:13:11)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at cors (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa2-cors/dist/index.js:91:15)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:34:12
+    at Application.handleRequest (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/application.js:182:12)
+[2023-02-14T00:14:30.265] [DEBUG] default - Some debug messages
+[2023-02-14T00:14:31.612] [DEBUG] default - code:401 UnauthorizedError: Authentication Error
+    at Object.throw (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/context.js:97:11)
+    at jwt (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:23:22)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-unless/index.js:29:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/middleware/error.js:13:11)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at cors (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa2-cors/dist/index.js:91:15)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:34:12
+    at Application.handleRequest (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/application.js:182:12)
+[2023-02-14T00:14:45.327] [DEBUG] default - Some debug messages
+[2023-02-14T00:14:47.000] [DEBUG] default - code:401 UnauthorizedError: Authentication Error
+    at Object.throw (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/context.js:97:11)
+    at jwt (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:23:22)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-unless/index.js:29:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/middleware/error.js:13:11)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at cors (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa2-cors/dist/index.js:91:15)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:34:12
+    at Application.handleRequest (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/application.js:182:12)

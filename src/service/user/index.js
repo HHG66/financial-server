@@ -1,28 +1,34 @@
-const userMapper = require('mapper/user/index')
+const { registeredUser, userInfo } = require('mapper/user/index')
+var jwtToken = require('jsonwebtoken');
+
+
 module.exports = async (ctx, next) => {
-  // console.log(ctx.request.body);
-  let tt = '123'
-  // let userServe = new Promise((resolve, reject) => {
-  //   resolve(userMapper(ctx, next))
-  // }
-  // )
+  let state
+  let retController
+  let token = jwtToken.sign({}, "secret", { expiresIn: '4h' });
+  //可以根据查找出来的数据做操作
+  let userMapperdata = await registeredUser(ctx, next)
+  // console.log(userMapperdata);
+  if (userMapperdata) {
+    let info = await userInfo(ctx, next)
+    state = 0
+    if (info == null) {
+      retController = {}
+      state = 1
+    } else {
+      retController = {
+        token: token,
+        username: info.user_name,
+        id: info._id,
+        permissions: info.permissions
+      }
+      state = 2
+    }
 
-  // let ssss = await userMapper(ctx, next)
-  // console.log(ssss);
-  // console.log(ttt());
-  // console.log(userMapper(ctx, next));
-  // console.log(ssss);
-
-  // console.log(userMapper);
-  // let ttt = await userMapper(ctx, next)
-
-  console.log('------');
-  // console.log(ttt);
-  let sss =  userMapper(ctx, next)
-  console.log(sss);
-  console.log('------');
+  }
+  //返回结果，结果没有处理，交给controller处理
   return {
-    tt,
-    userServe: userMapper(ctx, next)
+    state,
+    retController
   }
 }
