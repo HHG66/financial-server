@@ -419,3 +419,420 @@
     at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
     at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:34:12
     at Application.handleRequest (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/application.js:182:12)
+[2023-02-14T00:18:04.041] [DEBUG] default - Some debug messages
+[2023-02-14T00:23:04.930] [DEBUG] default - Some debug messages
+[2023-02-14T00:23:33.211] [DEBUG] default - Some debug messages
+[2023-02-14T00:24:10.011] [DEBUG] default - Some debug messages
+[2023-02-14T00:24:18.390] [DEBUG] default - Some debug messages
+[2023-02-14T00:24:26.242] [DEBUG] default - Some debug messages
+[2023-02-14T00:24:46.986] [DEBUG] default - Some debug messages
+[2023-02-14T00:25:03.954] [DEBUG] default - Some debug messages
+[2023-02-14T00:25:19.025] [DEBUG] default - Some debug messages
+[2023-02-14T00:25:36.018] [DEBUG] default - code:401 UnauthorizedError: Authentication Error
+    at Object.throw (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/context.js:97:11)
+    at jwt (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:23:22)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-unless/index.js:29:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/middleware/error.js:13:11)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at cors (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa2-cors/dist/index.js:91:15)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:34:12
+    at Application.handleRequest (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/application.js:182:12)
+[2023-02-14T00:25:42.221] [DEBUG] default - code:401 UnauthorizedError: Authentication Error
+    at Object.throw (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/context.js:97:11)
+    at jwt (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:23:22)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-unless/index.js:29:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/middleware/error.js:13:11)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at cors (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa2-cors/dist/index.js:91:15)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:34:12
+    at Application.handleRequest (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/application.js:182:12)
+[2023-02-14T00:26:22.994] [DEBUG] default - Some debug messages
+[2023-02-14T00:26:39.966] [DEBUG] default - Some debug messages
+[2023-02-14T00:27:23.382] [DEBUG] default - Some debug messages
+[2023-02-14T00:31:17.000] [DEBUG] default - Some debug messages
+[2023-02-14T00:31:52.210] [DEBUG] default - Some debug messages
+[2023-02-14T00:32:36.292] [DEBUG] default - Some debug messages
+[2023-02-14T00:32:49.052] [DEBUG] default - Some debug messages
+[2023-02-14T00:32:50.789] [DEBUG] default - Some debug messages
+[2023-02-14T00:33:19.885] [DEBUG] default - Some debug messages
+[2023-02-14T00:33:53.421] [DEBUG] default - Some debug messages
+[2023-02-14T00:34:07.394] [DEBUG] default - Some debug messages
+[2023-02-14T00:34:54.435] [DEBUG] default - Some debug messages
+[2023-02-14T00:34:57.057] [DEBUG] default - Some debug messages
+[2023-02-14T00:35:07.506] [DEBUG] default - code:401 UnauthorizedError: Authentication Error
+    at Object.throw (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/context.js:97:11)
+    at jwt (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:66:26)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/middleware/error.js:13:5)
+    at async cors (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa2-cors/dist/index.js:91:9) {
+  originalError: JsonWebTokenError: jwt malformed
+      at Object.module.exports [as verify] (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/jsonwebtoken/verify.js:70:17)
+      at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/verify.js:5:13
+      at new Promise (<anonymous>)
+      at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/verify.js:4:12)
+      at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:38:64
+      at Array.map (<anonymous>)
+      at jwt (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:38:43)
+      at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-unless/index.js:29:12
+      at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+      at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/middleware/error.js:13:11)
+}
+[2023-02-14T00:36:01.461] [DEBUG] default - Some debug messages
+[2023-02-14T00:36:18.979] [DEBUG] default - Some debug messages
+[2023-02-14T00:36:34.257] [DEBUG] default - Some debug messages
+[2023-02-14T00:36:50.344] [DEBUG] default - code:401 UnauthorizedError: Authentication Error
+    at Object.throw (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/context.js:97:11)
+    at jwt (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:66:26)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/middleware/error.js:13:5)
+    at async cors (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa2-cors/dist/index.js:91:9) {
+  originalError: JsonWebTokenError: invalid token
+      at Object.module.exports [as verify] (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/jsonwebtoken/verify.js:82:17)
+      at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/verify.js:5:13
+      at new Promise (<anonymous>)
+      at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/verify.js:4:12)
+      at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:38:64
+      at Array.map (<anonymous>)
+      at jwt (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:38:43)
+      at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-unless/index.js:29:12
+      at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+      at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/middleware/error.js:13:11)
+}
+[2023-02-14T00:37:45.000] [DEBUG] default - Some debug messages
+[2023-02-14T00:37:59.016] [DEBUG] default - code:401 UnauthorizedError: Authentication Error
+    at Object.throw (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/context.js:97:11)
+    at jwt (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:66:26)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/middleware/error.js:13:5)
+    at async cors (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa2-cors/dist/index.js:91:9) {
+  originalError: JsonWebTokenError: invalid token
+      at Object.module.exports [as verify] (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/jsonwebtoken/verify.js:82:17)
+      at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/verify.js:5:13
+      at new Promise (<anonymous>)
+      at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/verify.js:4:12)
+      at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:38:64
+      at Array.map (<anonymous>)
+      at jwt (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:38:43)
+      at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-unless/index.js:29:12
+      at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+      at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/middleware/error.js:13:11)
+}
+[2023-02-14T00:38:49.567] [DEBUG] default - Some debug messages
+[2023-02-14T00:38:49.941] [DEBUG] default - code:401 UnauthorizedError: Authentication Error
+    at Object.throw (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/context.js:97:11)
+    at jwt (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:66:26)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/middleware/error.js:13:5)
+    at async cors (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa2-cors/dist/index.js:91:9) {
+  originalError: JsonWebTokenError: invalid token
+      at Object.module.exports [as verify] (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/jsonwebtoken/verify.js:82:17)
+      at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/verify.js:5:13
+      at new Promise (<anonymous>)
+      at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/verify.js:4:12)
+      at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:38:64
+      at Array.map (<anonymous>)
+      at jwt (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:38:43)
+      at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-unless/index.js:29:12
+      at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+      at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/middleware/error.js:13:11)
+}
+[2023-02-14T00:38:54.578] [DEBUG] default - code:401 UnauthorizedError: Authentication Error
+    at Object.throw (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/context.js:97:11)
+    at jwt (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:66:26)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/middleware/error.js:13:5)
+    at async cors (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa2-cors/dist/index.js:91:9) {
+  originalError: JsonWebTokenError: invalid token
+      at Object.module.exports [as verify] (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/jsonwebtoken/verify.js:82:17)
+      at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/verify.js:5:13
+      at new Promise (<anonymous>)
+      at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/verify.js:4:12)
+      at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:38:64
+      at Array.map (<anonymous>)
+      at jwt (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:38:43)
+      at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-unless/index.js:29:12
+      at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+      at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/middleware/error.js:13:11)
+}
+[2023-02-14T00:39:21.946] [DEBUG] default - Some debug messages
+[2023-02-14T00:39:22.296] [DEBUG] default - code:401 UnauthorizedError: Authentication Error
+    at Object.throw (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/context.js:97:11)
+    at jwt (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:66:26)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/middleware/error.js:13:5)
+    at async cors (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa2-cors/dist/index.js:91:9) {
+  originalError: JsonWebTokenError: invalid token
+      at Object.module.exports [as verify] (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/jsonwebtoken/verify.js:82:17)
+      at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/verify.js:5:13
+      at new Promise (<anonymous>)
+      at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/verify.js:4:12)
+      at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:38:64
+      at Array.map (<anonymous>)
+      at jwt (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:38:43)
+      at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-unless/index.js:29:12
+      at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+      at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/middleware/error.js:13:11)
+}
+[2023-02-14T00:39:43.763] [DEBUG] default - Some debug messages
+[2023-02-14T00:39:44.122] [DEBUG] default - code:401 UnauthorizedError: Bad Authorization header format. Format is "Authorization: Bearer <token>"
+    at Object.throw (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/context.js:97:11)
+    at resolveAuthorizationHeader (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/resolvers/auth-header.js:26:18)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:20:49
+    at Array.find (<anonymous>)
+    at jwt (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:20:24)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-unless/index.js:29:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/middleware/error.js:13:11)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at cors (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa2-cors/dist/index.js:91:15)
+[2023-02-14T00:40:14.322] [DEBUG] default - Some debug messages
+[2023-02-14T00:40:14.569] [DEBUG] default - code:401 UnauthorizedError: Bad Authorization header format. Format is "Authorization: Bearer <token>"
+    at Object.throw (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/context.js:97:11)
+    at resolveAuthorizationHeader (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/resolvers/auth-header.js:26:18)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:20:49
+    at Array.find (<anonymous>)
+    at jwt (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:20:24)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-unless/index.js:29:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/middleware/error.js:13:11)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at cors (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa2-cors/dist/index.js:91:15)
+[2023-02-14T00:40:53.792] [DEBUG] default - Some debug messages
+[2023-02-14T00:40:54.797] [DEBUG] default - code:401 UnauthorizedError: Bad Authorization header format. Format is "Authorization: Bearer <token>"
+    at Object.throw (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/context.js:97:11)
+    at resolveAuthorizationHeader (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/resolvers/auth-header.js:26:18)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:20:49
+    at Array.find (<anonymous>)
+    at jwt (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:20:24)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-unless/index.js:29:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/middleware/error.js:13:11)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at cors (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa2-cors/dist/index.js:91:15)
+[2023-02-14T00:40:56.977] [DEBUG] default - Some debug messages
+[2023-02-14T00:40:57.687] [DEBUG] default - code:401 UnauthorizedError: Bad Authorization header format. Format is "Authorization: Bearer <token>"
+    at Object.throw (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/context.js:97:11)
+    at resolveAuthorizationHeader (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/resolvers/auth-header.js:26:18)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:20:49
+    at Array.find (<anonymous>)
+    at jwt (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:20:24)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-unless/index.js:29:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/middleware/error.js:13:11)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at cors (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa2-cors/dist/index.js:91:15)
+[2023-02-14T00:41:04.326] [DEBUG] default - code:401 UnauthorizedError: Bad Authorization header format. Format is "Authorization: Bearer <token>"
+    at Object.throw (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/context.js:97:11)
+    at resolveAuthorizationHeader (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/resolvers/auth-header.js:26:18)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:20:49
+    at Array.find (<anonymous>)
+    at jwt (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:20:24)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-unless/index.js:29:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/middleware/error.js:13:11)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at cors (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa2-cors/dist/index.js:91:15)
+[2023-02-14T00:41:23.573] [DEBUG] default - Some debug messages
+[2023-02-14T00:41:23.796] [DEBUG] default - code:401 UnauthorizedError: Bad Authorization header format. Format is "Authorization: Bearer <token>"
+    at Object.throw (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/context.js:97:11)
+    at resolveAuthorizationHeader (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/resolvers/auth-header.js:26:18)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:20:49
+    at Array.find (<anonymous>)
+    at jwt (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:20:24)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-unless/index.js:29:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/middleware/error.js:13:11)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at cors (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa2-cors/dist/index.js:91:15)
+[2023-02-14T00:42:01.876] [DEBUG] default - Some debug messages
+[2023-02-14T00:42:02.182] [DEBUG] default - code:401 UnauthorizedError: Bad Authorization header format. Format is "Authorization: Bearer <token>"
+    at Object.throw (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/context.js:97:11)
+    at resolveAuthorizationHeader (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/resolvers/auth-header.js:26:18)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:20:49
+    at Array.find (<anonymous>)
+    at jwt (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:20:24)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-unless/index.js:29:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/middleware/error.js:13:11)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at cors (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa2-cors/dist/index.js:91:15)
+[2023-02-14T00:42:11.353] [DEBUG] default - Some debug messages
+[2023-02-14T00:42:12.577] [DEBUG] default - code:401 UnauthorizedError: Bad Authorization header format. Format is "Authorization: Bearer <token>"
+    at Object.throw (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/context.js:97:11)
+    at resolveAuthorizationHeader (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/resolvers/auth-header.js:26:18)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:20:49
+    at Array.find (<anonymous>)
+    at jwt (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:20:24)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-unless/index.js:29:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/middleware/error.js:13:11)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at cors (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa2-cors/dist/index.js:91:15)
+[2023-02-14T00:42:44.051] [DEBUG] default - Some debug messages
+[2023-02-14T00:43:11.159] [DEBUG] default - Some debug messages
+[2023-02-14T00:43:47.709] [DEBUG] default - Some debug messages
+[2023-02-14T00:43:49.297] [DEBUG] default - Some debug messages
+[2023-02-14T00:44:07.810] [DEBUG] default - Some debug messages
+[2023-02-14T00:44:27.984] [DEBUG] default - Some debug messages
+[2023-02-14T00:44:52.354] [DEBUG] default - Some debug messages
+[2023-02-14T00:45:12.132] [DEBUG] default - code:401 UnauthorizedError: Bad Authorization header format. Format is "Authorization: Bearer <token>"
+    at Object.throw (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/context.js:97:11)
+    at resolveAuthorizationHeader (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/resolvers/auth-header.js:26:18)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:20:49
+    at Array.find (<anonymous>)
+    at jwt (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:20:24)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-unless/index.js:29:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/middleware/error.js:13:11)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at cors (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa2-cors/dist/index.js:91:15)
+[2023-02-14T00:45:25.039] [DEBUG] default - Some debug messages
+[2023-02-14T00:45:25.592] [DEBUG] default - code:401 UnauthorizedError: Bad Authorization header format. Format is "Authorization: Bearer <token>"
+    at Object.throw (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/context.js:97:11)
+    at resolveAuthorizationHeader (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/resolvers/auth-header.js:26:18)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:20:49
+    at Array.find (<anonymous>)
+    at jwt (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:20:24)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-unless/index.js:29:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/middleware/error.js:13:11)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at cors (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa2-cors/dist/index.js:91:15)
+[2023-02-14T00:45:26.431] [DEBUG] default - Some debug messages
+[2023-02-14T00:45:26.697] [DEBUG] default - code:401 UnauthorizedError: Bad Authorization header format. Format is "Authorization: Bearer <token>"
+    at Object.throw (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/context.js:97:11)
+    at resolveAuthorizationHeader (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/resolvers/auth-header.js:26:18)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:20:49
+    at Array.find (<anonymous>)
+    at jwt (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:20:24)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-unless/index.js:29:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/middleware/error.js:13:11)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at cors (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa2-cors/dist/index.js:91:15)
+[2023-02-14T00:45:36.468] [DEBUG] default - Some debug messages
+[2023-02-14T00:45:36.842] [DEBUG] default - code:401 UnauthorizedError: Bad Authorization header format. Format is "Authorization: Bearer <token>"
+    at Object.throw (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/context.js:97:11)
+    at resolveAuthorizationHeader (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/resolvers/auth-header.js:26:18)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:20:49
+    at Array.find (<anonymous>)
+    at jwt (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:20:24)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-unless/index.js:29:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/middleware/error.js:13:11)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at cors (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa2-cors/dist/index.js:91:15)
+[2023-02-14T00:46:02.458] [DEBUG] default - Some debug messages
+[2023-02-14T00:46:02.623] [DEBUG] default - code:401 UnauthorizedError: Bad Authorization header format. Format is "Authorization: Bearer <token>"
+    at Object.throw (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/context.js:97:11)
+    at resolveAuthorizationHeader (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/resolvers/auth-header.js:26:18)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:20:49
+    at Array.find (<anonymous>)
+    at jwt (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:20:24)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-unless/index.js:29:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/middleware/error.js:13:11)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at cors (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa2-cors/dist/index.js:91:15)
+[2023-02-14T00:46:28.761] [DEBUG] default - Some debug messages
+[2023-02-14T00:46:29.074] [DEBUG] default - code:401 UnauthorizedError: Bad Authorization header format. Format is "Authorization: Bearer <token>"
+    at Object.throw (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/context.js:97:11)
+    at resolveAuthorizationHeader (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/resolvers/auth-header.js:26:18)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:20:49
+    at Array.find (<anonymous>)
+    at jwt (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:20:24)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-unless/index.js:29:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/middleware/error.js:13:11)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at cors (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa2-cors/dist/index.js:91:15)
+[2023-02-14T00:47:08.530] [DEBUG] default - Some debug messages
+[2023-02-14T00:47:09.582] [DEBUG] default - code:401 UnauthorizedError: Bad Authorization header format. Format is "Authorization: Bearer <token>"
+    at Object.throw (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/context.js:97:11)
+    at resolveAuthorizationHeader (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/resolvers/auth-header.js:26:18)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:20:49
+    at Array.find (<anonymous>)
+    at jwt (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:20:24)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-unless/index.js:29:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/middleware/error.js:13:11)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at cors (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa2-cors/dist/index.js:91:15)
+[2023-02-14T00:47:15.331] [DEBUG] default - Some debug messages
+[2023-02-14T00:47:16.376] [DEBUG] default - code:401 UnauthorizedError: Bad Authorization header format. Format is "Authorization: Bearer <token>"
+    at Object.throw (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/context.js:97:11)
+    at resolveAuthorizationHeader (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/resolvers/auth-header.js:26:18)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:20:49
+    at Array.find (<anonymous>)
+    at jwt (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:20:24)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-unless/index.js:29:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/middleware/error.js:13:11)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at cors (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa2-cors/dist/index.js:91:15)
+[2023-02-14T00:47:27.226] [DEBUG] default - Some debug messages
+[2023-02-14T00:47:27.545] [DEBUG] default - code:401 UnauthorizedError: Bad Authorization header format. Format is "Authorization: Bearer <token>"
+    at Object.throw (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/context.js:97:11)
+    at resolveAuthorizationHeader (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/resolvers/auth-header.js:26:18)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:20:49
+    at Array.find (<anonymous>)
+    at jwt (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:20:24)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-unless/index.js:29:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/middleware/error.js:13:11)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at cors (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa2-cors/dist/index.js:91:15)
+[2023-02-14T00:47:28.894] [DEBUG] default - Some debug messages
+[2023-02-14T00:47:39.802] [DEBUG] default - Some debug messages
+[2023-02-14T00:47:51.301] [DEBUG] default - Some debug messages
+[2023-02-14T00:47:51.639] [DEBUG] default - code:401 UnauthorizedError: Bad Authorization header format. Format is "Authorization: Bearer <token>"
+    at Object.throw (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/context.js:97:11)
+    at resolveAuthorizationHeader (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/resolvers/auth-header.js:26:18)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:20:49
+    at Array.find (<anonymous>)
+    at jwt (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:20:24)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-unless/index.js:29:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/middleware/error.js:13:11)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at cors (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa2-cors/dist/index.js:91:15)
+[2023-02-14T00:48:19.576] [DEBUG] default - code:401 UnauthorizedError: Bad Authorization header format. Format is "Authorization: Bearer <token>"
+    at Object.throw (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/context.js:97:11)
+    at resolveAuthorizationHeader (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/resolvers/auth-header.js:26:18)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:20:49
+    at Array.find (<anonymous>)
+    at jwt (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:20:24)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-unless/index.js:29:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/middleware/error.js:13:11)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at cors (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa2-cors/dist/index.js:91:15)
+[2023-02-14T00:48:27.686] [DEBUG] default - Some debug messages
+[2023-02-14T00:48:50.353] [DEBUG] default - Some debug messages
+[2023-02-14T00:48:56.190] [DEBUG] default - Some debug messages
+[2023-02-14T00:49:24.130] [DEBUG] default - Some debug messages
+[2023-02-14T00:49:25.135] [DEBUG] default - Some debug messages
+[2023-02-14T00:49:28.340] [DEBUG] default - Some debug messages
+[2023-02-14T00:49:53.100] [DEBUG] default - Some debug messages
+[2023-02-14T00:50:00.871] [DEBUG] default - Some debug messages
+[2023-02-14T00:50:01.166] [DEBUG] default - code:401 UnauthorizedError: Authentication Error
+    at Object.throw (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/context.js:97:11)
+    at jwt (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:23:22)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-unless/index.js:29:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/middleware/error.js:13:11)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at cors (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa2-cors/dist/index.js:91:15)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:34:12
+    at Application.handleRequest (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/application.js:182:12)
+[2023-02-14T00:50:06.119] [DEBUG] default - Some debug messages
+[2023-02-14T00:50:10.098] [DEBUG] default - Some debug messages
+[2023-02-14T00:51:38.429] [DEBUG] default - Some debug messages
+[2023-02-14T00:51:46.835] [DEBUG] default - Some debug messages
+[2023-02-14T00:51:51.260] [DEBUG] default - Some debug messages
+[2023-02-14T00:52:30.546] [DEBUG] default - Some debug messages

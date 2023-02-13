@@ -1,7 +1,7 @@
 /*
  * @Author: HHG
  * @Date: 2023-02-08 22:13:49
- * @LastEditTime: 2023-02-14 00:11:53
+ * @LastEditTime: 2023-02-14 00:18:03
  * @LastEditors: 韩宏广
  * @FilePath: /Personal-finance/src/app.js
  * @文件说明: 
@@ -48,10 +48,10 @@ const logger = log4js.getLogger();
 logger.level = "debug";
 logger.debug("Some debug messages");
 
-// app.on('error', (error, ctx) => {
-//   logger.debug(error);
-//   console.log(error);
-// });
+app.on('error', (error, ctx) => {
+  logger.debug(error);
+  console.log(error);
+});
 
 mongoConnect()
 modelInit()

@@ -2,7 +2,6 @@
 const userServe = require('service/user/index.js')
 const mapper = require('mapper/user/index.js')
 
-
 module.exports = async (ctx, next) => {
   let { username, password } = ctx.request.body;
   //处理参数
@@ -18,8 +17,12 @@ module.exports = async (ctx, next) => {
     response(ctx, {}, { message: "账号或者密码错误", desc: 'error' })
   } else if (userServes.state == 2) {
     let responsedata = {
-      token: "123213213",
-      userinfo: userServes.retController
+      token: userServes.retController.token,
+      userinfo:{
+        name:userServes.retController.username,
+        role:userServes.retController.permissions
+      }
+      // userinfo: userServes.retController
     }
     response(ctx, responsedata)
   }else{

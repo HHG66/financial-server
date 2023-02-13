@@ -5,15 +5,18 @@ const UserSlice = createSlice({
   //初始状态
   initialState: {
     userInfo: {},
-    Token:''
+    Token: ''
   },
   reducers: {
     addInfo: (state, action) => {
       // console.log(action);
       // console.log(action.payload.userinfo);
       state.userInfo = action.payload.userinfo
-      state.Token=action.payload.token
+      state.Token = action.payload.token
     },
+    getToken: (state, action) => {
+      return state.Token
+    }
   }
 })
 

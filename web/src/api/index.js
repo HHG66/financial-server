@@ -1,15 +1,15 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-02 13:13:54
- * @LastEditTime: 2023-02-13 15:34:44
+ * @LastEditTime: 2023-02-14 00:49:52
  * @LastEditors: 韩宏广
- * @FilePath: \financial\web\src\api\index.js
+ * @FilePath: /Personal-finance/web/src/api/index.js
  * @文件说明: 
  */
 
 import axios from "axios";
 import { notification, message } from 'antd';
-
+import { getLocalStorage } from '@/utils/index'
 
 let request = axios.create({
   // baseURL:"http://49.234.54.90:3001/mock/33/api",
@@ -18,10 +18,11 @@ let request = axios.create({
   timeout: 1000
 })
 
+
 //请求先拦截器
 request.interceptors.request.use(function (config) {
   // 在发送请求之前做些什么
-  config.headers['auth-token'] = '123'
+  config.headers['Authorization'] = `Bearer ${JSON.parse(getLocalStorage('Token'))}`
   return config;
 }, function (error) {
   // 对请求错误做些什么
@@ -51,7 +52,7 @@ request.interceptors.response.use(function (response) {
   if (error && error.response) {
     switch (error.response.status) {
       case 401:
-        window.location.href = '/login'
+        // window.location.href = '/login'
         break;
       case 502:
         notification.open({
@@ -65,7 +66,7 @@ request.interceptors.response.use(function (response) {
         });
         break;
       case 0:
-        if(error.code==='ERR_NETWORK'){
+        if (error.code === 'ERR_NETWORK') {
           notification.open({
             message: '网络错误！',
             type: "error",

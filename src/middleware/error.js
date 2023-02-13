@@ -1,7 +1,7 @@
 /*
  * @Author: HHG
  * @Date: 2023-02-13 21:51:33
- * @LastEditTime: 2023-02-14 00:14:29
+ * @LastEditTime: 2023-02-14 00:51:37
  * @LastEditors: 韩宏广
  * @FilePath: /Personal-finance/src/middleware/error.js
  * @文件说明: 
@@ -27,7 +27,7 @@ module.exports = async (ctx, next) => {
         ctx.body = {
           error: "权限错误"
         }
-        console.log(401,"权限错误");
+        console.log(401, "权限错误");
         logger.debug("code:401", e);
       default:
         console.log(e);
