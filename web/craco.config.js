@@ -4,13 +4,13 @@ const CracoLessPlugin = require("craco-less");
 module.exports = {
   eslint: {
     enable: true /* (default value) */,
-    mode: "extends", /* (default value) */  
-    configure: {  
-        "extends": "react-app",
-        "rules":{
-          "jsx-a11y/anchor-is-valid": "off"
-        }
-     },
+    mode: "extends", /* (default value) */
+    configure: {
+      "extends": "react-app",
+      "rules": {
+        "jsx-a11y/anchor-is-valid": "off"
+      }
+    },
   },
   webpack: {
     alias: {
@@ -61,4 +61,15 @@ module.exports = {
       }
     }
   ],
+  devServer: {
+    proxy: {
+      '/proxy': {
+        target: 'http://127.0.0.1:3000',
+        changeOrigin: true,
+        pathRewrite: {
+          "^/proxy": ''
+        }
+      }
+    },
+  },
 }

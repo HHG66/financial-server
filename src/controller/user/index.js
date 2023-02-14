@@ -3,12 +3,15 @@ const userServe = require('service/user/index.js')
 const mapper = require('mapper/user/index.js')
 
 module.exports = async (ctx, next) => {
+// app(error)
+
   let { username, password } = ctx.request.body;
   //处理参数
   ctx.request.body = { username: username, password: password }
   //业务层处理
   let userServes = await userServe(ctx, next)
 
+  
   if (userServes.state == 0) {
 
     response(ctx, {}, { message: '用户未注册', desc: 'error' })
@@ -26,6 +29,6 @@ module.exports = async (ctx, next) => {
     }
     response(ctx, responsedata)
   }else{
-    response(ctx,{},{message:"请输入账号或者密码"})
+    response(ctx,{},{message:"请输入账号或者密码",desc:'error'})
   }
 }

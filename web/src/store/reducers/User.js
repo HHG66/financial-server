@@ -16,9 +16,13 @@ const UserSlice = createSlice({
     },
     getToken: (state, action) => {
       return state.Token
+    },
+    deleteInfo: (state, action) => {
+      state.userInfo = ''
+      state.Token = ''
     }
   }
 })
 
-export const { addInfo } = UserSlice.actions
+export const { addInfo,getToken,deleteInfo} = UserSlice.actions
 export default UserSlice.reducer

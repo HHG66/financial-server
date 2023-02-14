@@ -1,5 +1,6 @@
 
 module.exports = (ctx, res, option = {}) => {
+ 
   ctx.body = {
     code: option.code || '00000',
     data: res,

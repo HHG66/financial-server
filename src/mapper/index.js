@@ -1,26 +1,23 @@
 /*
  * @Author: HHG
  * @Date: 2023-02-08 22:40:41
- * @LastEditTime: 2023-02-12 18:17:05
+ * @LastEditTime: 2023-02-14 16:35:00
  * @LastEditors: 韩宏广
- * @FilePath: /koa-cli/src/mapper/index.js
+ * @FilePath: \financial\src\mapper\index.js
  * @文件说明: 
  */
 /**
  * @description: 封装的查询方法
  * @param {Schema} model
  * @param {*} where
- * @param {*} ctx
+ * @param {*} mapping 对返回的数据做操作，1 为返回，0为不返回
  * @return {*}
  */
-const find = (model, where, ctx, mapping) => (
+const find = (model, where, mapping) => (
   model.find(where, mapping).then(rel => {
     return rel
   }).catch(err => {
-    ctx.body = {
-      code: 400,
-      msg: '查询出现异常！'
-    }
+    console.log('find', err);
     console.error(err)
   })
 )
@@ -30,17 +27,13 @@ const find = (model, where, ctx, mapping) => (
  * @param {Schema} model
  * @param {*} where
  * @param {*} params
- * @param {*} ctx
  * @return {*}
  */
-const updata = (model, where, params, ctx) => (
+const updata = (model, where, params) => (
   model.updateOne(where, params).then(rel => {
     return rel
   }).catch(err => {
-    ctx.body = {
-      code: 400,
-      msg: '修改出现异常！'
-    }
+    console.log('updata', err);
     console.error(err)
   })
 )
@@ -49,24 +42,13 @@ const updata = (model, where, params, ctx) => (
  * @description: 增加
  * @param {Schema} model
  * @param {*} params
- * @param {*} ctx
  * @return {*}
  */
-const add = (model, params, ctx) => (
+const add = (model, params) => (
   model.create(params).then(rel => {
-    if (rel) {
-      return rel
-    } else {
-      ctx.body = {
-        code: 300,
-        msg: '添加失败',
-      }
-    }
+    return rel
   }).catch(err => {
-    ctx.body = {
-      code: 400,
-      msg: '添加出现异常！'
-    }
+    console.log('create', err);
     console.error(err)
   })
 )
@@ -75,17 +57,13 @@ const add = (model, params, ctx) => (
  * @description: 删除的公共方法
  * @param {Schema} model
  * @param {*} where
- * @param {*} ctx
  * @return {*}
  */
-const del = (model, where, ctx) => (
+const del = (model, where) => (
   model.findOneAndDelete(where).then(rel => {
     return rel
   }).catch(err => {
-    ctx.body = {
-      code: 400,
-      msg: '删除出现异常！'
-    }
+    console.log('del', err);
     console.error(err)
   })
 )
@@ -97,19 +75,29 @@ const del = (model, where, ctx) => (
  * @param {*} ctx
  * @return {*}
  */
-const findOne = (model, where, ctx, params) => (
+const findOne = (model, where, params) => (
   model.findOne(where, params).then(rel => {
     return rel
   }).catch(err => {
-    ctx.body = {
-      code: 400,
-      msg: '查询出现异常！'
-    }
+    console.log('findOne', err);
     console.error(err)
   })
 
 )
 
+// const findOne = (model, where, params) => (
+//   model.findOne(where, params).then(rel => {
+//     return rel
+//   }).catch(err => {
+//     console.log('findOne', err);
+//     console.error(err)
+//   })
+
+// )
+
+const aggregate = (model, where, params) => {
+
+}
 module.exports = {
   find,
   updata,

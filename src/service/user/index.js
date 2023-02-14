@@ -2,7 +2,7 @@ const { registeredUser, userInfo } = require('mapper/user/index')
 var jwtToken = require('jsonwebtoken');
 
 module.exports = async (ctx, next) => {
-  let state
+  let state=0
   let retController
   let token = jwtToken.sign({}, "secret", { expiresIn: '4h' });
   //可以根据查找出来的数据做操作

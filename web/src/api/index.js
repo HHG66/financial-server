@@ -1,9 +1,9 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-02 13:13:54
- * @LastEditTime: 2023-02-14 00:49:52
+ * @LastEditTime: 2023-02-14 14:31:34
  * @LastEditors: 韩宏广
- * @FilePath: /Personal-finance/web/src/api/index.js
+ * @FilePath: \financial\web\src\api\index.js
  * @文件说明: 
  */
 
@@ -14,8 +14,9 @@ import { getLocalStorage } from '@/utils/index'
 let request = axios.create({
   // baseURL:"http://49.234.54.90:3001/mock/33/api",
   // baseURL: "http://127.0.0.1:4523/m1/1605761-0-default/",
-  baseURL: "http://127.0.0.1:3000/",
-  timeout: 1000
+  baseURL: "/proxy",
+  // baseURL: "http://127.0.0.1:3000",
+  timeout: 3000
 })
 
 
@@ -52,7 +53,7 @@ request.interceptors.response.use(function (response) {
   if (error && error.response) {
     switch (error.response.status) {
       case 401:
-        // window.location.href = '/login'
+        window.location.href = '/login'
         break;
       case 502:
         notification.open({

@@ -1,9 +1,9 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-09 11:31:33
- * @LastEditTime: 2022-12-12 23:43:14
+ * @LastEditTime: 2023-02-14 09:33:35
  * @LastEditors: 韩宏广
- * @FilePath: /个人财务/web/src/components/Heade.js
+ * @FilePath: \financial\web\src\components\Heade.js
  * @文件说明: 
  */
 import { Breadcrumb, Avatar, Layout, Drawer,Popover,Button} from 'antd'
@@ -11,10 +11,11 @@ import { useState, useEffect, useRef } from 'react'
 import { useLocation } from 'react-router-dom'
 import SvgIcon from '@/components/Icon'
 import Routers from '@/routers'
-import { useSelector } from 'react-redux'
-// import { bindActionCreators } from 'redux'
+import { useSelector,useDispatch  } from 'react-redux'
+import {  deleteInfo } from '@/store/reducers/User.js'
 // import { actions } from '@/store/export.js'
 import { useNavigate } from 'react-router-dom'
+import {setLocalStorage} from '@/utils/index'
 const { Header } = Layout
 const Heade = () => {
   const [breadcrumb, setBreadcrumb] = useState([])
@@ -26,7 +27,8 @@ const Heade = () => {
   const store = useSelector(store => store.Store.UserReducer.userInfo)
   // const store1 = useSelector(store => store )
   // console.log(store1);
-  // const dispatch = useDispatch()
+  const dispatch = useDispatch()
+  
   // const { deleteInfo } = bindActionCreators(actions, dispatch)
   const navigate = useNavigate()
 
@@ -67,6 +69,8 @@ const Heade = () => {
   }
   const personalInfo = () => {
     // deleteInfo()
+    dispatch(deleteInfo())
+    setLocalStorage('Token','')
     navigate('/login')
   }
   return (
