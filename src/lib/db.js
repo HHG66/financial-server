@@ -17,12 +17,7 @@ module.exports = async () => {
     useNewUrlParser: true,
     useUnifiedTopology: true
   })
-    .then(function (client, err) {
-      console.log( client);
-    
-      client.collection.insertOne(
-        { id: 1, user_name: 'admin', password: 'admin', permissions: '1,2-1,2-2,2,3,3-1,3-2,4,4-1,4-2,5,5-1,5-2,5-3,6,6-1,6-2,7,8' }
-      )
+    .then(function () {
       console.log('数据库连接成功');
     })
     .catch(function (err) {

@@ -1,7 +1,7 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-01 17:01:17
- * @LastEditTime: 2023-01-10 23:16:38
+ * @LastEditTime: 2023-02-14 22:15:23
  * @LastEditors: 韩宏广
  * @FilePath: /Personal-finance/web/src/pages/ConsumptionManagement/index.js
  * @文件说明: 
@@ -110,9 +110,9 @@ const ConsumptionManagement = () => {
       setConfirmLoading(true);
       if (open.isEdit !== true) {
         newConsumptionType(values).then(res => {
-          if (res.code === "00000") {
+          setConfirmLoading(false);
+          if (res.code === "00000" ) {
             message.success(res.message);
-            setConfirmLoading(false);
             setOpen({
               open: false
             });

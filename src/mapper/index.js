@@ -1,9 +1,9 @@
 /*
  * @Author: HHG
  * @Date: 2023-02-08 22:40:41
- * @LastEditTime: 2023-02-14 16:35:00
+ * @LastEditTime: 2023-02-14 20:24:52
  * @LastEditors: 韩宏广
- * @FilePath: \financial\src\mapper\index.js
+ * @FilePath: /Personal-finance/src/mapper/index.js
  * @文件说明: 
  */
 /**
@@ -85,19 +85,6 @@ const findOne = (model, where, params) => (
 
 )
 
-// const findOne = (model, where, params) => (
-//   model.findOne(where, params).then(rel => {
-//     return rel
-//   }).catch(err => {
-//     console.log('findOne', err);
-//     console.error(err)
-//   })
-
-// )
-
-const aggregate = (model, where, params) => {
-
-}
 module.exports = {
   find,
   updata,
