@@ -5,7 +5,8 @@ module.exports = async (ctx, next) => {
   let result = {}
   let modelDate = {
     createdate: new Date(),
-    consumptiontypename: ctx.request.body.consumptiontypename
+    consumptiontypename: ctx.request.body.consumptiontypename,
+    remark:ctx.request.body.remark
   }
   let findOneConsumptiontypes = await findOneConsumptiontype(ctx.request.body.consumptiontypename)
   if (findOneConsumptiontypes) {

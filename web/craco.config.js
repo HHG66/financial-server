@@ -65,6 +65,7 @@ module.exports = {
     proxy: {
       '/proxy': {
         target: 'http://127.0.0.1:3000',
+        timeout: 9999999999999999999999999999999999,
         changeOrigin: true,
         pathRewrite: {
           "^/proxy": ''

@@ -1,0 +1,93 @@
+[2023-02-15T22:05:57.890] [DEBUG] default - Some debug messages
+[2023-02-15T22:06:06.939] [DEBUG] default - Some debug messages
+[2023-02-15T22:09:20.201] [DEBUG] default - Some debug messages
+[2023-02-15T22:09:31.963] [DEBUG] default - Some debug messages
+[2023-02-15T22:10:59.609] [DEBUG] default - Some debug messages
+[2023-02-15T22:11:17.385] [DEBUG] default - Some debug messages
+[2023-02-15T22:12:02.693] [DEBUG] default - Some debug messages
+[2023-02-15T22:13:51.896] [DEBUG] default - Some debug messages
+[2023-02-15T22:21:37.808] [DEBUG] default - Some debug messages
+[2023-02-15T22:21:38.921] [DEBUG] default - Some debug messages
+[2023-02-15T22:22:07.957] [DEBUG] default - Some debug messages
+[2023-02-15T22:22:14.241] [DEBUG] default - Some debug messages
+[2023-02-15T22:22:14.964] [DEBUG] default - Some debug messages
+[2023-02-15T22:22:29.624] [DEBUG] default - Some debug messages
+[2023-02-15T22:23:16.968] [DEBUG] default - Some debug messages
+[2023-02-15T22:23:39.645] [DEBUG] default - Some debug messages
+[2023-02-15T22:23:44.748] [DEBUG] default - Some debug messages
+[2023-02-15T22:24:55.246] [DEBUG] default - Some debug messages
+[2023-02-15T22:25:01.402] [DEBUG] default - Some debug messages
+[2023-02-15T22:25:09.254] [DEBUG] default - Some debug messages
+[2023-02-15T22:25:53.322] [DEBUG] default - Some debug messages
+[2023-02-15T22:26:06.608] [DEBUG] default - Some debug messages
+[2023-02-15T22:26:41.802] [DEBUG] default - Some debug messages
+[2023-02-15T22:27:57.608] [DEBUG] default - Some debug messages
+[2023-02-15T22:28:30.113] [DEBUG] default - Some debug messages
+[2023-02-15T22:28:43.730] [DEBUG] default - Some debug messages
+[2023-02-15T22:29:14.528] [DEBUG] default - Some debug messages
+[2023-02-15T22:29:21.323] [DEBUG] default - Some debug messages
+[2023-02-15T22:29:42.275] [DEBUG] default - Some debug messages
+[2023-02-15T22:30:29.731] [DEBUG] default - Some debug messages
+[2023-02-15T22:32:54.559] [DEBUG] default - Some debug messages
+[2023-02-15T22:34:12.609] [DEBUG] default - Some debug messages
+[2023-02-15T22:34:46.570] [DEBUG] default - Some debug messages
+[2023-02-15T22:36:23.357] [DEBUG] default - Some debug messages
+[2023-02-15T22:38:00.924] [DEBUG] default - Some debug messages
+[2023-02-15T22:39:20.901] [DEBUG] default - Some debug messages
+[2023-02-15T22:39:26.525] [DEBUG] default - Some debug messages
+[2023-02-15T22:39:27.178] [DEBUG] default - Some debug messages
+[2023-02-15T22:39:42.468] [DEBUG] default - Some debug messages
+[2023-02-15T22:40:08.611] [DEBUG] default - Some debug messages
+[2023-02-15T22:40:11.347] [DEBUG] default - Some debug messages
+[2023-02-15T22:40:11.793] [DEBUG] default - Some debug messages
+[2023-02-15T22:40:12.231] [DEBUG] default - Some debug messages
+[2023-02-15T22:40:23.041] [DEBUG] default - Some debug messages
+[2023-02-15T22:40:34.248] [DEBUG] default - Some debug messages
+[2023-02-15T22:40:55.086] [DEBUG] default - Some debug messages
+[2023-02-15T22:41:22.213] [DEBUG] default - Some debug messages
+[2023-02-15T22:41:40.831] [DEBUG] default - Some debug messages
+[2023-02-15T22:47:51.252] [DEBUG] default - Some debug messages
+[2023-02-15T22:47:54.538] [DEBUG] default - Some debug messages
+[2023-02-15T22:47:59.575] [DEBUG] default - Some debug messages
+[2023-02-15T22:48:04.831] [DEBUG] default - Some debug messages
+[2023-02-15T22:48:45.288] [DEBUG] default - Some debug messages
+[2023-02-15T22:48:46.933] [DEBUG] default - Some debug messages
+[2023-02-15T22:49:13.220] [DEBUG] default - Some debug messages
+[2023-02-15T22:49:15.306] [DEBUG] default - Some debug messages
+[2023-02-15T22:49:29.696] [DEBUG] default - Some debug messages
+[2023-02-15T22:49:50.224] [DEBUG] default - Some debug messages
+[2023-02-15T22:50:12.041] [DEBUG] default - Some debug messages
+[2023-02-15T22:51:11.886] [DEBUG] default - Some debug messages
+[2023-02-15T22:51:17.994] [DEBUG] default - Some debug messages
+[2023-02-15T22:51:23.578] [DEBUG] default - Some debug messages
+[2023-02-15T22:51:30.491] [DEBUG] default - 未知错误 TypeError: Cannot read properties of null (reading '_id')
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/consumptiontype/deleteconsumptiontype.js:24:20)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js:18:3
+    at async bodyParser (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-bodyparser/index.js:95:5)
+    at async cors (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa2-cors/dist/index.js:91:9)
+[2023-02-15T22:51:33.154] [DEBUG] default - 未知错误 TypeError: Cannot read properties of null (reading '_id')
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/consumptiontype/deleteconsumptiontype.js:24:20)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js:18:3
+    at async bodyParser (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-bodyparser/index.js:95:5)
+    at async cors (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa2-cors/dist/index.js:91:9)
+[2023-02-15T22:51:53.974] [DEBUG] default - Some debug messages
+[2023-02-15T22:51:57.120] [DEBUG] default - Some debug messages
+[2023-02-15T22:52:46.050] [DEBUG] default - Some debug messages
+[2023-02-15T22:53:28.299] [DEBUG] default - Some debug messages
+[2023-02-15T22:54:19.143] [DEBUG] default - Some debug messages
+[2023-02-15T22:54:36.546] [DEBUG] default - Some debug messages
+[2023-02-15T23:13:13.985] [DEBUG] default - Some debug messages
+[2023-02-15T23:23:42.462] [DEBUG] default - Some debug messages
+[2023-02-15T23:24:22.489] [DEBUG] default - 未知错误 RangeError: Invalid string length
+    at JSON.stringify (<anonymous>)
+    at respond (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/application.js:302:15)
+    at handleResponse (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/application.js:180:34)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2023-02-15T23:45:26.221] [DEBUG] default - Some debug messages
+[2023-02-15T23:47:24.075] [DEBUG] default - Some debug messages
+[2023-02-15T23:47:48.596] [DEBUG] default - Some debug messages
+[2023-02-15T23:47:51.953] [DEBUG] default - Some debug messages
+[2023-02-15T23:52:26.395] [DEBUG] default - Some debug messages

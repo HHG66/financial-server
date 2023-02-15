@@ -1,7 +1,7 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-02 13:13:54
- * @LastEditTime: 2023-02-14 22:12:51
+ * @LastEditTime: 2023-02-15 23:23:41
  * @LastEditors: 韩宏广
  * @FilePath: /Personal-finance/web/src/api/index.js
  * @文件说明: 
@@ -16,7 +16,7 @@ let request = axios.create({
   // baseURL: "http://127.0.0.1:4523/m1/1605761-0-default/",
   baseURL: "/proxy",
   // baseURL: "http://127.0.0.1:3000",
-  timeout: 3000
+  timeout: 300000
 })
 
 

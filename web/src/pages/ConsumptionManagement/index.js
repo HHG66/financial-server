@@ -1,7 +1,7 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-01 17:01:17
- * @LastEditTime: 2023-02-14 22:15:23
+ * @LastEditTime: 2023-02-15 22:54:18
  * @LastEditors: 韩宏广
  * @FilePath: /Personal-finance/web/src/pages/ConsumptionManagement/index.js
  * @文件说明: 
@@ -66,13 +66,23 @@ const ConsumptionManagement = () => {
   ];
 
   useEffect(() => {
-    getConsumptionTypeListApi({}).then((res) => {
-      setDataSource(res.data)
-    });
+    getAllConsumptiontypeList()
   }, [])
-
+  const getAllConsumptiontypeList = () => {
+    getConsumptionTypeListApi({}).then((res) => {
+      let data = []
+      res.data.forEach(element => {
+        data.push({
+          ...element,
+          key: element.id
+        })
+      });
+      setDataSource(data)
+    });
+  }
   const onReset = () => {
     searchform.resetFields();
+    getAllConsumptiontypeList()
   };
 
   const onFinish = (values) => {
@@ -111,8 +121,9 @@ const ConsumptionManagement = () => {
       if (open.isEdit !== true) {
         newConsumptionType(values).then(res => {
           setConfirmLoading(false);
-          if (res.code === "00000" ) {
+          if (res.code === "00000") {
             message.success(res.message);
+            getAllConsumptiontypeList()
             setOpen({
               open: false
             });
@@ -123,6 +134,7 @@ const ConsumptionManagement = () => {
         editConsumptionTypeApi({ ...values, id: open.id }).then((res) => {
           setConfirmLoading(false);
           message.success(res.message);
+          getAllConsumptiontypeList()
           setOpen({
             open: false
           });
@@ -139,7 +151,7 @@ const ConsumptionManagement = () => {
       state: true,
       isEdit: true,
       title: '编辑',
-      id: rowdata.key
+      id: rowdata.id
     });
     // console.log(form);
     console.log(rowdata);
@@ -152,7 +164,9 @@ const ConsumptionManagement = () => {
 
   const deleteConsumptiontype = (id) => {
     deleteConsumptiontypeApi(id).then((res) => {
-      message.success(res.message)
+      if (res.code === '00000') {
+        message.success(res.message)
+      }
     })
   }
 

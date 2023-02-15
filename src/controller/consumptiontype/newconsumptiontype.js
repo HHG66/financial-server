@@ -5,10 +5,10 @@ const mapper = require('mapper/consumptiontype/index.js');
 module.exports = async (ctx, next) => {
 
   //获取参数
-  let { consumptiontype } = ctx.request.body;
+  let { consumptiontype,remarks } = ctx.request.body;
   //处理参数
   if (typeof consumptiontype == 'string') {
-    ctx.request.body = { consumptiontypename: consumptiontype }
+    ctx.request.body = { consumptiontypename: consumptiontype ,remark:remarks}
   } else {
     response(ctx, {}, { message: '请输入字符串' })
   }
