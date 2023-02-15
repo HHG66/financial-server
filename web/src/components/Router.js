@@ -1,9 +1,9 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-10 16:46:32
- * @LastEditTime: 2022-09-16 17:23:05
+ * @LastEditTime: 2023-02-15 09:30:27
  * @LastEditors: 韩宏广
- * @FilePath: \my-financial\web\src\components\Router.js
+ * @FilePath: \financial\web\src\components\Router.js
  * @文件说明: 
  */
 import { Routes, Route } from 'react-router-dom'
@@ -13,10 +13,11 @@ import Login from "@/pages/Login"
 import Routers from '@/routers'
 import NoFound from "@/pages/NoFound"
 import { useEffect, useState } from 'react'
-
+import { Navigate } from "react-router-dom";
 const AppRouter = () => {
   let [router, setRouter] = useState([])
   useEffect(() => {
+    //等待重写
     let router = Routers.map((rou) => {
       let _rou = []
       if (rou.subs) {
@@ -26,8 +27,10 @@ const AppRouter = () => {
         //这一级是父级路由所以组件上面不需要权限判断，因为子级路由已经做了判断
         return <Route key={rou.key} path={rou.key} element={rou.component}>{[..._rou]}</Route>
       }
+
       return <Route key={rou.key} path={rou.key} element={<Authorized>{rou.component}</Authorized>}></Route>
     })
+    router.push( <Route key='/' path='/' element={<Navigate to='/home' />}></Route>)
     setRouter(router)
   }, [])
   return (

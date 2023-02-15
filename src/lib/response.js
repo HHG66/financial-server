@@ -1,5 +1,6 @@
 
 module.exports = async (ctx, res, option = {}) => {
+  console.log(this);
   // console.log(option);
   ctx.body = {
     code: option.code || '00000',

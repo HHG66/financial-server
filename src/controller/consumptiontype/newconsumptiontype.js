@@ -14,11 +14,10 @@ module.exports = async (ctx, next) => {
   }
   //业务层处理
   let serviceResult = await newconsumptiontype(ctx, next)
-  console.log(serviceResult);
   if (serviceResult.state === 0 || serviceResult.state === 3) {
     response(ctx, {}, { code: "00001", message: serviceResult.message })
   } else if (serviceResult.state === 1) {
-    response(ctx, {}, { code: "00000" })
+    response(ctx, {}, { code: "00000",message:"添加成功" })
   }
 
 }

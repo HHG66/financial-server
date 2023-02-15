@@ -47,7 +47,7 @@ module.exports = {
       return webpackConfig;
     },
   },
-
+  devtool:"inline-source-map",
   plugins: [
     {
       plugin: CracoLessPlugin,

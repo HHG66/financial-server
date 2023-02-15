@@ -23,13 +23,6 @@ import SvgIcon from '@/components/Icon'
 // } from '@ant-design/icons';
 const Routers = [
   // 菜单相关路由
-  // {
-  //   key: '/home',
-  //   title: '首页',
-  //   icon: <div><SvgIcon iconClass="home" style={{ width: "20px", height: "20px", marginRight: '10px', }} /></div>,
-  //   component: <Home />,
-  //   role: "1"
-  // },
   {
     key: '/home',
     title: '首页',
