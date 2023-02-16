@@ -1,7 +1,7 @@
 /*
  * @Author: HHG
  * @Date: 2023-02-08 22:13:49
- * @LastEditTime: 2023-02-14 14:46:06
+ * @LastEditTime: 2023-02-16 13:21:49
  * @LastEditors: 韩宏广
  * @FilePath: \financial\src\app.js
  * @文件说明: 
@@ -58,7 +58,7 @@ logger.level = "debug";
 logger.debug("Some debug messages");
 
 app.on('error', (error, ctx) => {
-  errorMiddlware(ctx,error)
+  errorMiddlware(ctx, error)
   // console.log('99',error.status);
   // logger.debug(66,error);
   // console.log(error);

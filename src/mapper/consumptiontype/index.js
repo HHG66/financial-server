@@ -8,8 +8,12 @@ module.exports = {
     let addBack = add(Consumptiontype, data)
     return addBack
   },
+  //查询
   findOneConsumptiontype: (name) => {
     return findOne(Consumptiontype, { consumptiontypename: name })
+  },
+  findOneConsumptiontypeFormId: (id) => {
+    return findOne(Consumptiontype, { _id: id })
   },
   //获取
   getConsumptiontypeList: (name) => {

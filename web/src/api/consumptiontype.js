@@ -1,7 +1,7 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-13 19:16:40
- * @LastEditTime: 2023-01-12 09:09:42
+ * @LastEditTime: 2023-02-16 10:51:16
  * @LastEditors: 韩宏广
  * @FilePath: \financial\web\src\api\consumptiontype.js
  * @文件说明: 消费类型的接口
@@ -54,7 +54,7 @@ export function newAssociatedBillName(data) {
     url: '/newassociatedbillname',
     data: {
       consumptionName: data.consumptionName,
-      consumptiontype: data.consumptiontype
+      consumptiontypeid: data.consumptiontype
     }
   })
 }
@@ -64,8 +64,8 @@ export function getassociatedbill(data) {
     method: 'GET',
     url: '/getassociatedbill',
     params: {
-      consumptionName: data.consumptionName,
-      consumptiontype: data.consumptiontype
+      consumptionname: data.consumptionName,
+      // consumptiontype: data.consumptiontype
     }
   })
 }

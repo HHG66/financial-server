@@ -1,9 +1,9 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-01 17:01:12
- * @LastEditTime: 2022-12-11 19:34:22
+ * @LastEditTime: 2023-02-16 10:50:05
  * @LastEditors: 韩宏广
- * @FilePath: /个人财务/web/src/pages/ConsumpAssociated/index.js
+ * @FilePath: \financial\web\src\pages\ConsumpAssociated\index.js
  * @文件说明: 
  */
 import { Space, Table, Row, Col, Button, Form, Input, Modal, Select, message, Popconfirm } from 'antd';
@@ -34,7 +34,7 @@ const ConsumpAssociated = () => {
     getConsumptionTypeListApi(data).then((res) => {
       var reqConsumptionTypeList = []
       res.data.forEach(element => {
-        reqConsumptionTypeList.push({ "label": element.name, "value": element.age, key: element.name })
+        reqConsumptionTypeList.push({ "label": element.name, "value": element.id, key: element.id })
       });
       setConsumptionTypeList(reqConsumptionTypeList)
     })
@@ -54,9 +54,11 @@ const ConsumpAssociated = () => {
     form.validateFields().then(values => {
       if (modelState === false) {
         newAssociatedBillName(values).then(res => {
-          message.success(res.message)
+          if (res.code === '00000') {
+            message.success(res.message)
+            setshowModal(false)
+          }
           setConfirmLoading(false)
-          setshowModal(false)
         })
       } else if (modelState === true) {
         setConfirmLoading(false)
@@ -152,7 +154,10 @@ const ConsumpAssociated = () => {
   }
   const onFinish = (values) => {
     console.log('Success:', values);
-    getConsumptionTypeList({ consumptionName: values.billconsumptionname })
+    getassociatedbill({consumptionName: values.billconsumptionname}).then(res => {
+      setData(res.data)
+    })
+    // getConsumptionTypeList({ consumptionName: values.billconsumptionname })
   };
   return (
     <>

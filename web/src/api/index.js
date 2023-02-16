@@ -1,9 +1,9 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-02 13:13:54
- * @LastEditTime: 2023-02-15 23:23:41
+ * @LastEditTime: 2023-02-16 09:06:39
  * @LastEditors: 韩宏广
- * @FilePath: /Personal-finance/web/src/api/index.js
+ * @FilePath: \financial\web\src\api\index.js
  * @文件说明: 
  */
 
@@ -12,7 +12,6 @@ import { notification, message } from 'antd';
 import { getLocalStorage } from '@/utils/index'
 
 let request = axios.create({
-  // baseURL:"http://49.234.54.90:3001/mock/33/api",
   // baseURL: "http://127.0.0.1:4523/m1/1605761-0-default/",
   baseURL: "/proxy",
   // baseURL: "http://127.0.0.1:3000",
@@ -44,7 +43,6 @@ request.interceptors.response.use(function (response) {
   }
 }, function (error) {
   console.log(error);
-
   // 超出 2xx 范围的状态码都会触发该函数。
   // 对响应错误做点什么
   // 请求成功发出且服务器也响应了状态码，但状态代码超出了 2xx 的范围
