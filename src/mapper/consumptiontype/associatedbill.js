@@ -1,4 +1,4 @@
-const { Associatedbill } = require('models/consumptiontype/associatedbill.js')
+const { Associatedbill } = require('@models/consumptiontype/associatedbill.js')
 // const { Consumptiontype } = require('models/consumptiontype/type.js')
 const { add, findOne, find, updata, del } = require('../index.js')
 
@@ -22,9 +22,7 @@ module.exports = {
           from: "consumptiontypes",
           localField: "consumptiontype",
           foreignField: "_id",
-          as:{
-            consumptionname
-          }
+          as:"consumptiontypes"
         }
       },
     ])

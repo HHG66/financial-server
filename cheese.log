@@ -34,3 +34,989 @@
   codeName: 'FailedToParse',
   [Symbol(errorLabels)]: Set(0) {}
 }
+[2023-02-17T21:01:31.879] [DEBUG] default - Some debug messages
+[2023-02-17T21:01:34.415] [DEBUG] default - Some debug messages
+[2023-02-17T21:03:50.559] [DEBUG] default - Some debug messages
+[2023-02-17T21:03:55.545] [DEBUG] default - 未知错误 MongoServerError: $lookup argument 'as' must be a string, found as: { consumptionname: "" }: object
+    at Connection.onMessage (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/mongodb/lib/cmap/connection.js:227:30)
+    at MessageStream.<anonymous> (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/mongodb/lib/cmap/connection.js:60:60)
+    at MessageStream.emit (node:events:526:28)
+    at processIncomingData (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/mongodb/lib/cmap/message_stream.js:125:16)
+    at MessageStream._write (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/mongodb/lib/cmap/message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at MessageStream.Writable.write (node:internal/streams/writable:334:10)
+    at Socket.ondata (node:internal/streams/readable:754:22)
+    at Socket.emit (node:events:526:28) {
+  ok: 0,
+  code: 9,
+  codeName: 'FailedToParse',
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2023-02-17T21:12:06.156] [DEBUG] default - Some debug messages
+[2023-02-17T21:12:16.923] [DEBUG] default - 未知错误 MongoServerError: $lookup argument 'as' must be a string, found as: { consumptionname: 1 }: object
+    at Connection.onMessage (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/mongodb/lib/cmap/connection.js:227:30)
+    at MessageStream.<anonymous> (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/mongodb/lib/cmap/connection.js:60:60)
+    at MessageStream.emit (node:events:526:28)
+    at processIncomingData (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/mongodb/lib/cmap/message_stream.js:125:16)
+    at MessageStream._write (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/mongodb/lib/cmap/message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at MessageStream.Writable.write (node:internal/streams/writable:334:10)
+    at Socket.ondata (node:internal/streams/readable:754:22)
+    at Socket.emit (node:events:526:28) {
+  ok: 0,
+  code: 9,
+  codeName: 'FailedToParse',
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2023-02-17T21:14:16.336] [DEBUG] default - Some debug messages
+[2023-02-17T21:15:55.508] [DEBUG] default - Some debug messages
+[2023-02-17T21:16:01.740] [DEBUG] default - Some debug messages
+[2023-02-17T21:16:04.955] [DEBUG] default - Some debug messages
+[2023-02-17T21:16:09.368] [DEBUG] default - 未知错误 ReferenceError: consumptiontypes is not defined
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/consumptiontype/getassociatedbill.js:14:23
+    at Array.forEach (<anonymous>)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/consumptiontype/getassociatedbill.js:11:17)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js:28:3
+    at async bodyParser (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-bodyparser/index.js:95:5)
+    at async cors (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa2-cors/dist/index.js:91:9)
+[2023-02-17T21:16:23.719] [DEBUG] default - Some debug messages
+[2023-02-17T21:16:33.147] [DEBUG] default - Some debug messages
+[2023-02-17T21:16:36.615] [DEBUG] default - Some debug messages
+[2023-02-17T21:16:38.911] [DEBUG] default - Some debug messages
+[2023-02-17T21:16:55.525] [DEBUG] default - Some debug messages
+[2023-02-17T21:17:23.243] [DEBUG] default - Some debug messages
+[2023-02-17T21:17:51.507] [DEBUG] default - Some debug messages
+[2023-02-17T21:18:05.225] [DEBUG] default - Some debug messages
+[2023-02-17T21:18:18.946] [DEBUG] default - Some debug messages
+[2023-02-17T21:18:29.700] [DEBUG] default - Some debug messages
+[2023-02-17T21:18:56.883] [DEBUG] default - Some debug messages
+[2023-02-17T21:18:59.231] [DEBUG] default - Some debug messages
+[2023-02-17T21:20:09.976] [DEBUG] default - Some debug messages
+[2023-02-17T21:20:39.334] [DEBUG] default - Some debug messages
+[2023-02-17T21:20:58.374] [DEBUG] default - Some debug messages
+[2023-02-17T21:21:03.091] [DEBUG] default - Some debug messages
+[2023-02-17T21:21:03.843] [DEBUG] default - Some debug messages
+[2023-02-17T21:21:17.143] [DEBUG] default - Some debug messages
+[2023-02-17T21:21:23.451] [DEBUG] default - Some debug messages
+[2023-02-17T21:21:26.087] [DEBUG] default - Some debug messages
+[2023-02-17T21:21:49.314] [DEBUG] default - Some debug messages
+[2023-02-17T21:22:00.029] [DEBUG] default - Some debug messages
+[2023-02-17T21:22:00.496] [DEBUG] default - Some debug messages
+[2023-02-17T21:22:00.802] [DEBUG] default - Some debug messages
+[2023-02-17T23:22:36.559] [DEBUG] default - Some debug messages
+[2023-02-17T23:22:42.940] [DEBUG] default - Some debug messages
+[2023-02-17T23:27:26.303] [DEBUG] default - Some debug messages
+[2023-02-17T23:31:50.283] [DEBUG] default - Some debug messages
+[2023-02-17T23:32:39.217] [DEBUG] default - Some debug messages
+[2023-02-17T23:32:39.661] [DEBUG] default - Some debug messages
+[2023-02-17T23:32:45.784] [DEBUG] default - Some debug messages
+[2023-02-17T23:32:50.740] [DEBUG] default - Some debug messages
+[2023-02-17T23:34:03.509] [DEBUG] default - Some debug messages
+[2023-02-17T23:34:23.837] [DEBUG] default - Some debug messages
+[2023-02-17T23:34:36.027] [DEBUG] default - 未知错误 ReferenceError: pacontrollerPathth is not defined
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js:30:17
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/@koa/router/lib/router.js:425:16
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/@koa/router/lib/router.js:430:31)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-bodyparser/index.js:95:11)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2023-02-17T23:34:37.229] [DEBUG] default - 未知错误 Error: Cannot find module '@/controller/consumptiontype/newconsumptiontype.jsgetconsumptiontype.js'
+Require stack:
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js:10:9
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/@koa/router/lib/router.js:425:16
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/@koa/router/lib/router.js:430:31) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js'
+  ]
+}
+[2023-02-17T23:34:37.233] [DEBUG] default - 未知错误 ReferenceError: pacontrollerPathth is not defined
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js:30:17
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/@koa/router/lib/router.js:425:16
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/@koa/router/lib/router.js:430:31)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-bodyparser/index.js:95:11)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2023-02-17T23:35:04.959] [DEBUG] default - Some debug messages
+[2023-02-17T23:35:11.149] [DEBUG] default - 未知错误 Error: Cannot find module '@/controller/consumptiontype/newconsumptiontype.jsgetconsumptiontype.js'
+Require stack:
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js:10:9
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/@koa/router/lib/router.js:425:16
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/@koa/router/lib/router.js:430:31) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js'
+  ]
+}
+[2023-02-17T23:35:11.153] [DEBUG] default - 未知错误 Error: Cannot find module '@/controller/consumptiontype/newconsumptiontype.jsgetassociatedbill.js'
+Require stack:
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js:30:9
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/@koa/router/lib/router.js:425:16
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/@koa/router/lib/router.js:430:31) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js'
+  ]
+}
+[2023-02-17T23:36:22.087] [DEBUG] default - Some debug messages
+[2023-02-17T23:36:27.637] [DEBUG] default - 未知错误 Error: Cannot find module 'controller/consumptiontype/newconsumptiontype.jsgetconsumptiontype.js'
+Require stack:
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js:10:9
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/@koa/router/lib/router.js:425:16
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/@koa/router/lib/router.js:430:31) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js'
+  ]
+}
+[2023-02-17T23:36:27.642] [DEBUG] default - 未知错误 Error: Cannot find module 'controller/consumptiontype/newconsumptiontype.jsgetassociatedbill.js'
+Require stack:
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js:30:9
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/@koa/router/lib/router.js:425:16
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/@koa/router/lib/router.js:430:31) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js'
+  ]
+}
+[2023-02-17T23:37:08.951] [DEBUG] default - Some debug messages
+[2023-02-17T23:37:18.821] [DEBUG] default - Some debug messages
+[2023-02-17T23:37:21.824] [DEBUG] default - 未知错误 ReferenceError: pacontrollerPathth is not defined
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js:30:17
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/@koa/router/lib/router.js:425:16
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/@koa/router/lib/router.js:430:31)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-bodyparser/index.js:95:11)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2023-02-17T23:37:32.726] [DEBUG] default - Some debug messages
+[2023-02-17T23:37:33.541] [DEBUG] default - 未知错误 Error: Cannot find module 'controller/consumptiontype/newconsumptiontype.jsgetassociatedbill.js'
+Require stack:
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js:30:9
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/@koa/router/lib/router.js:425:16
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/@koa/router/lib/router.js:430:31) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js'
+  ]
+}
+[2023-02-17T23:37:51.019] [DEBUG] default - Some debug messages
+[2023-02-17T23:43:18.180] [DEBUG] default - Some debug messages
+[2023-02-17T23:43:24.551] [DEBUG] default - 未知错误 Error: Cannot find module '@servive/consumptiontype/getconsumptiontype.js'
+Require stack:
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js:13:9
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/@koa/router/lib/router.js:425:16
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/@koa/router/lib/router.js:430:31) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js'
+  ]
+}
+[2023-02-17T23:43:24.556] [DEBUG] default - 未知错误 Error: Cannot find module '@servive/consumptiontype/getassociatedbill.js'
+Require stack:
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js:33:9
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/@koa/router/lib/router.js:425:16
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/@koa/router/lib/router.js:430:31) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js'
+  ]
+}
+[2023-02-17T23:43:54.991] [DEBUG] default - Some debug messages
+[2023-02-17T23:44:00.957] [DEBUG] default - 未知错误 Error: Cannot find module '@controller/consumptiontype/getconsumptiontype.js'
+Require stack:
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js:13:9
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/@koa/router/lib/router.js:425:16
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/@koa/router/lib/router.js:430:31) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js'
+  ]
+}
+[2023-02-17T23:44:00.966] [DEBUG] default - 未知错误 Error: Cannot find module '@controller/consumptiontype/getassociatedbill.js'
+Require stack:
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js:33:9
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/@koa/router/lib/router.js:425:16
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/@koa/router/lib/router.js:430:31) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js'
+  ]
+}
+[2023-02-17T23:44:42.471] [DEBUG] default - Some debug messages
+[2023-02-17T23:44:43.956] [DEBUG] default - 未知错误 Error: Cannot find module '@controller/consumptiontypegetconsumptiontype.js'
+Require stack:
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js:13:9
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/@koa/router/lib/router.js:425:16
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/@koa/router/lib/router.js:430:31) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js'
+  ]
+}
+[2023-02-17T23:44:43.963] [DEBUG] default - 未知错误 Error: Cannot find module '@controller/consumptiontypegetassociatedbill.js'
+Require stack:
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js:33:9
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/@koa/router/lib/router.js:425:16
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/@koa/router/lib/router.js:430:31) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js'
+  ]
+}
+[2023-02-17T23:47:00.820] [DEBUG] default - Some debug messages
+[2023-02-17T23:47:08.921] [DEBUG] default - 未知错误 Error: Cannot find module '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/consumptiontypegetconsumptiontype.js'
+Require stack:
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._resolveFilename (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/module-alias/index.js:49:29)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js:13:9
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/@koa/router/lib/router.js:425:16
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:34:12 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js'
+  ]
+}
+[2023-02-17T23:47:08.927] [DEBUG] default - 未知错误 Error: Cannot find module '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/consumptiontypegetassociatedbill.js'
+Require stack:
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._resolveFilename (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/module-alias/index.js:49:29)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js:33:9
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/@koa/router/lib/router.js:425:16
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:34:12 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js'
+  ]
+}
+[2023-02-17T23:48:00.487] [DEBUG] default - Some debug messages
+[2023-02-17T23:48:01.398] [DEBUG] default - 未知错误 Error: Cannot find module 'service/consumptiontype/getconsumptiontype.js'
+Require stack:
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/consumptiontype/getconsumptiontype.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._resolveFilename (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/module-alias/index.js:49:29)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/consumptiontype/getconsumptiontype.js:1:28)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/consumptiontype/getconsumptiontype.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js'
+  ]
+}
+[2023-02-17T23:48:01.405] [DEBUG] default - 未知错误 Error: Cannot find module 'service/consumptiontype/getassociatedbill.js'
+Require stack:
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/consumptiontype/getassociatedbill.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._resolveFilename (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/module-alias/index.js:49:29)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/consumptiontype/getassociatedbill.js:1:27)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/consumptiontype/getassociatedbill.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js'
+  ]
+}
+[2023-02-17T23:48:14.254] [DEBUG] default - Some debug messages
+[2023-02-17T23:48:35.602] [DEBUG] default - Some debug messages
+[2023-02-17T23:48:37.834] [DEBUG] default - 未知错误 Error: Cannot find module 'service/consumptiontype/getconsumptiontype.js'
+Require stack:
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/consumptiontype/getconsumptiontype.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._resolveFilename (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/module-alias/index.js:49:29)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/consumptiontype/getconsumptiontype.js:1:28)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/consumptiontype/getconsumptiontype.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js'
+  ]
+}
+[2023-02-17T23:48:37.838] [DEBUG] default - 未知错误 Error: Cannot find module '@service/consumptiontype/getassociatedbill.js'
+Require stack:
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/consumptiontype/getassociatedbill.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._resolveFilename (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/module-alias/index.js:49:29)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/consumptiontype/getassociatedbill.js:1:27)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/consumptiontype/getassociatedbill.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js'
+  ]
+}
+[2023-02-17T23:48:54.120] [DEBUG] default - Some debug messages
+[2023-02-17T23:49:06.384] [DEBUG] default - Some debug messages
+[2023-02-17T23:49:08.281] [DEBUG] default - 未知错误 Error: Cannot find module 'service/consumptiontype/getconsumptiontype.js'
+Require stack:
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/consumptiontype/getconsumptiontype.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._resolveFilename (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/module-alias/index.js:49:29)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/consumptiontype/getconsumptiontype.js:1:28)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/consumptiontype/getconsumptiontype.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js'
+  ]
+}
+[2023-02-17T23:49:08.285] [DEBUG] default - 未知错误 Error: Cannot find module '@service/consumptiontype/getassociatedbill.js'
+Require stack:
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/consumptiontype/getassociatedbill.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._resolveFilename (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/module-alias/index.js:49:29)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/consumptiontype/getassociatedbill.js:1:27)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/consumptiontype/getassociatedbill.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js'
+  ]
+}
+[2023-02-17T23:49:46.804] [DEBUG] default - Some debug messages
+[2023-02-17T23:49:50.775] [DEBUG] default - Some debug messages
+[2023-02-17T23:49:51.884] [DEBUG] default - 未知错误 Error: Cannot find module 'service/consumptiontype/getconsumptiontype.js'
+Require stack:
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/consumptiontype/getconsumptiontype.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._resolveFilename (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/module-alias/index.js:49:29)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/consumptiontype/getconsumptiontype.js:1:28)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/consumptiontype/getconsumptiontype.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js'
+  ]
+}
+[2023-02-17T23:49:51.889] [DEBUG] default - 未知错误 Error: Cannot find module '@mapper/consumptiontype/associatedbill'
+Require stack:
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/service/consumptiontype/getassociatedbill.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/consumptiontype/getassociatedbill.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._resolveFilename (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/module-alias/index.js:49:29)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/service/consumptiontype/getassociatedbill.js:1:31)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/service/consumptiontype/getassociatedbill.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/consumptiontype/getassociatedbill.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js'
+  ]
+}
+[2023-02-17T23:50:11.455] [DEBUG] default - Some debug messages
+[2023-02-17T23:50:13.298] [DEBUG] default - 未知错误 Error: Cannot find module 'service/consumptiontype/getconsumptiontype.js'
+Require stack:
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/consumptiontype/getconsumptiontype.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._resolveFilename (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/module-alias/index.js:49:29)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/consumptiontype/getconsumptiontype.js:1:28)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/consumptiontype/getconsumptiontype.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js'
+  ]
+}
+[2023-02-17T23:50:13.304] [DEBUG] default - 未知错误 Error: Cannot find module '@mapper/consumptiontype/associatedbill'
+Require stack:
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/service/consumptiontype/getassociatedbill.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/consumptiontype/getassociatedbill.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._resolveFilename (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/module-alias/index.js:49:29)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/service/consumptiontype/getassociatedbill.js:1:31)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/service/consumptiontype/getassociatedbill.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/consumptiontype/getassociatedbill.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js'
+  ]
+}
+[2023-02-17T23:50:31.165] [DEBUG] default - Some debug messages
+[2023-02-17T23:50:34.145] [DEBUG] default - Some debug messages
+[2023-02-17T23:50:35.992] [DEBUG] default - 未知错误 Error: Cannot find module 'service/consumptiontype/getconsumptiontype.js'
+Require stack:
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/consumptiontype/getconsumptiontype.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._resolveFilename (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/module-alias/index.js:49:29)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/consumptiontype/getconsumptiontype.js:1:28)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/consumptiontype/getconsumptiontype.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js'
+  ]
+}
+[2023-02-17T23:50:35.998] [DEBUG] default - 未知错误 Error: Cannot find module 'models/consumptiontype/associatedbill.js'
+Require stack:
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/mapper/consumptiontype/associatedbill.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/service/consumptiontype/getassociatedbill.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/consumptiontype/getassociatedbill.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._resolveFilename (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/module-alias/index.js:49:29)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/mapper/consumptiontype/associatedbill.js:1:28)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/mapper/consumptiontype/associatedbill.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/service/consumptiontype/getassociatedbill.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/consumptiontype/getassociatedbill.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js'
+  ]
+}
+[2023-02-17T23:50:53.339] [DEBUG] default - Some debug messages
+[2023-02-17T23:51:26.506] [DEBUG] default - Some debug messages
+[2023-02-17T23:51:29.449] [DEBUG] default - 未知错误 Error: Cannot find module 'service/consumptiontype/getconsumptiontype.js'
+Require stack:
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/consumptiontype/getconsumptiontype.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._resolveFilename (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/module-alias/index.js:49:29)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/consumptiontype/getconsumptiontype.js:1:28)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/consumptiontype/getconsumptiontype.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js'
+  ]
+}
+[2023-02-17T23:51:41.055] [DEBUG] default - Some debug messages
+[2023-02-17T23:51:45.789] [DEBUG] default - 未知错误 Error: Cannot find module 'mapper/consumptiontype/index'
+Require stack:
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/service/consumptiontype/getconsumptiontype.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/consumptiontype/getconsumptiontype.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._resolveFilename (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/module-alias/index.js:49:29)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/service/consumptiontype/getconsumptiontype.js:1:63)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/service/consumptiontype/getconsumptiontype.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/consumptiontype/getconsumptiontype.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js'
+  ]
+}
+[2023-02-17T23:51:55.822] [DEBUG] default - Some debug messages
+[2023-02-17T23:52:02.326] [DEBUG] default - 未知错误 Error: Cannot find module 'models/consumptiontype/type.js'
+Require stack:
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/mapper/consumptiontype/index.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/service/consumptiontype/getconsumptiontype.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/consumptiontype/getconsumptiontype.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._resolveFilename (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/module-alias/index.js:49:29)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/mapper/consumptiontype/index.js:1:29)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/mapper/consumptiontype/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/service/consumptiontype/getconsumptiontype.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/consumptiontype/getconsumptiontype.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/consumptiontype/consumptiontype.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js'
+  ]
+}
+[2023-02-17T23:52:10.390] [DEBUG] default - Some debug messages
+[2023-02-17T23:52:28.897] [DEBUG] default - Some debug messages
+[2023-02-18T13:02:56.931] [DEBUG] default - Some debug messages
+[2023-02-18T13:03:49.529] [DEBUG] default - Some debug messages
+[2023-02-18T13:04:32.168] [DEBUG] default - code:401 UnauthorizedError: Authentication Error
+    at Object.throw (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/context.js:97:11)
+    at jwt (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:66:26)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async cors (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa2-cors/dist/index.js:91:9) {
+  originalError: TokenExpiredError: jwt expired
+      at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/jsonwebtoken/verify.js:190:21
+      at getSecret (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/jsonwebtoken/verify.js:97:14)
+      at Object.module.exports [as verify] (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/jsonwebtoken/verify.js:101:10)
+      at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/verify.js:5:13
+      at new Promise (<anonymous>)
+      at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/verify.js:4:12)
+      at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:38:64
+      at Array.map (<anonymous>)
+      at jwt (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:38:43)
+      at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-unless/index.js:29:12 {
+    expiredAt: 2023-02-17T16:51:54.000Z
+  }
+}
+[2023-02-18T13:04:32.170] [DEBUG] default - code:401 UnauthorizedError: Authentication Error
+    at Object.throw (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa/lib/context.js:97:11)
+    at jwt (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:66:26)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async cors (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa2-cors/dist/index.js:91:9) {
+  originalError: TokenExpiredError: jwt expired
+      at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/jsonwebtoken/verify.js:190:21
+      at getSecret (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/jsonwebtoken/verify.js:97:14)
+      at Object.module.exports [as verify] (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/jsonwebtoken/verify.js:101:10)
+      at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/verify.js:5:13
+      at new Promise (<anonymous>)
+      at module.exports (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/verify.js:4:12)
+      at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:38:64
+      at Array.map (<anonymous>)
+      at jwt (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-jwt/lib/index.js:38:43)
+      at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-unless/index.js:29:12 {
+    expiredAt: 2023-02-17T16:51:54.000Z
+  }
+}
+[2023-02-18T13:04:36.469] [DEBUG] default - 未知错误 Error: Cannot find module 'controller/user/index.js'
+Require stack:
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/user-router/index.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._resolveFilename (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/module-alias/index.js:49:29)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/user-router/index.js:12:9
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/@koa/router/lib/router.js:425:16
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:34:12 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/user-router/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js'
+  ]
+}
+[2023-02-18T13:04:38.313] [DEBUG] default - 未知错误 Error: Cannot find module 'controller/user/index.js'
+Require stack:
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/user-router/index.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._resolveFilename (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/module-alias/index.js:49:29)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/user-router/index.js:12:9
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/@koa/router/lib/router.js:425:16
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/koa-compose/index.js:34:12 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/user-router/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js'
+  ]
+}
+[2023-02-18T13:04:47.314] [DEBUG] default - Some debug messages
+[2023-02-18T13:04:52.460] [DEBUG] default - 未知错误 Error: Cannot find module 'service/user/index.js'
+Require stack:
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/user/index.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/user-router/index.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._resolveFilename (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/module-alias/index.js:49:29)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/user/index.js:2:19)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/user/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/user-router/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js'
+  ]
+}
+[2023-02-18T13:05:02.850] [DEBUG] default - Some debug messages
+[2023-02-18T13:05:04.436] [DEBUG] default - 未知错误 Error: Cannot find module 'mapper/user/index'
+Require stack:
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/service/user/index.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/user/index.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/user-router/index.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._resolveFilename (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/module-alias/index.js:49:29)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/service/user/index.js:1:38)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/service/user/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/user/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/user-router/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js'
+  ]
+}
+[2023-02-18T13:05:13.552] [DEBUG] default - Some debug messages
+[2023-02-18T13:05:14.764] [DEBUG] default - 未知错误 Error: Cannot find module 'models/user.js'
+Require stack:
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/mapper/user/index.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/service/user/index.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/user/index.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/user-router/index.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js
+- /Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._resolveFilename (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/module-alias/index.js:49:29)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/hanhongguang/Documents/个人项目/Personal-finance/src/mapper/user/index.js:1:18)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/mapper/user/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/service/user/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/controller/user/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/user-router/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/router/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Personal-finance/src/app.js'
+  ]
+}
+[2023-02-18T13:05:22.807] [DEBUG] default - Some debug messages

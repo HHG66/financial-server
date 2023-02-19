@@ -1,4 +1,4 @@
-const { registeredUser, userInfo } = require('mapper/user/index')
+const { registeredUser, userInfo } = require('@mapper/user/index')
 var jwtToken = require('jsonwebtoken');
 
 module.exports = async (ctx, next) => {

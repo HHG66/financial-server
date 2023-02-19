@@ -1,24 +1,26 @@
 /*
  * @Author: HHG
  * @Date: 2023-02-08 22:13:49
- * @LastEditTime: 2023-02-16 13:21:49
+ * @LastEditTime: 2023-02-17 23:46:30
  * @LastEditors: 韩宏广
- * @FilePath: \financial\src\app.js
+ * @FilePath: /Personal-finance/src/app.js
  * @文件说明: 
  */
-require('app-module-path').addPath(__dirname);
+// require('app-module-path').addPath(__dirname);
+require('module-alias/register')
+
 
 const Koa = require('koa')
 const Router = require('@koa/router');
 const bodyParser = require('koa-bodyparser');
-const mongoConnect = require('lib/db.js')
+const mongoConnect = require('@/lib/db.js')
 const cors = require('koa2-cors');
 const InitController = require('./router/index.js')
-const modelInit = require('models/index.js')
-const response = require('lib/response.js')
+const modelInit = require('@/models/index.js')
+const response = require('@/lib/response.js')
 const log4js = require("log4js");
 var jwt = require('koa-jwt');
-const errorMiddlware = require('middleware/error.js')
+const errorMiddlware = require('@/middleware/error.js')
 
 const app = new Koa();
 app.use(cors());

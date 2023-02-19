@@ -18,6 +18,6 @@ module.exports = async (ctx, next) => {
   if (serviceResult === false) {
     response(ctx, {}, { message: '未找到消费类型', code: '00001' })
   }else{
-    response(ctx, respond)
+    response(ctx, respond,{message:'添加成功'})
   }
 }

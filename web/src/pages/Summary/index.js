@@ -1,18 +1,18 @@
 /*
  * @Author: HHG
  * @Date: 2022-10-04 00:02:13
- * @LastEditTime: 2023-01-12 22:17:22
+ * @LastEditTime: 2023-02-19 22:07:34
  * @LastEditors: 韩宏广
  * @FilePath: /Personal-finance/web/src/pages/Summary/index.js
  * @文件说明: 
  */
 import React, { useEffect, useState } from 'react'
-import { Form, Row, Col, Button, Input, Tag, Space, Table, DatePicker, Modal, message, Popconfirm, Select, Drawer, Divider } from 'antd'
+import { Form, Row, Col, Button, Input, Space, Table, DatePicker, Modal, message, Popconfirm, Select, Drawer, Divider } from 'antd'
 import { DownOutlined, UpOutlined } from '@ant-design/icons';
 import { getBillSummaryListApi, editSingleBill, deleteSingleBillApi } from '@/api/summary'
 import { getConsumptionTypeListApi } from '@/api/consumptiontype'
 import { getIncomeTypeList } from '@/api/incometype'
-import { dateFormat } from '@/utils/index'
+// import { dateFormat } from '@/utils/index'
 
 const DescriptionItem = ({ title, content }) => (
   <div className="site-description-item-profile-wrapper">
@@ -80,7 +80,7 @@ const Summary = () => {
   const editBill = (rowData) => {
     showModal()
     setBillsummaryid(rowData.key)
-    if (typeof (rowData.tradingtime) == 'string' && rowData.tradingtime.replace(/\s+/g, "") == '') {
+    if (typeof (rowData.tradingtime) === 'string' && rowData.tradingtime.replace(/\s+/g, "") === '') {
       rowData.tradingtime = ''
     } else {
       rowData.tradingtime = window.moment(rowData.tradingtime)
@@ -367,7 +367,7 @@ const Summary = () => {
             {/* <Input /> */}
             <Select
               // onChange={}
-              options={incomeExpenditureState == '收入' ? incomeOption : spendingOption}
+              options={incomeExpenditureState === '收入' ? incomeOption : spendingOption}
             />
           </Form.Item>
         </Form>

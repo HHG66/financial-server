@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true, 
+    "allowSyntheticDefaultImports": true,
+    "module": "commonjs",
+    "target": "esnext",
+    "baseUrl": "./",
+    "paths": {
+      "@": ["src/*"],
+      "@mapper":["src/mapper/*"]
+    }
+  },
+}

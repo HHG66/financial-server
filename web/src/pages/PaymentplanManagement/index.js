@@ -1,14 +1,14 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-01 17:04:01
- * @LastEditTime: 2023-01-31 20:15:50
+ * @LastEditTime: 2023-02-19 22:06:42
  * @LastEditors: 韩宏广
  * @FilePath: /Personal-finance/web/src/pages/PaymentplanManagement/index.js
  * @文件说明: 
  */
 import { useEffect, useState } from 'react'
-import { Descriptions, Button, Row, Col, Form, Input, DatePicker } from 'antd'
-import { DownOutlined, UpOutlined } from '@ant-design/icons';
+import { Descriptions, Button, Row, Col, Form, DatePicker } from 'antd'
+// import { DownOutlined, UpOutlined } from '@ant-design/icons';
 import { getPlanListApi } from '@/api/paymentplanManagement'
 import './index.less'
 
@@ -93,7 +93,7 @@ const PaymentplanManagement = () => {
         </Row>
       </Form>
 
-      <div style={{ display: (description.detailed == 'none') ? 'none' : 'block' }}>
+      <div style={{ display: (description.detailed === 'none') ? 'none' : 'block' }}>
         {
           Object.keys(plan).map(ele => {
             // debugger
@@ -118,7 +118,7 @@ const PaymentplanManagement = () => {
         }
       </div>
 
-      <div style={{ display: (description.detailed == 'none') ? 'block' : 'none' }}>
+      <div style={{ display: (description.detailed === 'none') ? 'block' : 'none' }}>
         <Descriptions title={year + '年度收入计划详细'} extra={<><Button type="primary" style={{ marginRight: '5px' }}>编辑</Button><Button onClick={() => seeMonthPlan()} type="primary">查看详细</Button></>} className='descriptions' style={{ marginTop: '8px' }}>
           {
             plan.income.map((ele) => {

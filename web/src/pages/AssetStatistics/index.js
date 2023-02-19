@@ -1,7 +1,7 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-01 17:00:51
- * @LastEditTime: 2023-01-31 20:42:42
+ * @LastEditTime: 2023-02-19 22:06:33
  * @LastEditors: 韩宏广
  * @FilePath: /Personal-finance/web/src/pages/AssetStatistics/index.js
  * @文件说明: 
@@ -9,7 +9,7 @@
 
 import * as echarts from 'echarts';
 import { useEffect, useState } from 'react';
-import { Button, Col, Form, Input, Row, Select } from 'antd'
+import { Button, Col, Form, Input, Row } from 'antd'
 import { DownOutlined, UpOutlined } from '@ant-design/icons';
 import './index.less'
 const AssetStatistics = () => {

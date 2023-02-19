@@ -1,12 +1,12 @@
 /*
  * @Author: HHG
- * @Date: 2023-02-15 22:22:13
- * @LastEditTime: 2023-02-18 11:45:09
+ * @Date: 2023-02-17 21:21:02
+ * @LastEditTime: 2023-02-17 21:21:03
  * @LastEditors: 韩宏广
- * @FilePath: /Personal-finance/src/controller/consumptiontype/editconsumptiontype.js
+ * @FilePath: /Personal-finance/src/controller/consumptiontype/editassociatedbill.js
  * @文件说明: 
  */
-const editconsumptiontype = require('@service/consumptiontype/editconsumptiontype.js')
+const editassociatedbill = require('service/consumptiontype/editassociatedbill.js')
 
 module.exports = async (ctx, next) => {
   let respond = []

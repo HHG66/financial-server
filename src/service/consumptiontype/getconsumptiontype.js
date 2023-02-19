@@ -1,4 +1,4 @@
-const { getConsumptiontypeList, getAllConsumptiontypeList } = require('mapper/consumptiontype/index')
+const { getConsumptiontypeList, getAllConsumptiontypeList } = require('@mapper/consumptiontype/index')
 module.exports = async (ctx, next) => {
   let getConsumptiontypeLists
   let { consumptiontypename } = ctx.query

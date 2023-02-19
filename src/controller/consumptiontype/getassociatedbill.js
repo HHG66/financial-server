@@ -1,4 +1,4 @@
-const getassociatedbill = require('service/consumptiontype/getassociatedbill.js')
+const getassociatedbill = require('@service/consumptiontype/getassociatedbill.js')
 
 module.exports = async (ctx, next) => {
   let respond = []
@@ -11,6 +11,7 @@ module.exports = async (ctx, next) => {
   serviceResult.forEach(element => {
     respond.push({
       consumptionname:element.consumptionname,
+      consumptiontype:element.consumptiontypes[0].consumptiontypename,
       key:element._id,
       // consumptiontype:
     })

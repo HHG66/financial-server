@@ -1,6 +1,6 @@
 
-const userServe = require('service/user/index.js')
-const mapper = require('mapper/user/index.js')
+const userServe = require('@service/user/index.js')
+const mapper = require('@mapper/user/index.js')
 
 module.exports = async (ctx, next) => {
   // app(error)

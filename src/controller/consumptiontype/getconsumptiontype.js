@@ -1,4 +1,4 @@
-const getconsumptiontype = require('service/consumptiontype/getconsumptiontype.js')
+const getconsumptiontype = require('@service/consumptiontype/getconsumptiontype.js')
 
 module.exports = async (ctx, next) => {
   let respond = []

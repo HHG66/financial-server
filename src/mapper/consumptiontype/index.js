@@ -1,4 +1,4 @@
-const { Consumptiontype } = require('models/consumptiontype/type.js')
+const { Consumptiontype } = require('@models/consumptiontype/type.js')
 const { add, findOne, find, updata, del } = require('../index.js')
 
 //项目不大，mapper就不拆分了

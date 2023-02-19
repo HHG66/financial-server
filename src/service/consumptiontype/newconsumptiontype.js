@@ -1,12 +1,11 @@
-const { inserConsumptiontype, findOneConsumptiontype } = require('mapper/consumptiontype/index')
-
+const { inserConsumptiontype, findOneConsumptiontype } = require('@mapper/consumptiontype/index')
 module.exports = async (ctx, next) => {
   // console.log(ctx.request.body);
   let result = {}
   let modelDate = {
     createdate: new Date(),
     consumptiontypename: ctx.request.body.consumptiontypename,
-    remark:ctx.request.body.remark
+    remark: ctx.request.body.remark
   }
   let findOneConsumptiontypes = await findOneConsumptiontype(ctx.request.body.consumptiontypename)
   if (findOneConsumptiontypes) {

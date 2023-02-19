@@ -1,7 +1,7 @@
 /*
  * @Author: HHG
  * @Date: 2023-02-15 22:39:26
- * @LastEditTime: 2023-02-15 22:52:45
+ * @LastEditTime: 2023-02-18 11:39:08
  * @LastEditors: 韩宏广
  * @FilePath: /Personal-finance/src/controller/consumptiontype/deleteconsumptiontype.js
  * @文件说明: 
