@@ -2,16 +2,16 @@ const path = require('path')
 // const CracoLessPlugin = require("craco-less");
 // // console.log(process.env.NODE_ENV);
 module.exports = {
-  //   eslint: {
-  //     enable: true /* (default value) */,
-  //     mode: "extends", /* (default value) */
-  //     configure: {
-  //       "extends": "react-app",
-  //       "rules": {
-  //         "jsx-a11y/anchor-is-valid": "off"
-  //       }
-  //     },
-  //   },
+  eslint: {
+    enable: true /* (default value) */,
+    mode: "extends", /* (default value) */
+    configure: {
+      "extends": "react-app",
+      "rules": {
+        "jsx-a11y/anchor-is-valid": "off"
+      }
+    },
+  },
   webpack: {
     alias: {
       '@': path.resolve(__dirname, 'src')
