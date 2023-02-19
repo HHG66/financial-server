@@ -7,7 +7,6 @@
  * @文件说明: 
  */
 const deleteconsumptiontype = require('service/consumptiontype/deleteconsumptiontype.js')
-const mapper = require('mapper/consumptiontype/index.js');
 
 module.exports = async (ctx, next) => {
   let respond = []

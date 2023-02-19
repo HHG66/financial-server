@@ -1,0 +1,36 @@
+[2023-02-17T20:55:29.920] [DEBUG] default - Some debug messages
+[2023-02-17T20:55:30.870] [DEBUG] default - 未知错误 MongoServerError: $lookup argument 'as' must be a string, found as: { consumptionname: "" }: object
+    at Connection.onMessage (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/mongodb/lib/cmap/connection.js:227:30)
+    at MessageStream.<anonymous> (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/mongodb/lib/cmap/connection.js:60:60)
+    at MessageStream.emit (node:events:526:28)
+    at processIncomingData (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/mongodb/lib/cmap/message_stream.js:125:16)
+    at MessageStream._write (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/mongodb/lib/cmap/message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at MessageStream.Writable.write (node:internal/streams/writable:334:10)
+    at Socket.ondata (node:internal/streams/readable:754:22)
+    at Socket.emit (node:events:526:28) {
+  ok: 0,
+  code: 9,
+  codeName: 'FailedToParse',
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2023-02-17T20:55:50.227] [DEBUG] default - Some debug messages
+[2023-02-17T20:56:04.218] [DEBUG] default - Some debug messages
+[2023-02-17T20:56:22.650] [DEBUG] default - Some debug messages
+[2023-02-17T20:57:07.864] [DEBUG] default - 未知错误 MongoServerError: $lookup argument 'as' must be a string, found as: { consumptionname: "" }: object
+    at Connection.onMessage (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/mongodb/lib/cmap/connection.js:227:30)
+    at MessageStream.<anonymous> (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/mongodb/lib/cmap/connection.js:60:60)
+    at MessageStream.emit (node:events:526:28)
+    at processIncomingData (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/mongodb/lib/cmap/message_stream.js:125:16)
+    at MessageStream._write (/Users/hanhongguang/Documents/个人项目/Personal-finance/node_modules/mongodb/lib/cmap/message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at MessageStream.Writable.write (node:internal/streams/writable:334:10)
+    at Socket.ondata (node:internal/streams/readable:754:22)
+    at Socket.emit (node:events:526:28) {
+  ok: 0,
+  code: 9,
+  codeName: 'FailedToParse',
+  [Symbol(errorLabels)]: Set(0) {}
+}

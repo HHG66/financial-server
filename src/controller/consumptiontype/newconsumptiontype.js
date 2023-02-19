@@ -1,6 +1,5 @@
 
 const newconsumptiontype = require('service/consumptiontype/newconsumptiontype.js')
-const mapper = require('mapper/consumptiontype/index.js');
 
 module.exports = async (ctx, next) => {
 

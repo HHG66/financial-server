@@ -47,7 +47,7 @@ module.exports = {
       return webpackConfig;
     },
   },
-  devtool:"inline-source-map",
+  // devtool: "inline-source-map",
   plugins: [
     {
       plugin: CracoLessPlugin,
@@ -61,16 +61,16 @@ module.exports = {
       }
     }
   ],
-  devServer: {
-    proxy: {
-      '/proxy': {
-        target: 'http://127.0.0.1:3000',
-        timeout: 30000,
-        changeOrigin: true,
-        pathRewrite: {
-          "^/proxy": ''
-        }
-      }
-    },
-  },
+  // devServer: {
+  //   proxy: {
+  //     '/proxy': {
+  //       target: 'http://127.0.0.1:3000',
+  //       timeout: 30000,
+  //       changeOrigin: true,
+  //       pathRewrite: {
+  //         "^/proxy": ''
+  //       }
+  //     }
+  //   },
+  // },
 }

@@ -1,5 +1,4 @@
 const getconsumptiontype = require('service/consumptiontype/getconsumptiontype.js')
-const mapper = require('mapper/consumptiontype/index.js');
 
 module.exports = async (ctx, next) => {
   let respond = []

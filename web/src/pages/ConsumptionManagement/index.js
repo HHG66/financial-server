@@ -1,9 +1,9 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-01 17:01:17
- * @LastEditTime: 2023-02-15 22:54:18
+ * @LastEditTime: 2023-02-16 09:10:25
  * @LastEditors: 韩宏广
- * @FilePath: /Personal-finance/web/src/pages/ConsumptionManagement/index.js
+ * @FilePath: \financial\web\src\pages\ConsumptionManagement\index.js
  * @文件说明: 
  */
 import { Table, Form, Input, Row, Col, Button, Space, Modal, message, Popconfirm } from 'antd'
@@ -165,6 +165,7 @@ const ConsumptionManagement = () => {
   const deleteConsumptiontype = (id) => {
     deleteConsumptiontypeApi(id).then((res) => {
       if (res.code === '00000') {
+        getAllConsumptiontypeList()
         message.success(res.message)
       }
     })
