@@ -1,5 +1,5 @@
 const { newassociatedbill } = require('@mapper/consumptiontype/associatedbill')
-const { findOneConsumptiontypeFormId } = require('mapper/consumptiontype/index')
+const { findOneConsumptiontypeFormId } = require('@mapper/consumptiontype/index')
 module.exports = async (ctx, next) => {
   let newResult
   let newassociatedbillData = {}

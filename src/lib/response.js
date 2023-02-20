@@ -4,6 +4,6 @@ module.exports = async (ctx, res, option = {}) => {
     code: option.code || '00000',
     data: res,
     message: option.message || "请求成功",
-    desc: option.desc || 'success'
+    // desc: option.desc || 'success'
   }
 }

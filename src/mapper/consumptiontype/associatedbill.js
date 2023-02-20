@@ -22,9 +22,15 @@ module.exports = {
           from: "consumptiontypes",
           localField: "consumptiontype",
           foreignField: "_id",
-          as:"consumptiontypes"
+          as: "consumptiontypes"
         }
       },
     ])
+  },
+  editassociatedbill: (data) => {
+    return Associatedbill.findOneAndUpdate({ _id: data.id }, { consumptionname: data.consumptionname, consumptiontype: data.consumptiontype })
+  },
+  deleteassociatedbill: (_id) => {
+    return del(Associatedbill, _id)
   }
 }

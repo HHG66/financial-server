@@ -36,5 +36,10 @@ router.post('/editassociatedbill', async (ctx, next) => {
   await require(controllerPath + `editassociatedbill.js`)(ctx, next)
   // require(`@/controller/test/index.js`)(ctx, next)
 });
+//删除关联消费类型
+router.post('/deleteassociatedbill', async (ctx, next) => {
+  await require(controllerPath + `deleteassociatedbill.js`)(ctx, next)
+  // require(`@/controller/test/index.js`)(ctx, next)
+});
 
 module.exports = router

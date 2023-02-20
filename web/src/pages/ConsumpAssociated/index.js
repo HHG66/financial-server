@@ -1,9 +1,9 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-01 17:01:12
- * @LastEditTime: 2023-02-16 10:50:05
+ * @LastEditTime: 2023-02-20 23:08:06
  * @LastEditors: 韩宏广
- * @FilePath: \financial\web\src\pages\ConsumpAssociated\index.js
+ * @FilePath: /Financial/web/src/pages/ConsumpAssociated/index.js
  * @文件说明: 
  */
 import { Space, Table, Row, Col, Button, Form, Input, Modal, Select, message, Popconfirm } from 'antd';
@@ -36,6 +36,7 @@ const ConsumpAssociated = () => {
       res.data.forEach(element => {
         reqConsumptionTypeList.push({ "label": element.name, "value": element.id, key: element.id })
       });
+      console.log(reqConsumptionTypeList);
       setConsumptionTypeList(reqConsumptionTypeList)
     })
   }
@@ -57,14 +58,23 @@ const ConsumpAssociated = () => {
           if (res.code === '00000') {
             message.success(res.message)
             setshowModal(false)
+            getassociatedbill({}).then(res => {
+              setData(res.data)
+            })  
           }
           setConfirmLoading(false)
         })
       } else if (modelState === true) {
         setConfirmLoading(false)
-        console.log("bianji");
         editAssociatedBill({ editAssociatedBillId, values }).then(res => {
-          console.log(res);
+          if (res.code === '00000') {
+            message.success(res.message)
+            //暂时不单独拿出去
+            getassociatedbill({}).then(res => {
+              setData(res.data)
+            })
+            setshowModal(false)
+          }
         })
       }
     }).catch(error => {
@@ -73,10 +83,17 @@ const ConsumpAssociated = () => {
     })
   }
   function editAssociatedBillModel(rowData) {
-    // console.log(rowData);
+    console.log('rowData', rowData);
+    let consumptiontypes
+    consumptionTypeList.forEach(element => {
+      if (element.label === rowData.consumptiontype) {
+        consumptiontypes = element.value
+      }
+    });
+    console.log('consumptiontypes', consumptiontypes);
     setshowModal(true)
     setTitle('编辑关联消费账单')
-    form.setFieldsValue({ consumptionName: rowData.consumptionname, consumptiontype: rowData.consumptiontype })
+    form.setFieldsValue({ consumptionName: rowData.consumptionname, consumptiontype: consumptiontypes })
     setmodelState(true)
     seteditAssociatedBillId(rowData.key)
   }
@@ -84,6 +101,9 @@ const ConsumpAssociated = () => {
     deleteAssociatedBill(rowData.key).then((res) => {
       console.log(res);
       message.success(res.message)
+      getassociatedbill({}).then(res => {
+        setData(res.data)
+      })
     })
   }
   const confirm = (record) => {
@@ -154,7 +174,7 @@ const ConsumpAssociated = () => {
   }
   const onFinish = (values) => {
     console.log('Success:', values);
-    getassociatedbill({consumptionName: values.billconsumptionname}).then(res => {
+    getassociatedbill({ consumptionName: values.billconsumptionname }).then(res => {
       setData(res.data)
     })
     // getConsumptionTypeList({ consumptionName: values.billconsumptionname })
@@ -168,7 +188,7 @@ const ConsumpAssociated = () => {
             layout="inline"
             form={searchForm}
             initialValues={{
-              remember: true,
+              // remember: true,
             }}
             onFinish={onFinish}
             // onFinishFailed={onFinishFailed}
@@ -222,7 +242,7 @@ const ConsumpAssociated = () => {
             span: 24,
           }}
           initialValues={{
-            consumptiontype: ''
+            // consumptiontype: consumptionTypeList[0],
           }}
           autoComplete="off"
         >
@@ -257,8 +277,7 @@ const ConsumpAssociated = () => {
             </Select> */}
             <Select
               showSearch
-              placeholder="Select a person"
-              optionFilterProp="children"
+              // optionFilterProp="children"
               onChange={onChange}
               onSearch={onSearch}
               options={consumptionTypeList}

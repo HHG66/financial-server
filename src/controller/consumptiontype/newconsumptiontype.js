@@ -1,5 +1,5 @@
 
-const newconsumptiontype = require('service/consumptiontype/newconsumptiontype.js')
+const newconsumptiontype = require('@service/consumptiontype/newconsumptiontype.js')
 
 module.exports = async (ctx, next) => {
 

@@ -1,4 +1,4 @@
-const newassociatedbillname = require('service/consumptiontype/newassociatedbillname.js')
+const newassociatedbillname = require('@service/consumptiontype/newassociatedbillname.js')
 
 module.exports = async (ctx, next) => {
   let respond = []
