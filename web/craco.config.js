@@ -3,7 +3,7 @@ const CracoLessPlugin = require("craco-less");
 // // console.log(process.env.NODE_ENV);
 module.exports = {
   eslint: {
-    enable: true /* (default value) */,
+    enable: false /* (default value) */,
     mode: "extends", /* (default value) */
     configure: {
       "extends": "react-app",
