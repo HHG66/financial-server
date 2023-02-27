@@ -1,9 +1,9 @@
 /*
  * @Author: HHG
  * @Date: 2023-02-08 22:13:49
- * @LastEditTime: 2023-02-17 23:46:30
+ * @LastEditTime: 2023-02-27 14:35:10
  * @LastEditors: 韩宏广
- * @FilePath: /Personal-finance/src/app.js
+ * @FilePath: \financial\src\app.js
  * @文件说明: 
  */
 // require('app-module-path').addPath(__dirname);
@@ -66,8 +66,10 @@ app.on('error', (error, ctx) => {
   // console.log(error);
 });
 
-mongoConnect()
-modelInit()
+mongoConnect().then(()=>{
+  //连接成功状态下初始化数据
+  modelInit()
+})
 //响应方法挂载到全局
 global.response = response
 

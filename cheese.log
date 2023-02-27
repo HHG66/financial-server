@@ -1,0 +1,218 @@
+[2023-02-27T14:35:08.283] [DEBUG] default - Some debug messages
+[2023-02-27T14:35:11.642] [DEBUG] default - Some debug messages
+[2023-02-27T14:35:14.683] [DEBUG] default - 未知错误 MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at Connection.openUri (D:\personal\personal-projects\financial\node_modules\mongoose\lib\connection.js:825:32)
+    at D:\personal\personal-projects\financial\node_modules\mongoose\lib\index.js:414:10
+    at D:\personal\personal-projects\financial\node_modules\mongoose\lib\helpers\promiseOrCallback.js:41:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (D:\personal\personal-projects\financial\node_modules\mongoose\lib\helpers\promiseOrCallback.js:40:10)
+    at Mongoose._promiseOrCallback (D:\personal\personal-projects\financial\node_modules\mongoose\lib\index.js:1288:10)
+    at Mongoose.connect (D:\personal\personal-projects\financial\node_modules\mongoose\lib\index.js:413:20)
+    at module.exports (D:\personal\personal-projects\financial\src\lib\db.js:13:18)
+    at Object.<anonymous> (D:\personal\personal-projects\financial\src\app.js:69:1)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14) {
+  reason: TopologyDescription {
+    type: 'Unknown',
+    servers: Map(1) { '127.0.0.1:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+[2023-02-27T14:36:18.793] [DEBUG] default - Some debug messages
+[2023-02-27T14:36:21.846] [DEBUG] default - 未知错误 MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at Connection.openUri (D:\personal\personal-projects\financial\node_modules\mongoose\lib\connection.js:825:32)
+    at D:\personal\personal-projects\financial\node_modules\mongoose\lib\index.js:414:10
+    at D:\personal\personal-projects\financial\node_modules\mongoose\lib\helpers\promiseOrCallback.js:41:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (D:\personal\personal-projects\financial\node_modules\mongoose\lib\helpers\promiseOrCallback.js:40:10)
+    at Mongoose._promiseOrCallback (D:\personal\personal-projects\financial\node_modules\mongoose\lib\index.js:1288:10)
+    at Mongoose.connect (D:\personal\personal-projects\financial\node_modules\mongoose\lib\index.js:413:20)
+    at module.exports (D:\personal\personal-projects\financial\src\lib\db.js:13:18)
+    at Object.<anonymous> (D:\personal\personal-projects\financial\src\app.js:69:1)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14) {
+  reason: TopologyDescription {
+    type: 'Unknown',
+    servers: Map(1) { '127.0.0.1:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+[2023-02-27T14:36:24.062] [DEBUG] default - Some debug messages
+[2023-02-27T14:36:27.112] [DEBUG] default - 未知错误 MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at Connection.openUri (D:\personal\personal-projects\financial\node_modules\mongoose\lib\connection.js:825:32)
+    at D:\personal\personal-projects\financial\node_modules\mongoose\lib\index.js:414:10
+    at D:\personal\personal-projects\financial\node_modules\mongoose\lib\helpers\promiseOrCallback.js:41:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (D:\personal\personal-projects\financial\node_modules\mongoose\lib\helpers\promiseOrCallback.js:40:10)
+    at Mongoose._promiseOrCallback (D:\personal\personal-projects\financial\node_modules\mongoose\lib\index.js:1288:10)
+    at Mongoose.connect (D:\personal\personal-projects\financial\node_modules\mongoose\lib\index.js:413:20)
+    at module.exports (D:\personal\personal-projects\financial\src\lib\db.js:13:18)
+    at Object.<anonymous> (D:\personal\personal-projects\financial\src\app.js:69:1)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14) {
+  reason: TopologyDescription {
+    type: 'Unknown',
+    servers: Map(1) { '127.0.0.1:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+[2023-02-27T14:36:38.007] [DEBUG] default - Some debug messages
+[2023-02-27T14:36:41.352] [DEBUG] default - Some debug messages
+[2023-02-27T14:36:44.460] [DEBUG] default - 未知错误 MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at Connection.openUri (D:\personal\personal-projects\financial\node_modules\mongoose\lib\connection.js:825:32)
+    at D:\personal\personal-projects\financial\node_modules\mongoose\lib\index.js:414:10
+    at D:\personal\personal-projects\financial\node_modules\mongoose\lib\helpers\promiseOrCallback.js:41:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (D:\personal\personal-projects\financial\node_modules\mongoose\lib\helpers\promiseOrCallback.js:40:10)
+    at Mongoose._promiseOrCallback (D:\personal\personal-projects\financial\node_modules\mongoose\lib\index.js:1288:10)
+    at Mongoose.connect (D:\personal\personal-projects\financial\node_modules\mongoose\lib\index.js:413:20)
+    at module.exports (D:\personal\personal-projects\financial\src\lib\db.js:13:18)
+    at Object.<anonymous> (D:\personal\personal-projects\financial\src\app.js:69:1)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14) {
+  reason: TopologyDescription {
+    type: 'Unknown',
+    servers: Map(1) { '127.0.0.1:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+[2023-02-27T14:36:50.792] [DEBUG] default - Some debug messages
+[2023-02-27T14:36:53.905] [DEBUG] default - 未知错误 MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at Connection.openUri (D:\personal\personal-projects\financial\node_modules\mongoose\lib\connection.js:825:32)
+    at D:\personal\personal-projects\financial\node_modules\mongoose\lib\index.js:414:10
+    at D:\personal\personal-projects\financial\node_modules\mongoose\lib\helpers\promiseOrCallback.js:41:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (D:\personal\personal-projects\financial\node_modules\mongoose\lib\helpers\promiseOrCallback.js:40:10)
+    at Mongoose._promiseOrCallback (D:\personal\personal-projects\financial\node_modules\mongoose\lib\index.js:1288:10)
+    at Mongoose.connect (D:\personal\personal-projects\financial\node_modules\mongoose\lib\index.js:413:20)
+    at module.exports (D:\personal\personal-projects\financial\src\lib\db.js:13:18)
+    at Object.<anonymous> (D:\personal\personal-projects\financial\src\app.js:69:1)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14) {
+  reason: TopologyDescription {
+    type: 'Unknown',
+    servers: Map(1) { '127.0.0.1:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+[2023-02-27T14:39:24.850] [DEBUG] default - Some debug messages
+[2023-02-27T14:39:27.915] [DEBUG] default - 未知错误 MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at Connection.openUri (D:\personal\personal-projects\financial\node_modules\mongoose\lib\connection.js:825:32)
+    at D:\personal\personal-projects\financial\node_modules\mongoose\lib\index.js:414:10
+    at D:\personal\personal-projects\financial\node_modules\mongoose\lib\helpers\promiseOrCallback.js:41:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (D:\personal\personal-projects\financial\node_modules\mongoose\lib\helpers\promiseOrCallback.js:40:10)
+    at Mongoose._promiseOrCallback (D:\personal\personal-projects\financial\node_modules\mongoose\lib\index.js:1288:10)
+    at Mongoose.connect (D:\personal\personal-projects\financial\node_modules\mongoose\lib\index.js:413:20)
+    at module.exports (D:\personal\personal-projects\financial\src\lib\db.js:13:18)
+    at Object.<anonymous> (D:\personal\personal-projects\financial\src\app.js:69:1)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14) {
+  reason: TopologyDescription {
+    type: 'Unknown',
+    servers: Map(1) { '127.0.0.1:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+[2023-02-27T14:39:30.232] [DEBUG] default - Some debug messages
+[2023-02-27T14:39:33.275] [DEBUG] default - 未知错误 MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at Connection.openUri (D:\personal\personal-projects\financial\node_modules\mongoose\lib\connection.js:825:32)
+    at D:\personal\personal-projects\financial\node_modules\mongoose\lib\index.js:414:10
+    at D:\personal\personal-projects\financial\node_modules\mongoose\lib\helpers\promiseOrCallback.js:41:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (D:\personal\personal-projects\financial\node_modules\mongoose\lib\helpers\promiseOrCallback.js:40:10)
+    at Mongoose._promiseOrCallback (D:\personal\personal-projects\financial\node_modules\mongoose\lib\index.js:1288:10)
+    at Mongoose.connect (D:\personal\personal-projects\financial\node_modules\mongoose\lib\index.js:413:20)
+    at module.exports (D:\personal\personal-projects\financial\src\lib\db.js:13:18)
+    at Object.<anonymous> (D:\personal\personal-projects\financial\src\app.js:69:1)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14) {
+  reason: TopologyDescription {
+    type: 'Unknown',
+    servers: Map(1) { '127.0.0.1:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+[2023-02-27T14:39:38.546] [DEBUG] default - Some debug messages
+[2023-02-27T14:39:41.592] [DEBUG] default - 未知错误 MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at Connection.openUri (D:\personal\personal-projects\financial\node_modules\mongoose\lib\connection.js:825:32)
+    at D:\personal\personal-projects\financial\node_modules\mongoose\lib\index.js:414:10
+    at D:\personal\personal-projects\financial\node_modules\mongoose\lib\helpers\promiseOrCallback.js:41:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (D:\personal\personal-projects\financial\node_modules\mongoose\lib\helpers\promiseOrCallback.js:40:10)
+    at Mongoose._promiseOrCallback (D:\personal\personal-projects\financial\node_modules\mongoose\lib\index.js:1288:10)
+    at Mongoose.connect (D:\personal\personal-projects\financial\node_modules\mongoose\lib\index.js:413:20)
+    at module.exports (D:\personal\personal-projects\financial\src\lib\db.js:13:18)
+    at Object.<anonymous> (D:\personal\personal-projects\financial\src\app.js:69:1)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14) {
+  reason: TopologyDescription {
+    type: 'Unknown',
+    servers: Map(1) { '127.0.0.1:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}

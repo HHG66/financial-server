@@ -12,7 +12,7 @@
     "koa2-cors": "^2.0.6",
     "log4js": "^6.7.1",
     "module-alias": "^2.2.2",
-    "mongoose": "^6.9.1",
+    "mongoose": "^6.10.0",
     "node-polyfill-webpack-plugin": "^2.0.1",
     "require-directory": "^2.1.1"
   },
