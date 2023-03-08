@@ -1,9 +1,9 @@
 /*
  * @Author: HHG
  * @Date: 2023-02-12 11:37:58
- * @LastEditTime: 2023-02-27 14:39:27
+ * @LastEditTime: 2023-03-08 20:39:54
  * @LastEditors: 韩宏广
- * @FilePath: \financial\src\lib\db.js
+ * @FilePath: /Financial/src/lib/db.js
  * @文件说明: 
  */
 const mongoose = require('mongoose');
@@ -19,8 +19,8 @@ module.exports = async (resolve, reject) => {
     useUnifiedTopology: true,
     serverSelectionTimeoutMS: 3000
   })
-    .then(function (err) {
-      console.log(err);
+    .then(function (res) {
+      // console.log(err);
       console.log('数据库连接成功');
       //返回连接状态，做初始化操作
       // return resolve()

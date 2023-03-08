@@ -1,15 +1,13 @@
 /*
  * @Author: HHG
  * @Date: 2023-02-08 22:13:49
- * @LastEditTime: 2023-02-27 14:35:10
+ * @LastEditTime: 2023-03-08 20:40:24
  * @LastEditors: 韩宏广
- * @FilePath: \financial\src\app.js
+ * @FilePath: /Financial/src/app.js
  * @文件说明: 
  */
 // require('app-module-path').addPath(__dirname);
 require('module-alias/register')
-
-
 const Koa = require('koa')
 const Router = require('@koa/router');
 const bodyParser = require('koa-bodyparser');
@@ -36,16 +34,11 @@ app.use(cors());
 //     }
 //   }
 // )
-
-
 app.use(jwt({ secret: 'secret' }).unless({ path: '/login' }));
 
 //写入全局变量
 let router = new Router();
 global.router = router
-// app.use(async ctx => {
-//   console.log(ctx);
-// })
 
 app.use(bodyParser())
 InitController.InitCore(app)

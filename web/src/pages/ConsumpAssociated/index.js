@@ -1,9 +1,9 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-01 17:01:12
- * @LastEditTime: 2023-02-20 23:08:06
+ * @LastEditTime: 2023-03-08 21:05:13
  * @LastEditors: 韩宏广
- * @FilePath: /Financial/web/src/pages/ConsumpAssociated/index.js
+ * @FilePath: /web/src/pages/ConsumpAssociated/index.js
  * @文件说明: 
  */
 import { Space, Table, Row, Col, Button, Form, Input, Modal, Select, message, Popconfirm } from 'antd';
@@ -60,7 +60,7 @@ const ConsumpAssociated = () => {
             setshowModal(false)
             getassociatedbill({}).then(res => {
               setData(res.data)
-            })  
+            })
           }
           setConfirmLoading(false)
         })
@@ -179,6 +179,11 @@ const ConsumpAssociated = () => {
     })
     // getConsumptionTypeList({ consumptionName: values.billconsumptionname })
   };
+  const getassociatedbillList = () => {
+    getassociatedbill({}).then(res => {
+      setData(res.data)
+    })
+  }
   return (
     <>
       <Row gutter={24} className='btn-form'>
@@ -206,7 +211,7 @@ const ConsumpAssociated = () => {
                 <Button type="primary" htmlType="submit">
                   搜索
                 </Button>
-                <Button type="primary" onClick={() => searchForm.resetFields()}>
+                <Button type="primary" onClick={() => { searchForm.resetFields(); getassociatedbillList() }}>
                   重置
                 </Button>
               </Space>
