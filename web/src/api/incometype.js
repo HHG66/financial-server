@@ -1,9 +1,9 @@
 /*
  * @Author: HHG
  * @Date: 2022-10-22 20:33:04
- * @LastEditTime: 2022-12-11 22:39:00
+ * @LastEditTime: 2023-03-09 21:06:08
  * @LastEditors: 韩宏广
- * @FilePath: /个人财务/web/src/api/incometype.js
+ * @FilePath: /Financial/web/src/api/incometype.js
  * @文件说明: 
  */
 import request from './index.js'
