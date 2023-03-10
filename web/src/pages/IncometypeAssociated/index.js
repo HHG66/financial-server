@@ -1,14 +1,15 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-01 17:01:29
- * @LastEditTime: 2022-12-11 22:37:04
+ * @LastEditTime: 2023-03-09 21:09:10
  * @LastEditors: 韩宏广
- * @FilePath: /个人财务/web/src/pages/IncometypeAssociated/index.js
+ * @FilePath: /Financial/web/src/pages/IncometypeAssociated/index.js
  * @文件说明: 
  */
 import { Space, Table, Row, Col, Button, Modal, Form, Input, message, Select, Popconfirm } from 'antd';
 import { useEffect, useState } from 'react';
-import { newAssociatedIncome, getIncomeTypeList, editAssociatedIncomeApi, deleteAssociatedIncomeApi, getAssocicitedIncomeListApi } from '@/api/incometype'
+import { newAssociatedIncome, getIncomeTypeList, editAssociatedIncomeApi, deleteAssociatedIncomeApi, getAssocicitedIncomeListApi } from '@/api/incometype';
+
 
 const IncometypeAssociated = () => {
   const [model, setModel] = useState({
@@ -52,14 +53,7 @@ const IncometypeAssociated = () => {
   ]
 
   useEffect(() => {
-    let incomeTypeList = []
-    getIncomeTypeList().then((res) => {
-      // console.log(res);
-      res.data.forEach(element => {
-        incomeTypeList.push({ "label": element.name, "value": element.id, "key": element.id })
-      });
-      setIncomeTypeList(incomeTypeList)
-    })
+
     getAssocicitedIncomeListApi({}).then((res) => {
       // const tableData = res.data.map(item => ({
       //   billincomename: item.billincomename,
@@ -131,12 +125,20 @@ const IncometypeAssociated = () => {
     })
   }
   const showModal = () => {
+    let incomeTypeList = []
     form.resetFields()
+    getIncomeTypeList().then((res) => {
+      // console.log(res);
+      res.data.forEach(element => {
+        incomeTypeList.push({ "label": element.name, "value": element.id, "key": element.id })
+      });
+      setIncomeTypeList(incomeTypeList)
+    })
     setModel({
       ...model,
       state: true,
       title: '新建关联收入账单',
-      isEdit:false
+      isEdit: false
     })
   }
   const handleOk = () => {
