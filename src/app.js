@@ -1,13 +1,15 @@
 /*
  * @Author: HHG
  * @Date: 2023-02-08 22:13:49
- * @LastEditTime: 2023-03-08 20:40:24
+ * @LastEditTime: 2023-03-10 10:03:44
  * @LastEditors: 韩宏广
- * @FilePath: /Financial/src/app.js
+ * @FilePath: \financial\src\app.js
  * @文件说明: 
  */
 // require('app-module-path').addPath(__dirname);
 require('module-alias/register')
+
+
 const Koa = require('koa')
 const Router = require('@koa/router');
 const bodyParser = require('koa-bodyparser');

@@ -13,14 +13,14 @@ import '@/icon/index'
 
 function App() {
   return (
-    <HashRouter style={{ height: "100%", width: "100%" }}>
+    <BrowserRouter style={{ height: "100%", width: "100%" }}>
       {/* <AppRouter /> */}
       <AppRouter />
       {/* <Routes>
           <Route path='/' element={
              <Layouts/>
        </Routes> */}
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 

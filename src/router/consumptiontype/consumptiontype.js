@@ -1,4 +1,4 @@
-controllerPath = '@controller/consumptiontype/'
+let controllerPath = '@controller/consumptiontype/'
 
 // controller/consumptiontype/'
 //新增消费类型
