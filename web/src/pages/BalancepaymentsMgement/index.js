@@ -1,9 +1,9 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-01 17:01:04
- * @LastEditTime: 2023-01-10 23:17:03
+ * @LastEditTime: 2023-03-12 14:29:23
  * @LastEditors: 韩宏广
- * @FilePath: /Personal-finance/web/src/pages/BalancepaymentsMgement/index.js
+ * @FilePath: /Financial/web/src/pages/BalancepaymentsMgement/index.js
  * @文件说明: 
  */
 import { Calendar, Col, Divider, Drawer, Row, Badge, Space, Button, Modal, Form, Input, Select, message, DatePicker } from 'antd'
@@ -11,7 +11,7 @@ import { useEffect, useState } from 'react'
 import "./index.less"
 
 import { getBalancepayMentsApi, newFinancialRecordApi, getPeriodTimeBillApi } from '@/api/balancepayments'
-import { getIncomeTypeList } from '@/api/incometype'
+import { getIncomeTypeListApi } from '@/api/incometype'
 import { getConsumptionTypeListApi } from '@/api/consumptiontype'
 
 const DescriptionItem = ({ title, content }) => (
@@ -114,7 +114,7 @@ const BalancepaymentsMgement = () => {
         ...modelInfo,
         type: 'income'
       })
-      getIncomeTypeList().then(res => {
+      getIncomeTypeListApi().then(res => {
         let incomePayment = []
         res.data.forEach(element => {
           incomePayment.push({

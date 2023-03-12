@@ -1,14 +1,14 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-01 17:01:31
- * @LastEditTime: 2022-12-10 22:18:57
+ * @LastEditTime: 2023-03-12 14:38:27
  * @LastEditors: 韩宏广
- * @FilePath: /个人财务/web/src/pages/IncometypeManagement/index.js
+ * @FilePath: /Financial/web/src/pages/IncometypeManagement/index.js
  * @文件说明: 
  */
 import { Row, Space, Table, Col, Button, Form, Modal, Input, message, Popconfirm } from 'antd';
 import { useEffect, useState } from 'react';
-import { newIncometype, deleteIncomeType, getIncomeTypeList,editIncometype } from '@/api/incometype'
+import { newIncometype, deleteIncomeType, getIncomeTypeListApi, editIncometypeApi } from '@/api/incometype'
 
 const IncometypeManagement = () => {
   const columns = [
@@ -56,7 +56,10 @@ const IncometypeManagement = () => {
   const [form] = Form.useForm();
   const [formdata, setFormdata] = useState(data)
   useEffect(() => {
-    getIncomeTypeList().then((res) => {
+    getIncomeTypeList()
+  }, [])
+  const getIncomeTypeList = () => {
+    getIncomeTypeListApi().then((res) => {
       console.log(res);
       // {
       //   key: '1',
@@ -71,13 +74,12 @@ const IncometypeManagement = () => {
           key: element.id,
           incometypename: element.name,
           date: element.data,
-          remarks:element.remarks
+          remarks: element.remarks
         })
       });
       setFormdata(tabelData)
     })
-  }, [])
-
+  }
   const showModal = () => {
     setOpen({
       open: true,
@@ -97,12 +99,14 @@ const IncometypeManagement = () => {
           })
           message.success(res.message)
         })
-      }else{
-        editIncometype({id:incomeTypeId,name:res.incomName,remarks:res.remarks}).then((res)=>{
+      } else {
+        editIncometypeApi({ id: incomeTypeId, name: res.incomName, remarks: res.remarks }).then((res) => {
           setOpen({
             open: false
-          })
+          })  
+          getIncomeTypeList()
           message.success(res.message)
+          setConfirmLoading(false)
         })
       }
 
@@ -117,13 +121,13 @@ const IncometypeManagement = () => {
       title: '编辑',
       isEdit: true
     })
-    form.setFieldsValue({ incomName: rowdata.incometypename,remarks:rowdata.remarks })
+    form.setFieldsValue({ incomName: rowdata.incometypename, remarks: rowdata.remarks })
     setIncomeTypeId(rowdata.key)
   }
   const deleteIncomeTypes = (rowdata) => {
-    console.log(rowdata);
     deleteIncomeType(rowdata.key).then((res) => {
       message.success(res.message)
+      getIncomeTypeList()
     })
   }
 

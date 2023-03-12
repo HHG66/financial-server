@@ -1,14 +1,14 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-01 17:01:29
- * @LastEditTime: 2023-03-09 21:09:10
+ * @LastEditTime: 2023-03-12 14:29:09
  * @LastEditors: 韩宏广
  * @FilePath: /Financial/web/src/pages/IncometypeAssociated/index.js
  * @文件说明: 
  */
 import { Space, Table, Row, Col, Button, Modal, Form, Input, message, Select, Popconfirm } from 'antd';
 import { useEffect, useState } from 'react';
-import { newAssociatedIncome, getIncomeTypeList, editAssociatedIncomeApi, deleteAssociatedIncomeApi, getAssocicitedIncomeListApi } from '@/api/incometype';
+import { newAssociatedIncome, getIncomeTypeListApi, editAssociatedIncomeApi, deleteAssociatedIncomeApi, getAssocicitedIncomeListApi } from '@/api/incometype';
 
 
 const IncometypeAssociated = () => {
@@ -127,7 +127,7 @@ const IncometypeAssociated = () => {
   const showModal = () => {
     let incomeTypeList = []
     form.resetFields()
-    getIncomeTypeList().then((res) => {
+    getIncomeTypeListApi().then((res) => {
       // console.log(res);
       res.data.forEach(element => {
         incomeTypeList.push({ "label": element.name, "value": element.id, "key": element.id })

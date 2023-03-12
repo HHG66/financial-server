@@ -1,9 +1,9 @@
 /*
  * @Author: HHG
  * @Date: 2022-10-04 00:02:13
- * @LastEditTime: 2023-02-19 22:07:34
+ * @LastEditTime: 2023-03-12 14:28:54
  * @LastEditors: 韩宏广
- * @FilePath: /Personal-finance/web/src/pages/Summary/index.js
+ * @FilePath: /Financial/web/src/pages/Summary/index.js
  * @文件说明: 
  */
 import React, { useEffect, useState } from 'react'
@@ -11,7 +11,7 @@ import { Form, Row, Col, Button, Input, Space, Table, DatePicker, Modal, message
 import { DownOutlined, UpOutlined } from '@ant-design/icons';
 import { getBillSummaryListApi, editSingleBill, deleteSingleBillApi } from '@/api/summary'
 import { getConsumptionTypeListApi } from '@/api/consumptiontype'
-import { getIncomeTypeList } from '@/api/incometype'
+import { getIncomeTypeListApi } from '@/api/incometype'
 // import { dateFormat } from '@/utils/index'
 
 const DescriptionItem = ({ title, content }) => (
@@ -45,7 +45,7 @@ const Summary = () => {
       })
       setSpendingOption(options)
     })
-    getIncomeTypeList().then(res => {
+    getIncomeTypeListApi().then(res => {
       let options = []
       res.data.forEach(element => {
         options.push({ label: element.name, value: element.id })

@@ -1,7 +1,7 @@
 /*
  * @Author: HHG
  * @Date: 2022-10-22 20:33:04
- * @LastEditTime: 2023-03-09 21:06:08
+ * @LastEditTime: 2023-03-12 14:32:17
  * @LastEditors: 韩宏广
  * @FilePath: /Financial/web/src/api/incometype.js
  * @文件说明: 
@@ -19,7 +19,7 @@ export const newIncometype = (data) => {
   })
 }
 
-export const editIncometype = (data) => {
+export const editIncometypeApi = (data) => {
   return request({
     method: 'POST',
     url: '/editincometype',
@@ -41,7 +41,7 @@ export const deleteIncomeType = (id) => {
   })
 }
 
-export const getIncomeTypeList = (searchform) => {
+export const getIncomeTypeListApi = (searchform) => {
   let searchData
   if (!searchform) {
     searchData = ''

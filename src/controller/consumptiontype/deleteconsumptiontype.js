@@ -1,12 +1,12 @@
 /*
  * @Author: HHG
  * @Date: 2023-02-15 22:39:26
- * @LastEditTime: 2023-02-18 11:39:08
+ * @LastEditTime: 2023-03-12 12:06:04
  * @LastEditors: 韩宏广
- * @FilePath: /Personal-finance/src/controller/consumptiontype/deleteconsumptiontype.js
+ * @FilePath: /Financial/src/controller/consumptiontype/deleteconsumptiontype.js
  * @文件说明: 
  */
-const deleteconsumptiontype = require('service/consumptiontype/deleteconsumptiontype.js')
+const deleteconsumptiontype = require('@/service/consumptiontype/deleteconsumptiontype.js')
 
 module.exports = async (ctx, next) => {
   let respond = []

@@ -1,0 +1,124 @@
+[2023-03-12T12:26:24.176] [DEBUG] default - Some debug messages
+[2023-03-12T12:28:05.492] [DEBUG] default - Some debug messages
+[2023-03-12T12:29:22.441] [DEBUG] default - Some debug messages
+[2023-03-12T14:09:59.031] [DEBUG] default - Some debug messages
+[2023-03-12T14:10:36.355] [DEBUG] default - Some debug messages
+[2023-03-12T14:12:18.976] [DEBUG] default - Some debug messages
+[2023-03-12T14:13:09.121] [DEBUG] default - Some debug messages
+[2023-03-12T14:13:13.473] [DEBUG] default - Some debug messages
+[2023-03-12T14:13:24.025] [DEBUG] default - Some debug messages
+[2023-03-12T14:14:07.480] [DEBUG] default - Some debug messages
+[2023-03-12T14:14:28.629] [DEBUG] default - Some debug messages
+[2023-03-12T14:14:42.414] [DEBUG] default - Some debug messages
+[2023-03-12T14:14:51.715] [DEBUG] default - Some debug messages
+[2023-03-12T14:15:24.972] [DEBUG] default - Some debug messages
+[2023-03-12T14:15:34.257] [DEBUG] default - Some debug messages
+[2023-03-12T14:17:05.507] [DEBUG] default - Some debug messages
+[2023-03-12T14:18:52.640] [DEBUG] default - Some debug messages
+[2023-03-12T14:19:22.347] [DEBUG] default - Some debug messages
+[2023-03-12T14:19:36.040] [DEBUG] default - Some debug messages
+[2023-03-12T14:19:38.536] [DEBUG] default - Some debug messages
+[2023-03-12T14:20:53.318] [DEBUG] default - Some debug messages
+[2023-03-12T14:20:55.563] [DEBUG] default - CastError: Cast to ObjectId failed for value "asdfwefwefwefwef" (type string) at path "_id" for model "IncomeType"
+    at model.Query.exec (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/mongoose/lib/query.js:4913:21)
+    at model.Query.Query.then (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/mongoose/lib/query.js:5012:15)
+    at del (/Users/hanhongguang/Documents/个人项目/Financial/src/mapper/index.js:65:33)
+    at deleteincometype (/Users/hanhongguang/Documents/个人项目/Financial/src/mapper/income/index.js:29:11)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/service/income/deleteincometype.js:12:27)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/income/deleteincometype.js:12:24)
+    at /Users/hanhongguang/Documents/个人项目/Financial/src/router/income/index.js:21:56
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:425:16
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32) {
+  messageFormat: undefined,
+  stringValue: '"asdfwefwefwefwef"',
+  kind: 'ObjectId',
+  value: 'asdfwefwefwefwef',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/bson/lib/error.js:41:28)
+      at new ObjectId (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/bson/lib/objectid.js:67:23)
+      at castObjectId (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/mongoose/lib/schema/objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/mongoose/lib/schematype.js:1201:12)
+      at ObjectId.SchemaType._castForQuery (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/mongoose/lib/schematype.js:1648:15)
+      at ObjectId.SchemaType.castForQuery (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/mongoose/lib/schematype.js:1636:15)
+      at ObjectId.SchemaType.castForQueryWrapper (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/mongoose/lib/schematype.js:1612:20)
+      at cast (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/mongoose/lib/cast.js:349:32)
+      at model.Query.Query.cast (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/mongoose/lib/query.js:5343:12),
+  valueType: 'string'
+}
+[2023-03-12T14:22:42.624] [DEBUG] default - Some debug messages
+[2023-03-12T14:22:44.647] [DEBUG] default - CastError: Cast to ObjectId failed for value "asdfwefwefwefwef" (type string) at path "_id" for model "IncomeType"
+    at model.Query.exec (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/mongoose/lib/query.js:4913:21)
+    at model.Query.Query.then (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/mongoose/lib/query.js:5012:15)
+    at del (/Users/hanhongguang/Documents/个人项目/Financial/src/mapper/index.js:65:33)
+    at deleteincometype (/Users/hanhongguang/Documents/个人项目/Financial/src/mapper/income/index.js:29:11)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/service/income/deleteincometype.js:12:27)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/income/deleteincometype.js:12:24)
+    at /Users/hanhongguang/Documents/个人项目/Financial/src/router/income/index.js:21:56
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:425:16
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32) {
+  messageFormat: undefined,
+  stringValue: '"asdfwefwefwefwef"',
+  kind: 'ObjectId',
+  value: 'asdfwefwefwefwef',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/bson/lib/error.js:41:28)
+      at new ObjectId (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/bson/lib/objectid.js:67:23)
+      at castObjectId (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/mongoose/lib/schema/objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/mongoose/lib/schematype.js:1201:12)
+      at ObjectId.SchemaType._castForQuery (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/mongoose/lib/schematype.js:1648:15)
+      at ObjectId.SchemaType.castForQuery (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/mongoose/lib/schematype.js:1636:15)
+      at ObjectId.SchemaType.castForQueryWrapper (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/mongoose/lib/schematype.js:1612:20)
+      at cast (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/mongoose/lib/cast.js:349:32)
+      at model.Query.Query.cast (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/mongoose/lib/query.js:5343:12),
+  valueType: 'string'
+}
+[2023-03-12T14:24:11.769] [DEBUG] default - Some debug messages
+[2023-03-12T14:24:24.321] [DEBUG] default - Some debug messages
+[2023-03-12T14:24:42.978] [DEBUG] default - Some debug messages
+[2023-03-12T14:24:56.672] [DEBUG] default - code:401 UnauthorizedError: Authentication Error
+    at Object.throw (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa/lib/context.js:97:11)
+    at jwt (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-jwt/lib/index.js:66:26)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async cors (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa2-cors/dist/index.js:91:9) {
+  originalError: TokenExpiredError: jwt expired
+      at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/jsonwebtoken/verify.js:190:21
+      at getSecret (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/jsonwebtoken/verify.js:97:14)
+      at Object.module.exports [as verify] (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/jsonwebtoken/verify.js:101:10)
+      at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-jwt/lib/verify.js:5:13
+      at new Promise (<anonymous>)
+      at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-jwt/lib/verify.js:4:12)
+      at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-jwt/lib/index.js:38:64
+      at Array.map (<anonymous>)
+      at jwt (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-jwt/lib/index.js:38:43)
+      at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-unless/index.js:29:12 {
+    expiredAt: 2023-03-08T16:40:44.000Z
+  }
+}
+[2023-03-12T14:25:46.957] [DEBUG] default - Some debug messages
+[2023-03-12T14:26:41.751] [DEBUG] default - Some debug messages
+[2023-03-12T14:27:03.797] [DEBUG] default - Some debug messages
+[2023-03-12T14:27:08.766] [DEBUG] default - Some debug messages
+[2023-03-12T14:28:02.236] [DEBUG] default - Some debug messages
+[2023-03-12T14:28:07.088] [DEBUG] default - Some debug messages
+[2023-03-12T14:28:54.975] [DEBUG] default - Some debug messages
+[2023-03-12T14:29:10.180] [DEBUG] default - Some debug messages
+[2023-03-12T14:29:24.154] [DEBUG] default - Some debug messages
+[2023-03-12T14:31:07.400] [DEBUG] default - Some debug messages
+[2023-03-12T14:31:42.123] [DEBUG] default - Some debug messages
+[2023-03-12T14:32:18.079] [DEBUG] default - Some debug messages
+[2023-03-12T14:32:24.566] [DEBUG] default - Some debug messages
+[2023-03-12T14:32:33.410] [DEBUG] default - Some debug messages
+[2023-03-12T14:32:55.866] [DEBUG] default - Some debug messages
+[2023-03-12T14:33:33.316] [DEBUG] default - Some debug messages
+[2023-03-12T14:34:20.563] [DEBUG] default - Some debug messages
+[2023-03-12T14:34:43.637] [DEBUG] default - Some debug messages
+[2023-03-12T14:36:25.423] [DEBUG] default - Some debug messages
+[2023-03-12T14:37:27.369] [DEBUG] default - Some debug messages
+[2023-03-12T14:38:05.143] [DEBUG] default - Some debug messages
+[2023-03-12T14:38:28.406] [DEBUG] default - Some debug messages

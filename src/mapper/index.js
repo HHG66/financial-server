@@ -1,9 +1,9 @@
 /*
  * @Author: HHG
  * @Date: 2023-02-08 22:40:41
- * @LastEditTime: 2023-02-15 22:40:54
+ * @LastEditTime: 2023-03-12 14:22:42
  * @LastEditors: 韩宏广
- * @FilePath: /Personal-finance/src/mapper/index.js
+ * @FilePath: /Financial/src/mapper/index.js
  * @文件说明: 
  */
 /**
@@ -13,6 +13,8 @@
  * @param {*} mapping 对返回的数据做操作，1 为返回，0为不返回
  * @return {*}
  */
+const log4js = require("log4js");
+const logger = log4js.getLogger();
 const find = (model, where, mapping) => (
   model.find(where, mapping).then(rel => {
     return rel
@@ -64,7 +66,9 @@ const del = (model, where) => (
     return rel
   }).catch(err => {
     console.log('del', err);
-    console.error(err)
+    logger.debug(err) 
+    return "err"
+    // console.error(err)
   })
 )
 
