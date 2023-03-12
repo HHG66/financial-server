@@ -1,7 +1,7 @@
 /*
  * @Author: HHG
  * @Date: 2023-03-08 21:07:35
- * @LastEditTime: 2023-03-12 20:55:11
+ * @LastEditTime: 2023-03-12 22:43:27
  * @LastEditors: 韩宏广
  * @FilePath: /Financial/src/router/income/index.js
  * @文件说明: 
@@ -24,5 +24,10 @@ router.post('/deleteincometype', async (ctx,next) => {
 router.post('/newassociatedincome', async (ctx,next) => {
   await require(controllerPath + 'newassociatedincome.js')(ctx,next)
 })
+//获取收入关联
+router.get('/getassociatedincomelist', async (ctx,next) => {
+  await require(controllerPath + 'getassociatedincome.js')(ctx,next)
+})
+
 
 module.exports = router
