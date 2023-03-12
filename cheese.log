@@ -122,3 +122,251 @@
 [2023-03-12T14:37:27.369] [DEBUG] default - Some debug messages
 [2023-03-12T14:38:05.143] [DEBUG] default - Some debug messages
 [2023-03-12T14:38:28.406] [DEBUG] default - Some debug messages
+[2023-03-12T20:55:12.066] [DEBUG] default - Some debug messages
+[2023-03-12T20:55:18.725] [DEBUG] default - Some debug messages
+[2023-03-12T20:55:30.635] [DEBUG] default - Some debug messages
+[2023-03-12T20:55:31.059] [DEBUG] default - Some debug messages
+[2023-03-12T20:55:31.605] [DEBUG] default - Some debug messages
+[2023-03-12T20:57:54.200] [DEBUG] default - Some debug messages
+[2023-03-12T20:58:17.571] [DEBUG] default - Some debug messages
+[2023-03-12T20:58:33.650] [DEBUG] default - Some debug messages
+[2023-03-12T20:59:14.991] [DEBUG] default - Some debug messages
+[2023-03-12T20:59:59.811] [DEBUG] default - Some debug messages
+[2023-03-12T21:00:58.677] [DEBUG] default - Some debug messages
+[2023-03-12T21:01:14.622] [DEBUG] default - Some debug messages
+[2023-03-12T21:01:14.968] [DEBUG] default - Some debug messages
+[2023-03-12T21:02:04.537] [DEBUG] default - Some debug messages
+[2023-03-12T21:02:37.039] [DEBUG] default - Some debug messages
+[2023-03-12T21:03:18.801] [DEBUG] default - Some debug messages
+[2023-03-12T21:03:33.960] [DEBUG] default - Some debug messages
+[2023-03-12T21:05:32.559] [DEBUG] default - Some debug messages
+[2023-03-12T21:06:13.688] [DEBUG] default - Some debug messages
+[2023-03-12T21:06:46.453] [DEBUG] default - Some debug messages
+[2023-03-12T21:06:47.411] [DEBUG] default - Some debug messages
+[2023-03-12T21:07:23.314] [DEBUG] default - Some debug messages
+[2023-03-12T21:07:56.119] [DEBUG] default - Some debug messages
+[2023-03-12T21:07:56.442] [DEBUG] default - Some debug messages
+[2023-03-12T21:08:26.976] [DEBUG] default - Some debug messages
+[2023-03-12T21:09:19.681] [DEBUG] default - Some debug messages
+[2023-03-12T21:09:46.401] [DEBUG] default - Some debug messages
+[2023-03-12T21:09:53.322] [DEBUG] default - Some debug messages
+[2023-03-12T21:10:11.920] [DEBUG] default - Some debug messages
+[2023-03-12T21:10:16.492] [DEBUG] default - Some debug messages
+[2023-03-12T21:10:32.620] [DEBUG] default - Some debug messages
+[2023-03-12T21:11:04.136] [DEBUG] default - Some debug messages
+[2023-03-12T21:11:06.342] [DEBUG] default - Some debug messages
+[2023-03-12T21:11:07.707] [DEBUG] default - Some debug messages
+[2023-03-12T21:11:11.255] [DEBUG] default - code:401 UnauthorizedError: Authentication Error
+    at Object.throw (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa/lib/context.js:97:11)
+    at jwt (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-jwt/lib/index.js:66:26)
+    at async cors (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa2-cors/dist/index.js:91:9) {
+  originalError: TokenExpiredError: jwt expired
+      at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/jsonwebtoken/verify.js:190:21
+      at getSecret (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/jsonwebtoken/verify.js:97:14)
+      at Object.module.exports [as verify] (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/jsonwebtoken/verify.js:101:10)
+      at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-jwt/lib/verify.js:5:13
+      at new Promise (<anonymous>)
+      at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-jwt/lib/verify.js:4:12)
+      at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-jwt/lib/index.js:38:64
+      at Array.map (<anonymous>)
+      at jwt (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-jwt/lib/index.js:38:43)
+      at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-unless/index.js:29:12 {
+    expiredAt: 2023-03-12T07:40:31.000Z
+  }
+}
+[2023-03-12T21:11:46.426] [DEBUG] default - 未知错误 TypeError: Cannot read properties of undefined (reading 'body')
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/income/newassociatedincome.js:13:39)
+    at /Users/hanhongguang/Documents/个人项目/Financial/src/router/income/index.js:25:59
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:425:16
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:430:31)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-bodyparser/index.js:95:11)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2023-03-12T21:11:59.248] [DEBUG] default - Some debug messages
+[2023-03-12T21:11:59.950] [DEBUG] default - 未知错误 TypeError: Cannot read properties of undefined (reading 'body')
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/service/income/newassociatedincome.js:11:55)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/income/newassociatedincome.js:13:22)
+    at /Users/hanhongguang/Documents/个人项目/Financial/src/router/income/index.js:25:59
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:425:16
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:430:31)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-bodyparser/index.js:95:11)
+[2023-03-12T21:12:46.691] [DEBUG] default - Some debug messages
+[2023-03-12T21:12:50.394] [DEBUG] default - Some debug messages
+[2023-03-12T21:12:51.903] [DEBUG] default - 未知错误 TypeError: newassociatedincome is not a function
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/service/income/newassociatedincome.js:12:27)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/income/newassociatedincome.js:13:22)
+    at /Users/hanhongguang/Documents/个人项目/Financial/src/router/income/index.js:25:59
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:425:16
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:430:31)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-bodyparser/index.js:95:11)
+[2023-03-12T21:13:25.019] [DEBUG] default - Some debug messages
+[2023-03-12T21:13:44.585] [DEBUG] default - Some debug messages
+[2023-03-12T21:13:45.371] [DEBUG] default - 未知错误 TypeError: newassociatedincome is not a function
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/service/income/newassociatedincome.js:13:27)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/income/newassociatedincome.js:13:22)
+    at /Users/hanhongguang/Documents/个人项目/Financial/src/router/income/index.js:25:59
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:425:16
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:430:31)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-bodyparser/index.js:95:11)
+[2023-03-12T21:14:18.323] [DEBUG] default - Some debug messages
+[2023-03-12T21:14:43.540] [DEBUG] default - Some debug messages
+[2023-03-12T21:15:02.997] [DEBUG] default - Some debug messages
+[2023-03-12T21:15:07.149] [DEBUG] default - Some debug messages
+[2023-03-12T21:15:09.232] [DEBUG] default - 未知错误 Error: Cannot find module '/Users/hanhongguang/Documents/个人项目/Financial/src/mapper/associatedincome'
+Require stack:
+- /Users/hanhongguang/Documents/个人项目/Financial/src/service/income/newassociatedincome.js
+- /Users/hanhongguang/Documents/个人项目/Financial/src/controller/income/newassociatedincome.js
+- /Users/hanhongguang/Documents/个人项目/Financial/src/router/income/index.js
+- /Users/hanhongguang/Documents/个人项目/Financial/src/router/index.js
+- /Users/hanhongguang/Documents/个人项目/Financial/src/app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._resolveFilename (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/module-alias/index.js:49:29)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/hanhongguang/Documents/个人项目/Financial/src/service/income/newassociatedincome.js:9:33)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/service/income/newassociatedincome.js',
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/controller/income/newassociatedincome.js',
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/router/income/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/router/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/app.js'
+  ]
+}
+[2023-03-12T21:15:38.560] [DEBUG] default - Some debug messages
+[2023-03-12T21:15:39.057] [DEBUG] default - 未知错误 ReferenceError: add is not defined
+    at newassociatedincome (/Users/hanhongguang/Documents/个人项目/Financial/src/mapper/income/associatedincome.js:12:5)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/service/income/newassociatedincome.js:13:27)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/income/newassociatedincome.js:13:22)
+    at /Users/hanhongguang/Documents/个人项目/Financial/src/router/income/index.js:25:59
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:425:16
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:430:31)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+[2023-03-12T21:16:13.834] [DEBUG] default - Some debug messages
+[2023-03-12T21:16:14.526] [DEBUG] default - 未知错误 TypeError: add is not a function
+    at newassociatedincome (/Users/hanhongguang/Documents/个人项目/Financial/src/mapper/income/associatedincome.js:13:12)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/service/income/newassociatedincome.js:13:27)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/income/newassociatedincome.js:13:22)
+    at /Users/hanhongguang/Documents/个人项目/Financial/src/router/income/index.js:25:59
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:425:16
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:430:31)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+[2023-03-12T21:16:20.206] [DEBUG] default - Some debug messages
+[2023-03-12T21:16:30.063] [DEBUG] default - Some debug messages
+[2023-03-12T21:17:15.825] [DEBUG] default - Some debug messages
+[2023-03-12T21:17:18.963] [DEBUG] default - Some debug messages
+[2023-03-12T21:17:25.183] [DEBUG] default - Some debug messages
+[2023-03-12T21:17:44.616] [DEBUG] default - Some debug messages
+[2023-03-12T21:17:45.201] [DEBUG] default - Some debug messages
+[2023-03-12T21:18:08.329] [DEBUG] default - Some debug messages
+[2023-03-12T21:18:18.963] [DEBUG] default - Some debug messages
+[2023-03-12T21:18:28.911] [DEBUG] default - Some debug messages
+[2023-03-12T21:19:02.656] [DEBUG] default - Some debug messages
+[2023-03-12T21:19:33.241] [DEBUG] default - Some debug messages
+[2023-03-12T21:19:39.093] [DEBUG] default - Some debug messages
+[2023-03-12T21:19:43.938] [DEBUG] default - Some debug messages
+[2023-03-12T21:20:05.874] [DEBUG] default - Some debug messages
+[2023-03-12T21:20:57.927] [DEBUG] default - Some debug messages
+[2023-03-12T21:21:26.350] [DEBUG] default - Some debug messages
+[2023-03-12T21:23:16.957] [DEBUG] default - Some debug messages
+[2023-03-12T21:26:41.611] [DEBUG] default - Some debug messages
+[2023-03-12T21:27:57.073] [DEBUG] default - 未知错误 Error: Cannot find module '/Users/hanhongguang/Documents/个人项目/Financial/src/models/income/index.js'
+Require stack:
+- /Users/hanhongguang/Documents/个人项目/Financial/src/mapper/income/associatedincome.js
+- /Users/hanhongguang/Documents/个人项目/Financial/src/service/income/newassociatedincome.js
+- /Users/hanhongguang/Documents/个人项目/Financial/src/controller/income/newassociatedincome.js
+- /Users/hanhongguang/Documents/个人项目/Financial/src/router/income/index.js
+- /Users/hanhongguang/Documents/个人项目/Financial/src/router/index.js
+- /Users/hanhongguang/Documents/个人项目/Financial/src/app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._resolveFilename (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/module-alias/index.js:49:29)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/hanhongguang/Documents/个人项目/Financial/src/mapper/income/associatedincome.js:10:24)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/mapper/income/associatedincome.js',
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/service/income/newassociatedincome.js',
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/controller/income/newassociatedincome.js',
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/router/income/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/router/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/app.js'
+  ]
+}
+[2023-03-12T21:28:34.090] [DEBUG] default - Some debug messages
+[2023-03-12T21:28:43.194] [DEBUG] default - Some debug messages
+[2023-03-12T21:29:04.759] [DEBUG] default - Some debug messages
+[2023-03-12T21:30:54.802] [DEBUG] default - Some debug messages
+[2023-03-12T21:31:13.722] [DEBUG] default - Some debug messages
+[2023-03-12T21:31:23.868] [DEBUG] default - Some debug messages
+[2023-03-12T21:31:52.667] [DEBUG] default - 未知错误 Error: Cannot find module '/Users/hanhongguang/Documents/个人项目/Financial/src/models/income/index.js'
+Require stack:
+- /Users/hanhongguang/Documents/个人项目/Financial/src/mapper/income/associatedincome.js
+- /Users/hanhongguang/Documents/个人项目/Financial/src/service/income/newassociatedincome.js
+- /Users/hanhongguang/Documents/个人项目/Financial/src/controller/income/newassociatedincome.js
+- /Users/hanhongguang/Documents/个人项目/Financial/src/router/income/index.js
+- /Users/hanhongguang/Documents/个人项目/Financial/src/router/index.js
+- /Users/hanhongguang/Documents/个人项目/Financial/src/app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._resolveFilename (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/module-alias/index.js:49:29)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/hanhongguang/Documents/个人项目/Financial/src/mapper/income/associatedincome.js:10:24)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/mapper/income/associatedincome.js',
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/service/income/newassociatedincome.js',
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/controller/income/newassociatedincome.js',
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/router/income/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/router/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/app.js'
+  ]
+}
+[2023-03-12T21:32:20.593] [DEBUG] default - Some debug messages
+[2023-03-12T21:33:44.176] [DEBUG] default - Some debug messages
+[2023-03-12T21:34:18.881] [DEBUG] default - Some debug messages
+[2023-03-12T21:35:09.094] [DEBUG] default - Some debug messages
+[2023-03-12T21:35:46.871] [DEBUG] default - Some debug messages
+[2023-03-12T21:36:01.665] [DEBUG] default - Some debug messages
+[2023-03-12T21:39:16.786] [DEBUG] default - Some debug messages
+[2023-03-12T21:40:36.981] [DEBUG] default - Some debug messages
+[2023-03-12T21:40:59.668] [DEBUG] default - Some debug messages
+[2023-03-12T21:41:01.059] [DEBUG] default - Some debug messages
+[2023-03-12T21:42:01.460] [DEBUG] default - Some debug messages
+[2023-03-12T21:42:05.497] [DEBUG] default - Some debug messages
