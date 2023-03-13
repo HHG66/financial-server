@@ -516,3 +516,456 @@ Require stack:
 [2023-03-12T23:38:50.179] [DEBUG] default - Some debug messages
 [2023-03-12T23:38:56.008] [DEBUG] default - Some debug messages
 [2023-03-12T23:39:16.766] [DEBUG] default - Some debug messages
+[2023-03-13T22:32:13.118] [DEBUG] default - code:401 UnauthorizedError: Authentication Error
+    at Object.throw (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa/lib/context.js:97:11)
+    at jwt (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-jwt/lib/index.js:66:26)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async cors (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa2-cors/dist/index.js:91:9) {
+  originalError: TokenExpiredError: jwt expired
+      at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/jsonwebtoken/verify.js:190:21
+      at getSecret (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/jsonwebtoken/verify.js:97:14)
+      at Object.module.exports [as verify] (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/jsonwebtoken/verify.js:101:10)
+      at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-jwt/lib/verify.js:5:13
+      at new Promise (<anonymous>)
+      at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-jwt/lib/verify.js:4:12)
+      at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-jwt/lib/index.js:38:64
+      at Array.map (<anonymous>)
+      at jwt (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-jwt/lib/index.js:38:43)
+      at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-unless/index.js:29:12 {
+    expiredAt: 2023-03-12T17:27:41.000Z
+  }
+}
+[2023-03-13T22:35:02.792] [DEBUG] default - Some debug messages
+[2023-03-13T22:35:30.935] [DEBUG] default - Some debug messages
+[2023-03-13T22:35:58.254] [DEBUG] default - Some debug messages
+[2023-03-13T22:36:07.213] [DEBUG] default - Some debug messages
+[2023-03-13T22:36:07.792] [DEBUG] default - Some debug messages
+[2023-03-13T22:36:08.234] [DEBUG] default - Some debug messages
+[2023-03-13T22:36:47.039] [DEBUG] default - Some debug messages
+[2023-03-13T22:37:28.960] [DEBUG] default - Some debug messages
+[2023-03-13T22:37:30.550] [DEBUG] default - Some debug messages
+[2023-03-13T22:37:30.802] [DEBUG] default - Some debug messages
+[2023-03-13T22:37:31.314] [DEBUG] default - Some debug messages
+[2023-03-13T22:38:01.884] [DEBUG] default - Some debug messages
+[2023-03-13T22:38:21.753] [DEBUG] default - Some debug messages
+[2023-03-13T22:38:30.259] [DEBUG] default - Some debug messages
+[2023-03-13T22:39:12.547] [DEBUG] default - Some debug messages
+[2023-03-13T22:39:51.653] [DEBUG] default - Some debug messages
+[2023-03-13T22:40:05.520] [DEBUG] default - Some debug messages
+[2023-03-13T22:40:12.985] [DEBUG] default - Some debug messages
+[2023-03-13T22:40:42.024] [DEBUG] default - Some debug messages
+[2023-03-13T22:40:50.781] [DEBUG] default - Some debug messages
+[2023-03-13T22:40:54.935] [DEBUG] default - Some debug messages
+[2023-03-13T22:41:53.720] [DEBUG] default - Some debug messages
+[2023-03-13T22:42:20.038] [DEBUG] default - Some debug messages
+[2023-03-13T22:43:01.495] [DEBUG] default - Some debug messages
+[2023-03-13T22:43:36.891] [DEBUG] default - Some debug messages
+[2023-03-13T22:44:12.496] [DEBUG] default - Some debug messages
+[2023-03-13T22:44:39.173] [DEBUG] default - Some debug messages
+[2023-03-13T22:45:54.644] [DEBUG] default - code:401 UnauthorizedError: Authentication Error
+    at Object.throw (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa/lib/context.js:97:11)
+    at jwt (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-jwt/lib/index.js:66:26)
+    at async cors (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa2-cors/dist/index.js:91:9) {
+  originalError: TokenExpiredError: jwt expired
+      at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/jsonwebtoken/verify.js:190:21
+      at getSecret (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/jsonwebtoken/verify.js:97:14)
+      at Object.module.exports [as verify] (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/jsonwebtoken/verify.js:101:10)
+      at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-jwt/lib/verify.js:5:13
+      at new Promise (<anonymous>)
+      at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-jwt/lib/verify.js:4:12)
+      at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-jwt/lib/index.js:38:64
+      at Array.map (<anonymous>)
+      at jwt (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-jwt/lib/index.js:38:43)
+      at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-unless/index.js:29:12 {
+    expiredAt: 2023-03-12T17:11:23.000Z
+  }
+}
+[2023-03-13T22:46:42.654] [DEBUG] default - 未知错误 ReferenceError: reqire is not defined
+    at Object.<anonymous> (/Users/hanhongguang/Documents/个人项目/Financial/src/service/income/editassociatedincome.js:9:31)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/income/editassociatedincome.js:9:13)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+[2023-03-13T22:46:58.017] [DEBUG] default - Some debug messages
+[2023-03-13T22:47:00.759] [DEBUG] default - 未知错误 Error: Cannot find module '/Users/hanhongguang/Documents/个人项目/Financial/src/mappler/income/associatedincome'
+Require stack:
+- /Users/hanhongguang/Documents/个人项目/Financial/src/service/income/editassociatedincome.js
+- /Users/hanhongguang/Documents/个人项目/Financial/src/controller/income/editassociatedincome.js
+- /Users/hanhongguang/Documents/个人项目/Financial/src/router/income/index.js
+- /Users/hanhongguang/Documents/个人项目/Financial/src/router/index.js
+- /Users/hanhongguang/Documents/个人项目/Financial/src/app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._resolveFilename (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/module-alias/index.js:49:29)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/hanhongguang/Documents/个人项目/Financial/src/service/income/editassociatedincome.js:9:31)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/service/income/editassociatedincome.js',
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/controller/income/editassociatedincome.js',
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/router/income/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/router/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/app.js'
+  ]
+}
+[2023-03-13T22:47:26.195] [DEBUG] default - Some debug messages
+[2023-03-13T22:48:23.838] [DEBUG] default - Some debug messages
+[2023-03-13T22:48:52.555] [DEBUG] default - Some debug messages
+[2023-03-13T22:49:02.975] [DEBUG] default - Some debug messages
+[2023-03-13T22:49:39.254] [DEBUG] default - Some debug messages
+[2023-03-13T22:50:15.850] [DEBUG] default - Some debug messages
+[2023-03-13T22:51:10.551] [DEBUG] default - Some debug messages
+[2023-03-13T22:51:23.319] [DEBUG] default - Some debug messages
+[2023-03-13T22:51:35.995] [DEBUG] default - Some debug messages
+[2023-03-13T22:51:36.594] [DEBUG] default - Some debug messages
+[2023-03-13T22:53:19.781] [DEBUG] default - Some debug messages
+[2023-03-13T22:53:57.829] [DEBUG] default - Some debug messages
+[2023-03-13T22:54:03.888] [DEBUG] default - Some debug messages
+[2023-03-13T22:54:04.318] [DEBUG] default - Some debug messages
+[2023-03-13T22:54:04.892] [DEBUG] default - Some debug messages
+[2023-03-13T22:55:27.150] [DEBUG] default - Some debug messages
+[2023-03-13T22:56:07.835] [DEBUG] default - Some debug messages
+[2023-03-13T22:56:55.413] [DEBUG] default - Some debug messages
+[2023-03-13T22:57:45.483] [DEBUG] default - Some debug messages
+[2023-03-13T22:57:59.986] [DEBUG] default - 未知错误 Error: Cannot find module '/Users/hanhongguang/Documents/个人项目/Financial/src/'
+Require stack:
+- /Users/hanhongguang/Documents/个人项目/Financial/src/controller/income/deleteassociatedincome.js
+- /Users/hanhongguang/Documents/个人项目/Financial/src/router/income/index.js
+- /Users/hanhongguang/Documents/个人项目/Financial/src/router/index.js
+- /Users/hanhongguang/Documents/个人项目/Financial/src/app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._resolveFilename (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/module-alias/index.js:49:29)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/income/deleteassociatedincome.js:1:22)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/controller/income/deleteassociatedincome.js',
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/router/income/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/router/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/app.js'
+  ]
+}
+[2023-03-13T22:58:49.717] [DEBUG] default - Some debug messages
+[2023-03-13T23:00:44.404] [DEBUG] default - Some debug messages
+[2023-03-13T23:00:46.037] [DEBUG] default - 未知错误 Error: Cannot find module '/Users/hanhongguang/Documents/个人项目/Financial/src/'
+Require stack:
+- /Users/hanhongguang/Documents/个人项目/Financial/src/controller/income/deleteassociatedincome.js
+- /Users/hanhongguang/Documents/个人项目/Financial/src/router/income/index.js
+- /Users/hanhongguang/Documents/个人项目/Financial/src/router/index.js
+- /Users/hanhongguang/Documents/个人项目/Financial/src/app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._resolveFilename (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/module-alias/index.js:49:29)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/income/deleteassociatedincome.js:1:22)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/controller/income/deleteassociatedincome.js',
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/router/income/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/router/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/app.js'
+  ]
+}
+[2023-03-13T23:01:02.985] [DEBUG] default - Some debug messages
+[2023-03-13T23:01:03.533] [DEBUG] default - 未知错误 Error: Cannot find module '/Users/hanhongguang/Documents/个人项目/Financial/src/'
+Require stack:
+- /Users/hanhongguang/Documents/个人项目/Financial/src/controller/income/deleteassociatedincome.js
+- /Users/hanhongguang/Documents/个人项目/Financial/src/router/income/index.js
+- /Users/hanhongguang/Documents/个人项目/Financial/src/router/index.js
+- /Users/hanhongguang/Documents/个人项目/Financial/src/app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._resolveFilename (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/module-alias/index.js:49:29)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/income/deleteassociatedincome.js:1:22)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/controller/income/deleteassociatedincome.js',
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/router/income/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/router/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/app.js'
+  ]
+}
+[2023-03-13T23:01:20.101] [DEBUG] default - Some debug messages
+[2023-03-13T23:01:26.624] [DEBUG] default - Some debug messages
+[2023-03-13T23:01:28.344] [DEBUG] default - 未知错误 Error: Cannot find module '/Users/hanhongguang/Documents/个人项目/Financial/src/'
+Require stack:
+- /Users/hanhongguang/Documents/个人项目/Financial/src/controller/income/deleteassociatedincome.js
+- /Users/hanhongguang/Documents/个人项目/Financial/src/router/income/index.js
+- /Users/hanhongguang/Documents/个人项目/Financial/src/router/index.js
+- /Users/hanhongguang/Documents/个人项目/Financial/src/app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._resolveFilename (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/module-alias/index.js:49:29)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/income/deleteassociatedincome.js:1:22)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/controller/income/deleteassociatedincome.js',
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/router/income/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/router/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/app.js'
+  ]
+}
+[2023-03-13T23:01:40.354] [DEBUG] default - Some debug messages
+[2023-03-13T23:01:41.848] [DEBUG] default - 未知错误 Error: Cannot find module '/Users/hanhongguang/Documents/个人项目/Financial/src/'
+Require stack:
+- /Users/hanhongguang/Documents/个人项目/Financial/src/controller/income/deleteassociatedincome.js
+- /Users/hanhongguang/Documents/个人项目/Financial/src/router/income/index.js
+- /Users/hanhongguang/Documents/个人项目/Financial/src/router/index.js
+- /Users/hanhongguang/Documents/个人项目/Financial/src/app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._resolveFilename (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/module-alias/index.js:49:29)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/income/deleteassociatedincome.js:1:22)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/controller/income/deleteassociatedincome.js',
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/router/income/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/router/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/app.js'
+  ]
+}
+[2023-03-13T23:02:11.917] [DEBUG] default - Some debug messages
+[2023-03-13T23:02:13.409] [DEBUG] default - 未知错误 Error: Cannot find module '/Users/hanhongguang/Documents/个人项目/Financial/src/'
+Require stack:
+- /Users/hanhongguang/Documents/个人项目/Financial/src/controller/income/deleteassociatedincome.js
+- /Users/hanhongguang/Documents/个人项目/Financial/src/router/income/index.js
+- /Users/hanhongguang/Documents/个人项目/Financial/src/router/index.js
+- /Users/hanhongguang/Documents/个人项目/Financial/src/app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._resolveFilename (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/module-alias/index.js:49:29)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/income/deleteassociatedincome.js:1:22)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/controller/income/deleteassociatedincome.js',
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/router/income/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/router/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/app.js'
+  ]
+}
+[2023-03-13T23:02:55.609] [DEBUG] default - Some debug messages
+[2023-03-13T23:03:07.299] [DEBUG] default - Some debug messages
+[2023-03-13T23:03:09.317] [DEBUG] default - 未知错误 Error: Cannot find module '/Users/hanhongguang/Documents/个人项目/Financial/src/'
+Require stack:
+- /Users/hanhongguang/Documents/个人项目/Financial/src/controller/income/deleteassociatedincome.js
+- /Users/hanhongguang/Documents/个人项目/Financial/src/router/income/index.js
+- /Users/hanhongguang/Documents/个人项目/Financial/src/router/index.js
+- /Users/hanhongguang/Documents/个人项目/Financial/src/app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._resolveFilename (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/module-alias/index.js:49:29)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/income/deleteassociatedincome.js:1:22)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/controller/income/deleteassociatedincome.js',
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/router/income/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/router/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/app.js'
+  ]
+}
+[2023-03-13T23:03:51.079] [DEBUG] default - Some debug messages
+[2023-03-13T23:03:52.026] [DEBUG] default - 未知错误 Error: Cannot find module '/Users/hanhongguang/Documents/个人项目/Financial/src/'
+Require stack:
+- /Users/hanhongguang/Documents/个人项目/Financial/src/controller/income/deleteassociatedincome.js
+- /Users/hanhongguang/Documents/个人项目/Financial/src/router/income/index.js
+- /Users/hanhongguang/Documents/个人项目/Financial/src/router/index.js
+- /Users/hanhongguang/Documents/个人项目/Financial/src/app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._resolveFilename (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/module-alias/index.js:49:29)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/income/deleteassociatedincome.js:1:22)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/controller/income/deleteassociatedincome.js',
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/router/income/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/router/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/app.js'
+  ]
+}
+[2023-03-13T23:04:18.686] [DEBUG] default - Some debug messages
+[2023-03-13T23:04:24.483] [DEBUG] default - Some debug messages
+[2023-03-13T23:04:26.198] [DEBUG] default - 未知错误 Error: Cannot find module '/Users/hanhongguang/Documents/个人项目/Financial/src/'
+Require stack:
+- /Users/hanhongguang/Documents/个人项目/Financial/src/controller/income/deleteassociatedincome.js
+- /Users/hanhongguang/Documents/个人项目/Financial/src/router/income/index.js
+- /Users/hanhongguang/Documents/个人项目/Financial/src/router/index.js
+- /Users/hanhongguang/Documents/个人项目/Financial/src/app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._resolveFilename (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/module-alias/index.js:49:29)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/income/deleteassociatedincome.js:1:22)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/controller/income/deleteassociatedincome.js',
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/router/income/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/router/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/app.js'
+  ]
+}
+[2023-03-13T23:04:49.263] [DEBUG] default - Some debug messages
+[2023-03-13T23:04:54.205] [DEBUG] default - Some debug messages
+[2023-03-13T23:04:55.311] [DEBUG] default - 未知错误 Error: Cannot find module '/Users/hanhongguang/Documents/个人项目/Financial/src/'
+Require stack:
+- /Users/hanhongguang/Documents/个人项目/Financial/src/controller/income/deleteassociatedincome.js
+- /Users/hanhongguang/Documents/个人项目/Financial/src/router/income/index.js
+- /Users/hanhongguang/Documents/个人项目/Financial/src/router/index.js
+- /Users/hanhongguang/Documents/个人项目/Financial/src/app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._resolveFilename (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/module-alias/index.js:49:29)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/income/deleteassociatedincome.js:1:22)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/controller/income/deleteassociatedincome.js',
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/router/income/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/router/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/app.js'
+  ]
+}
+[2023-03-13T23:05:13.598] [DEBUG] default - Some debug messages
+[2023-03-13T23:05:15.659] [DEBUG] default - 未知错误 Error: Cannot find module '/Users/hanhongguang/Documents/个人项目/Financial/src/'
+Require stack:
+- /Users/hanhongguang/Documents/个人项目/Financial/src/controller/income/deleteassociatedincome.js
+- /Users/hanhongguang/Documents/个人项目/Financial/src/router/income/index.js
+- /Users/hanhongguang/Documents/个人项目/Financial/src/router/index.js
+- /Users/hanhongguang/Documents/个人项目/Financial/src/app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._resolveFilename (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/module-alias/index.js:49:29)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/income/deleteassociatedincome.js:1:22)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/controller/income/deleteassociatedincome.js',
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/router/income/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/router/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/app.js'
+  ]
+}
+[2023-03-13T23:06:24.243] [DEBUG] default - Some debug messages
+[2023-03-13T23:06:33.920] [DEBUG] default - Some debug messages
+[2023-03-13T23:06:35.250] [DEBUG] default - 未知错误 Error: Cannot find module '/Users/hanhongguang/Documents/个人项目/Financial/src/'
+Require stack:
+- /Users/hanhongguang/Documents/个人项目/Financial/src/controller/income/deleteassociatedincome.js
+- /Users/hanhongguang/Documents/个人项目/Financial/src/router/income/index.js
+- /Users/hanhongguang/Documents/个人项目/Financial/src/router/index.js
+- /Users/hanhongguang/Documents/个人项目/Financial/src/app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._resolveFilename (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/module-alias/index.js:49:29)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/income/deleteassociatedincome.js:1:22)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/controller/income/deleteassociatedincome.js',
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/router/income/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/router/index.js',
+    '/Users/hanhongguang/Documents/个人项目/Financial/src/app.js'
+  ]
+}
+[2023-03-13T23:08:00.130] [DEBUG] default - Some debug messages
+[2023-03-13T23:08:03.124] [DEBUG] default - Some debug messages
+[2023-03-13T23:08:04.352] [DEBUG] default - Some debug messages
+[2023-03-13T23:08:05.624] [DEBUG] default - 未知错误 TypeError: serve is not a function
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/income/deleteassociatedincome.js:11:24)
+    at /Users/hanhongguang/Documents/个人项目/Financial/src/router/income/index.js:37:62
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:425:16
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:430:31)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-bodyparser/index.js:95:11)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2023-03-13T23:08:20.102] [DEBUG] default - Some debug messages
+[2023-03-13T23:08:20.723] [DEBUG] default - 未知错误 TypeError: deleteassociatedincome is not a function
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/service/income/deleteassociatedincome.js:11:28)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/income/deleteassociatedincome.js:11:24)
+    at /Users/hanhongguang/Documents/个人项目/Financial/src/router/income/index.js:37:62
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:425:16
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:430:31)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-bodyparser/index.js:95:11)
+[2023-03-13T23:08:34.634] [DEBUG] default - Some debug messages
