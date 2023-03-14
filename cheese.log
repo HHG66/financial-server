@@ -969,3 +969,515 @@ Require stack:
     at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
     at bodyParser (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-bodyparser/index.js:95:11)
 [2023-03-13T23:08:34.634] [DEBUG] default - Some debug messages
+[2023-03-13T23:11:11.822] [DEBUG] default - 未知错误 TypeError: Cannot read properties of undefined (reading 'consumptiontypename')
+    at /Users/hanhongguang/Documents/个人项目/Financial/src/controller/consumptiontype/getassociatedbill.js:14:51
+    at Array.forEach (<anonymous>)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/consumptiontype/getassociatedbill.js:11:17)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async /Users/hanhongguang/Documents/个人项目/Financial/src/router/consumptiontype/consumptiontype.js:31:3
+    at async bodyParser (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-bodyparser/index.js:95:5)
+    at async cors (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa2-cors/dist/index.js:91:9)
+[2023-03-13T23:11:36.240] [DEBUG] default - 未知错误 TypeError: Cannot read properties of undefined (reading 'consumptiontypename')
+    at /Users/hanhongguang/Documents/个人项目/Financial/src/controller/consumptiontype/getassociatedbill.js:14:51
+    at Array.forEach (<anonymous>)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/consumptiontype/getassociatedbill.js:11:17)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async /Users/hanhongguang/Documents/个人项目/Financial/src/router/consumptiontype/consumptiontype.js:31:3
+    at async bodyParser (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-bodyparser/index.js:95:5)
+    at async cors (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa2-cors/dist/index.js:91:9)
+[2023-03-14T19:53:33.719] [DEBUG] default - Some debug messages
+[2023-03-14T19:55:17.431] [DEBUG] default - Some debug messages
+[2023-03-14T19:55:18.176] [DEBUG] default - Some debug messages
+[2023-03-14T19:55:50.585] [DEBUG] default - Some debug messages
+[2023-03-14T19:56:06.607] [DEBUG] default - Some debug messages
+[2023-03-14T19:56:23.017] [DEBUG] default - Some debug messages
+[2023-03-14T19:56:34.477] [DEBUG] default - Some debug messages
+[2023-03-14T19:56:35.294] [DEBUG] default - Some debug messages
+[2023-03-14T19:57:20.795] [DEBUG] default - Some debug messages
+[2023-03-14T19:58:19.570] [DEBUG] default - Some debug messages
+[2023-03-14T19:58:41.767] [DEBUG] default - Some debug messages
+[2023-03-14T19:58:45.094] [DEBUG] default - Some debug messages
+[2023-03-14T19:58:46.159] [DEBUG] default - Some debug messages
+[2023-03-14T19:59:15.728] [DEBUG] default - Some debug messages
+[2023-03-14T19:59:31.930] [DEBUG] default - Some debug messages
+[2023-03-14T19:59:35.113] [DEBUG] default - Some debug messages
+[2023-03-14T19:59:35.559] [DEBUG] default - Some debug messages
+[2023-03-14T19:59:36.123] [DEBUG] default - Some debug messages
+[2023-03-14T19:59:51.163] [DEBUG] default - Some debug messages
+[2023-03-14T20:00:05.086] [DEBUG] default - Some debug messages
+[2023-03-14T20:00:42.316] [DEBUG] default - Some debug messages
+[2023-03-14T20:01:02.255] [DEBUG] default - code:401 UnauthorizedError: Authentication Error
+    at Object.throw (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa/lib/context.js:97:11)
+    at jwt (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-jwt/lib/index.js:66:26)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async cors (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa2-cors/dist/index.js:91:9) {
+  originalError: TokenExpiredError: jwt expired
+      at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/jsonwebtoken/verify.js:190:21
+      at getSecret (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/jsonwebtoken/verify.js:97:14)
+      at Object.module.exports [as verify] (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/jsonwebtoken/verify.js:101:10)
+      at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-jwt/lib/verify.js:5:13
+      at new Promise (<anonymous>)
+      at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-jwt/lib/verify.js:4:12)
+      at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-jwt/lib/index.js:38:64
+      at Array.map (<anonymous>)
+      at jwt (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-jwt/lib/index.js:38:43)
+      at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-unless/index.js:29:12 {
+    expiredAt: 2023-03-13T18:32:17.000Z
+  }
+}
+[2023-03-14T20:02:24.574] [DEBUG] default - Some debug messages
+[2023-03-14T20:02:42.033] [DEBUG] default - Some debug messages
+[2023-03-14T20:02:50.191] [DEBUG] default - Some debug messages
+[2023-03-14T20:02:50.417] [DEBUG] default - Some debug messages
+[2023-03-14T20:02:51.061] [DEBUG] default - Some debug messages
+[2023-03-14T20:02:55.105] [DEBUG] default - Some debug messages
+[2023-03-14T20:02:55.621] [DEBUG] default - Some debug messages
+[2023-03-14T20:02:56.065] [DEBUG] default - Some debug messages
+[2023-03-14T20:03:15.980] [DEBUG] default - Some debug messages
+[2023-03-14T20:04:57.875] [DEBUG] default - Some debug messages
+[2023-03-14T20:06:28.992] [DEBUG] default - 未知错误 ReferenceError: reqire is not defined
+    at Object.<anonymous> (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/budget/importingbills.js:9:13)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at /Users/hanhongguang/Documents/个人项目/Financial/src/router/budget/index.js:17:9
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:425:16
+[2023-03-14T20:06:42.953] [DEBUG] default - 未知错误 ReferenceError: reqire is not defined
+    at Object.<anonymous> (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/budget/importingbills.js:9:13)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at /Users/hanhongguang/Documents/个人项目/Financial/src/router/budget/index.js:17:9
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:425:16
+[2023-03-14T20:17:33.865] [DEBUG] default - 未知错误 ReferenceError: reqire is not defined
+    at Object.<anonymous> (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/budget/importingbills.js:9:13)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at /Users/hanhongguang/Documents/个人项目/Financial/src/router/budget/index.js:17:9
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:425:16
+[2023-03-14T20:45:43.019] [DEBUG] default - Some debug messages
+[2023-03-14T20:45:46.086] [DEBUG] default - Some debug messages
+[2023-03-14T20:45:49.013] [DEBUG] default - Some debug messages
+[2023-03-14T20:45:53.927] [DEBUG] default - Some debug messages
+[2023-03-14T20:45:57.017] [DEBUG] default - Some debug messages
+[2023-03-14T20:46:00.101] [DEBUG] default - Some debug messages
+[2023-03-14T20:46:07.098] [DEBUG] default - Some debug messages
+[2023-03-14T20:46:12.574] [DEBUG] default - Some debug messages
+[2023-03-14T20:46:19.744] [DEBUG] default - Some debug messages
+[2023-03-14T20:46:23.732] [DEBUG] default - Some debug messages
+[2023-03-14T20:46:30.015] [DEBUG] default - Some debug messages
+[2023-03-14T20:46:32.444] [DEBUG] default - Some debug messages
+[2023-03-14T20:46:48.868] [DEBUG] default - Some debug messages
+[2023-03-14T20:47:13.602] [DEBUG] default - Some debug messages
+[2023-03-14T20:48:33.834] [DEBUG] default - Some debug messages
+[2023-03-14T20:49:09.045] [DEBUG] default - Some debug messages
+[2023-03-14T20:49:30.058] [DEBUG] default - Some debug messages
+[2023-03-14T20:49:30.752] [DEBUG] default - Some debug messages
+[2023-03-14T20:50:50.568] [DEBUG] default - Some debug messages
+[2023-03-14T20:51:34.429] [DEBUG] default - Some debug messages
+[2023-03-14T20:51:39.008] [DEBUG] default - Some debug messages
+[2023-03-14T20:53:07.571] [DEBUG] default - Some debug messages
+[2023-03-14T20:53:23.451] [DEBUG] default - Some debug messages
+[2023-03-14T20:54:03.761] [DEBUG] default - Some debug messages
+[2023-03-14T20:54:34.843] [DEBUG] default - Some debug messages
+[2023-03-14T20:55:10.339] [DEBUG] default - Some debug messages
+[2023-03-14T20:55:11.146] [DEBUG] default - Some debug messages
+[2023-03-14T20:56:03.518] [DEBUG] default - 未知错误 ReferenceError: reqire is not defined
+    at Object.<anonymous> (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/budget/importingbills.js:9:15)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at /Users/hanhongguang/Documents/个人项目/Financial/src/router/budget/index.js:17:9
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:425:16
+[2023-03-14T20:56:22.262] [DEBUG] default - Some debug messages
+[2023-03-14T20:56:27.542] [DEBUG] default - 未知错误 ReferenceError: reqire is not defined
+    at Object.<anonymous> (/Users/hanhongguang/Documents/个人项目/Financial/src/service/budget/importingbills.js:9:28)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/budget/importingbills.js:9:15)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+[2023-03-14T20:56:37.982] [DEBUG] default - Some debug messages
+[2023-03-14T20:56:41.131] [DEBUG] default - 未知错误 ReferenceError: reqire is not defined
+    at Object.<anonymous> (/Users/hanhongguang/Documents/个人项目/Financial/src/mapper/budget/index.js:10:18)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/hanhongguang/Documents/个人项目/Financial/src/service/budget/importingbills.js:9:28)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+[2023-03-14T20:56:49.766] [DEBUG] default - Some debug messages
+[2023-03-14T20:56:51.838] [DEBUG] default - 未知错误 TypeError: Cannot read properties of undefined (reading 'body')
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/service/budget/importingbills.js:11:41)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/budget/importingbills.js:12:24)
+    at /Users/hanhongguang/Documents/个人项目/Financial/src/router/budget/index.js:17:54
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:425:16
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:430:31)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-bodyparser/index.js:95:11)
+[2023-03-14T20:57:12.667] [DEBUG] default - Some debug messages
+[2023-03-14T20:57:22.481] [DEBUG] default - 未知错误 TypeError: Cannot read properties of undefined (reading 'body')
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/service/budget/importingbills.js:11:41)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/budget/importingbills.js:12:24)
+    at /Users/hanhongguang/Documents/个人项目/Financial/src/router/budget/index.js:17:54
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:425:16
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:430:31)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-bodyparser/index.js:95:11)
+[2023-03-14T20:57:42.729] [DEBUG] default - Some debug messages
+[2023-03-14T20:58:18.546] [DEBUG] default - Some debug messages
+[2023-03-14T20:58:24.324] [DEBUG] default - Some debug messages
+[2023-03-14T20:58:57.118] [DEBUG] default - Some debug messages
+[2023-03-14T20:59:17.991] [DEBUG] default - Some debug messages
+[2023-03-14T20:59:52.117] [DEBUG] default - Some debug messages
+[2023-03-14T21:00:36.877] [DEBUG] default - Some debug messages
+[2023-03-14T21:00:37.542] [DEBUG] default - Some debug messages
+[2023-03-14T21:03:14.114] [DEBUG] default - Some debug messages
+[2023-03-14T21:03:31.051] [DEBUG] default - Some debug messages
+[2023-03-14T21:05:51.936] [DEBUG] default - Some debug messages
+[2023-03-14T21:05:58.329] [DEBUG] default - 未知错误 ReferenceError: element is not defined
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/service/budget/importingbills.js:16:36)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/budget/importingbills.js:13:24)
+    at /Users/hanhongguang/Documents/个人项目/Financial/src/router/budget/index.js:17:54
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:425:16
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:430:31)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-bodyparser/index.js:95:11)
+[2023-03-14T21:06:20.891] [DEBUG] default - Some debug messages
+[2023-03-14T21:06:31.455] [DEBUG] default - Some debug messages
+[2023-03-14T21:07:16.060] [DEBUG] default - Some debug messages
+[2023-03-14T21:07:27.911] [DEBUG] default - Some debug messages
+[2023-03-14T21:08:10.016] [DEBUG] default - Some debug messages
+[2023-03-14T21:08:11.155] [DEBUG] default - Some debug messages
+[2023-03-14T21:08:54.133] [DEBUG] default - Some debug messages
+[2023-03-14T21:08:55.579] [DEBUG] default - Some debug messages
+[2023-03-14T21:10:21.859] [DEBUG] default - Some debug messages
+[2023-03-14T21:10:26.127] [DEBUG] default - 未知错误 TypeError: Cannot read properties of undefined (reading 'length')
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/budget/importingbills.js:14:43)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async /Users/hanhongguang/Documents/个人项目/Financial/src/router/budget/index.js:17:3
+    at async bodyParser (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-bodyparser/index.js:95:5)
+    at async cors (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa2-cors/dist/index.js:91:9)
+[2023-03-14T21:11:21.079] [DEBUG] default - Some debug messages
+[2023-03-14T21:11:24.972] [DEBUG] default - 未知错误 TypeError: Cannot read properties of undefined (reading 'length')
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/budget/importingbills.js:15:43)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async /Users/hanhongguang/Documents/个人项目/Financial/src/router/budget/index.js:17:3
+    at async bodyParser (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-bodyparser/index.js:95:5)
+    at async cors (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa2-cors/dist/index.js:91:9)
+[2023-03-14T21:11:32.260] [DEBUG] default - Some debug messages
+[2023-03-14T21:12:34.370] [DEBUG] default - Some debug messages
+[2023-03-14T21:12:41.127] [DEBUG] default - Some debug messages
+[2023-03-14T21:12:53.316] [DEBUG] default - Some debug messages
+[2023-03-14T21:13:03.605] [DEBUG] default - Some debug messages
+[2023-03-14T21:13:15.264] [DEBUG] default - Some debug messages
+[2023-03-14T21:13:45.488] [DEBUG] default - Some debug messages
+[2023-03-14T22:07:25.301] [DEBUG] default - Some debug messages
+[2023-03-14T22:09:19.344] [DEBUG] default - Some debug messages
+[2023-03-14T22:10:01.756] [DEBUG] default - Some debug messages
+[2023-03-14T22:10:12.077] [DEBUG] default - Some debug messages
+[2023-03-14T22:10:36.383] [DEBUG] default - Some debug messages
+[2023-03-14T22:10:59.208] [DEBUG] default - Some debug messages
+[2023-03-14T22:15:04.911] [DEBUG] default - code:401 UnauthorizedError: Authentication Error
+    at Object.throw (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa/lib/context.js:97:11)
+    at jwt (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-jwt/lib/index.js:66:26)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async cors (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa2-cors/dist/index.js:91:9) {
+  originalError: TokenExpiredError: jwt expired
+      at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/jsonwebtoken/verify.js:190:21
+      at getSecret (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/jsonwebtoken/verify.js:97:14)
+      at Object.module.exports [as verify] (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/jsonwebtoken/verify.js:101:10)
+      at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-jwt/lib/verify.js:5:13
+      at new Promise (<anonymous>)
+      at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-jwt/lib/verify.js:4:12)
+      at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-jwt/lib/index.js:38:64
+      at Array.map (<anonymous>)
+      at jwt (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-jwt/lib/index.js:38:43)
+      at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-unless/index.js:29:12 {
+    expiredAt: 2023-03-12T10:25:00.000Z
+  }
+}
+[2023-03-14T22:15:54.076] [DEBUG] default - Some debug messages
+[2023-03-14T22:20:36.880] [DEBUG] default - Some debug messages
+[2023-03-14T22:21:20.732] [DEBUG] default - Some debug messages
+[2023-03-14T22:21:32.996] [DEBUG] default - Some debug messages
+[2023-03-14T22:21:54.490] [DEBUG] default - Some debug messages
+[2023-03-14T22:22:09.848] [DEBUG] default - Some debug messages
+[2023-03-14T22:22:12.012] [DEBUG] default - Some debug messages
+[2023-03-14T22:22:14.174] [DEBUG] default - Some debug messages
+[2023-03-14T22:27:36.863] [DEBUG] default - Some debug messages
+[2023-03-14T22:27:58.619] [DEBUG] default - Some debug messages
+[2023-03-14T22:28:06.295] [DEBUG] default - 未知错误 TypeError: Cannot read properties of undefined (reading 'length')
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/service/budget/importingbills.js:18:23)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/budget/importingbills.js:14:18)
+    at async /Users/hanhongguang/Documents/个人项目/Financial/src/router/budget/index.js:17:3
+    at async bodyParser (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-bodyparser/index.js:95:5)
+    at async cors (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa2-cors/dist/index.js:91:9)
+[2023-03-14T22:28:28.916] [DEBUG] default - Some debug messages
+[2023-03-14T22:28:36.668] [DEBUG] default - 未知错误 ReferenceError: validateModifiedOnly is not defined
+    at importingbills (/Users/hanhongguang/Documents/个人项目/Financial/src/mapper/budget/index.js:16:30)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/service/budget/importingbills.js:16:26)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/budget/importingbills.js:14:24)
+    at /Users/hanhongguang/Documents/个人项目/Financial/src/router/budget/index.js:17:54
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:425:16
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:430:31)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+[2023-03-14T22:28:51.214] [DEBUG] default - Some debug messages
+[2023-03-14T22:32:08.464] [DEBUG] default - Some debug messages
+[2023-03-14T22:32:14.562] [DEBUG] default - Some debug messages
+[2023-03-14T22:32:39.769] [DEBUG] default - Some debug messages
+[2023-03-14T22:35:07.720] [DEBUG] default - Some debug messages
+[2023-03-14T22:35:56.266] [DEBUG] default - Some debug messages
+[2023-03-14T22:42:05.824] [DEBUG] default - Some debug messages
+[2023-03-14T22:42:34.100] [DEBUG] default - Some debug messages
+[2023-03-14T22:42:52.897] [DEBUG] default - Some debug messages
+[2023-03-14T22:43:18.123] [DEBUG] default - Some debug messages
+[2023-03-14T22:43:27.319] [DEBUG] default - Some debug messages
+[2023-03-14T22:45:14.648] [DEBUG] default - Some debug messages
+[2023-03-14T22:46:28.900] [DEBUG] default - Some debug messages
+[2023-03-14T22:46:40.257] [DEBUG] default - 未知错误 MongooseError: Invalid update pipeline operator: "tradinghours"
+    at castPipelineOperator (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/mongoose/lib/helpers/query/castUpdate.js:158:9)
+    at castUpdate (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/mongoose/lib/helpers/query/castUpdate.js:40:22)
+    at model.Query._castUpdate (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/mongoose/lib/query.js:5128:10)
+    at model.Query._updateThunk (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/mongoose/lib/query.js:4265:27)
+    at model.Query.<anonymous> (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/mongoose/lib/query.js:4365:23)
+    at model.Query._wrappedThunk [as _updateMany] (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/mongoose/lib/helpers/query/wrapThunk.js:29:8)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/kareem/index.js:497:25
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+[2023-03-14T22:47:44.651] [DEBUG] default - Some debug messages
+[2023-03-14T22:47:48.665] [DEBUG] default - 未知错误 ObjectParameterError: Parameter "filter" to updateMany() must be an object, got [object Object],[object Object],[object Object]
+    at _update (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/mongoose/lib/query.js:4745:17)
+    at model.Query.Query.updateMany (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/mongoose/lib/query.js:4577:10)
+    at _update (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/mongoose/lib/model.js:4279:16)
+    at Function.updateMany (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/mongoose/lib/model.js:4168:10)
+    at importingbills (/Users/hanhongguang/Documents/个人项目/Financial/src/mapper/budget/index.js:17:17)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/service/budget/importingbills.js:16:26)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/budget/importingbills.js:14:24)
+    at /Users/hanhongguang/Documents/个人项目/Financial/src/router/budget/index.js:17:54
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:425:16
+[2023-03-14T22:48:00.855] [DEBUG] default - Some debug messages
+[2023-03-14T22:48:22.382] [DEBUG] default - Some debug messages
+[2023-03-14T22:48:46.130] [DEBUG] default - Some debug messages
+[2023-03-14T22:49:21.068] [DEBUG] default - Some debug messages
+[2023-03-14T22:49:26.348] [DEBUG] default - 未知错误 ReferenceError: trasactionid is not defined
+    at importingbills (/Users/hanhongguang/Documents/个人项目/Financial/src/mapper/budget/index.js:17:29)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/service/budget/importingbills.js:16:26)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/budget/importingbills.js:14:24)
+    at /Users/hanhongguang/Documents/个人项目/Financial/src/router/budget/index.js:17:54
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:425:16
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:430:31)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+[2023-03-14T22:51:13.331] [DEBUG] default - Some debug messages
+[2023-03-14T22:51:15.374] [DEBUG] default - Some debug messages
+[2023-03-14T22:51:20.707] [DEBUG] default - 未知错误 MongooseError: Invalid update pipeline operator: "tradinghours"
+    at castPipelineOperator (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/mongoose/lib/helpers/query/castUpdate.js:158:9)
+    at castUpdate (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/mongoose/lib/helpers/query/castUpdate.js:40:22)
+    at model.Query._castUpdate (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/mongoose/lib/query.js:5128:10)
+    at model.Query._updateThunk (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/mongoose/lib/query.js:4265:27)
+    at model.Query.<anonymous> (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/mongoose/lib/query.js:4365:23)
+    at model.Query._wrappedThunk [as _updateMany] (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/mongoose/lib/helpers/query/wrapThunk.js:29:8)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/kareem/index.js:497:25
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+[2023-03-14T22:52:10.947] [DEBUG] default - Some debug messages
+[2023-03-14T22:52:14.725] [DEBUG] default - 未知错误 MongooseError: Invalid update pipeline operator: "tradinghours"
+    at castPipelineOperator (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/mongoose/lib/helpers/query/castUpdate.js:158:9)
+    at castUpdate (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/mongoose/lib/helpers/query/castUpdate.js:40:22)
+    at model.Query._castUpdate (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/mongoose/lib/query.js:5128:10)
+    at model.Query._updateThunk (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/mongoose/lib/query.js:4265:27)
+    at model.Query.<anonymous> (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/mongoose/lib/query.js:4365:23)
+    at model.Query._wrappedThunk [as _updateMany] (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/mongoose/lib/helpers/query/wrapThunk.js:29:8)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/kareem/index.js:497:25
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+[2023-03-14T22:52:34.143] [DEBUG] default - Some debug messages
+[2023-03-14T22:52:36.616] [DEBUG] default - 未知错误 MongooseError: Invalid update pipeline operator: "tradinghours"
+    at castPipelineOperator (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/mongoose/lib/helpers/query/castUpdate.js:158:9)
+    at castUpdate (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/mongoose/lib/helpers/query/castUpdate.js:40:22)
+    at model.Query._castUpdate (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/mongoose/lib/query.js:5128:10)
+    at model.Query._updateThunk (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/mongoose/lib/query.js:4265:27)
+    at model.Query.<anonymous> (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/mongoose/lib/query.js:4365:23)
+    at model.Query._wrappedThunk [as _updateMany] (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/mongoose/lib/helpers/query/wrapThunk.js:29:8)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/kareem/index.js:497:25
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+[2023-03-14T22:53:50.185] [DEBUG] default - Some debug messages
+[2023-03-14T22:53:54.455] [DEBUG] default - Some debug messages
+[2023-03-14T22:57:51.287] [DEBUG] default - Some debug messages
+[2023-03-14T22:58:46.413] [DEBUG] default - Some debug messages
+[2023-03-14T23:00:12.483] [DEBUG] default - Some debug messages
+[2023-03-14T23:00:56.198] [DEBUG] default - Some debug messages
+[2023-03-14T23:01:03.387] [DEBUG] default - Some debug messages
+[2023-03-14T23:01:12.857] [DEBUG] default - Some debug messages
+[2023-03-14T23:01:44.364] [DEBUG] default - 未知错误 TypeError: Cannot read properties of undefined (reading 'nModified')
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/service/budget/importingbills.js:18:23)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/budget/importingbills.js:14:18)
+    at async /Users/hanhongguang/Documents/个人项目/Financial/src/router/budget/index.js:17:3
+    at async bodyParser (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-bodyparser/index.js:95:5)
+    at async cors (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa2-cors/dist/index.js:91:9)
+[2023-03-14T23:02:02.480] [DEBUG] default - Some debug messages
+[2023-03-14T23:02:04.773] [DEBUG] default - Some debug messages
+[2023-03-14T23:02:07.493] [DEBUG] default - Some debug messages
+[2023-03-14T23:02:23.871] [DEBUG] default - Some debug messages
+[2023-03-14T23:04:38.964] [DEBUG] default - Some debug messages
+[2023-03-14T23:04:50.942] [DEBUG] default - Some debug messages
+[2023-03-14T23:05:17.977] [DEBUG] default - Some debug messages
+[2023-03-14T23:08:23.554] [DEBUG] default - Some debug messages
+[2023-03-14T23:12:43.702] [DEBUG] default - Some debug messages
+[2023-03-14T23:17:21.091] [DEBUG] default - Some debug messages
+[2023-03-14T23:17:55.758] [DEBUG] default - Some debug messages
+[2023-03-14T23:17:58.719] [DEBUG] default - Some debug messages
+[2023-03-14T23:19:10.356] [DEBUG] default - Some debug messages
+[2023-03-14T23:19:22.511] [DEBUG] default - Some debug messages
+[2023-03-14T23:19:23.590] [DEBUG] default - Some debug messages
+[2023-03-14T23:19:47.542] [DEBUG] default - Some debug messages
+[2023-03-14T23:20:22.096] [DEBUG] default - Some debug messages
+[2023-03-14T23:20:22.902] [DEBUG] default - Some debug messages
+[2023-03-14T23:20:35.535] [DEBUG] default - Some debug messages
+[2023-03-14T23:21:20.014] [DEBUG] default - Some debug messages
+[2023-03-14T23:22:42.691] [DEBUG] default - Some debug messages
+[2023-03-14T23:22:45.865] [DEBUG] default - Some debug messages
+[2023-03-14T23:23:08.089] [DEBUG] default - Some debug messages
+[2023-03-14T23:24:17.343] [DEBUG] default - Some debug messages
+[2023-03-14T23:24:24.386] [DEBUG] default - Some debug messages
+[2023-03-14T23:24:42.750] [DEBUG] default - Some debug messages
+[2023-03-14T23:25:14.190] [DEBUG] default - Some debug messages
+[2023-03-14T23:27:14.944] [DEBUG] default - Some debug messages
+[2023-03-14T23:27:54.694] [DEBUG] default - Some debug messages
+[2023-03-14T23:28:27.747] [DEBUG] default - Some debug messages
+[2023-03-14T23:29:13.443] [DEBUG] default - Some debug messages
+[2023-03-14T23:30:01.669] [DEBUG] default - Some debug messages
+[2023-03-14T23:30:05.246] [DEBUG] default - Some debug messages
+[2023-03-14T23:30:10.049] [DEBUG] default - Some debug messages
+[2023-03-14T23:33:05.854] [DEBUG] default - Some debug messages
+[2023-03-14T23:33:45.984] [DEBUG] default - Some debug messages
+[2023-03-14T23:34:02.470] [DEBUG] default - Some debug messages
+[2023-03-14T23:34:47.158] [DEBUG] default - Some debug messages
+[2023-03-14T23:38:25.684] [DEBUG] default - Some debug messages
+[2023-03-14T23:38:39.043] [DEBUG] default - Some debug messages
+[2023-03-14T23:39:46.918] [DEBUG] default - Some debug messages
+[2023-03-14T23:39:51.997] [DEBUG] default - Some debug messages
+[2023-03-14T23:40:02.265] [DEBUG] default - Some debug messages
+[2023-03-14T23:40:39.437] [DEBUG] default - Some debug messages
+[2023-03-14T23:41:10.173] [DEBUG] default - Some debug messages
+[2023-03-14T23:41:16.341] [DEBUG] default - Some debug messages
+[2023-03-14T23:41:28.560] [DEBUG] default - 未知错误 ReferenceError: num is not defined
+    at importingbills (/Users/hanhongguang/Documents/个人项目/Financial/src/mapper/budget/index.js:35:25)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/service/budget/importingbills.js:16:26)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/budget/importingbills.js:14:24)
+    at /Users/hanhongguang/Documents/个人项目/Financial/src/router/budget/index.js:17:54
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:425:16
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:430:31)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+[2023-03-14T23:41:43.251] [DEBUG] default - Some debug messages
+[2023-03-14T23:41:55.880] [DEBUG] default - Some debug messages
+[2023-03-14T23:43:58.812] [DEBUG] default - Some debug messages
+[2023-03-14T23:46:20.409] [DEBUG] default - Some debug messages
+[2023-03-14T23:47:04.027] [DEBUG] default - Some debug messages
+[2023-03-14T23:47:15.579] [DEBUG] default - 未知错误 ReferenceError: num is not defined
+    at importingbills (/Users/hanhongguang/Documents/个人项目/Financial/src/mapper/budget/index.js:32:25)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/service/budget/importingbills.js:16:26)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/budget/importingbills.js:14:24)
+    at /Users/hanhongguang/Documents/个人项目/Financial/src/router/budget/index.js:17:54
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:425:16
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:430:31)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+[2023-03-14T23:47:30.511] [DEBUG] default - Some debug messages
+[2023-03-14T23:47:35.950] [DEBUG] default - 未知错误 ReferenceError: num is not defined
+    at importingbills (/Users/hanhongguang/Documents/个人项目/Financial/src/mapper/budget/index.js:35:5)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/service/budget/importingbills.js:16:20)
+    at async module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/budget/importingbills.js:14:18)
+    at async /Users/hanhongguang/Documents/个人项目/Financial/src/router/budget/index.js:17:3
+    at async bodyParser (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-bodyparser/index.js:95:5)
+    at async cors (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa2-cors/dist/index.js:91:9)
+[2023-03-14T23:47:44.083] [DEBUG] default - Some debug messages
+[2023-03-14T23:49:42.194] [DEBUG] default - Some debug messages
+[2023-03-14T23:50:38.689] [DEBUG] default - Some debug messages
+[2023-03-14T23:50:53.013] [DEBUG] default - Some debug messages
+[2023-03-14T23:51:43.396] [DEBUG] default - Some debug messages
+[2023-03-14T23:52:09.317] [DEBUG] default - Some debug messages
+[2023-03-14T23:53:10.972] [DEBUG] default - Some debug messages
+[2023-03-14T23:53:43.980] [DEBUG] default - Some debug messages
+[2023-03-14T23:53:49.148] [DEBUG] default - Some debug messages
+[2023-03-14T23:54:40.427] [DEBUG] default - Some debug messages
+[2023-03-14T23:54:55.282] [DEBUG] default - Some debug messages
+[2023-03-14T23:55:21.648] [DEBUG] default - Some debug messages
+[2023-03-14T23:56:24.827] [DEBUG] default - Some debug messages
+[2023-03-14T23:56:30.301] [DEBUG] default - 未知错误 ReferenceError: getNum is not defined
+    at importingbills (/Users/hanhongguang/Documents/个人项目/Financial/src/mapper/budget/index.js:37:16)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/service/budget/importingbills.js:16:26)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/budget/importingbills.js:14:24)
+    at /Users/hanhongguang/Documents/个人项目/Financial/src/router/budget/index.js:17:54
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:425:16
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:430:31)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+[2023-03-14T23:56:47.751] [DEBUG] default - Some debug messages
+[2023-03-14T23:56:51.332] [DEBUG] default - 未知错误 ReferenceError: getNum is not defined
+    at importingbills (/Users/hanhongguang/Documents/个人项目/Financial/src/mapper/budget/index.js:16:16)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/service/budget/importingbills.js:16:26)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/budget/importingbills.js:14:24)
+    at /Users/hanhongguang/Documents/个人项目/Financial/src/router/budget/index.js:17:54
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:425:16
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:430:31)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+[2023-03-14T23:57:14.262] [DEBUG] default - Some debug messages
+[2023-03-14T23:57:47.260] [DEBUG] default - Some debug messages
+[2023-03-14T23:58:45.117] [DEBUG] default - Some debug messages
+[2023-03-14T23:59:24.185] [DEBUG] default - Some debug messages
+[2023-03-15T00:01:38.014] [DEBUG] default - Some debug messages
+[2023-03-15T00:04:37.624] [DEBUG] default - Some debug messages
+[2023-03-15T00:04:58.559] [DEBUG] default - Some debug messages
+[2023-03-15T00:04:58.983] [DEBUG] default - Some debug messages
+[2023-03-15T00:05:25.071] [DEBUG] default - Some debug messages

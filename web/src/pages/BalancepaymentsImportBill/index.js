@@ -1,9 +1,9 @@
 /*
  * @Author: HHG
  * @Date: 2022-10-03 23:55:35
- * @LastEditTime: 2023-01-31 23:07:10
+ * @LastEditTime: 2023-03-14 21:10:20
  * @LastEditors: 韩宏广
- * @FilePath: /Personal-finance/web/src/pages/BalancepaymentsImportBill/index.js
+ * @FilePath: /Financial/web/src/pages/BalancepaymentsImportBill/index.js
  * @文件说明: 
  */
 import React, { useState, useEffect } from 'react'
@@ -250,7 +250,7 @@ const BalancepaymentsImportBill = () => {
       // setPres(datass);
       ImportingbillsApi(datass).then(res => {
         console.log(res);
-        setPres(res.data);
+        // setPres(res.data);
         message.success(res.message)
       })
     };
