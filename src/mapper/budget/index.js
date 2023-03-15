@@ -1,7 +1,7 @@
 /*
  * @Author: HHG
  * @Date: 2023-03-14 19:59:34
- * @LastEditTime: 2023-03-15 00:04:37
+ * @LastEditTime: 2023-03-15 23:52:23
  * @LastEditors: 韩宏广
  * @FilePath: /Financial/src/mapper/budget/index.js
  * @文件说明: 
@@ -24,10 +24,14 @@ module.exports = {
         }
       }
     });
-   
+
     return data.length
   },
-  getdisposebill:()=>{
-    
+  getdisposebill: (date) => {
+    if (date) {
+      return find(Bill, { tradinghours: date })
+    } else {
+      return find(Bill, {},{__v:0})
+    }
   }
 }
