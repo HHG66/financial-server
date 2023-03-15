@@ -26,5 +26,8 @@ module.exports = {
     });
    
     return data.length
+  },
+  getdisposebill:()=>{
+    
   }
 }
