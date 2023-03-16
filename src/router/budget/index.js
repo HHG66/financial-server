@@ -1,9 +1,9 @@
 /*
  * @Author: HHG
  * @Date: 2023-03-14 19:55:16
- * @LastEditTime: 2023-03-15 23:46:17
+ * @LastEditTime: 2023-03-16 17:39:56
  * @LastEditors: 韩宏广
- * @FilePath: /Financial/src/router/budget/index.js
+ * @FilePath: \financial\src\router\budget\index.js
  * @文件说明: 
  */
 let controllerPath = '@controller/budget/'
@@ -19,4 +19,9 @@ router.post('/importingbills', async (ctx, next) => {
 //获取导入账单列表
 router.get('/getdisposebill', async (ctx, next) => {
   await require(controllerPath + `getdisposebill.js`)(ctx, next)
+});
+
+//新增一笔财务记录
+router.get('/newfinancialrecord', async (ctx, next) => {
+  await require(controllerPath + `newfinancialrecord.js`)(ctx, next)
 });

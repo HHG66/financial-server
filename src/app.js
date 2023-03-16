@@ -1,9 +1,9 @@
 /*
  * @Author: HHG
  * @Date: 2023-02-08 22:13:49
- * @LastEditTime: 2023-03-12 14:18:52
+ * @LastEditTime: 2023-03-16 17:27:54
  * @LastEditors: 韩宏广
- * @FilePath: /Financial/src/app.js
+ * @FilePath: \financial\src\app.js
  * @文件说明: 
  */
 // require('app-module-path').addPath(__dirname);
@@ -52,7 +52,7 @@ log4js.configure({
 
 const logger = log4js.getLogger();
 logger.level = "debug";
-logger.debug("Some debug messages");
+logger.debug("服务启动成功");
 
 app.on('error', (error, ctx) => {
   errorMiddlware(ctx, error)

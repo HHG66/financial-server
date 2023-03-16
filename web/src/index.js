@@ -28,6 +28,6 @@ root.render(
         <App />
       </ConfigProvider>
     </PersistGate>
-    {/* </React.StrictMode>   */}
+    {/* </React.StrictMode>*/}
   </Provider>
 );

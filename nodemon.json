@@ -1,0 +1,9 @@
+{
+  "watch": ["src/"],
+  "ignore": ["/web"],
+  "script": "app.js",
+  "options": {
+    "extensions": ["js", "coffee"],
+    "exec": "node"
+  }
+}

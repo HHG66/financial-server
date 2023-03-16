@@ -33,5 +33,8 @@ module.exports = {
     } else {
       return find(Bill, {},{__v:0})
     }
+  },
+  newfinancialrecord:()=>{
+    
   }
 }
