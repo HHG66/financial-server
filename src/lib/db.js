@@ -1,18 +1,18 @@
 /*
  * @Author: HHG
  * @Date: 2023-02-12 11:37:58
- * @LastEditTime: 2023-03-15 16:46:35
+ * @LastEditTime: 2023-03-16 21:20:48
  * @LastEditors: 韩宏广
- * @FilePath: \financial\src\lib\db.js
+ * @FilePath: /Financial/src/lib/db.js
  * @文件说明: 
  */
 const mongoose = require('mongoose');
 const errorMiddlware = require('@/middleware/error.js')
 module.exports = async (resolve, reject) => {
   mongoose.set("strictQuery", false);
-  // await mongoose.connect('mongodb://192.168.0.109:27017/financial', {
+  await mongoose.connect('mongodb://192.168.0.109:27017/financial', {
+    // await mongoose.connect('mongodb://frp-hip.top:13552/financial', {
     // await mongoose.connect('mongodb://127.0.0.1:27017/financial', {
-      await mongoose.connect('mongodb://frp-hip.top:13552/financial', {
     // mongoose.connect('mongodb://mywebsite:han1314.@118.31.79.83:27017/my_website', {
     //mongodb://mywebsite:han1314.@118.31.79.83:27017/my_website
     //'mongodb://127.0.0.1:27017/my_website'
@@ -29,7 +29,7 @@ module.exports = async (resolve, reject) => {
     })
     .catch(function (err) {
       console.log('数据库连接失败', err);
-      errorMiddlware({},err)
+      errorMiddlware({}, err)
       // return reject()
     })
   // mongoose.connection.on('error', err => {
