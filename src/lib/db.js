@@ -1,7 +1,7 @@
 /*
  * @Author: HHG
  * @Date: 2023-02-12 11:37:58
- * @LastEditTime: 2023-03-15 16:46:35
+ * @LastEditTime: 2023-03-17 09:35:09
  * @LastEditors: 韩宏广
  * @FilePath: \financial\src\lib\db.js
  * @文件说明: 
@@ -20,7 +20,7 @@ module.exports = async (resolve, reject) => {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     serverSelectionTimeoutMS: 3000
-  })
+  })git 
     .then(function (res) {
       // console.log(err);
       console.log('数据库连接成功');
