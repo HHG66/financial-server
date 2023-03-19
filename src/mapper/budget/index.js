@@ -1,7 +1,7 @@
 /*
  * @Author: HHG
  * @Date: 2023-03-14 19:59:34
- * @LastEditTime: 2023-03-16 23:22:19
+ * @LastEditTime: 2023-03-19 20:27:39
  * @LastEditors: 韩宏广
  * @FilePath: /Financial/src/mapper/budget/index.js
  * @文件说明: 
@@ -11,6 +11,7 @@ const { add, findOne, find, updata, del } = require('../index.js')
 const { Bill } = require('@/models/budget/index.js');
 //是基础的账单字段信息
 const { Check } = require('@/models/bills/index.js');
+const Batch = require('@/models/budget/batch.js')
 module.exports = {
   //这里的异步没有学明白，无法返回这个num的值
   importingbills: async (data) => {
@@ -27,12 +28,13 @@ module.exports = {
         }
       }
     });
-
+    //批次信息
+    await add(Batch, { batchname: new Date().toLocaleDateString() + '导入的账单', importtime: new Date().toLocaleString() })
     return data.length
   },
   getdisposebill: (date) => {
     if (date) {
-      return find(Bill, { tradinghours: date })
+      return find(Bill, { tradinghours: { $eq: date } })
     } else {
       return find(Bill, {}, { __v: 0 })
     }
@@ -41,6 +43,24 @@ module.exports = {
     return add(Check, fileds)
   },
   getType: (schema, _id,) => {
-    return findOne(schema, {_id:_id})
+    return findOne(schema, { _id: _id })
+  },
+  getperiodtimebill: (startDate, endDate) => {
+    return find(Check, { date: { $gte: startDate, $lte: endDate } }, { __v: 0 })
+  },
+  getbalancepayments: (date) => {
+    return findOne(Check, { date: { $eq: date } }, { __v: 0 })
+  },
+  getimportrecords: (starttime, endtime) => {
+    if (starttime && endtime) {
+      return find(Batch, { importtime: { $gte: starttime, $lte: endtime } }, { __v: 0 })
+    } else if (!starttime && !endtime) {
+      return find(Batch, {}, { __v: 0 })
+    } else if (starttime && !endtime) {
+      return find(Batch, { importtime: { $gte: starttime } }, { __v: 0 })
+    } else {
+      return find(Batch, { importtime: { $lte: endtime } }, { __v: 0 })
+    }
+
   }
 }
