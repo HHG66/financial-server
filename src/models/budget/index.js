@@ -1,7 +1,7 @@
 /*
  * @Author: HHG
  * @Date: 2023-03-14 20:49:29
- * @LastEditTime: 2023-03-19 19:37:34
+ * @LastEditTime: 2023-03-20 21:32:29
  * @LastEditors: 韩宏广
  * @FilePath: /Financial/src/models/budget/index.js
  * @文件说明: 
@@ -18,7 +18,8 @@ const bill = new mongoose.Schema({
   currentstate: String,
   trasactionid: String,
   merchantstoorder: String,
-  remark: String
+  remark: String,
+  batchid: mongoose.Schema.Types.ObjectId
 })
 
 const Bill = mongoose.model('bill', bill)

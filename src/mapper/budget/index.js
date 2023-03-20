@@ -1,7 +1,7 @@
 /*
  * @Author: HHG
  * @Date: 2023-03-14 19:59:34
- * @LastEditTime: 2023-03-19 20:27:39
+ * @LastEditTime: 2023-03-20 22:19:30
  * @LastEditors: 韩宏广
  * @FilePath: /Financial/src/mapper/budget/index.js
  * @文件说明: 
@@ -28,9 +28,12 @@ module.exports = {
         }
       }
     });
-    //批次信息
-    await add(Batch, { batchname: new Date().toLocaleDateString() + '导入的账单', importtime: new Date().toLocaleString() })
+
     return data.length
+  },
+  addBatchInfo: () => {
+    //批次信息
+    return add(Batch, { batchname: new Date().toLocaleDateString() + '导入的账单', importtime: new Date().toLocaleString() })
   },
   getdisposebill: (date) => {
     if (date) {
@@ -61,6 +64,8 @@ module.exports = {
     } else {
       return find(Batch, { importtime: { $lte: endtime } }, { __v: 0 })
     }
-
+  },
+  getinportbillinfo: (id) => {
+    return find(Bill, { batchid: id }, { __v: 0 })
   }
 }

@@ -726,3 +726,214 @@
 [2023-03-19T20:34:43.430] [DEBUG] default - 服务启动成功
 [2023-03-19T20:34:49.497] [DEBUG] default - 服务启动成功
 [2023-03-19T20:36:06.323] [DEBUG] default - 服务启动成功
+[2023-03-20T20:57:30.952] [DEBUG] default - code:401 UnauthorizedError: Authentication Error
+    at Object.throw (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa/lib/context.js:97:11)
+    at jwt (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-jwt/lib/index.js:66:26)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async cors (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa2-cors/dist/index.js:91:9) {
+  originalError: TokenExpiredError: jwt expired
+      at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/jsonwebtoken/verify.js:190:21
+      at getSecret (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/jsonwebtoken/verify.js:97:14)
+      at Object.module.exports [as verify] (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/jsonwebtoken/verify.js:101:10)
+      at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-jwt/lib/verify.js:5:13
+      at new Promise (<anonymous>)
+      at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-jwt/lib/verify.js:4:12)
+      at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-jwt/lib/index.js:38:64
+      at Array.map (<anonymous>)
+      at jwt (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-jwt/lib/index.js:38:43)
+      at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-unless/index.js:29:12 {
+    expiredAt: 2023-03-19T15:44:51.000Z
+  }
+}
+[2023-03-20T21:21:18.651] [DEBUG] default - 服务启动成功
+[2023-03-20T21:21:22.920] [DEBUG] default - 服务启动成功
+[2023-03-20T21:21:23.443] [DEBUG] default - 服务启动成功
+[2023-03-20T21:21:23.786] [DEBUG] default - 服务启动成功
+[2023-03-20T21:21:34.636] [DEBUG] default - 服务启动成功
+[2023-03-20T21:21:40.456] [DEBUG] default - 服务启动成功
+[2023-03-20T21:21:40.758] [DEBUG] default - 服务启动成功
+[2023-03-20T21:21:41.449] [DEBUG] default - 服务启动成功
+[2023-03-20T21:21:59.462] [DEBUG] default - 服务启动成功
+[2023-03-20T21:22:10.362] [DEBUG] default - 服务启动成功
+[2023-03-20T21:23:20.001] [DEBUG] default - 服务启动成功
+[2023-03-20T21:24:01.818] [DEBUG] default - 服务启动成功
+[2023-03-20T21:25:18.920] [DEBUG] default - 服务启动成功
+[2023-03-20T21:27:23.744] [DEBUG] default - 未知错误 ReferenceError: batchid is not defined
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/budget/getinportbillinfo.js:11:26)
+    at /Users/hanhongguang/Documents/个人项目/Financial/src/router/budget/index.js:37:57
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:425:16
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:430:31)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-bodyparser/index.js:95:11)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2023-03-20T21:27:42.887] [DEBUG] default - 服务启动成功
+[2023-03-20T21:29:34.399] [DEBUG] default - 未知错误 ReferenceError: batchid is not defined
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/budget/getinportbillinfo.js:11:26)
+    at /Users/hanhongguang/Documents/个人项目/Financial/src/router/budget/index.js:37:57
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:425:16
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:430:31)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-bodyparser/index.js:95:11)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2023-03-20T21:32:29.670] [DEBUG] default - 服务启动成功
+[2023-03-20T21:32:41.618] [DEBUG] default - 服务启动成功
+[2023-03-20T21:33:18.991] [DEBUG] default - 服务启动成功
+[2023-03-20T21:33:40.099] [DEBUG] default - 服务启动成功
+[2023-03-20T21:33:58.553] [DEBUG] default - 服务启动成功
+[2023-03-20T21:35:25.199] [DEBUG] default - 服务启动成功
+[2023-03-20T21:36:01.658] [DEBUG] default - 服务启动成功
+[2023-03-20T21:36:27.303] [DEBUG] default - 服务启动成功
+[2023-03-20T21:37:27.096] [DEBUG] default - 服务启动成功
+[2023-03-20T21:37:33.673] [DEBUG] default - 未知错误 /Users/hanhongguang/Documents/个人项目/Financial/src/mapper/budget/index.js:38
+  getdisposebill: (date) => {
+  ^^^^^^^^^^^^^^
+
+SyntaxError: Unexpected identifier
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1032:15)
+    at Module._compile (node:internal/modules/cjs/loader:1067:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/hanhongguang/Documents/个人项目/Financial/src/service/budget/importingbills.js:9:42)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+[2023-03-20T21:37:48.705] [DEBUG] default - 服务启动成功
+[2023-03-20T21:38:14.999] [DEBUG] default - 服务启动成功
+[2023-03-20T21:38:20.004] [DEBUG] default - 未知错误 TypeError: data.forEach is not a function
+    at importingbills (/Users/hanhongguang/Documents/个人项目/Financial/src/mapper/budget/index.js:19:10)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/service/budget/importingbills.js:22:28)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/budget/importingbills.js:14:18)
+    at async /Users/hanhongguang/Documents/个人项目/Financial/src/router/budget/index.js:17:3
+    at async bodyParser (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-bodyparser/index.js:95:5)
+    at async cors (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa2-cors/dist/index.js:91:9)
+[2023-03-20T21:39:32.173] [DEBUG] default - 服务启动成功
+[2023-03-20T21:40:08.678] [DEBUG] default - 服务启动成功
+[2023-03-20T21:40:11.747] [DEBUG] default - 服务启动成功
+[2023-03-20T21:40:15.086] [DEBUG] default - 未知错误 ReferenceError: mapperRusult is not defined
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/service/budget/importingbills.js:24:3)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/budget/importingbills.js:14:18)
+    at async /Users/hanhongguang/Documents/个人项目/Financial/src/router/budget/index.js:17:3
+    at async bodyParser (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-bodyparser/index.js:95:5)
+    at async cors (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa2-cors/dist/index.js:91:9)
+[2023-03-20T21:41:31.368] [DEBUG] default - 服务启动成功
+[2023-03-20T21:41:55.591] [DEBUG] default - 服务启动成功
+[2023-03-20T21:41:59.102] [DEBUG] default - 服务启动成功
+[2023-03-20T21:42:00.119] [DEBUG] default - 服务启动成功
+[2023-03-20T21:42:04.623] [DEBUG] default - 未知错误 ReferenceError: data is not defined
+    at /Users/hanhongguang/Documents/个人项目/Financial/src/service/budget/importingbills.js:23:5
+    at Array.forEach (<anonymous>)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/service/budget/importingbills.js:22:20)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/budget/importingbills.js:14:18)
+    at async /Users/hanhongguang/Documents/个人项目/Financial/src/router/budget/index.js:17:3
+    at async bodyParser (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-bodyparser/index.js:95:5)
+    at async cors (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa2-cors/dist/index.js:91:9)
+[2023-03-20T21:42:14.029] [DEBUG] default - 服务启动成功
+[2023-03-20T21:42:16.587] [DEBUG] default - 未知错误 ReferenceError: mapperRusult is not defined
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/service/budget/importingbills.js:31:3)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/budget/importingbills.js:14:18)
+    at async /Users/hanhongguang/Documents/个人项目/Financial/src/router/budget/index.js:17:3
+    at async bodyParser (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-bodyparser/index.js:95:5)
+    at async cors (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa2-cors/dist/index.js:91:9)
+[2023-03-20T21:42:39.274] [DEBUG] default - 服务启动成功
+[2023-03-20T21:45:51.473] [DEBUG] default - 服务启动成功
+[2023-03-20T21:46:01.274] [DEBUG] default - 服务启动成功
+[2023-03-20T21:46:07.457] [DEBUG] default - 服务启动成功
+[2023-03-20T21:46:35.143] [DEBUG] default - 服务启动成功
+[2023-03-20T21:46:39.778] [DEBUG] default - 服务启动成功
+[2023-03-20T21:46:52.770] [DEBUG] default - 未知错误 ReferenceError: batchid is not defined
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/budget/getinportbillinfo.js:11:26)
+    at /Users/hanhongguang/Documents/个人项目/Financial/src/router/budget/index.js:37:57
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:425:16
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:430:31)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-bodyparser/index.js:95:11)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2023-03-20T21:47:14.183] [DEBUG] default - 服务启动成功
+[2023-03-20T21:47:14.931] [DEBUG] default - 未知错误 ReferenceError: cta is not defined
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/budget/getinportbillinfo.js:11:26)
+    at /Users/hanhongguang/Documents/个人项目/Financial/src/router/budget/index.js:37:57
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:425:16
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:430:31)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-bodyparser/index.js:95:11)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2023-03-20T21:47:21.035] [DEBUG] default - 服务启动成功
+[2023-03-20T21:48:09.907] [DEBUG] default - 服务启动成功
+[2023-03-20T21:48:35.263] [DEBUG] default - 服务启动成功
+[2023-03-20T21:48:59.205] [DEBUG] default - 服务启动成功
+[2023-03-20T21:49:44.580] [DEBUG] default - 服务启动成功
+[2023-03-20T21:49:57.257] [DEBUG] default - 服务启动成功
+[2023-03-20T21:50:08.239] [DEBUG] default - 服务启动成功
+[2023-03-20T21:50:57.887] [DEBUG] default - 服务启动成功
+[2023-03-20T21:51:28.242] [DEBUG] default - 服务启动成功
+[2023-03-20T21:51:34.957] [DEBUG] default - 服务启动成功
+[2023-03-20T21:52:24.506] [DEBUG] default - 服务启动成功
+[2023-03-20T21:52:52.333] [DEBUG] default - 服务启动成功
+[2023-03-20T21:53:22.213] [DEBUG] default - 服务启动成功
+[2023-03-20T21:53:30.817] [DEBUG] default - 服务启动成功
+[2023-03-20T21:53:35.906] [DEBUG] default - 服务启动成功
+[2023-03-20T21:53:48.880] [DEBUG] default - 服务启动成功
+[2023-03-20T21:55:49.754] [DEBUG] default - 服务启动成功
+[2023-03-20T21:56:53.743] [DEBUG] default - 服务启动成功
+[2023-03-20T21:58:00.682] [DEBUG] default - 服务启动成功
+[2023-03-20T21:58:02.937] [DEBUG] default - 服务启动成功
+[2023-03-20T21:59:40.349] [DEBUG] default - 服务启动成功
+[2023-03-20T22:01:33.282] [DEBUG] default - 服务启动成功
+[2023-03-20T22:02:22.665] [DEBUG] default - 服务启动成功
+[2023-03-20T22:03:54.235] [DEBUG] default - 服务启动成功
+[2023-03-20T22:11:11.426] [DEBUG] default - 服务启动成功
+[2023-03-20T22:11:13.289] [DEBUG] default - 服务启动成功
+[2023-03-20T22:11:31.067] [DEBUG] default - 服务启动成功
+[2023-03-20T22:11:35.775] [DEBUG] default - 服务启动成功
+[2023-03-20T22:11:58.298] [DEBUG] default - 服务启动成功
+[2023-03-20T22:13:11.588] [DEBUG] default - 未知错误 TypeError: Cannot read properties of undefined (reading 'forEach')
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/service/budget/getinportbillinfo.js:17:16)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/budget/getinportbillinfo.js:11:14)
+    at async /Users/hanhongguang/Documents/个人项目/Financial/src/router/budget/index.js:37:3
+    at async bodyParser (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-bodyparser/index.js:95:5)
+    at async cors (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa2-cors/dist/index.js:91:9)
+[2023-03-20T22:14:29.503] [DEBUG] default - 服务启动成功
+[2023-03-20T22:15:48.044] [DEBUG] default - 服务启动成功
+[2023-03-20T22:15:48.927] [DEBUG] default - 未知错误 ReferenceError: mapperResult is not defined
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/service/budget/getinportbillinfo.js:19:3)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/budget/getinportbillinfo.js:11:14)
+    at async /Users/hanhongguang/Documents/个人项目/Financial/src/router/budget/index.js:37:3
+    at async bodyParser (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-bodyparser/index.js:95:5)
+    at async cors (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa2-cors/dist/index.js:91:9)
+[2023-03-20T22:16:24.775] [DEBUG] default - 服务启动成功
+[2023-03-20T22:18:04.050] [DEBUG] default - 服务启动成功
+[2023-03-20T22:18:45.342] [DEBUG] default - 服务启动成功
+[2023-03-20T22:19:31.238] [DEBUG] default - 服务启动成功
+[2023-03-20T22:19:50.923] [DEBUG] default - 服务启动成功
+[2023-03-20T22:20:05.332] [DEBUG] default - 服务启动成功
+[2023-03-20T22:21:06.238] [DEBUG] default - 服务启动成功
+[2023-03-20T22:21:56.503] [DEBUG] default - 服务启动成功
+[2023-03-20T22:21:58.747] [DEBUG] default - 服务启动成功
+[2023-03-20T22:22:37.964] [DEBUG] default - 服务启动成功
+[2023-03-20T22:23:35.720] [DEBUG] default - 服务启动成功
+[2023-03-20T22:24:12.177] [DEBUG] default - 服务启动成功
+[2023-03-20T22:24:41.485] [DEBUG] default - 服务启动成功
+[2023-03-20T22:24:56.171] [DEBUG] default - 服务启动成功
+[2023-03-20T22:25:04.856] [DEBUG] default - 服务启动成功
+[2023-03-20T22:25:11.466] [DEBUG] default - 服务启动成功
