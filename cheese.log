@@ -1148,3 +1148,141 @@ SyntaxError: Unexpected identifier
     at bodyParser (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-bodyparser/index.js:95:11)
 [2023-03-21T23:27:23.685] [DEBUG] default - 服务启动成功
 [2023-03-21T23:27:47.618] [DEBUG] default - 服务启动成功
+[2023-03-21T23:31:13.978] [DEBUG] default - 服务启动成功
+[2023-03-25T22:33:45.429] [DEBUG] default - 服务启动成功
+[2023-03-25T22:35:59.941] [DEBUG] default - 服务启动成功
+[2023-03-25T22:36:02.965] [DEBUG] default - code:401 UnauthorizedError: Authentication Error
+    at Object.throw (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa/lib/context.js:97:11)
+    at jwt (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-jwt/lib/index.js:66:26)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async cors (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa2-cors/dist/index.js:91:9) {
+  originalError: TokenExpiredError: jwt expired
+      at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/jsonwebtoken/verify.js:190:21
+      at getSecret (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/jsonwebtoken/verify.js:97:14)
+      at Object.module.exports [as verify] (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/jsonwebtoken/verify.js:101:10)
+      at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-jwt/lib/verify.js:5:13
+      at new Promise (<anonymous>)
+      at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-jwt/lib/verify.js:4:12)
+      at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-jwt/lib/index.js:38:64
+      at Array.map (<anonymous>)
+      at jwt (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-jwt/lib/index.js:38:43)
+      at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-unless/index.js:29:12 {
+    expiredAt: 2023-03-20T17:25:57.000Z
+  }
+}
+[2023-03-25T22:37:23.668] [DEBUG] default - 服务启动成功
+[2023-03-25T22:38:49.787] [DEBUG] default - 服务启动成功
+[2023-03-25T22:39:19.646] [DEBUG] default - 服务启动成功
+[2023-03-25T22:39:23.618] [DEBUG] default - code:401 UnauthorizedError: Authentication Error
+    at Object.throw (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa/lib/context.js:97:11)
+    at jwt (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-jwt/lib/index.js:66:26)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async cors (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa2-cors/dist/index.js:91:9) {
+  originalError: TokenExpiredError: jwt expired
+      at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/jsonwebtoken/verify.js:190:21
+      at getSecret (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/jsonwebtoken/verify.js:97:14)
+      at Object.module.exports [as verify] (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/jsonwebtoken/verify.js:101:10)
+      at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-jwt/lib/verify.js:5:13
+      at new Promise (<anonymous>)
+      at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-jwt/lib/verify.js:4:12)
+      at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-jwt/lib/index.js:38:64
+      at Array.map (<anonymous>)
+      at jwt (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-jwt/lib/index.js:38:43)
+      at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-unless/index.js:29:12 {
+    expiredAt: 2023-03-21T19:19:38.000Z
+  }
+}
+[2023-03-25T22:40:11.747] [DEBUG] default - 服务启动成功
+[2023-03-25T22:40:27.977] [DEBUG] default - 服务启动成功
+[2023-03-25T22:40:39.747] [DEBUG] default - 服务启动成功
+[2023-03-25T22:41:00.233] [DEBUG] default - 服务启动成功
+[2023-03-25T22:42:00.813] [DEBUG] default - 服务启动成功
+[2023-03-25T22:42:08.206] [DEBUG] default - 服务启动成功
+[2023-03-25T22:43:47.382] [DEBUG] default - 服务启动成功
+[2023-03-25T22:44:03.446] [DEBUG] default - 服务启动成功
+[2023-03-25T22:44:12.904] [DEBUG] default - 服务启动成功
+[2023-03-25T22:44:13.323] [DEBUG] default - 服务启动成功
+[2023-03-25T22:44:13.703] [DEBUG] default - 服务启动成功
+[2023-03-25T22:46:56.067] [DEBUG] default - 服务启动成功
+[2023-03-25T22:47:01.292] [DEBUG] default - 服务启动成功
+[2023-03-25T22:47:14.610] [DEBUG] default - 服务启动成功
+[2023-03-25T22:47:15.381] [DEBUG] default - 服务启动成功
+[2023-03-25T22:49:39.849] [DEBUG] default - 服务启动成功
+[2023-03-25T22:50:23.045] [DEBUG] default - 服务启动成功
+[2023-03-25T22:51:02.702] [DEBUG] default - 未知错误 Error: 方法没有实现
+    at Object.methodNotAllowed (/Users/hanhongguang/Documents/个人项目/Financial/src/router/index.js:46:40)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:520:29
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async bodyParser (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-bodyparser/index.js:95:5)
+    at async cors (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa2-cors/dist/index.js:91:9) {
+  data: null,
+  isBoom: true,
+  isServer: false,
+  output: {
+    statusCode: 405,
+    payload: { statusCode: 405, error: 'Method Not Allowed', message: '方法没有实现' },
+    headers: {}
+  }
+}
+[2023-03-25T22:51:31.804] [DEBUG] default - 服务启动成功
+[2023-03-25T22:51:33.541] [DEBUG] default - 未知错误 ReferenceError: ctt is not defined
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/service/investment/deletefund.js:11:39)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/investment/deletefund.js:11:22)
+    at /Users/hanhongguang/Documents/个人项目/Financial/src/router/investment/index.js:23:51
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:425:16
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:430:31)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-bodyparser/index.js:95:11)
+[2023-03-25T22:52:02.314] [DEBUG] default - 未知错误 ReferenceError: ctt is not defined
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/service/investment/deletefund.js:11:39)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/investment/deletefund.js:11:22)
+    at /Users/hanhongguang/Documents/个人项目/Financial/src/router/investment/index.js:23:51
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:425:16
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:430:31)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-bodyparser/index.js:95:11)
+[2023-03-25T22:52:22.000] [DEBUG] default - 服务启动成功
+[2023-03-25T22:52:23.633] [DEBUG] default - 未知错误 ReferenceError: _ is not defined
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/investment/deletefund.js:13:19)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async /Users/hanhongguang/Documents/个人项目/Financial/src/router/investment/index.js:23:3
+    at async bodyParser (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-bodyparser/index.js:95:5)
+    at async cors (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa2-cors/dist/index.js:91:9)
+[2023-03-25T22:53:27.660] [DEBUG] default - 服务启动成功
+[2023-03-25T22:53:41.702] [DEBUG] default - 服务启动成功
+[2023-03-25T22:54:26.965] [DEBUG] default - 服务启动成功
+[2023-03-25T22:54:41.267] [DEBUG] default - 服务启动成功
+[2023-03-25T22:54:52.718] [DEBUG] default - 服务启动成功
+[2023-03-25T22:55:05.531] [DEBUG] default - 服务启动成功
+[2023-03-25T22:55:57.960] [DEBUG] default - 未知错误 ReferenceError: _ is not defined
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/investment/deletefund.js:14:19)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async /Users/hanhongguang/Documents/个人项目/Financial/src/router/investment/index.js:23:3
+    at async bodyParser (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-bodyparser/index.js:95:5)
+    at async cors (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa2-cors/dist/index.js:91:9)
+[2023-03-25T22:58:08.765] [DEBUG] default - 服务启动成功
+[2023-03-25T22:58:39.308] [DEBUG] default - 服务启动成功
+[2023-03-25T22:58:54.252] [DEBUG] default - 未知错误 ReferenceError: _ is not defined
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/investment/deletefund.js:14:19)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async /Users/hanhongguang/Documents/个人项目/Financial/src/router/investment/index.js:23:3
+    at async bodyParser (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-bodyparser/index.js:95:5)
+    at async cors (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa2-cors/dist/index.js:91:9)
+[2023-03-25T22:59:16.882] [DEBUG] default - 服务启动成功
+[2023-03-25T23:01:05.195] [DEBUG] default - 服务启动成功
+[2023-03-25T23:01:08.679] [DEBUG] default - 服务启动成功
+[2023-03-25T23:01:22.596] [DEBUG] default - 未知错误 ReferenceError: _ is not defined
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/investment/deletefund.js:14:19)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async /Users/hanhongguang/Documents/个人项目/Financial/src/router/investment/index.js:23:3
+    at async bodyParser (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-bodyparser/index.js:95:5)
+    at async cors (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa2-cors/dist/index.js:91:9)
+[2023-03-25T23:04:37.645] [DEBUG] default - 服务启动成功
+[2023-03-25T23:05:04.498] [DEBUG] default - 服务启动成功
+[2023-03-25T23:05:05.642] [DEBUG] default - 服务启动成功
