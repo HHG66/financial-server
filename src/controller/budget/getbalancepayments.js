@@ -1,17 +1,19 @@
 /*
  * @Author: HHG
  * @Date: 2023-03-14 19:56:34
- * @LastEditTime: 2023-03-16 17:37:43
+ * @LastEditTime: 2023-03-18 19:55:18
  * @LastEditors: 韩宏广
- * @FilePath: \financial\src\controller\budget\getbalancepayments.js
+ * @FilePath: /Financial/src/controller/budget/getbalancepayments.js
  * @文件说明: 
  */
-const serve=reuqire('@/service/budget/getbalancepayments')
-module.exports=async(ctx,next)=>{
-  let {date}=ctx.query
-  ctx.query={
-    date:date.replace('-','/')
+const serve = require('@/service/budget/getbalancepayments')
+module.exports = async (ctx, next) => {
+  // let {date}=ctx.query
+  // ctx.query={
+  //   date:date.replace('-','/')
+  // }
+  let result =await serve(ctx)
+  if (result) {
+    response(ctx, result)
   }
-  console.log();
-  // let {data,}
 }
