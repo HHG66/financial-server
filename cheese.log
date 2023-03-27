@@ -3,3 +3,143 @@
 [2023-03-27T11:01:58.672] [DEBUG] default - 服务启动成功
 [2023-03-27T11:02:13.738] [DEBUG] default - 服务启动成功
 [2023-03-27T11:02:17.995] [DEBUG] default - 服务启动成功
+[2023-03-27T22:04:40.739] [DEBUG] default - 服务启动成功
+[2023-03-27T22:06:17.916] [DEBUG] default - 服务启动成功
+[2023-03-27T22:06:37.852] [DEBUG] default - 服务启动成功
+[2023-03-27T22:07:28.184] [DEBUG] default - 服务启动成功
+[2023-03-27T22:08:44.166] [DEBUG] default - 服务启动成功
+[2023-03-27T22:08:50.035] [DEBUG] default - 服务启动成功
+[2023-03-27T22:09:05.466] [DEBUG] default - 服务启动成功
+[2023-03-27T22:09:16.468] [DEBUG] default - 服务启动成功
+[2023-03-27T22:09:20.751] [DEBUG] default - 服务启动成功
+[2023-03-27T22:09:28.225] [DEBUG] default - 服务启动成功
+[2023-03-27T22:09:32.299] [DEBUG] default - 服务启动成功
+[2023-03-27T22:09:39.652] [DEBUG] default - 服务启动成功
+[2023-03-27T22:09:42.090] [DEBUG] default - 服务启动成功
+[2023-03-27T22:10:10.366] [DEBUG] default - 服务启动成功
+[2023-03-27T22:10:48.302] [DEBUG] default - 服务启动成功
+[2023-03-27T22:11:06.332] [DEBUG] default - 服务启动成功
+[2023-03-27T22:11:29.502] [DEBUG] default - 服务启动成功
+[2023-03-27T22:12:02.388] [DEBUG] default - 服务启动成功
+[2023-03-27T22:12:34.984] [DEBUG] default - 服务启动成功
+[2023-03-27T22:16:14.071] [DEBUG] default - 服务启动成功
+[2023-03-27T22:16:35.683] [DEBUG] default - 服务启动成功
+[2023-03-27T22:16:42.091] [DEBUG] default - 服务启动成功
+[2023-03-27T22:16:48.951] [DEBUG] default - 服务启动成功
+[2023-03-27T22:16:51.620] [DEBUG] default - 服务启动成功
+[2023-03-27T22:17:09.917] [DEBUG] default - 服务启动成功
+[2023-03-27T22:17:37.441] [DEBUG] default - code:401 UnauthorizedError: Authentication Error
+    at Object.throw (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa/lib/context.js:97:11)
+    at jwt (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-jwt/lib/index.js:66:26)
+    at async cors (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa2-cors/dist/index.js:91:9) {
+  originalError: TokenExpiredError: jwt expired
+      at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/jsonwebtoken/verify.js:190:21
+      at getSecret (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/jsonwebtoken/verify.js:97:14)
+      at Object.module.exports [as verify] (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/jsonwebtoken/verify.js:101:10)
+      at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-jwt/lib/verify.js:5:13
+      at new Promise (<anonymous>)
+      at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-jwt/lib/verify.js:4:12)
+      at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-jwt/lib/index.js:38:64
+      at Array.map (<anonymous>)
+      at jwt (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-jwt/lib/index.js:38:43)
+      at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-unless/index.js:29:12 {
+    expiredAt: 2023-03-25T18:39:30.000Z
+  }
+}
+[2023-03-27T22:17:57.642] [DEBUG] default - 未知错误 TypeError: Cannot read properties of undefined (reading 'body')
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/investment/editfundinfo.js:11:95)
+    at /Users/hanhongguang/Documents/个人项目/Financial/src/router/investment/index.js:28:53
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:425:16
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:430:31)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-bodyparser/index.js:95:11)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2023-03-27T22:18:14.730] [DEBUG] default - 服务启动成功
+[2023-03-27T22:18:17.417] [DEBUG] default - 未知错误 ReferenceError: editfundinfo is not defined
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/investment/editfundinfo.js:21:16)
+    at /Users/hanhongguang/Documents/个人项目/Financial/src/router/investment/index.js:28:53
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:425:16
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:430:31)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-bodyparser/index.js:95:11)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2023-03-27T22:18:32.915] [DEBUG] default - 服务启动成功
+[2023-03-27T22:18:34.167] [DEBUG] default - 未知错误 TypeError: serve is not a function
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/investment/editfundinfo.js:21:22)
+    at /Users/hanhongguang/Documents/个人项目/Financial/src/router/investment/index.js:28:53
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:425:16
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:430:31)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-bodyparser/index.js:95:11)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2023-03-27T22:18:45.346] [DEBUG] default - 服务启动成功
+[2023-03-27T22:18:46.833] [DEBUG] default - 未知错误 TypeError: serve is not a function
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/investment/editfundinfo.js:21:22)
+    at /Users/hanhongguang/Documents/个人项目/Financial/src/router/investment/index.js:28:53
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:425:16
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:430:31)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-bodyparser/index.js:95:11)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2023-03-27T22:19:03.949] [DEBUG] default - 服务启动成功
+[2023-03-27T22:19:04.796] [DEBUG] default - 未知错误 ReferenceError: sellingFund is not defined
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/service/investment/editfundinfo.js:12:25)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/investment/editfundinfo.js:21:22)
+    at /Users/hanhongguang/Documents/个人项目/Financial/src/router/investment/index.js:28:53
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:425:16
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:430:31)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-bodyparser/index.js:95:11)
+[2023-03-27T22:19:36.503] [DEBUG] default - 服务启动成功
+[2023-03-27T22:19:40.506] [DEBUG] default - 未知错误 ReferenceError: _id is not defined
+    at sellingFund (/Users/hanhongguang/Documents/个人项目/Financial/src/mapper/investment/index.js:25:29)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/service/investment/editfundinfo.js:13:31)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/investment/editfundinfo.js:21:22)
+    at /Users/hanhongguang/Documents/个人项目/Financial/src/router/investment/index.js:28:53
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:425:16
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:430:31)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+[2023-03-27T22:19:52.097] [DEBUG] default - 服务启动成功
+[2023-03-27T22:19:52.824] [DEBUG] default - 未知错误 ReferenceError: _id is not defined
+    at sellingFund (/Users/hanhongguang/Documents/个人项目/Financial/src/mapper/investment/index.js:26:29)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/service/investment/editfundinfo.js:13:31)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/investment/editfundinfo.js:21:22)
+    at /Users/hanhongguang/Documents/个人项目/Financial/src/router/investment/index.js:28:53
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:425:16
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:430:31)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+[2023-03-27T22:19:59.761] [DEBUG] default - 未知错误 ReferenceError: _id is not defined
+    at sellingFund (/Users/hanhongguang/Documents/个人项目/Financial/src/mapper/investment/index.js:26:29)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/service/investment/editfundinfo.js:13:31)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/investment/editfundinfo.js:21:22)
+    at /Users/hanhongguang/Documents/个人项目/Financial/src/router/investment/index.js:28:53
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:425:16
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:430:31)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+[2023-03-27T22:20:17.363] [DEBUG] default - 服务启动成功
+[2023-03-27T22:20:57.077] [DEBUG] default - 服务启动成功
+[2023-03-27T22:21:59.928] [DEBUG] default - 服务启动成功

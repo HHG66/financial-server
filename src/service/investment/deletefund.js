@@ -1,7 +1,7 @@
 /*
  * @Author: HHG
  * @Date: 2023-03-25 22:47:14
- * @LastEditTime: 2023-03-25 22:55:05
+ * @LastEditTime: 2023-03-27 21:22:02
  * @LastEditors: 韩宏广
  * @FilePath: /Financial/src/service/investment/deletefund.js
  * @文件说明: 
