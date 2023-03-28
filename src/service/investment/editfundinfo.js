@@ -1,9 +1,9 @@
 /*
  * @Author: HHG
  * @Date: 2023-03-27 11:31:02
- * @LastEditTime: 2023-03-28 10:03:37
+ * @LastEditTime: 2023-03-28 22:03:56
  * @LastEditors: 韩宏广
- * @FilePath: \financial\src\service\investment\editfundinfo.js
+ * @FilePath: /Financial/src/service/investment/editfundinfo.js
  * @文件说明: 
  */
 const { sellingFund, getFundInfo } = require('@/mapper/investment/index.js')
@@ -13,10 +13,11 @@ module.exports = async (data) => {
   let { _id, fundstate, sellingnumber, sellingprice, addnumber, price } = data
   if (fundstate === '1') {
     let fundInfo = await getFundInfo(_id)
-    
-    console.log(fundInfo);
-    
-    mappperResult = await sellingFund({ _id, sellingnumber, sellingprice, fundstate: [1] })
+    let sellingprices = Number(fundInfo[0].amountinvested) + Number(sellingprice)
+    let sellingnumbers = Number(fundInfo[0].amount) + Number(sellingnumber)
+    let fundstates=[...fundInfo[0].fundstate]
+    fundstates.push("卖出") 
+    mappperResult = await sellingFund(_id, sellingnumbers, sellingprices, fundstates)
   } else {
     // mappperResult = await sellingFund({ _id, sellingnumber, sellingprice })
   }

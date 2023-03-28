@@ -161,3 +161,157 @@
 [2023-03-28T10:03:26.919] [DEBUG] default - 服务启动成功
 [2023-03-28T10:03:35.407] [DEBUG] default - 服务启动成功
 [2023-03-28T10:03:38.667] [DEBUG] default - 服务启动成功
+[2023-03-28T21:23:34.295] [DEBUG] default - 服务启动成功
+[2023-03-28T21:23:54.303] [DEBUG] default - 服务启动成功
+[2023-03-28T21:25:40.471] [DEBUG] default - 服务启动成功
+[2023-03-28T21:26:50.390] [DEBUG] default - 服务启动成功
+[2023-03-28T21:28:23.462] [DEBUG] default - 服务启动成功
+[2023-03-28T21:28:31.822] [DEBUG] default - code:401 UnauthorizedError: Authentication Error
+    at Object.throw (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa/lib/context.js:97:11)
+    at jwt (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-jwt/lib/index.js:66:26)
+    at async cors (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa2-cors/dist/index.js:91:9) {
+  originalError: TokenExpiredError: jwt expired
+      at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/jsonwebtoken/verify.js:190:21
+      at getSecret (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/jsonwebtoken/verify.js:97:14)
+      at Object.module.exports [as verify] (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/jsonwebtoken/verify.js:101:10)
+      at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-jwt/lib/verify.js:5:13
+      at new Promise (<anonymous>)
+      at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-jwt/lib/verify.js:4:12)
+      at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-jwt/lib/index.js:38:64
+      at Array.map (<anonymous>)
+      at jwt (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-jwt/lib/index.js:38:43)
+      at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-unless/index.js:29:12 {
+    expiredAt: 2023-03-27T18:17:42.000Z
+  }
+}
+[2023-03-28T21:29:49.937] [DEBUG] default - 服务启动成功
+[2023-03-28T21:30:21.686] [DEBUG] default - 服务启动成功
+[2023-03-28T21:30:28.889] [DEBUG] default - 服务启动成功
+[2023-03-28T21:31:14.877] [DEBUG] default - 未知错误 TypeError: Cannot read properties of undefined (reading 'amountinvested')
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/service/investment/editfundinfo.js:17:30)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/investment/editfundinfo.js:21:16)
+    at async /Users/hanhongguang/Documents/个人项目/Financial/src/router/investment/index.js:28:3
+    at async bodyParser (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-bodyparser/index.js:95:5)
+    at async cors (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa2-cors/dist/index.js:91:9)
+[2023-03-28T21:32:08.633] [DEBUG] default - 服务启动成功
+[2023-03-28T21:32:10.018] [DEBUG] default - 未知错误 TypeError: Cannot read properties of undefined (reading '0')
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/service/investment/editfundinfo.js:17:29)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/investment/editfundinfo.js:21:16)
+    at async /Users/hanhongguang/Documents/个人项目/Financial/src/router/investment/index.js:28:3
+    at async bodyParser (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-bodyparser/index.js:95:5)
+    at async cors (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa2-cors/dist/index.js:91:9)
+[2023-03-28T21:35:10.005] [DEBUG] default - 服务启动成功
+[2023-03-28T21:35:10.242] [DEBUG] default - 服务启动成功
+[2023-03-28T21:35:54.741] [DEBUG] default - 服务启动成功
+[2023-03-28T21:35:57.171] [DEBUG] default - 未知错误 ReferenceError: Invalid left-hand side in assignment
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/service/investment/editfundinfo.js:17:5)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/investment/editfundinfo.js:21:16)
+    at async /Users/hanhongguang/Documents/个人项目/Financial/src/router/investment/index.js:28:3
+    at async bodyParser (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-bodyparser/index.js:95:5)
+    at async cors (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa2-cors/dist/index.js:91:9)
+[2023-03-28T21:36:31.461] [DEBUG] default - 服务启动成功
+[2023-03-28T21:36:59.178] [DEBUG] default - 服务启动成功
+[2023-03-28T21:37:26.804] [DEBUG] default - 服务启动成功
+[2023-03-28T21:39:09.504] [DEBUG] default - 服务启动成功
+[2023-03-28T21:41:08.010] [DEBUG] default - 服务启动成功
+[2023-03-28T21:42:08.055] [DEBUG] default - 服务启动成功
+[2023-03-28T21:42:18.009] [DEBUG] default - 服务启动成功
+[2023-03-28T21:42:36.517] [DEBUG] default - 服务启动成功
+[2023-03-28T21:42:48.175] [DEBUG] default - 未知错误 ReferenceError: data is not defined
+    at sellingFund (/Users/hanhongguang/Documents/个人项目/Financial/src/mapper/investment/index.js:29:29)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/service/investment/editfundinfo.js:22:27)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/investment/editfundinfo.js:21:16)
+    at async /Users/hanhongguang/Documents/个人项目/Financial/src/router/investment/index.js:28:3
+    at async bodyParser (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-bodyparser/index.js:95:5)
+    at async cors (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa2-cors/dist/index.js:91:9)
+[2023-03-28T21:42:58.693] [DEBUG] default - 服务启动成功
+[2023-03-28T21:43:44.656] [DEBUG] default - 服务启动成功
+[2023-03-28T21:44:40.426] [DEBUG] default - 服务启动成功
+[2023-03-28T21:45:10.197] [DEBUG] default - 服务启动成功
+[2023-03-28T21:45:50.499] [DEBUG] default - 服务启动成功
+[2023-03-28T21:45:52.789] [DEBUG] default - 服务启动成功
+[2023-03-28T21:46:15.660] [DEBUG] default - 未知错误 ReferenceError: Cannot access 'sellingnumbers' before initialization
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/service/investment/editfundinfo.js:20:17)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/investment/editfundinfo.js:21:16)
+    at async /Users/hanhongguang/Documents/个人项目/Financial/src/router/investment/index.js:28:3
+    at async bodyParser (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-bodyparser/index.js:95:5)
+    at async cors (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa2-cors/dist/index.js:91:9)
+[2023-03-28T21:46:34.188] [DEBUG] default - 服务启动成功
+[2023-03-28T21:46:55.202] [DEBUG] default - 服务启动成功
+[2023-03-28T21:46:59.114] [DEBUG] default - 服务启动成功
+[2023-03-28T21:47:19.600] [DEBUG] default - 服务启动成功
+[2023-03-28T21:48:10.845] [DEBUG] default - 服务启动成功
+[2023-03-28T21:48:22.810] [DEBUG] default - 服务启动成功
+[2023-03-28T21:50:37.688] [DEBUG] default - 服务启动成功
+[2023-03-28T21:51:12.078] [DEBUG] default - 服务启动成功
+[2023-03-28T21:53:01.060] [DEBUG] default - 服务启动成功
+[2023-03-28T21:53:41.412] [DEBUG] default - 服务启动成功
+[2023-03-28T21:54:08.729] [DEBUG] default - 服务启动成功
+[2023-03-28T21:54:15.214] [DEBUG] default - 服务启动成功
+[2023-03-28T21:55:36.022] [DEBUG] default - 服务启动成功
+[2023-03-28T21:55:36.734] [DEBUG] default - 服务启动成功
+[2023-03-28T21:55:39.949] [DEBUG] default - 未知错误 ReferenceError: Invalid left-hand side in assignment
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/service/investment/editfundinfo.js:22:16)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/investment/editfundinfo.js:21:16)
+    at async /Users/hanhongguang/Documents/个人项目/Financial/src/router/investment/index.js:28:3
+    at async bodyParser (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-bodyparser/index.js:95:5)
+    at async cors (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa2-cors/dist/index.js:91:9)
+[2023-03-28T21:56:08.328] [DEBUG] default - 服务启动成功
+[2023-03-28T21:56:09.827] [DEBUG] default - 服务启动成功
+[2023-03-28T21:56:13.964] [DEBUG] default - 未知错误 ReferenceError: Invalid left-hand side in assignment
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/service/investment/editfundinfo.js:22:16)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/investment/editfundinfo.js:21:16)
+    at async /Users/hanhongguang/Documents/个人项目/Financial/src/router/investment/index.js:28:3
+    at async bodyParser (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-bodyparser/index.js:95:5)
+    at async cors (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa2-cors/dist/index.js:91:9)
+[2023-03-28T21:56:25.099] [DEBUG] default - 服务启动成功
+[2023-03-28T21:56:26.982] [DEBUG] default - 未知错误 ReferenceError: Invalid left-hand side in assignment
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/service/investment/editfundinfo.js:22:16)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/investment/editfundinfo.js:21:16)
+    at async /Users/hanhongguang/Documents/个人项目/Financial/src/router/investment/index.js:28:3
+    at async bodyParser (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-bodyparser/index.js:95:5)
+    at async cors (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa2-cors/dist/index.js:91:9)
+[2023-03-28T21:56:34.957] [DEBUG] default - 服务启动成功
+[2023-03-28T21:56:50.734] [DEBUG] default - 服务启动成功
+[2023-03-28T21:57:16.940] [DEBUG] default - 服务启动成功
+[2023-03-28T22:01:28.557] [DEBUG] default - 服务启动成功
+[2023-03-28T22:02:28.558] [DEBUG] default - 服务启动成功
+[2023-03-28T22:03:09.313] [DEBUG] default - 服务启动成功
+[2023-03-28T22:03:56.753] [DEBUG] default - 服务启动成功
+[2023-03-28T22:04:54.092] [DEBUG] default - 服务启动成功
+[2023-03-28T22:05:39.777] [DEBUG] default - code:401 UnauthorizedError: Authentication Error
+    at Object.throw (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa/lib/context.js:97:11)
+    at jwt (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-jwt/lib/index.js:66:26)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async cors (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa2-cors/dist/index.js:91:9) {
+  originalError: TokenExpiredError: jwt expired
+      at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/jsonwebtoken/verify.js:190:21
+      at getSecret (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/jsonwebtoken/verify.js:97:14)
+      at Object.module.exports [as verify] (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/jsonwebtoken/verify.js:101:10)
+      at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-jwt/lib/verify.js:5:13
+      at new Promise (<anonymous>)
+      at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-jwt/lib/verify.js:4:12)
+      at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-jwt/lib/index.js:38:64
+      at Array.map (<anonymous>)
+      at jwt (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-jwt/lib/index.js:38:43)
+      at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-unless/index.js:29:12 {
+    expiredAt: 2023-03-25T18:36:06.000Z
+  }
+}
+[2023-03-28T22:07:32.261] [DEBUG] default - 服务启动成功
+[2023-03-28T22:08:07.695] [DEBUG] default - 服务启动成功
+[2023-03-28T22:08:41.510] [DEBUG] default - 服务启动成功
+[2023-03-28T22:09:59.003] [DEBUG] default - 服务启动成功
+[2023-03-28T22:10:39.732] [DEBUG] default - 服务启动成功
+[2023-03-28T22:12:24.915] [DEBUG] default - 服务启动成功
+[2023-03-28T22:13:49.008] [DEBUG] default - 服务启动成功
+[2023-03-28T22:14:07.848] [DEBUG] default - 服务启动成功
+[2023-03-28T22:14:08.552] [DEBUG] default - 服务启动成功

@@ -25,11 +25,11 @@ module.exports = {
     return find(Fund,{_id:_id},{__v:0})
   },
   //这个逻辑不正确，要改！
-  sellingFund:(data)=>{
-    return updata(Fund,{_id:data._id},{
-      amount:data.sellingnumber,
-      amountinvested:data.sellingprice,
-      fundstate:data.fundstate
+  sellingFund:(_id, sellingnumber, sellingprice, fundstate)=>{
+    return updata(Fund,{_id:_id},{
+      amount:sellingnumber,
+      amountinvested:sellingprice,
+      fundstate:fundstate
     })
   },
 }

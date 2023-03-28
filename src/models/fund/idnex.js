@@ -1,9 +1,9 @@
 /*
  * @Author: HHG
  * @Date: 2023-03-21 22:52:03
- * @LastEditTime: 2023-03-28 10:05:21
+ * @LastEditTime: 2023-03-28 22:13:48
  * @LastEditors: 韩宏广
- * @FilePath: \financial\src\models\fund\idnex.js
+ * @FilePath: /Financial/src/models/fund/idnex.js
  * @文件说明: 
  */
 const mongoose = require('mongoose')
@@ -14,17 +14,18 @@ const fund =new mongoose.Schema({
   amountinvested:Number,//投入金额
   buytime:String,//买入时间
   amount:Number,//总数
-  plate:String,//
-  saledate:String,
-  fundstate:Array,
-  proportionpositionsheld:Number,
-  currentprice:Number,
-  currentearnings:Number,
-  earningspercentage:Number,
-  earnings:Number,
-  fundid:String,
-  holdingstate:String,
-  costprice:String,
+  plate:String,//板块
+  saledate:String,//卖出时间
+  fundstate:[String],//最近操作
+  proportionpositionsheld:Number,//持仓占比
+  currentprice:Number,//当日价格
+  currentearnings:Number,//单日盈亏
+  earningspercentage:Number,//盈亏百分比
+  earnings:Number,//盈亏（元）
+  // fundid:String,
+  holdingstate:String,//持仓状态
+  costprice:String,//成本
+  updatetime:Date  //更新时间，非基金字段
 })
 
 const Fund= mongoose.model('fund', fund)
