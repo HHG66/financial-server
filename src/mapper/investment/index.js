@@ -1,9 +1,9 @@
 /*
  * @Author: HHG
  * @Date: 2023-03-21 22:49:06
- * @LastEditTime: 2023-03-27 22:19:51
+ * @LastEditTime: 2023-03-28 09:54:02
  * @LastEditors: 韩宏广
- * @FilePath: /Financial/src/mapper/investment/index.js
+ * @FilePath: \financial\src\mapper\investment\index.js
  * @文件说明: 
  */
 const mongoose = require('mongoose')
@@ -21,11 +21,15 @@ module.exports = {
   deletefund: (data) => {
     return del(Fund, { _id: data.fundid })
   },
+  getFundInfo:(_id)=>{
+    return find(Fund,{_id:_id},{__v:0})
+  },
   //这个逻辑不正确，要改！
   sellingFund:(data)=>{
     return updata(Fund,{_id:data._id},{
       amount:data.sellingnumber,
       amountinvested:data.sellingprice,
+      fundstate:data.fundstate
     })
-  }
+  },
 }
