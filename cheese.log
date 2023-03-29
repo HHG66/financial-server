@@ -315,3 +315,111 @@
 [2023-03-28T22:13:49.008] [DEBUG] default - 服务启动成功
 [2023-03-28T22:14:07.848] [DEBUG] default - 服务启动成功
 [2023-03-28T22:14:08.552] [DEBUG] default - 服务启动成功
+[2023-03-29T21:56:22.031] [DEBUG] default - code:401 UnauthorizedError: Authentication Error
+    at Object.throw (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa/lib/context.js:97:11)
+    at jwt (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-jwt/lib/index.js:66:26)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async cors (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa2-cors/dist/index.js:91:9) {
+  originalError: TokenExpiredError: jwt expired
+      at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/jsonwebtoken/verify.js:190:21
+      at getSecret (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/jsonwebtoken/verify.js:97:14)
+      at Object.module.exports [as verify] (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/jsonwebtoken/verify.js:101:10)
+      at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-jwt/lib/verify.js:5:13
+      at new Promise (<anonymous>)
+      at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-jwt/lib/verify.js:4:12)
+      at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-jwt/lib/index.js:38:64
+      at Array.map (<anonymous>)
+      at jwt (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-jwt/lib/index.js:38:43)
+      at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-unless/index.js:29:12 {
+    expiredAt: 2023-03-28T18:05:42.000Z
+  }
+}
+[2023-03-29T21:59:40.368] [DEBUG] default - 服务启动成功
+[2023-03-29T22:04:50.673] [DEBUG] default - 服务启动成功
+[2023-03-29T22:07:08.477] [DEBUG] default - 服务启动成功
+[2023-03-29T22:08:04.616] [DEBUG] default - 服务启动成功
+[2023-03-29T22:11:40.187] [DEBUG] default - 服务启动成功
+[2023-03-29T22:12:11.616] [DEBUG] default - 服务启动成功
+[2023-03-29T22:12:25.267] [DEBUG] default - 服务启动成功
+[2023-03-29T22:12:45.697] [DEBUG] default - 服务启动成功
+[2023-03-29T22:13:32.594] [DEBUG] default - 服务启动成功
+[2023-03-29T22:13:44.123] [DEBUG] default - 服务启动成功
+[2023-03-29T22:13:57.754] [DEBUG] default - 服务启动成功
+[2023-03-29T22:14:11.928] [DEBUG] default - 服务启动成功
+[2023-03-29T22:14:14.284] [DEBUG] default - 服务启动成功
+[2023-03-29T22:14:14.778] [DEBUG] default - 服务启动成功
+[2023-03-29T22:16:04.871] [DEBUG] default - 服务启动成功
+[2023-03-29T22:19:26.807] [DEBUG] default - 服务启动成功
+[2023-03-29T22:19:31.485] [DEBUG] default - 服务启动成功
+[2023-03-29T22:19:35.303] [DEBUG] default - 服务启动成功
+[2023-03-29T22:20:58.265] [DEBUG] default - 服务启动成功
+[2023-03-29T22:24:32.978] [DEBUG] default - 服务启动成功
+[2023-03-29T22:25:08.909] [DEBUG] default - 服务启动成功
+[2023-03-29T22:25:23.894] [DEBUG] default - 服务启动成功
+[2023-03-29T22:25:49.601] [DEBUG] default - 服务启动成功
+[2023-03-29T22:26:46.008] [DEBUG] default - 服务启动成功
+[2023-03-29T22:26:54.991] [DEBUG] default - 服务启动成功
+[2023-03-29T22:27:43.909] [DEBUG] default - 服务启动成功
+[2023-03-29T22:28:30.340] [DEBUG] default - 服务启动成功
+[2023-03-29T22:29:32.897] [DEBUG] default - 服务启动成功
+[2023-03-29T22:30:12.431] [DEBUG] default - 服务启动成功
+[2023-03-29T22:30:15.199] [DEBUG] default - 服务启动成功
+[2023-03-29T22:31:03.518] [DEBUG] default - 服务启动成功
+[2023-03-29T22:31:14.878] [DEBUG] default - 服务启动成功
+[2023-03-29T22:31:37.286] [DEBUG] default - 服务启动成功
+[2023-03-29T22:32:07.001] [DEBUG] default - 服务启动成功
+[2023-03-29T22:36:32.474] [DEBUG] default - 服务启动成功
+[2023-03-29T22:37:26.492] [DEBUG] default - 服务启动成功
+[2023-03-29T22:37:45.797] [DEBUG] default - 服务启动成功
+[2023-03-29T22:38:06.919] [DEBUG] default - 服务启动成功
+[2023-03-29T22:38:35.669] [DEBUG] default - 服务启动成功
+[2023-03-29T22:39:28.391] [DEBUG] default - 服务启动成功
+[2023-03-29T22:40:03.280] [DEBUG] default - 服务启动成功
+[2023-03-29T22:40:16.780] [DEBUG] default - 服务启动成功
+[2023-03-29T22:40:33.859] [DEBUG] default - 服务启动成功
+[2023-03-29T22:41:57.326] [DEBUG] default - 服务启动成功
+[2023-03-29T22:42:24.591] [DEBUG] default - 服务启动成功
+[2023-03-29T22:42:40.294] [DEBUG] default - 服务启动成功
+[2023-03-29T22:43:24.313] [DEBUG] default - 服务启动成功
+[2023-03-29T22:44:03.142] [DEBUG] default - 服务启动成功
+[2023-03-29T22:44:47.282] [DEBUG] default - 服务启动成功
+[2023-03-29T22:44:52.920] [DEBUG] default - 服务启动成功
+[2023-03-29T22:45:24.797] [DEBUG] default - 服务启动成功
+[2023-03-29T22:45:51.698] [DEBUG] default - 服务启动成功
+[2023-03-29T22:47:00.261] [DEBUG] default - 服务启动成功
+[2023-03-29T22:47:10.424] [DEBUG] default - 服务启动成功
+[2023-03-29T22:47:38.815] [DEBUG] default - 服务启动成功
+[2023-03-29T22:47:46.391] [DEBUG] default - 服务启动成功
+[2023-03-29T22:48:07.275] [DEBUG] default - 服务启动成功
+[2023-03-29T22:48:07.756] [DEBUG] default - 服务启动成功
+[2023-03-29T22:48:19.834] [DEBUG] default - 服务启动成功
+[2023-03-29T22:48:57.692] [DEBUG] default - 服务启动成功
+[2023-03-29T22:49:16.105] [DEBUG] default - 服务启动成功
+[2023-03-29T22:50:32.243] [DEBUG] default - 服务启动成功
+[2023-03-29T22:50:51.901] [DEBUG] default - 服务启动成功
+[2023-03-29T22:51:33.121] [DEBUG] default - 服务启动成功
+[2023-03-29T22:51:58.169] [DEBUG] default - 服务启动成功
+[2023-03-29T22:51:59.958] [DEBUG] default - 服务启动成功
+[2023-03-29T22:52:05.410] [DEBUG] default - 服务启动成功
+[2023-03-29T22:52:07.678] [DEBUG] default - 服务启动成功
+[2023-03-29T22:53:20.958] [DEBUG] default - 服务启动成功
+[2023-03-29T22:55:50.083] [DEBUG] default - 服务启动成功
+[2023-03-29T22:56:43.199] [DEBUG] default - 服务启动成功
+[2023-03-29T22:57:04.710] [DEBUG] default - 服务启动成功
+[2023-03-29T22:57:17.659] [DEBUG] default - 服务启动成功
+[2023-03-29T23:00:16.697] [DEBUG] default - 服务启动成功
+[2023-03-29T23:00:31.835] [DEBUG] default - 服务启动成功
+[2023-03-29T23:00:37.920] [DEBUG] default - 未知错误 ReferenceError: content is not defined
+    at getAddFundInfo (/Users/hanhongguang/Documents/个人项目/Financial/src/service/investment/getpositionfundslist.js:38:15)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/service/investment/getpositionfundslist.js:14:3)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/investment/getpositionfundslist.js:11:20)
+    at /Users/hanhongguang/Documents/个人项目/Financial/src/router/investment/index.js:18:61
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:425:16
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:430:31)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+[2023-03-29T23:00:44.567] [DEBUG] default - 服务启动成功
+[2023-03-29T23:01:00.202] [DEBUG] default - 服务启动成功
