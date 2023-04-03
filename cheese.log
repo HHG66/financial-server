@@ -423,3 +423,96 @@
     at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
 [2023-03-29T23:00:44.567] [DEBUG] default - 服务启动成功
 [2023-03-29T23:01:00.202] [DEBUG] default - 服务启动成功
+[2023-04-03T22:01:57.259] [DEBUG] default - 服务启动成功
+[2023-04-03T22:02:22.264] [DEBUG] default - 未知错误 Error: 方法没有实现
+    at Object.methodNotAllowed (/Users/hanhongguang/Documents/个人项目/Financial/src/router/index.js:46:40)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:520:29
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async bodyParser (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-bodyparser/index.js:95:5)
+    at async cors (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa2-cors/dist/index.js:91:9) {
+  data: null,
+  isBoom: true,
+  isServer: false,
+  output: {
+    statusCode: 405,
+    payload: { statusCode: 405, error: 'Method Not Allowed', message: '方法没有实现' },
+    headers: {}
+  }
+}
+[2023-04-03T22:02:50.768] [DEBUG] default - 未知错误 ReferenceError: ctx is not defined
+    at /Users/hanhongguang/Documents/个人项目/Financial/src/router/investment/index.js:33:57
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:425:16
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:430:31)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-bodyparser/index.js:95:11)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2023-04-03T22:03:09.403] [DEBUG] default - 服务启动成功
+[2023-04-03T22:03:54.858] [DEBUG] default - 服务启动成功
+[2023-04-03T22:04:29.156] [DEBUG] default - 服务启动成功
+[2023-04-03T22:04:32.372] [DEBUG] default - 服务启动成功
+[2023-04-03T22:04:56.725] [DEBUG] default - 服务启动成功
+[2023-04-03T22:05:39.177] [DEBUG] default - 服务启动成功
+[2023-04-03T22:05:46.913] [DEBUG] default - 服务启动成功
+[2023-04-03T22:05:52.732] [DEBUG] default - 服务启动成功
+[2023-04-03T22:06:19.947] [DEBUG] default - 服务启动成功
+[2023-04-03T22:06:47.393] [DEBUG] default - 服务启动成功
+[2023-04-03T22:06:48.985] [DEBUG] default - 未知错误 TypeError: test is not a function
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/service/investment/getfundnetworth.js:45:3)
+    at module.exports (/Users/hanhongguang/Documents/个人项目/Financial/src/controller/investment/getfundnetworth.js:11:22)
+    at /Users/hanhongguang/Documents/个人项目/Financial/src/router/investment/index.js:33:56
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:425:16
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at /Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/@koa/router/lib/router.js:430:31)
+    at dispatch (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/hanhongguang/Documents/个人项目/Financial/node_modules/koa-bodyparser/index.js:95:11)
+[2023-04-03T22:07:03.725] [DEBUG] default - 服务启动成功
+[2023-04-03T22:07:52.526] [DEBUG] default - 服务启动成功
+[2023-04-03T22:08:23.946] [DEBUG] default - 服务启动成功
+[2023-04-03T22:08:37.655] [DEBUG] default - 服务启动成功
+[2023-04-03T22:08:51.346] [DEBUG] default - 服务启动成功
+[2023-04-03T22:09:40.977] [DEBUG] default - 服务启动成功
+[2023-04-03T22:10:58.636] [DEBUG] default - 服务启动成功
+[2023-04-03T22:11:38.432] [DEBUG] default - 服务启动成功
+[2023-04-03T22:12:14.645] [DEBUG] default - 服务启动成功
+[2023-04-03T22:13:43.574] [DEBUG] default - 服务启动成功
+[2023-04-03T22:15:12.922] [DEBUG] default - 服务启动成功
+[2023-04-03T22:26:16.156] [DEBUG] default - 服务启动成功
+[2023-04-03T22:26:41.246] [DEBUG] default - 服务启动成功
+[2023-04-03T22:26:44.430] [DEBUG] default - 服务启动成功
+[2023-04-03T22:27:08.631] [DEBUG] default - 服务启动成功
+[2023-04-03T22:27:10.642] [DEBUG] default - 服务启动成功
+[2023-04-03T22:28:05.100] [DEBUG] default - 服务启动成功
+[2023-04-03T22:28:26.762] [DEBUG] default - 服务启动成功
+[2023-04-03T22:28:37.806] [DEBUG] default - 服务启动成功
+[2023-04-03T22:28:40.842] [DEBUG] default - 服务启动成功
+[2023-04-03T22:31:27.393] [DEBUG] default - 服务启动成功
+[2023-04-03T22:31:47.929] [DEBUG] default - 服务启动成功
+[2023-04-03T22:33:48.297] [DEBUG] default - 服务启动成功
+[2023-04-03T22:34:27.565] [DEBUG] default - 服务启动成功
+[2023-04-03T22:34:33.366] [DEBUG] default - 服务启动成功
+[2023-04-03T22:43:12.928] [DEBUG] default - 服务启动成功
+[2023-04-03T22:43:24.947] [DEBUG] default - 服务启动成功
+[2023-04-03T22:46:49.537] [DEBUG] default - 服务启动成功
+[2023-04-03T22:47:08.475] [DEBUG] default - 服务启动成功
+[2023-04-03T22:49:27.735] [DEBUG] default - 服务启动成功
+[2023-04-03T22:51:15.186] [DEBUG] default - 服务启动成功
+[2023-04-03T22:51:38.237] [DEBUG] default - 服务启动成功
+[2023-04-03T22:53:14.784] [DEBUG] default - 服务启动成功
+[2023-04-03T22:54:02.909] [DEBUG] default - 服务启动成功
+[2023-04-03T22:54:49.789] [DEBUG] default - 服务启动成功
+[2023-04-03T22:55:05.497] [DEBUG] default - 服务启动成功
+[2023-04-03T22:55:32.130] [DEBUG] default - 服务启动成功
+[2023-04-03T22:58:23.332] [DEBUG] default - 服务启动成功
+[2023-04-03T22:59:19.013] [DEBUG] default - 服务启动成功
+[2023-04-03T22:59:23.738] [DEBUG] default - 服务启动成功
+[2023-04-03T23:07:58.921] [DEBUG] default - 服务启动成功
+[2023-04-03T23:10:13.898] [DEBUG] default - 服务启动成功
+[2023-04-03T23:12:12.394] [DEBUG] default - 服务启动成功
+[2023-04-03T23:13:32.504] [DEBUG] default - 服务启动成功
+[2023-04-03T23:13:55.188] [DEBUG] default - 服务启动成功
+[2023-04-03T23:13:57.388] [DEBUG] default - 服务启动成功

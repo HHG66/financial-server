@@ -1,7 +1,7 @@
 /*
  * @Author: HHG
  * @Date: 2023-03-21 22:52:03
- * @LastEditTime: 2023-03-28 22:13:48
+ * @LastEditTime: 2023-04-03 22:54:49
  * @LastEditors: 韩宏广
  * @FilePath: /Financial/src/models/fund/idnex.js
  * @文件说明: 
@@ -25,7 +25,8 @@ const fund =new mongoose.Schema({
   // fundid:String,
   holdingstate:String,//持仓状态
   costprice:String,//成本
-  updatetime:Date  //更新时间，非基金字段
+  updatetime:Date , //更新时间，非基金字段
+  fundnetworth:String// 基金净值
 })
 
 const Fund= mongoose.model('fund', fund)
