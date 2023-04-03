@@ -1,7 +1,7 @@
 /*
  * @Author: HHG
  * @Date: 2023-03-22 21:17:36
- * @LastEditTime: 2023-03-29 23:00:16
+ * @LastEditTime: 2023-03-30 23:17:47
  * @LastEditors: 韩宏广
  * @FilePath: /Financial/src/service/investment/getpositionfundslist.js
  * @文件说明: 
@@ -35,7 +35,7 @@ module.exports = async (ctx) => {
 
 const getAddFundInfo = () => {
   var symbols = "SZ159633" + "," + 'SZ159605'// 这是需要提交的数据 
-  // 这是需要提交的数据 
+  // 阿里通用股票接口的
   let body_request = {
     hostname: 'alirmcom2.market.alicloudapi.com',
     path: "/query/comrms?symbols=" + symbols,
