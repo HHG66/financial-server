@@ -1,7 +1,7 @@
 /*
  * @Author: HHG
  * @Date: 2023-04-03 21:53:10
- * @LastEditTime: 2023-04-03 23:13:32
+ * @LastEditTime: 2023-04-06 22:31:36
  * @LastEditors: 韩宏广
  * @FilePath: /Financial/src/service/investment/getfundnetworth.js
  * @文件说明: 
@@ -12,8 +12,48 @@ const qs = require('querystring');
 
 module.exports = async (fundid, fundcode) => {
   // const mapperResult = await getfundnetworth(fundid)
-  let fundnetworth = new Promise(function (resolve, reject) {
+  let serveResult = await getTianFundDetails(fundcode, fundid).then(res => {
+    try {
+      eval(res.data.substring(38))
+      return {
+        state: true,
+      }
+    } catch (error) {
+      return {
+        state: false,
+        message: "基金信息错误，请检查基金代码"
+      }
+    }
+    getfundnetworth(fundid, {
+      fS_name,//基金或股票信息
+      fS_code,
+      fund_minsg,
+      ishb,
+      fund_sourceRate,//原费率
+      fund_Rate,//现费率
+      fund_minsg,//最小申购金额
+      syl_1n,//近一年收益率
+      syl_3y,//近三月收益率
+      syl_6y,//近6月收益率
+      syl_1y,//近一月收益率
+      Data_assetAllocationCurrency,//资产配置
+      Data_grandTotal,//累计收益率走势
+      Data_rateInSimilarType,//同类排名
+      Data_rateInSimilarPersent,//百分比排名
+      Data_sevenDaysYearIncome,//7日年化收益率
+      Data_millionCopiesIncome,//每万份收益
+      Data_fluctuationScale,//规模变动
+      Data_holderStructure,//持有人结构
+      Data_assetAllocation,//申购赎回
+      Data_currentFundManager,//现任基金经理
+      swithSameType,//同类型基金涨幅榜（页面底部通栏)
+    })
+  })
+  return serveResult
+}
 
+const getTianFundDetails = (fundcode, fundid) => {
+  return new Promise(function (resolve, reject) {
     let body_request = {
       hostname: 'fund.eastmoney.com',
       path: "/pingzhongdata/" + fundcode + '.js',
@@ -41,47 +81,5 @@ module.exports = async (fundid, fundcode) => {
     });
     req.end();
   })
-  fundnetworth.then(res => {
-    getfundnetworth(fundid,res.data)
-    getData(res.data)
-  })
+
 }
-
-//处理结果不正确
-function getData(text) {
-  const regex = /var\s+(\w+)\s*=\s*(("[^"]+"|{|}|[^\s,]+)\s*(,|\n|$))/g;
-  const result = {};
-
-  let match;
-  while ((match = regex.exec(text)) !== null) {
-    const key = match[1];
-    let value = match[2];
-
-    // If the value is a string, remove the surrounding quotes
-    if (value[0] === '"' && value[value.length - 1] === '"') {
-      value = value.slice(1, -1);
-    }
-    // If the value is a JSON object, parse it as JSON
-    else if (value[0] === '{' && value[value.length - 1] === '}') {
-      try {
-        value = JSON.parse(value);
-      } catch (e) {
-        console.error(`Error parsing JSON value for variable '${key}': ${e.message}`);
-        continue;
-      }
-    }
-    // If the value is a boolean or number, parse it using JavaScript's built-in parsing functions
-    else if (value === 'true') {
-      value = true;
-    } else if (value === 'false') {
-      value = false;
-    } else if (!isNaN(value)) {
-      value = parseFloat(value);
-    }
-    result[key] = value;
-  }
-  console.log(result);
-}
-
-
-
