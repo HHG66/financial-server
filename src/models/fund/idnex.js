@@ -1,9 +1,9 @@
 /*
  * @Author: HHG
  * @Date: 2023-03-21 22:52:03
- * @LastEditTime: 2023-04-06 22:01:29
+ * @LastEditTime: 2023-04-10 17:57:03
  * @LastEditors: 韩宏广
- * @FilePath: /Financial/src/models/fund/idnex.js
+ * @FilePath: \server\src\models\fund\idnex.js
  * @文件说明: 
  */
 const mongoose = require('mongoose')
@@ -14,7 +14,7 @@ const fund =new mongoose.Schema({
   amountinvested:Number,//投入金额
   buytime:String,//买入时间
   amount:Number,//总数
-  plate:String,//板块
+  plate:String,//板块(在基金中叫基金类型)
   saledate:String,//卖出时间
   fundstate:[String],//最近操作
   proportionpositionsheld:Number,//持仓占比

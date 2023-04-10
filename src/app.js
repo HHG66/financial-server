@@ -1,9 +1,9 @@
 /*
  * @Author: HHG
  * @Date: 2023-02-08 22:13:49
- * @LastEditTime: 2023-03-16 17:27:54
+ * @LastEditTime: 2023-04-10 18:53:13
  * @LastEditors: 韩宏广
- * @FilePath: \financial\src\app.js
+ * @FilePath: \server\src\app.js
  * @文件说明: 
  */
 // require('app-module-path').addPath(__dirname);
@@ -56,8 +56,8 @@ logger.debug("服务启动成功");
 
 app.on('error', (error, ctx) => {
   errorMiddlware(ctx, error)
+  logger.debug(error);
   // console.log('99',error.status);
-  // logger.debug(66,error);
   // console.log(error);
 });
 
@@ -74,6 +74,6 @@ app.listen(3000, (ctx) => {
   console.log('启动服务 端口3000...');
 });
 
-global.app = app
+// global.app = app
 
 module.exports = app

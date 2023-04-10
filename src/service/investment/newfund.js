@@ -7,8 +7,15 @@
  * @文件说明: 
  */
 const { newfund } = require('@/mapper/investment/index.js')
+const {getTianFundDetails} =require('@/service/other/thirdpartyapi.js')
 module.exports = async (ctx) => {
+  let mapperData={}
   console.log(ctx.request.body);
-  let mapperResult = await newfund(ctx.request.body)
+ let {}= await getTianFundDetails(ctx.request.body.fundcode)
+ mapperData={
+  ...ctx.request.body,
+  plate:fundInfo.
+ }
+  let mapperResult = await newfund(ctx.request.body,fundInfo)
   return mapperResult
 }
