@@ -1,9 +1,9 @@
 /*
  * @Author: HHG
  * @Date: 2023-02-08 22:13:49
- * @LastEditTime: 2023-04-10 18:53:13
+ * @LastEditTime: 2023-04-10 22:24:29
  * @LastEditors: 韩宏广
- * @FilePath: \server\src\app.js
+ * @FilePath: /server/src/app.js
  * @文件说明: 
  */
 // require('app-module-path').addPath(__dirname);
@@ -20,6 +20,7 @@ const modelInit = require('@/models/index.js')
 const response = require('@/lib/response.js')
 const log4js = require("log4js");
 var jwt = require('koa-jwt');
+//全局异常处理
 const errorMiddlware = require('@/middleware/error.js')
 
 const app = new Koa();
@@ -56,7 +57,6 @@ logger.debug("服务启动成功");
 
 app.on('error', (error, ctx) => {
   errorMiddlware(ctx, error)
-  logger.debug(error);
   // console.log('99',error.status);
   // console.log(error);
 });

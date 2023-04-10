@@ -1,9 +1,9 @@
 /*
  * @Author: HHG
  * @Date: 2023-04-10 17:04:47
- * @LastEditTime: 2023-04-10 18:45:04
+ * @LastEditTime: 2023-04-10 23:35:46
  * @LastEditors: 韩宏广
- * @FilePath: \server\src\service\other\thirdpartyapi.js
+ * @FilePath: /server/src/service/other/thirdpartyapi.js
  * @文件说明: 
  */
 const http = require('node:http')
@@ -75,37 +75,42 @@ module.exports = {
   },
   getTianFundLists: () => {
     return new Promise((resolve, reject) => {
-      let req = {
+      let body_request = {
         hostname: 'fund.eastmoney.com',
         path: "/js/fundcode_search.js",
         method: "GET",
         port: 80,
       }
-      let content
-      http.requset(req, res => {
+      let content = ''
+      let req = http.request(body_request, res => {
         res.setEncoding('utf-8');
         res.on('data', (chunk) => {
           content += chunk;
+          // console.log(chunk);
+          // console.log();
         });
         res.on('end', () => {
           try {
+            // console.log(JSON.stringify(content));
+            //执行完成之后前面有一个undefined
             eval(content)
             resolve({
-              result: true, data: {r}
+              result: true, data: { r }
             });
           } catch (error) {
+            console.log(error);
             return {
               state: false,
               message: "更新基金列表失败"
             }
           }
         });
-        req.on('error', function (err) {
-          console.log(err);
-          resolve({ result: false, errmsg: err.message });
-        });
-        req.end();
       })
+      req.on('error', function (err) {
+        console.log(err);
+        resolve({ result: false, errmsg: err.message });
+      });
+      req.end();
     })
   }
 }

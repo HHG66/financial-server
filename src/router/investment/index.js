@@ -1,9 +1,9 @@
 /*
  * @Author: HHG
  * @Date: 2023-03-21 22:27:27
- * @LastEditTime: 2023-04-03 22:03:08
+ * @LastEditTime: 2023-04-10 22:32:49
  * @LastEditors: 韩宏广
- * @FilePath: /Financial/src/router/investment/index.js
+ * @FilePath: /server/src/router/investment/index.js
  * @文件说明: 
  */
 let controllerPath = '@controller/investment/'
@@ -32,3 +32,8 @@ router.post('/editfundinfo', async function (ctx, next) {
 router.post('/getfundnetworth', async (ctx, next) => {
   await require(controllerPath + 'getfundnetworth.js')(ctx, next)
 })  
+ 
+//获取基金类型列表，使用频率很低，一年可能使用一次
+router.get('/getfundtypelist', async (ctx, next) => {
+  await require(controllerPath + 'getfundtypelist.js')(ctx, next)
+}) 

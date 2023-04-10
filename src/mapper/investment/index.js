@@ -1,13 +1,15 @@
 /*
  * @Author: HHG
  * @Date: 2023-03-21 22:49:06
- * @LastEditTime: 2023-04-03 22:55:05
+ * @LastEditTime: 2023-04-10 23:46:39
  * @LastEditors: 韩宏广
- * @FilePath: /Financial/src/mapper/investment/index.js
+ * @FilePath: /server/src/mapper/investment/index.js
  * @文件说明: 
  */
 const mongoose = require('mongoose')
 const Fund = require('@/models/fund/idnex.js');
+const FundType = require('@/models/fund/fundtype.js');
+
 const { add, find, del, updata } = require('../index')
 module.exports = {
   newfund: (data) => {
@@ -36,5 +38,9 @@ module.exports = {
     return updata(Fund, { _id: _id }, {
       fundnetworth: data
     })
+  },
+  updataFundTypeList: (data) => {
+    // console.log(data);
+    return FundType.insertMany(data)
   }
 }
