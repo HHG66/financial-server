@@ -1,9 +1,9 @@
 /*
  * @Author: HHG
  * @Date: 2023-03-21 22:49:06
- * @LastEditTime: 2023-04-11 10:13:33
+ * @LastEditTime: 2023-04-11 23:02:19
  * @LastEditors: 韩宏广
- * @FilePath: \server\src\mapper\investment\index.js
+ * @FilePath: /server/src/mapper/investment/index.js
  * @文件说明: 
  */
 const mongoose = require('mongoose')
@@ -13,12 +13,11 @@ const FundType = require('@/models/fund/fundtype.js');
 const { add, find, del, updata } = require('../index')
 module.exports = {
   newfund: (data) => {
-    console.log(data);
+    // console.log(data);
     return add(Fund, data)
   },
   getpositionfundslist: (data) => {
-    // console.log(data);
-    return find(Fund, { $or: [{ fundname: data.fundname }, { buydate: data.buydate }, { saledate: data.saledate }] }, { __v: 0 })
+    return find(Fund, { $or: [{ fundname: data.fundname }, { buytime: data.buydate }, { saledate: data.saledate }] }, { __v: 0 })
   },
   deletefund: (data) => {
     return del(Fund, { _id: data.fundid })
@@ -43,9 +42,9 @@ module.exports = {
     // console.log(data);
     return FundType.insertMany(data)
   },
-  getFundType:(fundcode)=>{
-    return find(FundType,{
-      fundcode:fundcode
+  getFundType: (fundcode) => {
+    return find(FundType, {
+      fundcode: fundcode
     })
   }
 }
