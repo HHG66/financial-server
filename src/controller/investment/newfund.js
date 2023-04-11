@@ -8,9 +8,10 @@
  */
 const serve = require('@/service/investment/newfund.js')
 module.exports = async (ctx, next) => {
-  console.log(ctx);
   let result = await serve(ctx)
   if (result) {
     response(ctx, {}, { message: '新增成功' })
+  }else{
+    response(ctx, {}, { message: '基金信息不正确' })
   }
 }

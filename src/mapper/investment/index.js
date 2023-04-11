@@ -1,9 +1,9 @@
 /*
  * @Author: HHG
  * @Date: 2023-03-21 22:49:06
- * @LastEditTime: 2023-04-10 23:46:39
+ * @LastEditTime: 2023-04-11 10:13:33
  * @LastEditors: 韩宏广
- * @FilePath: /server/src/mapper/investment/index.js
+ * @FilePath: \server\src\mapper\investment\index.js
  * @文件说明: 
  */
 const mongoose = require('mongoose')
@@ -17,7 +17,7 @@ module.exports = {
     return add(Fund, data)
   },
   getpositionfundslist: (data) => {
-    console.log(data);
+    // console.log(data);
     return find(Fund, { $or: [{ fundname: data.fundname }, { buydate: data.buydate }, { saledate: data.saledate }] }, { __v: 0 })
   },
   deletefund: (data) => {
@@ -42,5 +42,10 @@ module.exports = {
   updataFundTypeList: (data) => {
     // console.log(data);
     return FundType.insertMany(data)
+  },
+  getFundType:(fundcode)=>{
+    return find(FundType,{
+      fundcode:fundcode
+    })
   }
 }

@@ -1,7 +1,7 @@
 /*
  * @Author: HHG
  * @Date: 2023-04-03 21:53:10
- * @LastEditTime: 2023-04-10 17:50:45
+ * @LastEditTime: 2023-04-11 18:09:16
  * @LastEditors: 韩宏广
  * @FilePath: \server\src\service\investment\getfundnetworth.js
  * @文件说明: 
@@ -13,12 +13,17 @@ const { getTianFundDetails } = require('@/service/other/thirdpartyapi.js')
 
 
 module.exports = async (fundid, fundcode) => {
-  // const mapperResult = await getfundnetworth(fundid)
   let serveResult = await getTianFundDetails(fundcode)
-  if(serveResult.result==true){
-    return serveResult
-  }else{
+  // console.log(serveResult);
+  if (serveResult.result == true) {
+    const mapperResult = await getfundnetworth(fundid,serveResult.data)
+    if(mapperResult){
+      return {
+        state:true
+      }
+    }
+  } else {
     return serveResult.data
   }
-  
+
 }
