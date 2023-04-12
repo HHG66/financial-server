@@ -33,7 +33,7 @@ module.exports = async (ctx) => {
     proportionpositionsheld: Number(ctx.request.body.amountinvested) / (fundAmount + Number(ctx.request.body.amountinvested)),//基金内部持仓占比
     positionratio:0, //基金占总投资金额占比，比较复杂需要后面几个投资模块完成之后回来计算
     // currentprice:
-    fundnetworth: fundInfo.data,//净值信息
+    fundinfo: fundInfo.data,//基金信息
   }
   let mapperResult = await newfund(mapperData)
   // console.log(mapperResult);

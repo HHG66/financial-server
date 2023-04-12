@@ -1,9 +1,9 @@
 /*
  * @Author: HHG
  * @Date: 2023-03-21 22:49:06
- * @LastEditTime: 2023-04-11 23:02:19
+ * @LastEditTime: 2023-04-12 10:17:20
  * @LastEditors: 韩宏广
- * @FilePath: /server/src/mapper/investment/index.js
+ * @FilePath: \server\src\mapper\investment\index.js
  * @文件说明: 
  */
 const mongoose = require('mongoose')
@@ -35,7 +35,7 @@ module.exports = {
   },
   getfundnetworth: (_id, data) => {
     return updata(Fund, { _id: _id }, {
-      fundnetworth: data
+      fundinfo: data
     })
   },
   updataFundTypeList: (data) => {
