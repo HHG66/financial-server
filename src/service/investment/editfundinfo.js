@@ -1,7 +1,7 @@
 /*
  * @Author: HHG
  * @Date: 2023-03-27 11:31:02
- * @LastEditTime: 2023-04-12 11:19:01
+ * @LastEditTime: 2023-04-13 15:17:27
  * @LastEditors: 韩宏广
  * @FilePath: \server\src\service\investment\editfundinfo.js
  * @文件说明: 
@@ -22,7 +22,7 @@ module.exports = async (data) => {
     //逻辑:
     //1、获取前端传值，卖出（赎回）数量、卖出（赎回）价格、操作时间、
     //2、计算，赎回净值=卖出数量*卖出价格-（卖出数量*赎回费率），净收益=成本-赎回净值
-        //注：卖出价格可以通过基金的当天时间获取，所以可以不用
+        //注：卖出价格可以通过基金的当天时间获取
     //3、更新相关字段信息
   } else {
     // mappperResult = await sellingFund({ _id, sellingnumber, sellingprice })
