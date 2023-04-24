@@ -1,9 +1,9 @@
 /*
  * @Author: HHG
  * @Date: 2023-02-08 22:13:49
- * @LastEditTime: 2023-04-10 22:24:29
+ * @LastEditTime: 2023-04-24 17:03:59
  * @LastEditors: 韩宏广
- * @FilePath: /server/src/app.js
+ * @FilePath: \server\src\app.js
  * @文件说明: 
  */
 // require('app-module-path').addPath(__dirname);
@@ -70,7 +70,7 @@ global.response = response
 
 
 //开启一个web服务器 
-app.listen(3000, (ctx) => {
+app.listen(3000, () => {
   console.log('启动服务 端口3000...');
 });
 
