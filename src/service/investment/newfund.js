@@ -1,9 +1,9 @@
 /*
  * @Author: HHG
  * @Date: 2023-03-21 22:42:18
- * @LastEditTime: 2023-04-11 11:26:43
+ * @LastEditTime: 2023-04-30 22:50:17
  * @LastEditors: 韩宏广
- * @FilePath: \server\src\service\investment\newfund.js
+ * @FilePath: /server/src/service/investment/newfund.js
  * @文件说明: 
  */
 const { newfund, getFundType, getpositionfundslist } = require('@/mapper/investment/index.js')
@@ -14,7 +14,6 @@ module.exports = async (ctx) => {
   let fundInfo
   // console.log(ctx.request.body);
   //新增关键基础信息，查询对应的基金其他详细信息
-  console.log('---');
   let fundTypeInfo = await getFundType(ctx.request.body.fundcode)
   if (fundTypeInfo.length > 0) {
     fundInfo = await getTianFundDetails(ctx.request.body.fundcode)
