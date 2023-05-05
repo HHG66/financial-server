@@ -1,9 +1,9 @@
 /*
  * @Author: HHG
  * @Date: 2023-03-21 22:49:06
- * @LastEditTime: 2023-04-12 10:17:20
+ * @LastEditTime: 2023-05-01 00:36:58
  * @LastEditors: 韩宏广
- * @FilePath: \server\src\mapper\investment\index.js
+ * @FilePath: /server/src/mapper/investment/index.js
  * @文件说明: 
  */
 const mongoose = require('mongoose')
@@ -40,11 +40,18 @@ module.exports = {
   },
   updataFundTypeList: (data) => {
     // console.log(data);
+
     return FundType.insertMany(data)
+  },
+  updataFundType: (fundcode, data) => {
+    return FundType.updateOne({ fundcode: fundcode }, data, { upsert: true })
   },
   getFundType: (fundcode) => {
     return find(FundType, {
       fundcode: fundcode
     })
+  },
+  getAllFundType: () => {
+    return find(FundType)
   }
 }

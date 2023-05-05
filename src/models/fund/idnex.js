@@ -3,7 +3,7 @@
  * @Date: 2023-03-21 22:52:03
  * @LastEditTime: 2023-04-24 17:40:02
  * @LastEditors: 韩宏广
- * @FilePath: \server\src\models\fund\idnex.js
+ * @FilePath: /server/src/models/fund/idnex.js
  * @文件说明: 
  */
 const mongoose = require('mongoose')
