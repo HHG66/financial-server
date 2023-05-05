@@ -1,9 +1,9 @@
 /*
  * @Author: HHG
  * @Date: 2023-02-09 10:34:44
- * @LastEditTime: 2023-02-12 01:36:06
+ * @LastEditTime: 2023-04-25 09:51:17
  * @LastEditors: 韩宏广
- * @FilePath: /koa-cli/webpack.config.js
+ * @FilePath: \server\webpack.config.js
  * @文件说明: 
  */
 const path = require('path')
@@ -11,7 +11,7 @@ const NodePolyfillPlugin = require('node-polyfill-webpack-plugin');
 
 // console.log(path.resolve(__dirname, 'src/'));
 module.exports = {
-  // target: 'node18.12',
+  target: 'node18.12',
   target: 'node',
   node: {
     __dirname: true,
@@ -26,6 +26,7 @@ module.exports = {
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, './dist'),
+    libraryTarget: "commonjs"
     // clean: true
   },
   resolve: {
@@ -34,8 +35,8 @@ module.exports = {
     }
   },
   plugins: [
-		// new NodePolyfillPlugin()
-	]
+    // new NodePolyfillPlugin()
+  ]
   // module: {
   //   rules: [
   //     {
