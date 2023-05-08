@@ -1,0 +1,229 @@
+[2023-05-08T09:37:35.449] [DEBUG] default - 服务启动成功
+[2023-05-08T09:41:50.460] [DEBUG] default - 服务启动成功
+[2023-05-08T09:43:29.125] [DEBUG] default - 服务启动成功
+[2023-05-08T09:44:01.814] [DEBUG] default - 服务启动成功
+[2023-05-08T09:44:17.246] [DEBUG] default - 服务启动成功
+[2023-05-08T09:44:20.054] [DEBUG] default - 服务启动成功
+[2023-05-08T09:44:40.473] [DEBUG] default - 服务启动成功
+[2023-05-08T09:46:05.405] [DEBUG] default - 服务启动成功
+[2023-05-08T09:46:07.049] [DEBUG] default - 服务启动成功
+[2023-05-08T09:46:34.896] [DEBUG] default - 服务启动成功
+[2023-05-08T09:47:16.406] [DEBUG] default - 服务启动成功
+[2023-05-08T09:47:38.721] [DEBUG] default - 服务启动成功
+[2023-05-08T09:47:49.273] [DEBUG] default - 服务启动成功
+[2023-05-08T09:47:55.587] [DEBUG] default - code:401 UnauthorizedError: Authentication Error
+    at Object.throw (D:\personal\personal-projects\financial\server\node_modules\koa\lib\context.js:97:11)
+    at jwt (D:\personal\personal-projects\financial\server\node_modules\koa-jwt\lib\index.js:66:26)
+    at async cors (D:\personal\personal-projects\financial\server\node_modules\koa2-cors\dist\index.js:91:9) {
+  originalError: TokenExpiredError: jwt expired
+      at D:\personal\personal-projects\financial\server\node_modules\jsonwebtoken\verify.js:190:21
+      at getSecret (D:\personal\personal-projects\financial\server\node_modules\jsonwebtoken\verify.js:97:14)
+      at module.exports [as verify] (D:\personal\personal-projects\financial\server\node_modules\jsonwebtoken\verify.js:101:10)
+      at D:\personal\personal-projects\financial\server\node_modules\koa-jwt\lib\verify.js:5:13
+      at new Promise (<anonymous>)
+      at module.exports (D:\personal\personal-projects\financial\server\node_modules\koa-jwt\lib\verify.js:4:12)
+      at D:\personal\personal-projects\financial\server\node_modules\koa-jwt\lib\index.js:38:64
+      at Array.map (<anonymous>)
+      at jwt (D:\personal\personal-projects\financial\server\node_modules\koa-jwt\lib\index.js:38:43)
+      at D:\personal\personal-projects\financial\server\node_modules\koa-unless\index.js:29:12 {
+    expiredAt: 2023-04-30T18:44:54.000Z
+  }
+}
+[2023-05-08T09:48:25.987] [DEBUG] default - 未知错误 Error: 方法没有实现
+    at Object.methodNotAllowed (D:\personal\personal-projects\financial\server\src\router\index.js:46:40)
+    at D:\personal\personal-projects\financial\server\node_modules\@koa\router\lib\router.js:520:29
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async bodyParser (D:\personal\personal-projects\financial\server\node_modules\koa-bodyparser\index.js:95:5)
+    at async cors (D:\personal\personal-projects\financial\server\node_modules\koa2-cors\dist\index.js:91:9) {
+  data: null,
+  isBoom: true,
+  isServer: false,
+  output: {
+    statusCode: 405,
+    payload: { statusCode: 405, error: 'Method Not Allowed', message: '方法没有实现' },
+    headers: {}
+  }
+}
+[2023-05-08T09:48:42.131] [DEBUG] default - 未知错误 Error: Cannot find module 'D:\personal\personal-projects\financial\server\src\controller\investment\newstock.js'
+Require stack:
+- D:\personal\personal-projects\financial\server\src\router\investment\index.js
+- D:\personal\personal-projects\financial\server\src\router\index.js
+- D:\personal\personal-projects\financial\server\src\app.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:995:15)
+    at Module._resolveFilename (D:\personal\personal-projects\financial\server\node_modules\module-alias\index.js:49:29)
+    at Module._load (node:internal/modules/cjs/loader:841:27)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at D:\personal\personal-projects\financial\server\src\router\investment\index.js:43:9
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+    at D:\personal\personal-projects\financial\server\node_modules\@koa\router\lib\router.js:425:16
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+    at D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:34:12 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\personal\\personal-projects\\financial\\server\\src\\router\\investment\\index.js',
+    'D:\\personal\\personal-projects\\financial\\server\\src\\router\\index.js',
+    'D:\\personal\\personal-projects\\financial\\server\\src\\app.js'
+  ]
+}
+[2023-05-08T09:49:46.084] [DEBUG] default - 服务启动成功
+[2023-05-08T09:49:52.220] [DEBUG] default - 服务启动成功
+[2023-05-08T09:50:41.621] [DEBUG] default - 服务启动成功
+[2023-05-08T09:51:28.118] [DEBUG] default - 服务启动成功
+[2023-05-08T09:53:07.479] [DEBUG] default - 服务启动成功
+[2023-05-08T09:53:22.394] [DEBUG] default - 服务启动成功
+[2023-05-08T09:53:34.526] [DEBUG] default - 服务启动成功
+[2023-05-08T09:53:36.402] [DEBUG] default - 服务启动成功
+[2023-05-08T09:54:01.019] [DEBUG] default - 服务启动成功
+[2023-05-08T09:54:02.247] [DEBUG] default - 服务启动成功
+[2023-05-08T09:54:08.013] [DEBUG] default - 服务启动成功
+[2023-05-08T09:54:15.601] [DEBUG] default - 服务启动成功
+[2023-05-08T09:54:32.958] [DEBUG] default - 服务启动成功
+[2023-05-08T09:54:43.139] [DEBUG] default - 服务启动成功
+[2023-05-08T09:55:08.178] [DEBUG] default - 服务启动成功
+[2023-05-08T09:55:31.549] [DEBUG] default - 服务启动成功
+[2023-05-08T09:55:34.514] [DEBUG] default - 服务启动成功
+[2023-05-08T09:55:39.757] [DEBUG] default - 服务启动成功
+[2023-05-08T09:55:44.450] [DEBUG] default - 服务启动成功
+[2023-05-08T09:56:13.869] [DEBUG] default - 服务启动成功
+[2023-05-08T09:56:16.899] [DEBUG] default - 服务启动成功
+[2023-05-08T09:56:32.718] [DEBUG] default - 服务启动成功
+[2023-05-08T09:56:38.775] [DEBUG] default - 服务启动成功
+[2023-05-08T09:56:50.003] [DEBUG] default - 服务启动成功
+[2023-05-08T09:57:40.163] [DEBUG] default - 服务启动成功
+[2023-05-08T09:57:58.079] [DEBUG] default - 服务启动成功
+[2023-05-08T09:57:59.594] [DEBUG] default - 服务启动成功
+[2023-05-08T09:58:36.989] [DEBUG] default - 服务启动成功
+[2023-05-08T10:01:02.848] [DEBUG] default - 服务启动成功
+[2023-05-08T10:02:05.469] [DEBUG] default - 服务启动成功
+[2023-05-08T10:04:09.040] [DEBUG] default - 服务启动成功
+[2023-05-08T10:04:11.986] [DEBUG] default - 服务启动成功
+[2023-05-08T10:07:10.683] [DEBUG] default - 服务启动成功
+[2023-05-08T10:07:13.038] [DEBUG] default - 服务启动成功
+[2023-05-08T10:07:36.963] [DEBUG] default - 服务启动成功
+[2023-05-08T10:08:07.024] [DEBUG] default - 服务启动成功
+[2023-05-08T10:08:27.079] [DEBUG] default - 服务启动成功
+[2023-05-08T10:12:20.816] [DEBUG] default - 服务启动成功
+[2023-05-08T10:12:29.986] [DEBUG] default - 服务启动成功
+[2023-05-08T10:12:49.351] [DEBUG] default - 服务启动成功
+[2023-05-08T10:13:36.765] [DEBUG] default - 服务启动成功
+[2023-05-08T10:13:43.640] [DEBUG] default - 服务启动成功
+[2023-05-08T10:14:03.243] [DEBUG] default - 服务启动成功
+[2023-05-08T10:14:46.467] [DEBUG] default - 服务启动成功
+[2023-05-08T10:14:50.598] [DEBUG] default - 服务启动成功
+[2023-05-08T10:16:23.472] [DEBUG] default - 服务启动成功
+[2023-05-08T10:16:26.193] [DEBUG] default - 服务启动成功
+[2023-05-08T10:16:34.766] [DEBUG] default - 未知错误 D:\personal\personal-projects\financial\server\src\controller\investment\newstock.js:7
+      response(ctx,{result.data},{})
+                          ^
+
+SyntaxError: Unexpected token '.'
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1088:15)
+    at Module._compile (node:internal/modules/cjs/loader:1123:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at D:\personal\personal-projects\financial\server\src\router\investment\index.js:43:9
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+[2023-05-08T10:17:04.792] [DEBUG] default - 服务启动成功
+[2023-05-08T10:17:25.565] [DEBUG] default - 服务启动成功
+[2023-05-08T10:17:28.822] [DEBUG] default - 未知错误 Error: Cannot find module 'bignumber.js'
+Require stack:
+- D:\personal\personal-projects\financial\server\src\service\investment\newstock.js
+- D:\personal\personal-projects\financial\server\src\controller\investment\newstock.js
+- D:\personal\personal-projects\financial\server\src\router\investment\index.js
+- D:\personal\personal-projects\financial\server\src\router\index.js
+- D:\personal\personal-projects\financial\server\src\app.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:995:15)
+    at Module._resolveFilename (D:\personal\personal-projects\financial\server\node_modules\module-alias\index.js:49:29)
+    at Module._load (node:internal/modules/cjs/loader:841:27)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (D:\personal\personal-projects\financial\server\src\service\investment\newstock.js:3:19)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\personal\\personal-projects\\financial\\server\\src\\service\\investment\\newstock.js',
+    'D:\\personal\\personal-projects\\financial\\server\\src\\controller\\investment\\newstock.js',
+    'D:\\personal\\personal-projects\\financial\\server\\src\\router\\investment\\index.js',
+    'D:\\personal\\personal-projects\\financial\\server\\src\\router\\index.js',
+    'D:\\personal\\personal-projects\\financial\\server\\src\\app.js'
+  ]
+}
+[2023-05-08T10:18:42.496] [DEBUG] default - 服务启动成功
+[2023-05-08T10:46:39.216] [DEBUG] default - 服务启动成功
+[2023-05-08T10:47:10.368] [DEBUG] default - 服务启动成功
+[2023-05-08T10:47:27.176] [DEBUG] default - 服务启动成功
+[2023-05-08T10:47:39.449] [DEBUG] default - 服务启动成功
+[2023-05-08T10:48:00.433] [DEBUG] default - 服务启动成功
+[2023-05-08T10:51:11.144] [DEBUG] default - 服务启动成功
+[2023-05-08T10:52:03.094] [DEBUG] default - 服务启动成功
+[2023-05-08T10:52:12.429] [DEBUG] default - 服务启动成功
+[2023-05-08T10:52:38.054] [DEBUG] default - 服务启动成功
+[2023-05-08T10:52:39.538] [DEBUG] default - 未知错误 TypeError: model.create is not a function
+    at add (D:\personal\personal-projects\financial\server\src\mapper\index.js:50:9)
+    at newStock (D:\personal\personal-projects\financial\server\src\mapper\investment\stock.js:5:12)
+    at module.exports (D:\personal\personal-projects\financial\server\src\service\investment\newstock.js:13:28)
+    at module.exports (D:\personal\personal-projects\financial\server\src\controller\investment\newstock.js:5:22)
+    at D:\personal\personal-projects\financial\server\src\router\investment\index.js:43:48
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+    at D:\personal\personal-projects\financial\server\node_modules\@koa\router\lib\router.js:425:16
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+    at D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:34:12
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\@koa\router\lib\router.js:430:31)
+[2023-05-08T10:53:14.559] [DEBUG] default - 服务启动成功
+[2023-05-08T10:53:34.062] [DEBUG] default - 服务启动成功
+[2023-05-08T10:54:01.762] [DEBUG] default - 服务启动成功
+[2023-05-08T10:54:13.726] [DEBUG] default - 服务启动成功
+[2023-05-08T10:54:21.900] [DEBUG] default - 服务启动成功
+[2023-05-08T10:54:30.872] [DEBUG] default - 服务启动成功
+[2023-05-08T13:40:21.126] [DEBUG] default - 服务启动成功
+[2023-05-08T13:40:44.510] [DEBUG] default - 服务启动成功
+[2023-05-08T13:40:51.778] [DEBUG] default - 服务启动成功
+[2023-05-08T13:40:58.467] [DEBUG] default - 服务启动成功
+[2023-05-08T13:41:04.920] [DEBUG] default - 服务启动成功
+[2023-05-08T13:41:08.930] [DEBUG] default - 服务启动成功
+[2023-05-08T13:54:29.831] [DEBUG] default - 服务启动成功
+[2023-05-08T13:54:59.900] [DEBUG] default - 服务启动成功
+[2023-05-08T13:55:05.909] [DEBUG] default - code:401 UnauthorizedError: Authentication Error
+    at Object.throw (D:\personal\personal-projects\financial\server\node_modules\koa\lib\context.js:97:11)
+    at jwt (D:\personal\personal-projects\financial\server\node_modules\koa-jwt\lib\index.js:66:26)
+    at async cors (D:\personal\personal-projects\financial\server\node_modules\koa2-cors\dist\index.js:91:9) {
+  originalError: TokenExpiredError: jwt expired
+      at D:\personal\personal-projects\financial\server\node_modules\jsonwebtoken\verify.js:190:21
+      at getSecret (D:\personal\personal-projects\financial\server\node_modules\jsonwebtoken\verify.js:97:14)
+      at module.exports [as verify] (D:\personal\personal-projects\financial\server\node_modules\jsonwebtoken\verify.js:101:10)
+      at D:\personal\personal-projects\financial\server\node_modules\koa-jwt\lib\verify.js:5:13
+      at new Promise (<anonymous>)
+      at module.exports (D:\personal\personal-projects\financial\server\node_modules\koa-jwt\lib\verify.js:4:12)
+      at D:\personal\personal-projects\financial\server\node_modules\koa-jwt\lib\index.js:38:64
+      at Array.map (<anonymous>)
+      at jwt (D:\personal\personal-projects\financial\server\node_modules\koa-jwt\lib\index.js:38:43)
+      at D:\personal\personal-projects\financial\server\node_modules\koa-unless\index.js:29:12 {
+    expiredAt: 2023-05-08T05:48:01.000Z
+  }
+}
+[2023-05-08T13:56:00.053] [DEBUG] default - 服务启动成功
+[2023-05-08T13:56:07.130] [DEBUG] default - 服务启动成功
+[2023-05-08T13:56:10.147] [DEBUG] default - 服务启动成功
+[2023-05-08T13:56:45.390] [DEBUG] default - 服务启动成功
+[2023-05-08T13:56:47.274] [DEBUG] default - 服务启动成功
+[2023-05-08T13:56:51.312] [DEBUG] default - 服务启动成功
+[2023-05-08T13:57:16.417] [DEBUG] default - 服务启动成功
+[2023-05-08T13:57:24.050] [DEBUG] default - 服务启动成功
+[2023-05-08T13:57:39.719] [DEBUG] default - 服务启动成功
+[2023-05-08T13:57:45.947] [DEBUG] default - 服务启动成功
+[2023-05-08T13:57:48.612] [DEBUG] default - 服务启动成功
+[2023-05-08T13:58:04.851] [DEBUG] default - 服务启动成功
+[2023-05-08T13:58:08.869] [DEBUG] default - 服务启动成功
+[2023-05-08T13:58:50.047] [DEBUG] default - 服务启动成功
+[2023-05-08T13:59:14.439] [DEBUG] default - 服务启动成功
+[2023-05-08T13:59:27.342] [DEBUG] default - 服务启动成功
+[2023-05-08T14:01:15.934] [DEBUG] default - 服务启动成功
+[2023-05-08T14:01:20.245] [DEBUG] default - 服务启动成功

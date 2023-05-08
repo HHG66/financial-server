@@ -1,14 +1,13 @@
 /*
  * @Author: HHG
  * @Date: 2023-03-27 11:31:02
- * @LastEditTime: 2023-04-24 18:25:33
+ * @LastEditTime: 2023-05-08 10:07:11
  * @LastEditors: 韩宏广
- * @FilePath: /server/src/service/investment/editfundinfo.js
+ * @FilePath: \server\src\service\investment\editfundinfo.js
  * @文件说明: 
  */
 const BigNumber = require('bignumber.js');
 const { sellingFund, getFundInfo } = require('@/mapper/investment/index.js')
-const { add, multiply, fraction } = require('mathjs')
 
 
 module.exports = async (data) => {

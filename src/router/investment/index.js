@@ -38,7 +38,12 @@ router.get('/getfundtypelist', async (ctx, next) => {
   await require(controllerPath + 'getfundtypelist.js')(ctx, next)
 }) 
 
-//新增一只持仓基金
+//新增一只持仓股票
 router.post('/newstock', async (ctx, next) => {
   await require(controllerPath + 'newstock.js')(ctx, next)
+}) 
+
+//编辑股票信息
+router.post('/editstock', async (ctx, next) => {
+  await require(controllerPath + 'editstock.js')(ctx, next)
 }) 
