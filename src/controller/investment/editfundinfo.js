@@ -1,9 +1,9 @@
 /*
  * @Author: HHG
  * @Date: 2023-03-27 11:05:10
- * @LastEditTime: 2023-04-30 23:12:01
+ * @LastEditTime: 2023-05-09 13:44:23
  * @LastEditors: 韩宏广
- * @FilePath: /server/src/controller/investment/editfundinfo.js
+ * @FilePath: \server\src\controller\investment\editfundinfo.js
  * @文件说明: 
  */
 const serve = require('@/service/investment/editfundinfo.js')

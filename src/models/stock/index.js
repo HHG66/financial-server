@@ -1,13 +1,17 @@
 const mongoose = require('mongoose')
 
 const stock = new mongoose.Schema({
-  stockcode:String,//股票代码
-  stockprice:Number,//价格
-  stocknum:Number,//数量
-  operatingtime:String//操作时间
-  
+  stockcode: String,//股票代码
+  stockprice: Number,//价格
+  stocknum: Number,//数量
+  operatingtime: String,//操作时间
+  operatingrecord: {
+    _ids: mongoose.Schema.Types.ObjectId,
+    actions: [mongoose.Schema.Types.Mixed]
+  }, //操作记录
+
 })
-
+// const childSchema = new mongoose.Types.ObjectId
+// console.log(childSchema);
 const Stock = mongoose.model('stock', stock)
-
 module.exports = Stock

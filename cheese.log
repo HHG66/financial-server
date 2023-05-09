@@ -227,3 +227,603 @@ Require stack:
 [2023-05-08T13:59:27.342] [DEBUG] default - 服务启动成功
 [2023-05-08T14:01:15.934] [DEBUG] default - 服务启动成功
 [2023-05-08T14:01:20.245] [DEBUG] default - 服务启动成功
+[2023-05-08T14:01:29.201] [DEBUG] default - 服务启动成功
+[2023-05-08T14:02:09.919] [DEBUG] default - 服务启动成功
+[2023-05-09T10:07:01.707] [DEBUG] default - 服务启动成功
+[2023-05-09T10:11:01.046] [DEBUG] default - 服务启动成功
+[2023-05-09T10:11:17.831] [DEBUG] default - 服务启动成功
+[2023-05-09T10:11:44.112] [DEBUG] default - 服务启动成功
+[2023-05-09T10:11:47.922] [DEBUG] default - 服务启动成功
+[2023-05-09T10:11:54.867] [DEBUG] default - 服务启动成功
+[2023-05-09T10:12:17.256] [DEBUG] default - 服务启动成功
+[2023-05-09T10:12:29.440] [DEBUG] default - 服务启动成功
+[2023-05-09T10:12:32.527] [DEBUG] default - 服务启动成功
+[2023-05-09T10:12:38.508] [DEBUG] default - 服务启动成功
+[2023-05-09T10:13:11.863] [DEBUG] default - 服务启动成功
+[2023-05-09T10:13:46.453] [DEBUG] default - 服务启动成功
+[2023-05-09T10:14:21.076] [DEBUG] default - 服务启动成功
+[2023-05-09T10:16:31.176] [DEBUG] default - 服务启动成功
+[2023-05-09T10:29:59.247] [DEBUG] default - 服务启动成功
+[2023-05-09T10:30:03.178] [DEBUG] default - 未知错误 D:\personal\personal-projects\financial\server\src\service\investment\editstock.js:15
+    ..ctx,
+    ^
+
+SyntaxError: Unexpected token '.'
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1088:15)
+    at Module._compile (node:internal/modules/cjs/loader:1123:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (D:\personal\personal-projects\financial\server\src\controller\investment\editstock.js:1:15)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+[2023-05-09T10:30:20.128] [DEBUG] default - 服务启动成功
+[2023-05-09T10:30:22.402] [DEBUG] default - 未知错误 D:\personal\personal-projects\financial\server\src\service\investment\editstock.js:15
+    ..ctx,
+    ^
+
+SyntaxError: Unexpected token '.'
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1088:15)
+    at Module._compile (node:internal/modules/cjs/loader:1123:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (D:\personal\personal-projects\financial\server\src\controller\investment\editstock.js:1:15)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+[2023-05-09T10:30:29.003] [DEBUG] default - 服务启动成功
+[2023-05-09T10:30:30.452] [DEBUG] default - 未知错误 ReferenceError: editstock is not defined
+    at module.exports (D:\personal\personal-projects\financial\server\src\controller\investment\editstock.js:11:16)
+    at D:\personal\personal-projects\financial\server\src\router\investment\index.js:48:49
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+    at D:\personal\personal-projects\financial\server\node_modules\@koa\router\lib\router.js:425:16
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+    at D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:34:12
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\@koa\router\lib\router.js:430:31)
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (D:\personal\personal-projects\financial\server\node_modules\koa-bodyparser\index.js:95:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2023-05-09T10:30:34.131] [DEBUG] default - 服务启动成功
+[2023-05-09T10:30:36.203] [DEBUG] default - 未知错误 ReferenceError: editstock is not defined
+    at module.exports (D:\personal\personal-projects\financial\server\src\controller\investment\editstock.js:11:16)
+    at D:\personal\personal-projects\financial\server\src\router\investment\index.js:48:49
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+    at D:\personal\personal-projects\financial\server\node_modules\@koa\router\lib\router.js:425:16
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+    at D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:34:12
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\@koa\router\lib\router.js:430:31)
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (D:\personal\personal-projects\financial\server\node_modules\koa-bodyparser\index.js:95:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2023-05-09T10:31:04.478] [DEBUG] default - 未知错误 ReferenceError: editstock is not defined
+    at module.exports (D:\personal\personal-projects\financial\server\src\controller\investment\editstock.js:11:16)
+    at D:\personal\personal-projects\financial\server\src\router\investment\index.js:48:49
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+    at D:\personal\personal-projects\financial\server\node_modules\@koa\router\lib\router.js:425:16
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+    at D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:34:12
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\@koa\router\lib\router.js:430:31)
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (D:\personal\personal-projects\financial\server\node_modules\koa-bodyparser\index.js:95:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2023-05-09T10:31:06.390] [DEBUG] default - 服务启动成功
+[2023-05-09T10:31:07.362] [DEBUG] default - 未知错误 TypeError: editStock is not a function
+    at module.exports (D:\personal\personal-projects\financial\server\src\service\investment\editstock.js:14:28)
+    at module.exports (D:\personal\personal-projects\financial\server\src\controller\investment\editstock.js:11:22)
+    at D:\personal\personal-projects\financial\server\src\router\investment\index.js:48:49
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+    at D:\personal\personal-projects\financial\server\node_modules\@koa\router\lib\router.js:425:16
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+    at D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:34:12
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\@koa\router\lib\router.js:430:31)
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (D:\personal\personal-projects\financial\server\node_modules\koa-bodyparser\index.js:95:11)
+[2023-05-09T10:31:32.359] [DEBUG] default - 未知错误 TypeError: editStock is not a function
+    at module.exports (D:\personal\personal-projects\financial\server\src\service\investment\editstock.js:14:28)
+    at module.exports (D:\personal\personal-projects\financial\server\src\controller\investment\editstock.js:11:22)
+    at D:\personal\personal-projects\financial\server\src\router\investment\index.js:48:49
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+    at D:\personal\personal-projects\financial\server\node_modules\@koa\router\lib\router.js:425:16
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+    at D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:34:12
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\@koa\router\lib\router.js:430:31)
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (D:\personal\personal-projects\financial\server\node_modules\koa-bodyparser\index.js:95:11)
+[2023-05-09T10:31:35.411] [DEBUG] default - 服务启动成功
+[2023-05-09T10:31:36.284] [DEBUG] default - 未知错误 TypeError: editStock is not a function
+    at module.exports (D:\personal\personal-projects\financial\server\src\service\investment\editstock.js:14:28)
+    at module.exports (D:\personal\personal-projects\financial\server\src\controller\investment\editstock.js:11:22)
+    at D:\personal\personal-projects\financial\server\src\router\investment\index.js:48:49
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+    at D:\personal\personal-projects\financial\server\node_modules\@koa\router\lib\router.js:425:16
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+    at D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:34:12
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\@koa\router\lib\router.js:430:31)
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (D:\personal\personal-projects\financial\server\node_modules\koa-bodyparser\index.js:95:11)
+[2023-05-09T10:31:46.333] [DEBUG] default - 服务启动成功
+[2023-05-09T10:32:28.291] [DEBUG] default - 服务启动成功
+[2023-05-09T10:32:30.441] [DEBUG] default - 服务启动成功
+[2023-05-09T10:32:38.477] [DEBUG] default - 服务启动成功
+[2023-05-09T10:45:48.912] [DEBUG] default - 服务启动成功
+[2023-05-09T10:46:15.246] [DEBUG] default - 服务启动成功
+[2023-05-09T10:46:18.725] [DEBUG] default - 服务启动成功
+[2023-05-09T10:46:37.974] [DEBUG] default - 服务启动成功
+[2023-05-09T10:46:47.732] [DEBUG] default - 服务启动成功
+[2023-05-09T10:47:30.471] [DEBUG] default - 服务启动成功
+[2023-05-09T10:49:46.250] [DEBUG] default - 服务启动成功
+[2023-05-09T10:50:23.223] [DEBUG] default - 服务启动成功
+[2023-05-09T10:52:46.081] [DEBUG] default - 服务启动成功
+[2023-05-09T10:54:26.688] [DEBUG] default - 服务启动成功
+[2023-05-09T10:55:31.544] [DEBUG] default - 服务启动成功
+[2023-05-09T10:55:36.946] [DEBUG] default - 服务启动成功
+[2023-05-09T11:00:02.795] [DEBUG] default - 服务启动成功
+[2023-05-09T11:02:44.844] [DEBUG] default - 服务启动成功
+[2023-05-09T11:02:49.177] [DEBUG] default - 服务启动成功
+[2023-05-09T11:05:24.331] [DEBUG] default - 服务启动成功
+[2023-05-09T11:05:54.817] [DEBUG] default - 服务启动成功
+[2023-05-09T11:06:00.829] [DEBUG] default - 服务启动成功
+[2023-05-09T11:06:27.011] [DEBUG] default - 服务启动成功
+[2023-05-09T11:06:35.456] [DEBUG] default - 服务启动成功
+[2023-05-09T11:06:44.693] [DEBUG] default - 服务启动成功
+[2023-05-09T11:06:59.993] [DEBUG] default - 服务启动成功
+[2023-05-09T11:07:20.526] [DEBUG] default - 服务启动成功
+[2023-05-09T11:20:00.286] [DEBUG] default - 服务启动成功
+[2023-05-09T11:27:19.154] [DEBUG] default - 服务启动成功
+[2023-05-09T11:28:21.939] [DEBUG] default - 服务启动成功
+[2023-05-09T11:29:06.987] [DEBUG] default - 服务启动成功
+[2023-05-09T11:29:10.033] [DEBUG] default - 未知错误 D:\personal\personal-projects\financial\server\src\models\stock\index.js:8
+  operatingrecord:[Schema.Types.Mixed], //操作记录
+  ^^^^^^^^^^^^^^^
+
+SyntaxError: Unexpected identifier
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1088:15)
+    at Module._compile (node:internal/modules/cjs/loader:1123:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (D:\personal\personal-projects\financial\server\src\mapper\investment\stock.js:1:15)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+[2023-05-09T11:29:26.417] [DEBUG] default - 服务启动成功
+[2023-05-09T11:29:27.428] [DEBUG] default - 未知错误 ReferenceError: Schema is not defined
+    at Object.<anonymous> (D:\personal\personal-projects\financial\server\src\models\stock\index.js:8:20)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (D:\personal\personal-projects\financial\server\src\mapper\investment\stock.js:1:15)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+[2023-05-09T11:29:54.915] [DEBUG] default - 服务启动成功
+[2023-05-09T11:29:57.792] [DEBUG] default - 未知错误 ReferenceError: Schema is not defined
+    at Object.<anonymous> (D:\personal\personal-projects\financial\server\src\models\stock\index.js:8:20)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (D:\personal\personal-projects\financial\server\src\mapper\investment\stock.js:1:15)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+[2023-05-09T11:30:12.425] [DEBUG] default - 服务启动成功
+[2023-05-09T11:30:13.496] [DEBUG] default - 未知错误 ReferenceError: Cannot access 'stockInfo' before initialization
+    at module.exports (D:\personal\personal-projects\financial\server\src\service\investment\editstock.js:13:19)
+    at module.exports (D:\personal\personal-projects\financial\server\src\controller\investment\editstock.js:11:22)
+    at D:\personal\personal-projects\financial\server\src\router\investment\index.js:48:49
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+    at D:\personal\personal-projects\financial\server\node_modules\@koa\router\lib\router.js:425:16
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+    at D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:34:12
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\@koa\router\lib\router.js:430:31)
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (D:\personal\personal-projects\financial\server\node_modules\koa-bodyparser\index.js:95:11)
+[2023-05-09T11:30:45.019] [DEBUG] default - 服务启动成功
+[2023-05-09T11:30:45.754] [DEBUG] default - 未知错误 TypeError: Cannot read properties of undefined (reading 'number')
+    at module.exports (D:\personal\personal-projects\financial\server\src\service\investment\editstock.js:17:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async module.exports (D:\personal\personal-projects\financial\server\src\controller\investment\editstock.js:11:16)
+    at async D:\personal\personal-projects\financial\server\src\router\investment\index.js:48:3
+    at async bodyParser (D:\personal\personal-projects\financial\server\node_modules\koa-bodyparser\index.js:95:5)
+    at async cors (D:\personal\personal-projects\financial\server\node_modules\koa2-cors\dist\index.js:91:9)
+[2023-05-09T13:29:48.791] [DEBUG] default - 未知错误 TypeError: Cannot read properties of undefined (reading 'state')
+    at module.exports (D:\personal\personal-projects\financial\server\src\controller\investment\editstock.js:12:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\personal\personal-projects\financial\server\src\router\investment\index.js:48:3
+    at async bodyParser (D:\personal\personal-projects\financial\server\node_modules\koa-bodyparser\index.js:95:5)
+    at async cors (D:\personal\personal-projects\financial\server\node_modules\koa2-cors\dist\index.js:91:9)
+[2023-05-09T13:30:09.309] [DEBUG] default - 服务启动成功
+[2023-05-09T13:30:28.354] [DEBUG] default - 未知错误 TypeError: Cannot read properties of undefined (reading 'state')
+    at module.exports (D:\personal\personal-projects\financial\server\src\controller\investment\editstock.js:12:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\personal\personal-projects\financial\server\src\router\investment\index.js:48:3
+    at async bodyParser (D:\personal\personal-projects\financial\server\node_modules\koa-bodyparser\index.js:95:5)
+    at async cors (D:\personal\personal-projects\financial\server\node_modules\koa2-cors\dist\index.js:91:9)
+[2023-05-09T13:36:51.387] [DEBUG] default - 服务启动成功
+[2023-05-09T13:36:53.303] [DEBUG] default - 服务启动成功
+[2023-05-09T13:36:59.327] [DEBUG] default - 服务启动成功
+[2023-05-09T13:37:46.488] [DEBUG] default - 服务启动成功
+[2023-05-09T13:38:53.814] [DEBUG] default - 服务启动成功
+[2023-05-09T13:39:54.283] [DEBUG] default - 服务启动成功
+[2023-05-09T13:40:54.740] [DEBUG] default - 服务启动成功
+[2023-05-09T13:42:01.154] [DEBUG] default - 服务启动成功
+[2023-05-09T13:44:17.471] [DEBUG] default - 服务启动成功
+[2023-05-09T13:44:21.534] [DEBUG] default - 服务启动成功
+[2023-05-09T13:44:25.245] [DEBUG] default - 服务启动成功
+[2023-05-09T13:44:47.597] [DEBUG] default - 服务启动成功
+[2023-05-09T13:45:09.851] [DEBUG] default - 服务启动成功
+[2023-05-09T13:45:21.577] [DEBUG] default - 服务启动成功
+[2023-05-09T13:45:24.411] [DEBUG] default - 服务启动成功
+[2023-05-09T13:46:15.246] [DEBUG] default - 服务启动成功
+[2023-05-09T13:46:46.105] [DEBUG] default - 服务启动成功
+[2023-05-09T13:47:25.791] [DEBUG] default - 服务启动成功
+[2023-05-09T13:48:29.236] [DEBUG] default - 服务启动成功
+[2023-05-09T13:48:32.049] [DEBUG] default - 服务启动成功
+[2023-05-09T13:49:08.075] [DEBUG] default - 服务启动成功
+[2023-05-09T13:49:43.327] [DEBUG] default - 服务启动成功
+[2023-05-09T13:50:42.249] [DEBUG] default - 服务启动成功
+[2023-05-09T13:55:42.762] [DEBUG] default - 服务启动成功
+[2023-05-09T13:55:56.363] [DEBUG] default - 服务启动成功
+[2023-05-09T13:55:58.308] [DEBUG] default - 未知错误 D:\personal\personal-projects\financial\server\src\service\investment\editstock.js:31
+     }
+     ^
+
+SyntaxError: Unexpected token '}'
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1088:15)
+    at Module._compile (node:internal/modules/cjs/loader:1123:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (D:\personal\personal-projects\financial\server\src\controller\investment\editstock.js:1:15)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+[2023-05-09T13:56:16.399] [DEBUG] default - 服务启动成功
+[2023-05-09T13:56:20.515] [DEBUG] default - 服务启动成功
+[2023-05-09T13:56:22.599] [DEBUG] default - 未知错误 TypeError: mongoose.Schema.Types.String.ObjectId is not a function
+    at Object.<anonymous> (D:\personal\personal-projects\financial\server\src\models\stock\index.js:13:42)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (D:\personal\personal-projects\financial\server\src\mapper\investment\stock.js:1:15)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+[2023-05-09T13:56:34.719] [DEBUG] default - 服务启动成功
+[2023-05-09T13:56:36.124] [DEBUG] default - 未知错误 TypeError: this.splitPath is not a function
+    at Object.SchemaType (D:\personal\personal-projects\financial\server\node_modules\mongoose\lib\schematype.js:52:8)
+    at Object.ObjectId (D:\personal\personal-projects\financial\server\node_modules\mongoose\lib\schema\objectid.js:36:14)
+    at Object.<anonymous> (D:\personal\personal-projects\financial\server\src\models\stock\index.js:13:35)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (D:\personal\personal-projects\financial\server\src\mapper\investment\stock.js:1:15)
+[2023-05-09T13:56:39.928] [DEBUG] default - 未知错误 OverwriteModelError: Cannot overwrite `stock` model once compiled.
+    at Mongoose.model (D:\personal\personal-projects\financial\server\node_modules\mongoose\lib\index.js:587:13)
+    at Object.<anonymous> (D:\personal\personal-projects\financial\server\src\models\stock\index.js:12:24)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (D:\personal\personal-projects\financial\server\src\mapper\investment\stock.js:1:15)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+[2023-05-09T13:57:51.762] [DEBUG] default - 服务启动成功
+[2023-05-09T13:59:23.592] [DEBUG] default - 服务启动成功
+[2023-05-09T13:59:49.029] [DEBUG] default - 服务启动成功
+[2023-05-09T13:59:52.323] [DEBUG] default - 服务启动成功
+[2023-05-09T13:59:54.179] [DEBUG] default - 未知错误 ReferenceError: ObjectId is not defined
+    at Object.<anonymous> (D:\personal\personal-projects\financial\server\src\models\stock\index.js:11:9)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (D:\personal\personal-projects\financial\server\src\mapper\investment\stock.js:1:15)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+[2023-05-09T14:00:10.949] [DEBUG] default - 服务启动成功
+[2023-05-09T14:00:12.456] [DEBUG] default - 未知错误 TypeError: this.splitPath is not a function
+    at Mongoose.SchemaType (D:\personal\personal-projects\financial\server\node_modules\mongoose\lib\schematype.js:52:8)
+    at Mongoose.ObjectId (D:\personal\personal-projects\financial\server\node_modules\mongoose\lib\schema\objectid.js:36:14)
+    at Object.<anonymous> (D:\personal\personal-projects\financial\server\src\models\stock\index.js:11:19)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (D:\personal\personal-projects\financial\server\src\mapper\investment\stock.js:1:15)
+[2023-05-09T14:01:13.056] [DEBUG] default - 未知错误 TypeError: this.splitPath is not a function
+    at Mongoose.SchemaType (D:\personal\personal-projects\financial\server\node_modules\mongoose\lib\schematype.js:52:8)
+    at Mongoose.ObjectId (D:\personal\personal-projects\financial\server\node_modules\mongoose\lib\schema\objectid.js:36:14)
+    at Object.<anonymous> (D:\personal\personal-projects\financial\server\src\models\stock\index.js:11:19)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (D:\personal\personal-projects\financial\server\src\mapper\investment\stock.js:1:15)
+[2023-05-09T14:02:00.582] [DEBUG] default - 服务启动成功
+[2023-05-09T14:02:03.116] [DEBUG] default - 服务启动成功
+[2023-05-09T14:02:04.848] [DEBUG] default - 未知错误 ReferenceError: stocknum is not defined
+    at editStock (D:\personal\personal-projects\financial\server\src\mapper\investment\stock.js:11:7)
+    at module.exports (D:\personal\personal-projects\financial\server\src\service\investment\editstock.js:23:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async module.exports (D:\personal\personal-projects\financial\server\src\controller\investment\editstock.js:11:16)
+    at async D:\personal\personal-projects\financial\server\src\router\investment\index.js:48:3
+    at async bodyParser (D:\personal\personal-projects\financial\server\node_modules\koa-bodyparser\index.js:95:5)
+    at async cors (D:\personal\personal-projects\financial\server\node_modules\koa2-cors\dist\index.js:91:9)
+[2023-05-09T14:02:38.042] [DEBUG] default - 服务启动成功
+[2023-05-09T14:02:40.317] [DEBUG] default - 未知错误 TypeError: this.splitPath is not a function
+    at Mongoose.SchemaType (D:\personal\personal-projects\financial\server\node_modules\mongoose\lib\schematype.js:52:8)
+    at Mongoose.ObjectId (D:\personal\personal-projects\financial\server\node_modules\mongoose\lib\schema\objectid.js:36:14)
+    at Object.<anonymous> (D:\personal\personal-projects\financial\server\src\models\stock\index.js:11:19)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (D:\personal\personal-projects\financial\server\src\mapper\investment\stock.js:1:15)
+[2023-05-09T14:03:50.065] [DEBUG] default - 服务启动成功
+[2023-05-09T14:03:51.171] [DEBUG] default - 未知错误 ReferenceError: Schema is not defined
+    at Object.<anonymous> (D:\personal\personal-projects\financial\server\src\models\stock\index.js:11:21)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (D:\personal\personal-projects\financial\server\src\mapper\investment\stock.js:1:15)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+[2023-05-09T14:04:06.164] [DEBUG] default - 服务启动成功
+[2023-05-09T14:04:07.379] [DEBUG] default - 未知错误 ReferenceError: stocknum is not defined
+    at editStock (D:\personal\personal-projects\financial\server\src\mapper\investment\stock.js:11:7)
+    at module.exports (D:\personal\personal-projects\financial\server\src\service\investment\editstock.js:23:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async module.exports (D:\personal\personal-projects\financial\server\src\controller\investment\editstock.js:11:16)
+    at async D:\personal\personal-projects\financial\server\src\router\investment\index.js:48:3
+    at async bodyParser (D:\personal\personal-projects\financial\server\node_modules\koa-bodyparser\index.js:95:5)
+    at async cors (D:\personal\personal-projects\financial\server\node_modules\koa2-cors\dist\index.js:91:9)
+[2023-05-09T14:05:01.997] [DEBUG] default - 未知错误 ReferenceError: stocknum is not defined
+    at editStock (D:\personal\personal-projects\financial\server\src\mapper\investment\stock.js:11:7)
+    at module.exports (D:\personal\personal-projects\financial\server\src\service\investment\editstock.js:23:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async module.exports (D:\personal\personal-projects\financial\server\src\controller\investment\editstock.js:11:16)
+    at async D:\personal\personal-projects\financial\server\src\router\investment\index.js:48:3
+    at async bodyParser (D:\personal\personal-projects\financial\server\node_modules\koa-bodyparser\index.js:95:5)
+    at async cors (D:\personal\personal-projects\financial\server\node_modules\koa2-cors\dist\index.js:91:9)
+[2023-05-09T14:05:03.439] [DEBUG] default - 服务启动成功
+[2023-05-09T14:05:04.671] [DEBUG] default - 未知错误 ReferenceError: stocknum is not defined
+    at editStock (D:\personal\personal-projects\financial\server\src\mapper\investment\stock.js:11:7)
+    at module.exports (D:\personal\personal-projects\financial\server\src\service\investment\editstock.js:23:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async module.exports (D:\personal\personal-projects\financial\server\src\controller\investment\editstock.js:11:16)
+    at async D:\personal\personal-projects\financial\server\src\router\investment\index.js:48:3
+    at async bodyParser (D:\personal\personal-projects\financial\server\node_modules\koa-bodyparser\index.js:95:5)
+    at async cors (D:\personal\personal-projects\financial\server\node_modules\koa2-cors\dist\index.js:91:9)
+[2023-05-09T14:07:29.625] [DEBUG] default - 服务启动成功
+[2023-05-09T14:07:32.696] [DEBUG] default - code:401 UnauthorizedError: Authentication Error
+    at Object.throw (D:\personal\personal-projects\financial\server\node_modules\koa\lib\context.js:97:11)
+    at jwt (D:\personal\personal-projects\financial\server\node_modules\koa-jwt\lib\index.js:66:26)
+    at async cors (D:\personal\personal-projects\financial\server\node_modules\koa2-cors\dist\index.js:91:9) {
+  originalError: TokenExpiredError: jwt expired
+      at D:\personal\personal-projects\financial\server\node_modules\jsonwebtoken\verify.js:190:21
+      at getSecret (D:\personal\personal-projects\financial\server\node_modules\jsonwebtoken\verify.js:97:14)
+      at module.exports [as verify] (D:\personal\personal-projects\financial\server\node_modules\jsonwebtoken\verify.js:101:10)
+      at D:\personal\personal-projects\financial\server\node_modules\koa-jwt\lib\verify.js:5:13
+      at new Promise (<anonymous>)
+      at module.exports (D:\personal\personal-projects\financial\server\node_modules\koa-jwt\lib\verify.js:4:12)
+      at D:\personal\personal-projects\financial\server\node_modules\koa-jwt\lib\index.js:38:64
+      at Array.map (<anonymous>)
+      at jwt (D:\personal\personal-projects\financial\server\node_modules\koa-jwt\lib\index.js:38:43)
+      at D:\personal\personal-projects\financial\server\node_modules\koa-unless\index.js:29:12 {
+    expiredAt: 2023-05-09T06:07:32.000Z
+  }
+}
+[2023-05-09T14:07:54.687] [DEBUG] default - 未知错误 TypeError: this.splitPath is not a function
+    at Mongoose.SchemaType (D:\personal\personal-projects\financial\server\node_modules\mongoose\lib\schematype.js:52:8)
+    at Mongoose.ObjectId (D:\personal\personal-projects\financial\server\node_modules\mongoose\lib\schema\objectid.js:36:14)
+    at Object.<anonymous> (D:\personal\personal-projects\financial\server\src\models\stock\index.js:11:30)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (D:\personal\personal-projects\financial\server\src\mapper\investment\stock.js:1:15)
+[2023-05-09T14:08:23.004] [DEBUG] default - 服务启动成功
+[2023-05-09T14:08:37.357] [DEBUG] default - 未知错误 D:\personal\personal-projects\financial\server\src\models\stock\index.js:1
+const mongoose, { ObjectId } = require('mongoose')
+      ^^^^^^^^
+
+SyntaxError: Missing initializer in const declaration
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1088:15)
+    at Module._compile (node:internal/modules/cjs/loader:1123:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (D:\personal\personal-projects\financial\server\src\mapper\investment\stock.js:1:15)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+[2023-05-09T14:08:39.674] [DEBUG] default - 服务启动成功
+[2023-05-09T14:08:44.767] [DEBUG] default - 服务启动成功
+[2023-05-09T14:08:44.919] [DEBUG] default - 未知错误 ReferenceError: ObjectId is not defined
+    at Object.<anonymous> (D:\personal\personal-projects\financial\server\src\models\stock\index.js:11:21)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (D:\personal\personal-projects\financial\server\src\mapper\investment\stock.js:1:15)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+[2023-05-09T14:08:56.528] [DEBUG] default - 服务启动成功
+[2023-05-09T14:09:00.022] [DEBUG] default - 未知错误 TypeError: this.splitPath is not a function
+    at Mongoose.SchemaType (D:\personal\personal-projects\financial\server\node_modules\mongoose\lib\schematype.js:52:8)
+    at Mongoose.ObjectId (D:\personal\personal-projects\financial\server\node_modules\mongoose\lib\schema\objectid.js:36:14)
+    at Object.<anonymous> (D:\personal\personal-projects\financial\server\src\models\stock\index.js:11:30)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (D:\personal\personal-projects\financial\server\src\mapper\investment\stock.js:1:15)
+[2023-05-09T14:09:07.672] [DEBUG] default - 服务启动成功
+[2023-05-09T14:09:08.265] [DEBUG] default - 未知错误 ReferenceError: stocknum is not defined
+    at editStock (D:\personal\personal-projects\financial\server\src\mapper\investment\stock.js:11:7)
+    at module.exports (D:\personal\personal-projects\financial\server\src\service\investment\editstock.js:23:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async module.exports (D:\personal\personal-projects\financial\server\src\controller\investment\editstock.js:11:16)
+    at async D:\personal\personal-projects\financial\server\src\router\investment\index.js:48:3
+    at async bodyParser (D:\personal\personal-projects\financial\server\node_modules\koa-bodyparser\index.js:95:5)
+    at async cors (D:\personal\personal-projects\financial\server\node_modules\koa2-cors\dist\index.js:91:9)
+[2023-05-09T14:10:05.680] [DEBUG] default - 服务启动成功
+[2023-05-09T14:10:08.997] [DEBUG] default - 未知错误 ReferenceError: stocknum is not defined
+    at editStock (D:\personal\personal-projects\financial\server\src\mapper\investment\stock.js:11:7)
+    at module.exports (D:\personal\personal-projects\financial\server\src\service\investment\editstock.js:23:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async module.exports (D:\personal\personal-projects\financial\server\src\controller\investment\editstock.js:11:16)
+    at async D:\personal\personal-projects\financial\server\src\router\investment\index.js:48:3
+    at async bodyParser (D:\personal\personal-projects\financial\server\node_modules\koa-bodyparser\index.js:95:5)
+    at async cors (D:\personal\personal-projects\financial\server\node_modules\koa2-cors\dist\index.js:91:9)
+[2023-05-09T14:10:23.566] [DEBUG] default - 服务启动成功
+[2023-05-09T14:11:11.667] [DEBUG] default - 服务启动成功
+[2023-05-09T14:11:26.850] [DEBUG] default - 服务启动成功
+[2023-05-09T14:11:32.068] [DEBUG] default - 未知错误 D:\personal\personal-projects\financial\server\src\mapper\investment\stock.js:17
+        operatingrecord: data.operatingrecord
+        ^^^^^^^^^^^^^^^
+
+SyntaxError: Unexpected identifier
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1088:15)
+    at Module._compile (node:internal/modules/cjs/loader:1123:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (D:\personal\personal-projects\financial\server\src\service\investment\editstock.js:1:34)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+[2023-05-09T14:11:57.003] [DEBUG] default - 服务启动成功
+[2023-05-09T14:12:17.230] [DEBUG] default - 服务启动成功
+[2023-05-09T14:12:17.811] [DEBUG] default - 未知错误 D:\personal\personal-projects\financial\server\src\mapper\investment\stock.js:17
+        operatingrecord: data.operatingrecord
+        ^^^^^^^^^^^^^^^
+
+SyntaxError: Unexpected identifier
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1088:15)
+    at Module._compile (node:internal/modules/cjs/loader:1123:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (D:\personal\personal-projects\financial\server\src\service\investment\editstock.js:1:34)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+[2023-05-09T14:12:28.563] [DEBUG] default - 服务启动成功
+[2023-05-09T14:12:29.762] [DEBUG] default - 未知错误 D:\personal\personal-projects\financial\server\src\models\stock\index.js:8
+  operatingrecord: {mongoose.Schema.Types.Mixed}, //操作记录
+                            ^
+
+SyntaxError: Unexpected token '.'
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1088:15)
+    at Module._compile (node:internal/modules/cjs/loader:1123:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (D:\personal\personal-projects\financial\server\src\mapper\investment\stock.js:1:15)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+[2023-05-09T14:13:23.061] [DEBUG] default - 服务启动成功
+[2023-05-09T14:13:38.468] [DEBUG] default - 服务启动成功
+[2023-05-09T14:13:47.325] [DEBUG] default - 服务启动成功
+[2023-05-09T14:14:00.022] [DEBUG] default - 服务启动成功
+[2023-05-09T14:14:10.371] [DEBUG] default - 服务启动成功
+[2023-05-09T14:14:22.452] [DEBUG] default - 未知错误 ReferenceError: Schema is not defined
+    at Object.<anonymous> (D:\personal\personal-projects\financial\server\src\models\stock\index.js:10:14)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (D:\personal\personal-projects\financial\server\src\mapper\investment\stock.js:1:15)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+[2023-05-09T14:15:38.702] [DEBUG] default - 服务启动成功
+[2023-05-09T14:15:42.274] [DEBUG] default - 服务启动成功
+[2023-05-09T14:15:43.374] [DEBUG] default - 未知错误 ReferenceError: Schema is not defined
+    at Object.<anonymous> (D:\personal\personal-projects\financial\server\src\models\stock\index.js:10:15)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (D:\personal\personal-projects\financial\server\src\mapper\investment\stock.js:1:15)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+[2023-05-09T14:15:53.882] [DEBUG] default - 服务启动成功
+[2023-05-09T14:15:54.969] [DEBUG] default - 未知错误 ReferenceError: stocknum is not defined
+    at editStock (D:\personal\personal-projects\financial\server\src\mapper\investment\stock.js:14:7)
+    at module.exports (D:\personal\personal-projects\financial\server\src\service\investment\editstock.js:23:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async module.exports (D:\personal\personal-projects\financial\server\src\controller\investment\editstock.js:11:16)
+    at async D:\personal\personal-projects\financial\server\src\router\investment\index.js:48:3
+    at async bodyParser (D:\personal\personal-projects\financial\server\node_modules\koa-bodyparser\index.js:95:5)
+    at async cors (D:\personal\personal-projects\financial\server\node_modules\koa2-cors\dist\index.js:91:9)
+[2023-05-09T14:16:08.740] [DEBUG] default - 服务启动成功
+[2023-05-09T14:16:11.189] [DEBUG] default - 服务启动成功
+[2023-05-09T14:16:24.230] [DEBUG] default - 服务启动成功
+[2023-05-09T14:18:05.287] [DEBUG] default - 服务启动成功
+[2023-05-09T14:18:31.136] [DEBUG] default - 服务启动成功
+[2023-05-09T14:18:56.133] [DEBUG] default - 服务启动成功
+[2023-05-09T14:20:16.147] [DEBUG] default - 服务启动成功
+[2023-05-09T14:20:16.410] [DEBUG] default - 未知错误 D:\personal\personal-projects\financial\server\src\mapper\investment\stock.js:16
+        operatingrecord._ids: new mongoose.Types.ObjectId,
+                       ^
+
+SyntaxError: Unexpected token '.'
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1088:15)
+    at Module._compile (node:internal/modules/cjs/loader:1123:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (D:\personal\personal-projects\financial\server\src\service\investment\editstock.js:1:34)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+[2023-05-09T14:21:22.262] [DEBUG] default - 服务启动成功
+[2023-05-09T14:21:46.962] [DEBUG] default - 服务启动成功
+[2023-05-09T14:22:11.108] [DEBUG] default - 服务启动成功
+[2023-05-09T14:22:14.722] [DEBUG] default - 服务启动成功
+[2023-05-09T14:23:18.517] [DEBUG] default - 服务启动成功

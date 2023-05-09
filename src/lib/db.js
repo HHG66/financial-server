@@ -1,13 +1,9 @@
 /*
  * @Author: HHG
  * @Date: 2023-02-12 11:37:58
-<<<<<<< HEAD
- * @LastEditTime: 2023-04-24 17:26:52
-=======
- * @LastEditTime: 2023-04-30 21:56:06
->>>>>>> b026fa5137a52887ef42c92d757e47fbee6bf7e8
+ * @LastEditTime: 2023-05-09 11:02:45
  * @LastEditors: 韩宏广
- * @FilePath: /server/src/lib/db.js
+ * @FilePath: \server\src\lib\db.js
  * @文件说明: 
  */
 const mongoose = require('mongoose');
