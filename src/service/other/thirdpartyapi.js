@@ -1,7 +1,7 @@
 /*
  * @Author: HHG
  * @Date: 2023-04-10 17:04:47
- * @LastEditTime: 2023-05-05 11:18:54
+ * @LastEditTime: 2023-05-09 17:54:08
  * @LastEditors: 韩宏广
  * @FilePath: \server\src\service\other\thirdpartyapi.js
  * @文件说明: 
@@ -149,7 +149,7 @@ module.exports = {
     })
   },
   //阿里通用股票接口
-  getAddFundInfo: (stockcode) => {
+  getAliaFundInfo: (stockcode, ctx) => {
     // var symbols = "SZ159633" + "," + 'SZ159605'// 这是需要提交的数据 
     var symbols = stockcode // 这是需要提交的数据 
     // 阿里通用股票接口的
@@ -174,11 +174,22 @@ module.exports = {
         /*****合并返回数据****/
         res.on('data', (chunk) => {
           // console.log(chunk);
-          content += chunk;
+          content = chunk;
         });
         /*****数据获取完成后 resolve提交****/
-        res.on('end', () => {
-          resolve({ result: true, data: content });
+        res.on('end', (data) => {
+          content = JSON.parse(content)
+          if (content.Code == 0) {
+            if(content.Obj.length==0){
+              resolve({ result: false, data:{},message:'股票代码不正确'  });
+            }else{
+              resolve({ result: true, data: content.Obj });
+            }
+          } else {
+            response(ctx,{},{message:'股票信息接口错误'})
+            reject({ result: false });
+            // resolve({ result: false, data: content });
+          }
         });
       })
       /*****发送请求体*****/
@@ -186,6 +197,7 @@ module.exports = {
       /*****异常处理*****/
       req.on('error', function (err) {
         console.log(err);
+        response(ctx,{},{message:'股票信息接口网络错误'})
         resolve({ result: false, errmsg: err.message });
       });
       /*****结束请求*****/

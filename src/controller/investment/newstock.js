@@ -6,6 +6,6 @@ module.exports = async (ctx, next) => {
   if (result.state == true) {
     response(ctx, {}, { message: "新增成功" })
   } else {
-    response(ctx, {}, { message: "新增失败，请重试" })
+    response(ctx, {}, { message: result.message || "新增失败，请重试" })
   }
 }

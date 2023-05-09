@@ -12,6 +12,6 @@ module.exports = async (ctx, next) => {
   if (result.state == true) {
     response(ctx, {}, { message: "编辑成功" })
   } else {
-    response(ctx, {}, { message: '编辑失败' })
+    response(ctx, {}, { code: '00001', message: result.message || '编辑失败' })
   }
 }

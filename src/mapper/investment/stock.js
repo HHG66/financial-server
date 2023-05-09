@@ -1,5 +1,5 @@
 const Stock = require('@/models/stock/index.js')
-const { add, updata, findOne } = require('../index')
+const { add, updata, findOne,find } = require('../index')
 const mongoose = require('mongoose')
 // const childSchema = new mongoose.Types.ObjectId
 // console.log(childSchema);
@@ -8,7 +8,6 @@ module.exports = {
     return add(Stock, data, { __v: 0 })
   },
   editStock: (data) => {
-    console.log(data.actions);
     return updata(Stock, {
       _id: data.stockid
     }, {
@@ -16,7 +15,7 @@ module.exports = {
       $addToSet: {
         operatingrecord:{
           _ids: new mongoose.Types.ObjectId,
-          actions: data.actions
+          actions: data.actions,
         }
       }
     })
@@ -24,6 +23,12 @@ module.exports = {
   stockInfo: (id) => {
     return findOne(Stock, {
       _id: id
+    })
+  },
+  getStockList:(data)=>{
+    return find(Stock,{
+      stockcode:data.stockcode,
+      stockname:data.stockname,
     })
   }
 }

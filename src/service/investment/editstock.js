@@ -1,6 +1,6 @@
 const { editStock, stockInfo } = require("@/mapper/investment/stock.js")
 const BigNumber = require('bignumber.js');
-
+var dayjs = require('dayjs')
 module.exports = async (ctx) => {
   let {
     stockid,
@@ -17,8 +17,17 @@ module.exports = async (ctx) => {
     stocknum = new BigNumber(stockInfos.stocknum).plus(number)
   } else if (stockstate == 0) {
     //减仓
-    stocknum = new BigNumber(stockInfos.stocknum).minus(number)
+    let underweight = new BigNumber(stockInfos.stocknum).minus(number)
+    if (underweight < 0) {
+      return {
+        state: false,
+        message: '超过持仓数量'
+      }
+    } else {
+      stocknum = underweight
+    }
   }
+
   //更新
   let mapperResult = await editStock({
     stockid,
@@ -26,10 +35,13 @@ module.exports = async (ctx) => {
     stocknum,
     price, //第一次购买时候的价格
     cost,
+    //操作记录
     actions: {
-        date:'shijian',
-        info:'减仓股票'
-     }
+      number: 100,
+      state: stockstate,
+      info: stockstate == 1 ? '加仓股票' : '减仓股票',
+      date: new Date(dayjs(new Date()).add(8, 'hour'))
+    }
   })
   if (mapperResult) {
     return {

@@ -47,3 +47,8 @@ router.post('/newstock', async (ctx, next) => {
 router.post('/editstock', async (ctx, next) => {
   await require(controllerPath + 'editstock.js')(ctx, next)
 }) 
+
+//编辑股票信息
+router.get('/getstocklist', async (ctx, next) => {
+  await require(controllerPath + 'getstocklist.js')(ctx, next)
+}) 
