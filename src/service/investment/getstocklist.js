@@ -1,13 +1,21 @@
-const {getStockList} =require('@/mapper/investment/stock.js')
-module.exports=async(ctx,next)=>{
+const { getStockList } = require('@/mapper/investment/stock.js')
+module.exports = async (ctx, next) => {
   console.log(ctx.query)
-    
-    
-  if(ctx.query.stockname){
-    let mapperResult=await getStockList()
-  } 
-  return {
-    state:true,
-    data:{}
+
+  let mapperResult = await getStockList(ctx.query)
+
+  if (mapperResult) {
+    return {
+      state: true,
+      data: mapperResult
+    }
+  } else {
+    return {
+      state: false,
+      message:"股票列表查询错误",
+      data: {}
+    }
   }
+
+
 }

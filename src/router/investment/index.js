@@ -1,7 +1,7 @@
 /*
  * @Author: HHG
  * @Date: 2023-03-21 22:27:27
- * @LastEditTime: 2023-05-05 13:54:10
+ * @LastEditTime: 2023-05-10 17:48:50
  * @LastEditors: 韩宏广
  * @FilePath: \server\src\router\investment\index.js
  * @文件说明: 
@@ -52,3 +52,32 @@ router.post('/editstock', async (ctx, next) => {
 router.get('/getstocklist', async (ctx, next) => {
   await require(controllerPath + 'getstocklist.js')(ctx, next)
 }) 
+
+//删除股票信息
+router.post('/deletestock', async (ctx, next) => {
+  await require(controllerPath + 'deletestock.js')(ctx, next)
+}) 
+
+//新建存款单
+router.post('/newcertificatedeposit', async (ctx, next) => {
+  await require(controllerPath + 'newcertificatedeposit.js')(ctx, next)
+}) 
+
+//编辑存款单
+router.post('/editdepositinfo', async (ctx, next) => {
+  await require(controllerPath + 'editdepositinfo.js')(ctx, next)
+}) 
+
+//获取存款单列表
+router.get('/getdepositlist', async (ctx, next) => {
+  await require(controllerPath + 'getdepositlist.js')(ctx, next)
+}) 
+
+//删除存款单
+router.post('/deletedepositinfo', async (ctx, next) => {
+  await require(controllerPath + 'deletedepositinfo.js')(ctx, next)
+}) 
+
+
+ 
+ 
