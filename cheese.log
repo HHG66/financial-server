@@ -2108,3 +2108,512 @@ Require stack:
 [2023-05-11T11:05:13.909] [DEBUG] default - 服务启动成功
 [2023-05-11T11:05:58.062] [DEBUG] default - 服务启动成功
 [2023-05-11T11:06:32.383] [DEBUG] default - 服务启动成功
+[2023-05-11T11:30:49.124] [DEBUG] default - 服务启动成功
+[2023-05-11T11:31:39.548] [DEBUG] default - 服务启动成功
+[2023-05-11T13:18:12.943] [DEBUG] default - 服务启动成功
+[2023-05-11T13:20:24.633] [DEBUG] default - 服务启动成功
+[2023-05-11T13:21:11.332] [DEBUG] default - 服务启动成功
+[2023-05-11T13:21:13.999] [DEBUG] default - 服务启动成功
+[2023-05-11T13:22:14.367] [DEBUG] default - 服务启动成功
+[2023-05-11T13:23:05.692] [DEBUG] default - 服务启动成功
+[2023-05-11T13:23:25.974] [DEBUG] default - 服务启动成功
+[2023-05-11T13:23:33.643] [DEBUG] default - 服务启动成功
+[2023-05-11T13:23:35.579] [DEBUG] default - 服务启动成功
+[2023-05-11T13:23:37.667] [DEBUG] default - 服务启动成功
+[2023-05-11T13:23:39.701] [DEBUG] default - 服务启动成功
+[2023-05-11T13:23:44.715] [DEBUG] default - 服务启动成功
+[2023-05-11T13:23:48.329] [DEBUG] default - 服务启动成功
+[2023-05-11T13:23:52.322] [DEBUG] default - 服务启动成功
+[2023-05-11T13:24:23.935] [DEBUG] default - 服务启动成功
+[2023-05-11T13:31:04.608] [DEBUG] default - 服务启动成功
+[2023-05-11T13:31:06.412] [DEBUG] default - 服务启动成功
+[2023-05-11T13:31:14.076] [DEBUG] default - 服务启动成功
+[2023-05-11T13:32:13.427] [DEBUG] default - 服务启动成功
+[2023-05-11T13:32:17.236] [DEBUG] default - 服务启动成功
+[2023-05-11T13:34:16.130] [DEBUG] default - 服务启动成功
+[2023-05-11T13:34:18.900] [DEBUG] default - 服务启动成功
+[2023-05-11T13:34:54.649] [DEBUG] default - 服务启动成功
+[2023-05-11T13:35:33.025] [DEBUG] default - 服务启动成功
+[2023-05-11T13:35:42.284] [DEBUG] default - 服务启动成功
+[2023-05-11T13:39:30.499] [DEBUG] default - 服务启动成功
+[2023-05-11T13:40:24.203] [DEBUG] default - 服务启动成功
+[2023-05-11T13:41:15.769] [DEBUG] default - 服务启动成功
+[2023-05-11T13:41:23.440] [DEBUG] default - 服务启动成功
+[2023-05-11T13:42:02.790] [DEBUG] default - 服务启动成功
+[2023-05-11T13:42:40.670] [DEBUG] default - 服务启动成功
+[2023-05-11T13:42:41.812] [DEBUG] default - 未知错误 TypeError: numberperiods.forEach is not a function
+    at module.exports (D:\personal\personal-projects\financial\server\src\service\loan\newloan.js:6:17)
+    at module.exports (D:\personal\personal-projects\financial\server\src\controller\loan\newloan.js:3:22)
+    at D:\personal\personal-projects\financial\server\src\router\loans\index.js:5:47
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+    at D:\personal\personal-projects\financial\server\node_modules\@koa\router\lib\router.js:425:16
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+    at D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:34:12
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\@koa\router\lib\router.js:430:31)
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (D:\personal\personal-projects\financial\server\node_modules\koa-bodyparser\index.js:95:11)
+[2023-05-11T13:43:13.732] [DEBUG] default - 未知错误 TypeError: numberperiods.forEach is not a function
+    at module.exports (D:\personal\personal-projects\financial\server\src\service\loan\newloan.js:6:17)
+    at module.exports (D:\personal\personal-projects\financial\server\src\controller\loan\newloan.js:3:22)
+    at D:\personal\personal-projects\financial\server\src\router\loans\index.js:5:47
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+    at D:\personal\personal-projects\financial\server\node_modules\@koa\router\lib\router.js:425:16
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+    at D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:34:12
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\@koa\router\lib\router.js:430:31)
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (D:\personal\personal-projects\financial\server\node_modules\koa-bodyparser\index.js:95:11)
+[2023-05-11T13:43:15.822] [DEBUG] default - 服务启动成功
+[2023-05-11T13:43:24.453] [DEBUG] default - 服务启动成功
+[2023-05-11T13:43:38.906] [DEBUG] default - 服务启动成功
+[2023-05-11T13:43:40.242] [DEBUG] default - 服务启动成功
+[2023-05-11T13:44:23.415] [DEBUG] default - 服务启动成功
+[2023-05-11T13:44:56.872] [DEBUG] default - 服务启动成功
+[2023-05-11T13:46:08.404] [DEBUG] default - 服务启动成功
+[2023-05-11T13:46:20.163] [DEBUG] default - 服务启动成功
+[2023-05-11T13:49:17.457] [DEBUG] default - 服务启动成功
+[2023-05-11T13:49:26.895] [DEBUG] default - 服务启动成功
+[2023-05-11T13:49:51.931] [DEBUG] default - 服务启动成功
+[2023-05-11T13:59:42.856] [DEBUG] default - 服务启动成功
+[2023-05-11T14:00:28.451] [DEBUG] default - 服务启动成功
+[2023-05-11T14:01:08.055] [DEBUG] default - 服务启动成功
+[2023-05-11T14:02:16.696] [DEBUG] default - 服务启动成功
+[2023-05-11T14:02:44.887] [DEBUG] default - 服务启动成功
+[2023-05-11T14:03:07.327] [DEBUG] default - 服务启动成功
+[2023-05-11T14:03:55.837] [DEBUG] default - 服务启动成功
+[2023-05-11T14:10:06.244] [DEBUG] default - 服务启动成功
+[2023-05-11T14:10:35.636] [DEBUG] default - 服务启动成功
+[2023-05-11T14:12:37.567] [DEBUG] default - 服务启动成功
+[2023-05-11T14:12:41.462] [DEBUG] default - 服务启动成功
+[2023-05-11T14:13:18.627] [DEBUG] default - 服务启动成功
+[2023-05-11T14:14:43.485] [DEBUG] default - 服务启动成功
+[2023-05-11T14:14:48.917] [DEBUG] default - 未知错误 TypeError: dayjs(...) is not a function
+    at module.exports (D:\personal\personal-projects\financial\server\src\service\loan\newloan.js:14:39)
+    at module.exports (D:\personal\personal-projects\financial\server\src\controller\loan\newloan.js:3:22)
+    at D:\personal\personal-projects\financial\server\src\router\loans\index.js:5:47
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+    at D:\personal\personal-projects\financial\server\node_modules\@koa\router\lib\router.js:425:16
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+    at D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:34:12
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\@koa\router\lib\router.js:430:31)
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (D:\personal\personal-projects\financial\server\node_modules\koa-bodyparser\index.js:95:11)
+[2023-05-11T14:15:04.905] [DEBUG] default - 未知错误 TypeError: dayjs(...) is not a function
+    at module.exports (D:\personal\personal-projects\financial\server\src\service\loan\newloan.js:14:39)
+    at module.exports (D:\personal\personal-projects\financial\server\src\controller\loan\newloan.js:3:22)
+    at D:\personal\personal-projects\financial\server\src\router\loans\index.js:5:47
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+    at D:\personal\personal-projects\financial\server\node_modules\@koa\router\lib\router.js:425:16
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+    at D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:34:12
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\@koa\router\lib\router.js:430:31)
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (D:\personal\personal-projects\financial\server\node_modules\koa-bodyparser\index.js:95:11)
+[2023-05-11T14:15:18.218] [DEBUG] default - 服务启动成功
+[2023-05-11T14:15:18.762] [DEBUG] default - 未知错误 TypeError: dayjs(...) is not a function
+    at module.exports (D:\personal\personal-projects\financial\server\src\service\loan\newloan.js:15:39)
+    at module.exports (D:\personal\personal-projects\financial\server\src\controller\loan\newloan.js:3:22)
+    at D:\personal\personal-projects\financial\server\src\router\loans\index.js:5:47
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+    at D:\personal\personal-projects\financial\server\node_modules\@koa\router\lib\router.js:425:16
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+    at D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:34:12
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\@koa\router\lib\router.js:430:31)
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (D:\personal\personal-projects\financial\server\node_modules\koa-bodyparser\index.js:95:11)
+[2023-05-11T14:15:50.696] [DEBUG] default - 服务启动成功
+[2023-05-11T14:16:28.160] [DEBUG] default - 服务启动成功
+[2023-05-11T14:16:31.448] [DEBUG] default - 服务启动成功
+[2023-05-11T14:18:21.143] [DEBUG] default - 服务启动成功
+[2023-05-11T14:19:23.471] [DEBUG] default - 服务启动成功
+[2023-05-11T14:20:05.229] [DEBUG] default - 服务启动成功
+[2023-05-11T14:20:39.536] [DEBUG] default - 服务启动成功
+[2023-05-11T14:21:03.642] [DEBUG] default - 服务启动成功
+[2023-05-11T14:22:26.725] [DEBUG] default - 服务启动成功
+[2023-05-11T14:23:33.514] [DEBUG] default - 服务启动成功
+[2023-05-11T14:24:09.594] [DEBUG] default - 服务启动成功
+[2023-05-11T14:25:20.050] [DEBUG] default - 服务启动成功
+[2023-05-11T14:25:23.522] [DEBUG] default - 服务启动成功
+[2023-05-11T14:25:26.006] [DEBUG] default - 未知错误 ReferenceError: repaymentdate is not defined
+    at module.exports (D:\personal\personal-projects\financial\server\src\service\loan\newloan.js:16:56)
+    at module.exports (D:\personal\personal-projects\financial\server\src\controller\loan\newloan.js:3:22)
+    at D:\personal\personal-projects\financial\server\src\router\loans\index.js:5:47
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+    at D:\personal\personal-projects\financial\server\node_modules\@koa\router\lib\router.js:425:16
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+    at D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:34:12
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\@koa\router\lib\router.js:430:31)
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (D:\personal\personal-projects\financial\server\node_modules\koa-bodyparser\index.js:95:11)
+[2023-05-11T14:25:47.394] [DEBUG] default - 服务启动成功
+[2023-05-11T14:26:26.941] [DEBUG] default - 服务启动成功
+[2023-05-11T14:26:43.959] [DEBUG] default - 服务启动成功
+[2023-05-11T14:27:12.038] [DEBUG] default - 服务启动成功
+[2023-05-11T14:27:31.891] [DEBUG] default - 服务启动成功
+[2023-05-11T14:28:18.205] [DEBUG] default - 服务启动成功
+[2023-05-11T14:28:35.120] [DEBUG] default - 服务启动成功
+[2023-05-11T14:28:58.474] [DEBUG] default - 服务启动成功
+[2023-05-11T14:29:00.583] [DEBUG] default - 服务启动成功
+[2023-05-11T14:30:13.109] [DEBUG] default - 服务启动成功
+[2023-05-11T14:31:27.159] [DEBUG] default - 服务启动成功
+[2023-05-11T14:38:03.099] [DEBUG] default - 服务启动成功
+[2023-05-11T15:29:02.429] [DEBUG] default - 服务启动成功
+[2023-05-11T15:29:08.126] [DEBUG] default - 服务启动成功
+[2023-05-11T15:29:11.422] [DEBUG] default - 服务启动成功
+[2023-05-11T15:29:16.817] [DEBUG] default - 服务启动成功
+[2023-05-11T15:29:24.990] [DEBUG] default - 服务启动成功
+[2023-05-11T15:29:29.292] [DEBUG] default - 服务启动成功
+[2023-05-11T15:29:53.940] [DEBUG] default - 服务启动成功
+[2023-05-11T15:30:07.488] [DEBUG] default - 服务启动成功
+[2023-05-11T15:30:16.126] [DEBUG] default - 服务启动成功
+[2023-05-11T15:31:28.190] [DEBUG] default - 服务启动成功
+[2023-05-11T15:31:50.256] [DEBUG] default - 服务启动成功
+[2023-05-11T15:37:29.312] [DEBUG] default - 服务启动成功
+[2023-05-11T15:37:35.025] [DEBUG] default - 服务启动成功
+[2023-05-11T15:37:52.283] [DEBUG] default - 服务启动成功
+[2023-05-11T15:38:21.600] [DEBUG] default - 服务启动成功
+[2023-05-11T15:38:45.893] [DEBUG] default - code:401 UnauthorizedError: Authentication Error
+    at Object.throw (D:\personal\personal-projects\financial\server\node_modules\koa\lib\context.js:97:11)
+    at jwt (D:\personal\personal-projects\financial\server\node_modules\koa-jwt\lib\index.js:66:26)
+    at async cors (D:\personal\personal-projects\financial\server\node_modules\koa2-cors\dist\index.js:91:9) {
+  originalError: TokenExpiredError: jwt expired
+      at D:\personal\personal-projects\financial\server\node_modules\jsonwebtoken\verify.js:190:21
+      at getSecret (D:\personal\personal-projects\financial\server\node_modules\jsonwebtoken\verify.js:97:14)
+      at module.exports [as verify] (D:\personal\personal-projects\financial\server\node_modules\jsonwebtoken\verify.js:101:10)
+      at D:\personal\personal-projects\financial\server\node_modules\koa-jwt\lib\verify.js:5:13
+      at new Promise (<anonymous>)
+      at module.exports (D:\personal\personal-projects\financial\server\node_modules\koa-jwt\lib\verify.js:4:12)
+      at D:\personal\personal-projects\financial\server\node_modules\koa-jwt\lib\index.js:38:64
+      at Array.map (<anonymous>)
+      at jwt (D:\personal\personal-projects\financial\server\node_modules\koa-jwt\lib\index.js:38:43)
+      at D:\personal\personal-projects\financial\server\node_modules\koa-unless\index.js:29:12 {
+    expiredAt: 2023-05-11T06:57:40.000Z
+  }
+}
+[2023-05-11T15:41:50.686] [DEBUG] default - 服务启动成功
+[2023-05-11T15:42:52.248] [DEBUG] default - 服务启动成功
+[2023-05-11T15:43:16.476] [DEBUG] default - 服务启动成功
+[2023-05-11T15:45:47.881] [DEBUG] default - 服务启动成功
+[2023-05-11T15:46:30.301] [DEBUG] default - 服务启动成功
+[2023-05-11T15:46:40.212] [DEBUG] default - 服务启动成功
+[2023-05-11T15:48:57.313] [DEBUG] default - 服务启动成功
+[2023-05-11T15:49:12.085] [DEBUG] default - 服务启动成功
+[2023-05-11T15:49:18.324] [DEBUG] default - 服务启动成功
+[2023-05-11T15:49:24.187] [DEBUG] default - 服务启动成功
+[2023-05-11T15:49:49.565] [DEBUG] default - 服务启动成功
+[2023-05-11T15:55:19.878] [DEBUG] default - 服务启动成功
+[2023-05-11T15:55:57.247] [DEBUG] default - 服务启动成功
+[2023-05-11T15:56:17.740] [DEBUG] default - 服务启动成功
+[2023-05-11T15:58:11.134] [DEBUG] default - 服务启动成功
+[2023-05-11T15:58:24.348] [DEBUG] default - 服务启动成功
+[2023-05-11T15:58:39.082] [DEBUG] default - 服务启动成功
+[2023-05-11T16:00:51.475] [DEBUG] default - 服务启动成功
+[2023-05-11T16:01:27.772] [DEBUG] default - 服务启动成功
+[2023-05-11T16:02:07.613] [DEBUG] default - 服务启动成功
+[2023-05-11T16:03:03.022] [DEBUG] default - 服务启动成功
+[2023-05-11T16:03:04.045] [DEBUG] default - 未知错误 D:\personal\personal-projects\financial\server\src\service\loan\newloan.js:48
+  let mapperResult = await newLoan({ loanname, loanamount, loanamount, paymentmethod, interest, remainingpayments, numberperiods,, info: loaninfo, loanstaging: loanStagingList })
+                                                                                                                                 ^
+
+SyntaxError: Unexpected token ','
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1088:15)
+    at Module._compile (node:internal/modules/cjs/loader:1123:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (D:\personal\personal-projects\financial\server\src\controller\loan\newloan.js:1:15)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+[2023-05-11T16:03:18.447] [DEBUG] default - 服务启动成功
+[2023-05-11T16:03:19.614] [DEBUG] default - 未知错误 TypeError: Invalid schema configuration: `True` is not a valid type at path `whethercanprepayment`. See https://bit.ly/mongoose-schematypes for a list of valid schema types.
+    at Schema.interpretAsType (D:\personal\personal-projects\financial\server\node_modules\mongoose\lib\schema.js:1382:11)
+    at Schema.path (D:\personal\personal-projects\financial\server\node_modules\mongoose\lib\schema.js:1005:27)
+    at Schema.add (D:\personal\personal-projects\financial\server\node_modules\mongoose\lib\schema.js:676:12)
+    at new Schema (D:\personal\personal-projects\financial\server\node_modules\mongoose\lib\schema.js:133:10)
+    at Object.<anonymous> (D:\personal\personal-projects\financial\server\src\models\loan\index.js:3:14)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+[2023-05-11T16:03:32.650] [DEBUG] default - 服务启动成功
+[2023-05-11T16:03:33.011] [DEBUG] default - 未知错误 D:\personal\personal-projects\financial\server\src\service\loan\newloan.js:11
+  let whethercanprepayment = whethercanprepayment || true
+      ^
+
+SyntaxError: Identifier 'whethercanprepayment' has already been declared
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1088:15)
+    at Module._compile (node:internal/modules/cjs/loader:1123:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (D:\personal\personal-projects\financial\server\src\controller\loan\newloan.js:1:15)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+[2023-05-11T16:03:56.183] [DEBUG] default - 服务启动成功
+[2023-05-11T16:03:59.933] [DEBUG] default - 服务启动成功
+[2023-05-11T16:04:00.403] [DEBUG] default - 未知错误 TypeError: Invalid schema configuration: `True` is not a valid type at path `whethercanprepayment`. See https://bit.ly/mongoose-schematypes for a list of valid schema types.
+    at Schema.interpretAsType (D:\personal\personal-projects\financial\server\node_modules\mongoose\lib\schema.js:1382:11)
+    at Schema.path (D:\personal\personal-projects\financial\server\node_modules\mongoose\lib\schema.js:1005:27)
+    at Schema.add (D:\personal\personal-projects\financial\server\node_modules\mongoose\lib\schema.js:676:12)
+    at new Schema (D:\personal\personal-projects\financial\server\node_modules\mongoose\lib\schema.js:133:10)
+    at Object.<anonymous> (D:\personal\personal-projects\financial\server\src\models\loan\index.js:3:14)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+[2023-05-11T16:04:18.820] [DEBUG] default - 服务启动成功
+[2023-05-11T16:04:21.754] [DEBUG] default - 服务启动成功
+[2023-05-11T16:09:24.544] [DEBUG] default - 服务启动成功
+[2023-05-11T16:10:11.585] [DEBUG] default - 服务启动成功
+[2023-05-11T16:13:30.390] [DEBUG] default - 服务启动成功
+[2023-05-11T16:13:39.704] [DEBUG] default - 服务启动成功
+[2023-05-11T16:58:19.237] [DEBUG] default - 服务启动成功
+[2023-05-11T16:58:25.278] [DEBUG] default - 服务启动成功
+[2023-05-11T16:58:31.194] [DEBUG] default - 服务启动成功
+[2023-05-11T16:59:46.569] [DEBUG] default - 服务启动成功
+[2023-05-11T17:00:36.504] [DEBUG] default - 服务启动成功
+[2023-05-11T17:02:12.488] [DEBUG] default - 服务启动成功
+[2023-05-11T17:02:14.279] [DEBUG] default - 服务启动成功
+[2023-05-11T17:03:24.963] [DEBUG] default - 服务启动成功
+[2023-05-11T17:03:31.014] [DEBUG] default - 服务启动成功
+[2023-05-11T17:04:03.104] [DEBUG] default - 服务启动成功
+[2023-05-11T17:04:17.143] [DEBUG] default - 服务启动成功
+[2023-05-11T17:04:32.580] [DEBUG] default - 服务启动成功
+[2023-05-11T17:04:36.433] [DEBUG] default - 服务启动成功
+[2023-05-11T17:05:02.307] [DEBUG] default - 服务启动成功
+[2023-05-11T17:05:18.483] [DEBUG] default - 服务启动成功
+[2023-05-11T17:06:00.969] [DEBUG] default - 服务启动成功
+[2023-05-11T17:06:46.506] [DEBUG] default - 服务启动成功
+[2023-05-11T17:06:47.662] [DEBUG] default - 服务启动成功
+[2023-05-11T17:07:06.924] [DEBUG] default - 服务启动成功
+[2023-05-11T17:07:14.158] [DEBUG] default - 服务启动成功
+[2023-05-11T17:07:18.392] [DEBUG] default - 服务启动成功
+[2023-05-11T17:07:34.340] [DEBUG] default - 服务启动成功
+[2023-05-11T17:07:48.125] [DEBUG] default - 未知错误 Error: 方法没有实现
+    at Object.methodNotAllowed (D:\personal\personal-projects\financial\server\src\router\index.js:46:40)
+    at D:\personal\personal-projects\financial\server\node_modules\@koa\router\lib\router.js:520:29
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async bodyParser (D:\personal\personal-projects\financial\server\node_modules\koa-bodyparser\index.js:95:5)
+    at async cors (D:\personal\personal-projects\financial\server\node_modules\koa2-cors\dist\index.js:91:9) {
+  data: null,
+  isBoom: true,
+  isServer: false,
+  output: {
+    statusCode: 405,
+    payload: { statusCode: 405, error: 'Method Not Allowed', message: '方法没有实现' },
+    headers: {}
+  }
+}
+[2023-05-11T17:08:02.621] [DEBUG] default - 服务启动成功
+[2023-05-11T17:08:03.679] [DEBUG] default - 未知错误 Error: 方法没有实现
+    at Object.methodNotAllowed (D:\personal\personal-projects\financial\server\src\router\index.js:46:40)
+    at D:\personal\personal-projects\financial\server\node_modules\@koa\router\lib\router.js:520:29
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async bodyParser (D:\personal\personal-projects\financial\server\node_modules\koa-bodyparser\index.js:95:5)
+    at async cors (D:\personal\personal-projects\financial\server\node_modules\koa2-cors\dist\index.js:91:9) {
+  data: null,
+  isBoom: true,
+  isServer: false,
+  output: {
+    statusCode: 405,
+    payload: { statusCode: 405, error: 'Method Not Allowed', message: '方法没有实现' },
+    headers: {}
+  }
+}
+[2023-05-11T17:08:06.814] [DEBUG] default - 未知错误 Error: 方法没有实现
+    at Object.methodNotAllowed (D:\personal\personal-projects\financial\server\src\router\index.js:46:40)
+    at D:\personal\personal-projects\financial\server\node_modules\@koa\router\lib\router.js:520:29
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async bodyParser (D:\personal\personal-projects\financial\server\node_modules\koa-bodyparser\index.js:95:5)
+    at async cors (D:\personal\personal-projects\financial\server\node_modules\koa2-cors\dist\index.js:91:9) {
+  data: null,
+  isBoom: true,
+  isServer: false,
+  output: {
+    statusCode: 405,
+    payload: { statusCode: 405, error: 'Method Not Allowed', message: '方法没有实现' },
+    headers: {}
+  }
+}
+[2023-05-11T17:08:19.502] [DEBUG] default - 服务启动成功
+[2023-05-11T17:08:27.630] [DEBUG] default - 服务启动成功
+[2023-05-11T17:17:44.680] [DEBUG] default - 服务启动成功
+[2023-05-11T17:17:46.926] [DEBUG] default - 服务启动成功
+[2023-05-11T17:17:59.891] [DEBUG] default - 服务启动成功
+[2023-05-11T17:18:13.640] [DEBUG] default - 服务启动成功
+[2023-05-11T17:18:19.551] [DEBUG] default - 服务启动成功
+[2023-05-11T17:18:54.094] [DEBUG] default - 服务启动成功
+[2023-05-11T17:19:00.955] [DEBUG] default - 服务启动成功
+[2023-05-11T17:19:06.806] [DEBUG] default - 服务启动成功
+[2023-05-11T17:21:04.032] [DEBUG] default - 服务启动成功
+[2023-05-11T17:21:29.033] [DEBUG] default - 服务启动成功
+[2023-05-11T17:21:44.764] [DEBUG] default - 服务启动成功
+[2023-05-11T17:22:17.603] [DEBUG] default - 服务启动成功
+[2023-05-11T17:23:07.676] [DEBUG] default - 服务启动成功
+[2023-05-11T17:24:52.309] [DEBUG] default - 服务启动成功
+[2023-05-11T17:25:27.858] [DEBUG] default - 服务启动成功
+[2023-05-11T17:25:54.309] [DEBUG] default - 未知错误 D:\personal\personal-projects\financial\server\src\controller\loan\getloaninfolist.js:3
+  return result = awatit serve(ctx.query.id)
+                         ^^^^^
+
+SyntaxError: Unexpected identifier
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1088:15)
+    at Module._compile (node:internal/modules/cjs/loader:1123:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at D:\personal\personal-projects\financial\server\src\router\loans\index.js:15:9
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+[2023-05-11T17:26:06.985] [DEBUG] default - 未知错误 D:\personal\personal-projects\financial\server\src\controller\loan\getloaninfolist.js:3
+  return result = awatit serve(ctx.query.id)
+                         ^^^^^
+
+SyntaxError: Unexpected identifier
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1088:15)
+    at Module._compile (node:internal/modules/cjs/loader:1123:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at D:\personal\personal-projects\financial\server\src\router\loans\index.js:15:9
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+[2023-05-11T17:26:08.730] [DEBUG] default - 服务启动成功
+[2023-05-11T17:26:12.050] [DEBUG] default - 未知错误 D:\personal\personal-projects\financial\server\src\controller\loan\getloaninfolist.js:3
+  return result = await serve(ctx.query.id)
+                  ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1088:15)
+    at Module._compile (node:internal/modules/cjs/loader:1123:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at D:\personal\personal-projects\financial\server\src\router\loans\index.js:15:9
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+[2023-05-11T17:26:22.515] [DEBUG] default - 服务启动成功
+[2023-05-11T17:26:22.838] [DEBUG] default - 未知错误 D:\personal\personal-projects\financial\server\src\controller\loan\getloaninfolist.js:3
+  let result = await serve(ctx.query.id)
+               ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1088:15)
+    at Module._compile (node:internal/modules/cjs/loader:1123:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at D:\personal\personal-projects\financial\server\src\router\loans\index.js:15:9
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+[2023-05-11T17:26:32.194] [DEBUG] default - 服务启动成功
+[2023-05-11T17:26:32.667] [DEBUG] default - 未知错误 TypeError: getLoanInfoList is not a function
+    at module.exports (D:\personal\personal-projects\financial\server\src\service\loan\getloaninfolist.js:3:28)
+    at module.exports (D:\personal\personal-projects\financial\server\src\controller\loan\getloaninfolist.js:3:22)
+    at D:\personal\personal-projects\financial\server\src\router\loans\index.js:15:55
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+    at D:\personal\personal-projects\financial\server\node_modules\@koa\router\lib\router.js:425:16
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+    at D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:34:12
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\@koa\router\lib\router.js:430:31)
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (D:\personal\personal-projects\financial\server\node_modules\koa-bodyparser\index.js:95:11)
+[2023-05-11T17:27:12.994] [DEBUG] default - 服务启动成功
+[2023-05-11T17:27:19.222] [DEBUG] default - 服务启动成功
+[2023-05-11T17:27:34.581] [DEBUG] default - 服务启动成功
+[2023-05-11T17:27:58.538] [DEBUG] default - 服务启动成功
+[2023-05-11T17:32:33.059] [DEBUG] default - 服务启动成功
+[2023-05-11T17:34:09.920] [DEBUG] default - 服务启动成功
+[2023-05-11T17:34:42.727] [DEBUG] default - 服务启动成功
+[2023-05-11T17:35:15.807] [DEBUG] default - 服务启动成功
+[2023-05-11T17:35:18.996] [DEBUG] default - 服务启动成功
+[2023-05-11T17:35:24.866] [DEBUG] default - 服务启动成功
+[2023-05-11T17:37:09.338] [DEBUG] default - 服务启动成功
+[2023-05-11T17:37:58.362] [DEBUG] default - 服务启动成功
+[2023-05-11T17:38:20.102] [DEBUG] default - 服务启动成功
+[2023-05-11T17:38:26.021] [DEBUG] default - 服务启动成功
+[2023-05-11T17:39:33.540] [DEBUG] default - 服务启动成功
+[2023-05-11T17:40:30.797] [DEBUG] default - 服务启动成功
+[2023-05-11T17:41:00.092] [DEBUG] default - 服务启动成功
+[2023-05-11T17:41:07.777] [DEBUG] default - 未知错误 Error: 方法没有实现
+    at Object.methodNotAllowed (D:\personal\personal-projects\financial\server\src\router\index.js:46:40)
+    at D:\personal\personal-projects\financial\server\node_modules\@koa\router\lib\router.js:520:29
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async bodyParser (D:\personal\personal-projects\financial\server\node_modules\koa-bodyparser\index.js:95:5)
+    at async cors (D:\personal\personal-projects\financial\server\node_modules\koa2-cors\dist\index.js:91:9) {
+  data: null,
+  isBoom: true,
+  isServer: false,
+  output: {
+    statusCode: 405,
+    payload: { statusCode: 405, error: 'Method Not Allowed', message: '方法没有实现' },
+    headers: {}
+  }
+}
+[2023-05-11T17:41:22.099] [DEBUG] default - 服务启动成功
+[2023-05-11T17:41:22.587] [DEBUG] default - 未知错误 D:\personal\personal-projects\financial\server\src\controller\loan\deleteloan.js:2
+module.exports = asycn(ctx, next) => {
+                 ^^^^^^^^^^^^^^^
+
+SyntaxError: Malformed arrow function parameter list
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1088:15)
+    at Module._compile (node:internal/modules/cjs/loader:1123:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at D:\personal\personal-projects\financial\server\src\router\loans\index.js:20:9
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+[2023-05-11T17:41:35.474] [DEBUG] default - 未知错误 D:\personal\personal-projects\financial\server\src\controller\loan\deleteloan.js:2
+module.exports = asycn(ctx, next) => {
+                 ^^^^^^^^^^^^^^^
+
+SyntaxError: Malformed arrow function parameter list
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1088:15)
+    at Module._compile (node:internal/modules/cjs/loader:1123:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at D:\personal\personal-projects\financial\server\src\router\loans\index.js:20:9
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+[2023-05-11T17:41:39.201] [DEBUG] default - 服务启动成功
+[2023-05-11T17:42:39.534] [DEBUG] default - 服务启动成功
+[2023-05-11T17:43:06.120] [DEBUG] default - 服务启动成功
+[2023-05-11T17:43:23.994] [DEBUG] default - 服务启动成功
+[2023-05-11T17:43:29.141] [DEBUG] default - 服务启动成功
+[2023-05-11T17:43:45.668] [DEBUG] default - 服务启动成功
+[2023-05-11T17:44:16.332] [DEBUG] default - 服务启动成功
+[2023-05-11T17:44:29.391] [DEBUG] default - 服务启动成功
+[2023-05-11T17:45:02.815] [DEBUG] default - 服务启动成功
+[2023-05-11T17:45:31.631] [DEBUG] default - 服务启动成功
+[2023-05-11T17:45:41.125] [DEBUG] default - 服务启动成功
+[2023-05-11T17:46:32.237] [DEBUG] default - 服务启动成功
+[2023-05-11T17:47:47.445] [DEBUG] default - 服务启动成功
+[2023-05-11T17:48:05.806] [DEBUG] default - 服务启动成功
+[2023-05-11T17:49:08.777] [DEBUG] default - 服务启动成功
+[2023-05-11T17:49:44.170] [DEBUG] default - 服务启动成功
+[2023-05-11T17:51:20.058] [DEBUG] default - 服务启动成功
+[2023-05-11T17:51:31.750] [DEBUG] default - 服务启动成功
+[2023-05-11T17:53:09.190] [DEBUG] default - 服务启动成功
+[2023-05-11T17:53:19.056] [DEBUG] default - 服务启动成功
+[2023-05-11T17:53:47.600] [DEBUG] default - 服务启动成功
+[2023-05-11T17:54:39.034] [DEBUG] default - 服务启动成功

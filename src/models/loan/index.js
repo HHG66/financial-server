@@ -6,8 +6,11 @@ const loan = new mongoose.Schema({
   paymentmethod: String,//还款方式
   interest: Number,//总利息
   remainingpayments: Number,//剩余金额
-  info: mongoose.Schema.Types.Mixed,//贷款单详细信息
-  // numberperiods: Number,//期数
+  numberperiods: Number,//期数
+  phaseonedate: Date,//第一期还款时间
+  whethercanprepayment:Boolean,//是否可以提前还款
+  info: [mongoose.Schema.Types.Mixed],//贷款单详细信息
+  loanstaging: [mongoose.Schema.Types.Mixed] //每期还款信息
   // repaymentdate: Date,  //还款日期
   // openingbalance: Number,//期初余额
   // plannedrepayment: Number,//计划还款
