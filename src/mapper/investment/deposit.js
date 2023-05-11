@@ -1,6 +1,5 @@
 const Deposit = require('@/models/deposit/index.js')
 const { add, updata, findOne, find, del } = require('../index')
-const mongoose = require('mongoose')
 module.exports = {
   newCertificateDeposit: (data) => {
     return add(Deposit, data)
