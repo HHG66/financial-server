@@ -33,11 +33,13 @@ module.exports = {
       loanstaging: 0
     })
   },
-  editloaninfolist: (data) => {
+  editloaninfolist: (loanid, data) => {
+    // console.log(data.loanid);
+    // console.log(data);
     return updata(Loan, {
-      _id: data.loanid
+      _id: loanid
     }, {
-      ...data
+      loanstaging: data
     })
   }
 }

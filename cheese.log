@@ -509,3 +509,193 @@ SyntaxError: Unexpected token '...'
 [2023-05-12T14:46:32.391] [DEBUG] default - 服务启动成功
 [2023-05-12T14:46:46.686] [DEBUG] default - 服务启动成功
 [2023-05-12T14:46:53.171] [DEBUG] default - 服务启动成功
+[2023-05-12T14:48:17.751] [DEBUG] default - 服务启动成功
+[2023-05-12T15:31:22.929] [DEBUG] default - 服务启动成功
+[2023-05-12T15:33:35.159] [DEBUG] default - 服务启动成功
+[2023-05-12T15:33:44.105] [DEBUG] default - 服务启动成功
+[2023-05-12T15:33:54.251] [DEBUG] default - 服务启动成功
+[2023-05-12T15:33:55.621] [DEBUG] default - 未知错误 D:\personal\personal-projects\financial\server\src\mapper\loan\index.js:40
+      Loan.loanstaging: data
+          ^
+
+SyntaxError: Unexpected token '.'
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1088:15)
+    at Module._compile (node:internal/modules/cjs/loader:1123:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (D:\personal\personal-projects\financial\server\src\service\loan\editloaninfolist.js:1:31)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+[2023-05-12T15:34:07.814] [DEBUG] default - 服务启动成功
+[2023-05-12T15:35:49.423] [DEBUG] default - 服务启动成功
+[2023-05-12T15:36:26.945] [DEBUG] default - 服务启动成功
+[2023-05-12T15:36:42.651] [DEBUG] default - 服务启动成功
+[2023-05-12T15:37:50.969] [DEBUG] default - 服务启动成功
+[2023-05-12T15:38:03.437] [DEBUG] default - 服务启动成功
+[2023-05-12T15:38:21.740] [DEBUG] default - 服务启动成功
+[2023-05-12T15:38:22.538] [DEBUG] default - 未知错误 D:\personal\personal-projects\financial\server\src\mapper\loan\index.js:40
+      loanstaging[data.numberindex]: data
+                 ^
+
+SyntaxError: Unexpected token '['
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1088:15)
+    at Module._compile (node:internal/modules/cjs/loader:1123:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (D:\personal\personal-projects\financial\server\src\service\loan\newloan.js:1:21)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+[2023-05-12T15:38:57.476] [DEBUG] default - 服务启动成功
+[2023-05-12T15:39:17.500] [DEBUG] default - 服务启动成功
+[2023-05-12T15:39:30.026] [DEBUG] default - 服务启动成功
+[2023-05-12T15:39:49.407] [DEBUG] default - 服务启动成功
+[2023-05-12T15:40:33.456] [DEBUG] default - 服务启动成功
+[2023-05-12T15:40:42.282] [DEBUG] default - 服务启动成功
+[2023-05-12T15:41:29.285] [DEBUG] default - 服务启动成功
+[2023-05-12T15:43:11.853] [DEBUG] default - 未知错误 D:\personal\personal-projects\financial\server\src\service\loan\editloaninfolist.js:12
+      if (element ==data.) {
+                         ^
+
+SyntaxError: Unexpected token ')'
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1088:15)
+    at Module._compile (node:internal/modules/cjs/loader:1123:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (D:\personal\personal-projects\financial\server\src\controller\loan\editloaninfolist.js:1:15)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+[2023-05-12T15:45:20.057] [DEBUG] default - 服务启动成功
+[2023-05-12T15:45:21.719] [DEBUG] default - 未知错误 D:\personal\personal-projects\financial\server\src\mapper\loan\index.js:40
+      loanstaging[data.numberindex]: data
+                 ^
+
+SyntaxError: Unexpected token '['
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1088:15)
+    at Module._compile (node:internal/modules/cjs/loader:1123:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (D:\personal\personal-projects\financial\server\src\service\loan\editloaninfolist.js:1:31)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+[2023-05-12T15:45:40.328] [DEBUG] default - 服务启动成功
+[2023-05-12T15:45:41.354] [DEBUG] default - 未知错误 ReferenceError: getLoanInfoList is not defined
+    at module.exports (D:\personal\personal-projects\financial\server\src\service\loan\editloaninfolist.js:10:24)
+    at module.exports (D:\personal\personal-projects\financial\server\src\controller\loan\editloaninfolist.js:3:22)
+    at D:\personal\personal-projects\financial\server\src\router\loans\index.js:30:56
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+    at D:\personal\personal-projects\financial\server\node_modules\@koa\router\lib\router.js:425:16
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+    at D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:34:12
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\@koa\router\lib\router.js:430:31)
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (D:\personal\personal-projects\financial\server\node_modules\koa-bodyparser\index.js:95:11)
+[2023-05-12T15:45:55.106] [DEBUG] default - 服务启动成功
+[2023-05-12T15:45:56.195] [DEBUG] default - 未知错误 TypeError: Cannot read properties of undefined (reading 'forEach')
+    at module.exports (D:\personal\personal-projects\financial\server\src\service\loan\editloaninfolist.js:12:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async module.exports (D:\personal\personal-projects\financial\server\src\controller\loan\editloaninfolist.js:3:16)
+    at async D:\personal\personal-projects\financial\server\src\router\loans\index.js:30:3
+    at async bodyParser (D:\personal\personal-projects\financial\server\node_modules\koa-bodyparser\index.js:95:5)
+    at async cors (D:\personal\personal-projects\financial\server\node_modules\koa2-cors\dist\index.js:91:9)
+[2023-05-12T15:46:21.793] [DEBUG] default - 服务启动成功
+[2023-05-12T15:46:23.062] [DEBUG] default - 未知错误 TypeError: Cannot read properties of undefined (reading 'forEach')
+    at module.exports (D:\personal\personal-projects\financial\server\src\service\loan\editloaninfolist.js:13:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async module.exports (D:\personal\personal-projects\financial\server\src\controller\loan\editloaninfolist.js:3:16)
+    at async D:\personal\personal-projects\financial\server\src\router\loans\index.js:30:3
+    at async bodyParser (D:\personal\personal-projects\financial\server\node_modules\koa-bodyparser\index.js:95:5)
+    at async cors (D:\personal\personal-projects\financial\server\node_modules\koa2-cors\dist\index.js:91:9)
+[2023-05-12T15:46:45.161] [DEBUG] default - 服务启动成功
+[2023-05-12T15:46:48.278] [DEBUG] default - 服务启动成功
+[2023-05-12T15:47:14.934] [DEBUG] default - 服务启动成功
+[2023-05-12T15:47:27.991] [DEBUG] default - 服务启动成功
+[2023-05-12T15:47:54.441] [DEBUG] default - 服务启动成功
+[2023-05-12T15:48:28.408] [DEBUG] default - 服务启动成功
+[2023-05-12T15:49:01.773] [DEBUG] default - 未知错误 TypeError: Cannot read properties of undefined (reading 'forEach')
+    at module.exports (D:\personal\personal-projects\financial\server\src\service\loan\editloaninfolist.js:13:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async module.exports (D:\personal\personal-projects\financial\server\src\controller\loan\editloaninfolist.js:3:16)
+    at async D:\personal\personal-projects\financial\server\src\router\loans\index.js:30:3
+    at async bodyParser (D:\personal\personal-projects\financial\server\node_modules\koa-bodyparser\index.js:95:5)
+    at async cors (D:\personal\personal-projects\financial\server\node_modules\koa2-cors\dist\index.js:91:9)
+[2023-05-12T15:49:17.076] [DEBUG] default - 服务启动成功
+[2023-05-12T15:49:20.103] [DEBUG] default - 未知错误 TypeError: Cannot read properties of undefined (reading 'forEach')
+    at module.exports (D:\personal\personal-projects\financial\server\src\service\loan\editloaninfolist.js:14:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async module.exports (D:\personal\personal-projects\financial\server\src\controller\loan\editloaninfolist.js:3:16)
+    at async D:\personal\personal-projects\financial\server\src\router\loans\index.js:30:3
+    at async bodyParser (D:\personal\personal-projects\financial\server\node_modules\koa-bodyparser\index.js:95:5)
+    at async cors (D:\personal\personal-projects\financial\server\node_modules\koa2-cors\dist\index.js:91:9)
+[2023-05-12T15:49:55.961] [DEBUG] default - 服务启动成功
+[2023-05-12T15:49:58.613] [DEBUG] default - 未知错误 TypeError: Cannot read properties of undefined (reading 'forEach')
+    at module.exports (D:\personal\personal-projects\financial\server\src\service\loan\editloaninfolist.js:14:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async module.exports (D:\personal\personal-projects\financial\server\src\controller\loan\editloaninfolist.js:3:16)
+    at async D:\personal\personal-projects\financial\server\src\router\loans\index.js:30:3
+    at async bodyParser (D:\personal\personal-projects\financial\server\node_modules\koa-bodyparser\index.js:95:5)
+    at async cors (D:\personal\personal-projects\financial\server\node_modules\koa2-cors\dist\index.js:91:9)
+[2023-05-12T15:50:09.914] [DEBUG] default - 服务启动成功
+[2023-05-12T15:50:15.223] [DEBUG] default - 服务启动成功
+[2023-05-12T15:50:17.511] [DEBUG] default - 服务启动成功
+[2023-05-12T15:50:18.142] [DEBUG] default - 未知错误 TypeError: Cannot read properties of undefined (reading 'forEach')
+    at module.exports (D:\personal\personal-projects\financial\server\src\service\loan\editloaninfolist.js:15:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async module.exports (D:\personal\personal-projects\financial\server\src\controller\loan\editloaninfolist.js:3:16)
+    at async D:\personal\personal-projects\financial\server\src\router\loans\index.js:30:3
+    at async bodyParser (D:\personal\personal-projects\financial\server\node_modules\koa-bodyparser\index.js:95:5)
+    at async cors (D:\personal\personal-projects\financial\server\node_modules\koa2-cors\dist\index.js:91:9)
+[2023-05-12T15:50:28.776] [DEBUG] default - 服务启动成功
+[2023-05-12T15:50:45.746] [DEBUG] default - 服务启动成功
+[2023-05-12T15:50:47.341] [DEBUG] default - 未知错误 TypeError: Cannot read properties of undefined (reading 'forEach')
+    at module.exports (D:\personal\personal-projects\financial\server\src\service\loan\editloaninfolist.js:15:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async module.exports (D:\personal\personal-projects\financial\server\src\controller\loan\editloaninfolist.js:3:16)
+    at async D:\personal\personal-projects\financial\server\src\router\loans\index.js:30:3
+    at async bodyParser (D:\personal\personal-projects\financial\server\node_modules\koa-bodyparser\index.js:95:5)
+    at async cors (D:\personal\personal-projects\financial\server\node_modules\koa2-cors\dist\index.js:91:9)
+[2023-05-12T15:51:09.372] [DEBUG] default - 服务启动成功
+[2023-05-12T15:51:28.496] [DEBUG] default - 服务启动成功
+[2023-05-12T15:51:30.969] [DEBUG] default - 服务启动成功
+[2023-05-12T15:51:46.134] [DEBUG] default - 服务启动成功
+[2023-05-12T15:53:10.016] [DEBUG] default - 服务启动成功
+[2023-05-12T15:54:26.718] [DEBUG] default - 服务启动成功
+[2023-05-12T15:54:27.568] [DEBUG] default - 未知错误 D:\personal\personal-projects\financial\server\src\service\loan\editloaninfolist.js:19
+            repaymentdate: data.repaymentdate,
+            ^^^^^^^^^^^^^
+
+SyntaxError: Unexpected identifier
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1088:15)
+    at Module._compile (node:internal/modules/cjs/loader:1123:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (D:\personal\personal-projects\financial\server\src\controller\loan\editloaninfolist.js:1:15)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+[2023-05-12T15:54:50.909] [DEBUG] default - 服务启动成功
+[2023-05-12T15:56:18.690] [DEBUG] default - 服务启动成功
+[2023-05-12T15:56:46.056] [DEBUG] default - 服务启动成功
+[2023-05-12T15:57:09.600] [DEBUG] default - 服务启动成功
+[2023-05-12T15:57:42.036] [DEBUG] default - 服务启动成功
+[2023-05-12T15:57:56.665] [DEBUG] default - 服务启动成功
+[2023-05-12T15:58:21.340] [DEBUG] default - 服务启动成功
+[2023-05-12T15:58:32.106] [DEBUG] default - 服务启动成功
+[2023-05-12T15:58:33.952] [DEBUG] default - 服务启动成功
+[2023-05-12T15:58:35.340] [DEBUG] default - 服务启动成功
+[2023-05-12T15:58:37.850] [DEBUG] default - 服务启动成功
+[2023-05-12T15:59:16.378] [DEBUG] default - 服务启动成功
+[2023-05-12T16:00:02.362] [DEBUG] default - 服务启动成功
