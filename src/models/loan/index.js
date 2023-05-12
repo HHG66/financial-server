@@ -16,7 +16,7 @@ const loan = new mongoose.Schema({
   // plannedrepayment: Number,//计划还款
   // additionalrepayment: Number,//额外还款
   // accumulatedinterest: Number,//累计利息
-  // principal: Number,//本金
+  // principal: Number,//本金（不需要）
   // closingbalance: Number,//期终余额
   // loanstate: Boolean,//是否已还款
 })

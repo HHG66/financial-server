@@ -32,5 +32,12 @@ module.exports = {
       __v: 0,
       loanstaging: 0
     })
+  },
+  editloaninfolist: (data) => {
+    return updata(Loan, {
+      _id: data.loanid
+    }, {
+      ...data
+    })
   }
 }

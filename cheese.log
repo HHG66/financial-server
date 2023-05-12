@@ -370,3 +370,142 @@ SyntaxError: Unexpected token '...'
 [2023-05-12T11:26:53.815] [DEBUG] default - 服务启动成功
 [2023-05-12T11:28:27.451] [DEBUG] default - 服务启动成功
 [2023-05-12T11:28:29.176] [DEBUG] default - 服务启动成功
+[2023-05-12T11:29:42.183] [DEBUG] default - 服务启动成功
+[2023-05-12T13:42:16.471] [DEBUG] default - 服务启动成功
+[2023-05-12T13:43:31.095] [DEBUG] default - 服务启动成功
+[2023-05-12T13:44:06.435] [DEBUG] default - 服务启动成功
+[2023-05-12T13:44:12.023] [DEBUG] default - 服务启动成功
+[2023-05-12T13:44:19.708] [DEBUG] default - 服务启动成功
+[2023-05-12T13:44:37.919] [DEBUG] default - 服务启动成功
+[2023-05-12T13:44:58.012] [DEBUG] default - 服务启动成功
+[2023-05-12T13:45:11.881] [DEBUG] default - 服务启动成功
+[2023-05-12T13:45:47.140] [DEBUG] default - 服务启动成功
+[2023-05-12T13:46:28.870] [DEBUG] default - 服务启动成功
+[2023-05-12T14:03:06.082] [DEBUG] default - 服务启动成功
+[2023-05-12T14:05:12.739] [DEBUG] default - 服务启动成功
+[2023-05-12T14:06:00.086] [DEBUG] default - 服务启动成功
+[2023-05-12T14:06:29.381] [DEBUG] default - 服务启动成功
+[2023-05-12T14:07:24.646] [DEBUG] default - 服务启动成功
+[2023-05-12T14:08:41.631] [DEBUG] default - 服务启动成功
+[2023-05-12T14:10:10.321] [DEBUG] default - 服务启动成功
+[2023-05-12T14:11:41.117] [DEBUG] default - 服务启动成功
+[2023-05-12T14:12:03.358] [DEBUG] default - 服务启动成功
+[2023-05-12T14:12:27.519] [DEBUG] default - 服务启动成功
+[2023-05-12T14:15:31.678] [DEBUG] default - 服务启动成功
+[2023-05-12T14:16:55.434] [DEBUG] default - 服务启动成功
+[2023-05-12T14:17:07.180] [DEBUG] default - 服务启动成功
+[2023-05-12T14:17:44.444] [DEBUG] default - 服务启动成功
+[2023-05-12T14:20:43.149] [DEBUG] default - 服务启动成功
+[2023-05-12T14:23:29.983] [DEBUG] default - 服务启动成功
+[2023-05-12T14:24:38.113] [DEBUG] default - 服务启动成功
+[2023-05-12T14:25:15.770] [DEBUG] default - 服务启动成功
+[2023-05-12T14:26:25.245] [DEBUG] default - 服务启动成功
+[2023-05-12T14:27:27.841] [DEBUG] default - 服务启动成功
+[2023-05-12T14:30:16.399] [DEBUG] default - 服务启动成功
+[2023-05-12T14:30:32.758] [DEBUG] default - 服务启动成功
+[2023-05-12T14:30:46.087] [DEBUG] default - 服务启动成功
+[2023-05-12T14:30:50.947] [DEBUG] default - 服务启动成功
+[2023-05-12T14:31:13.070] [DEBUG] default - 服务启动成功
+[2023-05-12T14:31:51.260] [DEBUG] default - 服务启动成功
+[2023-05-12T14:32:28.710] [DEBUG] default - 服务启动成功
+[2023-05-12T14:32:37.018] [DEBUG] default - 服务启动成功
+[2023-05-12T14:32:56.811] [DEBUG] default - 服务启动成功
+[2023-05-12T14:33:02.542] [DEBUG] default - 服务启动成功
+[2023-05-12T14:33:45.812] [DEBUG] default - 服务启动成功
+[2023-05-12T14:34:27.437] [DEBUG] default - 服务启动成功
+[2023-05-12T14:34:38.714] [DEBUG] default - 服务启动成功
+[2023-05-12T14:34:45.870] [DEBUG] default - 服务启动成功
+[2023-05-12T14:34:52.951] [DEBUG] default - code:401 UnauthorizedError: Authentication Error
+    at Object.throw (D:\personal\personal-projects\financial\server\node_modules\koa\lib\context.js:97:11)
+    at jwt (D:\personal\personal-projects\financial\server\node_modules\koa-jwt\lib\index.js:66:26)
+    at async cors (D:\personal\personal-projects\financial\server\node_modules\koa2-cors\dist\index.js:91:9) {
+  originalError: TokenExpiredError: jwt expired
+      at D:\personal\personal-projects\financial\server\node_modules\jsonwebtoken\verify.js:190:21
+      at getSecret (D:\personal\personal-projects\financial\server\node_modules\jsonwebtoken\verify.js:97:14)
+      at module.exports [as verify] (D:\personal\personal-projects\financial\server\node_modules\jsonwebtoken\verify.js:101:10)
+      at D:\personal\personal-projects\financial\server\node_modules\koa-jwt\lib\verify.js:5:13
+      at new Promise (<anonymous>)
+      at module.exports (D:\personal\personal-projects\financial\server\node_modules\koa-jwt\lib\verify.js:4:12)
+      at D:\personal\personal-projects\financial\server\node_modules\koa-jwt\lib\index.js:38:64
+      at Array.map (<anonymous>)
+      at jwt (D:\personal\personal-projects\financial\server\node_modules\koa-jwt\lib\index.js:38:43)
+      at D:\personal\personal-projects\financial\server\node_modules\koa-unless\index.js:29:12 {
+    expiredAt: 2023-05-12T05:50:17.000Z
+  }
+}
+[2023-05-12T14:35:23.274] [DEBUG] default - 未知错误 ReferenceError: editloaninfolist is not defined
+    at module.exports (D:\personal\personal-projects\financial\server\src\controller\loan\editloaninfolist.js:3:16)
+    at D:\personal\personal-projects\financial\server\src\router\loans\index.js:30:56
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+    at D:\personal\personal-projects\financial\server\node_modules\@koa\router\lib\router.js:425:16
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+    at D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:34:12
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\@koa\router\lib\router.js:430:31)
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (D:\personal\personal-projects\financial\server\node_modules\koa-bodyparser\index.js:95:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2023-05-12T14:35:36.788] [DEBUG] default - 服务启动成功
+[2023-05-12T14:35:38.505] [DEBUG] default - 未知错误 TypeError: Cannot read properties of undefined (reading 'modifiedCount')
+    at module.exports (D:\personal\personal-projects\financial\server\src\service\loan\editloaninfolist.js:10:20)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async module.exports (D:\personal\personal-projects\financial\server\src\controller\loan\editloaninfolist.js:3:16)
+    at async D:\personal\personal-projects\financial\server\src\router\loans\index.js:30:3
+    at async bodyParser (D:\personal\personal-projects\financial\server\node_modules\koa-bodyparser\index.js:95:5)
+    at async cors (D:\personal\personal-projects\financial\server\node_modules\koa2-cors\dist\index.js:91:9)
+[2023-05-12T14:38:24.418] [DEBUG] default - 服务启动成功
+[2023-05-12T14:38:26.551] [DEBUG] default - 未知错误 ReferenceError: mapperRusult is not defined
+    at module.exports (D:\personal\personal-projects\financial\server\src\service\loan\editloaninfolist.js:14:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async module.exports (D:\personal\personal-projects\financial\server\src\controller\loan\editloaninfolist.js:3:16)
+    at async D:\personal\personal-projects\financial\server\src\router\loans\index.js:30:3
+    at async bodyParser (D:\personal\personal-projects\financial\server\node_modules\koa-bodyparser\index.js:95:5)
+    at async cors (D:\personal\personal-projects\financial\server\node_modules\koa2-cors\dist\index.js:91:9)
+[2023-05-12T14:38:46.796] [DEBUG] default - 服务启动成功
+[2023-05-12T14:38:48.091] [DEBUG] default - 未知错误 TypeError: Cannot read properties of undefined (reading 'modifiedCount')
+    at module.exports (D:\personal\personal-projects\financial\server\src\service\loan\editloaninfolist.js:14:20)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async module.exports (D:\personal\personal-projects\financial\server\src\controller\loan\editloaninfolist.js:3:16)
+    at async D:\personal\personal-projects\financial\server\src\router\loans\index.js:30:3
+    at async bodyParser (D:\personal\personal-projects\financial\server\node_modules\koa-bodyparser\index.js:95:5)
+    at async cors (D:\personal\personal-projects\financial\server\node_modules\koa2-cors\dist\index.js:91:9)
+[2023-05-12T14:40:21.296] [DEBUG] default - 服务启动成功
+[2023-05-12T14:41:06.389] [DEBUG] default - 服务启动成功
+[2023-05-12T14:41:16.738] [DEBUG] default - 服务启动成功
+[2023-05-12T14:41:22.603] [DEBUG] default - 未知错误 BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+    at new BSONTypeError (D:\personal\personal-projects\financial\server\node_modules\bson\lib\error.js:41:28)
+    at new ObjectId (D:\personal\personal-projects\financial\server\node_modules\bson\lib\objectid.js:67:23)
+    at ObjectId (D:\personal\personal-projects\financial\server\node_modules\bson\lib\objectid.js:26:20)
+    at module.exports (D:\personal\personal-projects\financial\server\src\service\loan\editloaninfolist.js:10:17)
+    at module.exports (D:\personal\personal-projects\financial\server\src\controller\loan\editloaninfolist.js:3:22)
+    at D:\personal\personal-projects\financial\server\src\router\loans\index.js:30:56
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+    at D:\personal\personal-projects\financial\server\node_modules\@koa\router\lib\router.js:425:16
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+    at D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:34:12
+[2023-05-12T14:42:34.596] [DEBUG] default - 未知错误 BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+    at new BSONTypeError (D:\personal\personal-projects\financial\server\node_modules\bson\lib\error.js:41:28)
+    at new ObjectId (D:\personal\personal-projects\financial\server\node_modules\bson\lib\objectid.js:67:23)
+    at ObjectId (D:\personal\personal-projects\financial\server\node_modules\bson\lib\objectid.js:26:20)
+    at module.exports (D:\personal\personal-projects\financial\server\src\service\loan\editloaninfolist.js:10:17)
+    at module.exports (D:\personal\personal-projects\financial\server\src\controller\loan\editloaninfolist.js:3:22)
+    at D:\personal\personal-projects\financial\server\src\router\loans\index.js:30:56
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+    at D:\personal\personal-projects\financial\server\node_modules\@koa\router\lib\router.js:425:16
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+    at D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:34:12
+[2023-05-12T14:42:37.765] [DEBUG] default - 服务启动成功
+[2023-05-12T14:42:38.855] [DEBUG] default - 未知错误 TypeError: Cannot read properties of undefined (reading 'modifiedCount')
+    at module.exports (D:\personal\personal-projects\financial\server\src\service\loan\editloaninfolist.js:14:20)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async module.exports (D:\personal\personal-projects\financial\server\src\controller\loan\editloaninfolist.js:3:16)
+    at async D:\personal\personal-projects\financial\server\src\router\loans\index.js:30:3
+    at async bodyParser (D:\personal\personal-projects\financial\server\node_modules\koa-bodyparser\index.js:95:5)
+    at async cors (D:\personal\personal-projects\financial\server\node_modules\koa2-cors\dist\index.js:91:9)
+[2023-05-12T14:44:04.402] [DEBUG] default - 服务启动成功
+[2023-05-12T14:44:21.592] [DEBUG] default - 服务启动成功
+[2023-05-12T14:45:21.366] [DEBUG] default - 服务启动成功
+[2023-05-12T14:45:33.447] [DEBUG] default - 服务启动成功
+[2023-05-12T14:46:10.047] [DEBUG] default - 服务启动成功
+[2023-05-12T14:46:32.391] [DEBUG] default - 服务启动成功
+[2023-05-12T14:46:46.686] [DEBUG] default - 服务启动成功
+[2023-05-12T14:46:53.171] [DEBUG] default - 服务启动成功
