@@ -33,7 +33,7 @@ module.exports = async (data) => {
       loanstate: false,
     })
   }
-  loaninfo.numberperiods = numberperiods
+  loaninfo.numberperiods = Number(numberperiods)
   // loaninfo.repaymentdate = new Date()
   loaninfo.openingbalance = 0
   loaninfo.plannedrepayment = 0

@@ -21,7 +21,11 @@ router.post('/deleteloan', async (ctx, next) => {
 })
 
 //获取贷款单基础信息
-router.post('/getloaninfo', async (ctx, next) => {
+router.get('/getloaninfo', async (ctx, next) => {
   await require(controllerPath + 'getloaninfo.js')(ctx, next)
 })
 
+//编辑贷款单详细列表
+router.post('/editloaninfolist', async (ctx, next) => {
+  await require(controllerPath + 'editloaninfolist.js')(ctx, next)
+})

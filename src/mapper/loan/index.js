@@ -24,5 +24,13 @@ module.exports = {
     return del(Loan, {
       _id
     })
+  },
+  getLoanLnfo: (_id) => {
+    return find(Loan, {
+      _id
+    }, {
+      __v: 0,
+      loanstaging: 0
+    })
   }
 }
