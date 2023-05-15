@@ -41,5 +41,18 @@ module.exports = {
     }, {
       loanstaging: data
     })
+  },
+  editLoanInfo: (data) => {
+    let { loanid, loanname, paymentmethod, ...info } = data
+    // console.log(info);
+    return updata(Loan, {
+      _id: loanid
+    }, {
+      loanname,
+      paymentmethod,
+      info: {
+        phaseonedate, thenumberrepaymentsperyear, annualinterestrate, interest, numberperiods
+      }
+    })
   }
 }

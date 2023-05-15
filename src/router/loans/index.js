@@ -29,3 +29,8 @@ router.get('/getloaninfo', async (ctx, next) => {
 router.post('/editloaninfolist', async (ctx, next) => {
   await require(controllerPath + 'editloaninfolist.js')(ctx, next)
 })
+
+//编辑贷款单基础信息
+router.post('/editloaninfo', async (ctx, next) => {
+  await require(controllerPath + 'editloaninfo.js')(ctx, next)
+})

@@ -35,14 +35,18 @@ module.exports = async (data) => {
   }
   loaninfo.numberperiods = Number(numberperiods)
   // loaninfo.repaymentdate = new Date()
-  loaninfo.openingbalance = 0
+  loaninfo.openingbalance = 0 //期初余额
   loaninfo.plannedrepayment = 0
   loaninfo.additionalrepayment = 0
   loaninfo.accumulatedinterest = 0
-  loaninfo.principal = 0
+  // loaninfo.principal = 0 本金（不需要）
   loaninfo.closingbalance = 0
-  loaninfo.additionalrepayment = 0
-  loaninfo.loanstate = true
+  loaninfo.thenumberrepaymentsperyear = 12
+  loaninfo.loanlife = 0 //贷款年限，应该计算，暂时先填写成0 
+  loaninfo.annualinterestrate = 0 //年利率
+  loaninfo.currentnumberissues = 0 //当前期数
+  loaninfo.interest = 0 //总利息，也应该是直接计算得到，先填0
+  
 
   let mapperResult = await newLoan({ loanname, loanamount, loanamount, paymentmethod, interest, remainingpayments, numberperiods, whethercanprepayment: canprepayment, info: loaninfo, loanstaging: loanStagingList })
   if (mapperResult) {

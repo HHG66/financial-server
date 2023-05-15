@@ -699,3 +699,154 @@ SyntaxError: Unexpected identifier
 [2023-05-12T15:58:37.850] [DEBUG] default - 服务启动成功
 [2023-05-12T15:59:16.378] [DEBUG] default - 服务启动成功
 [2023-05-12T16:00:02.362] [DEBUG] default - 服务启动成功
+[2023-05-12T16:22:30.625] [DEBUG] default - 服务启动成功
+[2023-05-15T10:11:31.897] [DEBUG] default - 服务启动成功
+[2023-05-15T10:29:16.624] [DEBUG] default - 服务启动成功
+[2023-05-15T10:29:55.370] [DEBUG] default - 服务启动成功
+[2023-05-15T10:30:40.194] [DEBUG] default - 服务启动成功
+[2023-05-15T10:30:44.248] [DEBUG] default - 服务启动成功
+[2023-05-15T10:30:47.228] [DEBUG] default - 服务启动成功
+[2023-05-15T10:30:49.512] [DEBUG] default - 服务启动成功
+[2023-05-15T10:31:17.870] [DEBUG] default - 服务启动成功
+[2023-05-15T10:31:43.151] [DEBUG] default - 服务启动成功
+[2023-05-15T10:31:46.387] [DEBUG] default - 服务启动成功
+[2023-05-15T10:31:54.458] [DEBUG] default - 服务启动成功
+[2023-05-15T10:32:09.969] [DEBUG] default - 服务启动成功
+[2023-05-15T10:32:12.339] [DEBUG] default - 服务启动成功
+[2023-05-15T10:32:54.574] [DEBUG] default - 服务启动成功
+[2023-05-15T10:33:15.489] [DEBUG] default - 服务启动成功
+[2023-05-15T10:33:20.314] [DEBUG] default - 服务启动成功
+[2023-05-15T10:34:02.818] [DEBUG] default - 服务启动成功
+[2023-05-15T10:34:20.926] [DEBUG] default - 服务启动成功
+[2023-05-15T10:34:27.927] [DEBUG] default - 服务启动成功
+[2023-05-15T10:34:35.253] [DEBUG] default - 服务启动成功
+[2023-05-15T10:55:03.047] [DEBUG] default - code:401 UnauthorizedError: Authentication Error
+    at Object.throw (D:\personal\personal-projects\financial\server\node_modules\koa\lib\context.js:97:11)
+    at jwt (D:\personal\personal-projects\financial\server\node_modules\koa-jwt\lib\index.js:66:26)
+    at async cors (D:\personal\personal-projects\financial\server\node_modules\koa2-cors\dist\index.js:91:9) {
+  originalError: TokenExpiredError: jwt expired
+      at D:\personal\personal-projects\financial\server\node_modules\jsonwebtoken\verify.js:190:21
+      at getSecret (D:\personal\personal-projects\financial\server\node_modules\jsonwebtoken\verify.js:97:14)
+      at module.exports [as verify] (D:\personal\personal-projects\financial\server\node_modules\jsonwebtoken\verify.js:101:10)
+      at D:\personal\personal-projects\financial\server\node_modules\koa-jwt\lib\verify.js:5:13
+      at new Promise (<anonymous>)
+      at module.exports (D:\personal\personal-projects\financial\server\node_modules\koa-jwt\lib\verify.js:4:12)
+      at D:\personal\personal-projects\financial\server\node_modules\koa-jwt\lib\index.js:38:64
+      at Array.map (<anonymous>)
+      at jwt (D:\personal\personal-projects\financial\server\node_modules\koa-jwt\lib\index.js:38:43)
+      at D:\personal\personal-projects\financial\server\node_modules\koa-unless\index.js:29:12 {
+    expiredAt: 2023-05-12T10:35:02.000Z
+  }
+}
+[2023-05-15T10:58:10.986] [DEBUG] default - 服务启动成功
+[2023-05-15T11:00:53.778] [DEBUG] default - 服务启动成功
+[2023-05-15T11:00:58.177] [DEBUG] default - 服务启动成功
+[2023-05-15T11:02:09.263] [DEBUG] default - 服务启动成功
+[2023-05-15T11:02:33.614] [DEBUG] default - 服务启动成功
+[2023-05-15T11:28:43.201] [DEBUG] default - 服务启动成功
+[2023-05-15T11:28:50.288] [DEBUG] default - 服务启动成功
+[2023-05-15T11:29:12.948] [DEBUG] default - 服务启动成功
+[2023-05-15T11:29:28.210] [DEBUG] default - 服务启动成功
+[2023-05-15T11:30:50.226] [DEBUG] default - 服务启动成功
+[2023-05-15T11:31:11.399] [DEBUG] default - 服务启动成功
+[2023-05-15T17:53:38.371] [DEBUG] default - 服务启动成功
+[2023-05-15T17:54:06.442] [DEBUG] default - 服务启动成功
+[2023-05-15T17:54:49.925] [DEBUG] default - 服务启动成功
+[2023-05-15T17:54:54.474] [DEBUG] default - 服务启动成功
+[2023-05-15T17:54:59.151] [DEBUG] default - 服务启动成功
+[2023-05-15T17:55:24.143] [DEBUG] default - 服务启动成功
+[2023-05-15T17:55:53.433] [DEBUG] default - 服务启动成功
+[2023-05-15T17:55:58.209] [DEBUG] default - 服务启动成功
+[2023-05-15T17:55:59.818] [DEBUG] default - 服务启动成功
+[2023-05-15T17:56:29.167] [DEBUG] default - 服务启动成功
+[2023-05-15T17:56:31.647] [DEBUG] default - 服务启动成功
+[2023-05-15T17:56:45.961] [DEBUG] default - 服务启动成功
+[2023-05-15T17:56:49.213] [DEBUG] default - 服务启动成功
+[2023-05-15T17:57:13.364] [DEBUG] default - 服务启动成功
+[2023-05-15T17:57:20.905] [DEBUG] default - 服务启动成功
+[2023-05-15T17:58:00.688] [DEBUG] default - 服务启动成功
+[2023-05-15T17:58:04.349] [DEBUG] default - 服务启动成功
+[2023-05-15T17:58:39.095] [DEBUG] default - 服务启动成功
+[2023-05-15T17:58:43.365] [DEBUG] default - 服务启动成功
+[2023-05-15T17:58:48.304] [DEBUG] default - 服务启动成功
+[2023-05-15T17:59:36.292] [DEBUG] default - 服务启动成功
+[2023-05-15T18:00:12.183] [DEBUG] default - 服务启动成功
+[2023-05-15T18:00:14.112] [DEBUG] default - 服务启动成功
+[2023-05-15T18:00:56.438] [DEBUG] default - 服务启动成功
+[2023-05-15T18:01:05.689] [DEBUG] default - 服务启动成功
+[2023-05-15T18:01:08.237] [DEBUG] default - 服务启动成功
+[2023-05-15T18:01:18.566] [DEBUG] default - 服务启动成功
+[2023-05-15T18:01:21.467] [DEBUG] default - 服务启动成功
+[2023-05-15T18:01:24.763] [DEBUG] default - 服务启动成功
+[2023-05-15T18:01:28.614] [DEBUG] default - 服务启动成功
+[2023-05-15T18:01:37.284] [DEBUG] default - 服务启动成功
+[2023-05-15T18:02:04.139] [DEBUG] default - 服务启动成功
+[2023-05-15T18:02:08.193] [DEBUG] default - 服务启动成功
+[2023-05-15T18:03:09.132] [DEBUG] default - 服务启动成功
+[2023-05-15T18:04:17.321] [DEBUG] default - 服务启动成功
+[2023-05-15T18:04:31.750] [DEBUG] default - 服务启动成功
+[2023-05-15T18:06:17.676] [DEBUG] default - 服务启动成功
+[2023-05-15T18:06:47.803] [DEBUG] default - 服务启动成功
+[2023-05-15T18:07:22.870] [DEBUG] default - 服务启动成功
+[2023-05-15T18:07:36.332] [DEBUG] default - 服务启动成功
+[2023-05-15T18:08:24.648] [DEBUG] default - 服务启动成功
+[2023-05-15T18:08:28.861] [DEBUG] default - 服务启动成功
+[2023-05-15T18:08:32.059] [DEBUG] default - 服务启动成功
+[2023-05-15T18:08:43.108] [DEBUG] default - 服务启动成功
+[2023-05-15T18:09:03.191] [DEBUG] default - 服务启动成功
+[2023-05-15T18:10:02.353] [DEBUG] default - 服务启动成功
+[2023-05-15T18:10:09.090] [DEBUG] default - 服务启动成功
+[2023-05-15T18:10:35.447] [DEBUG] default - 未知错误 D:\personal\personal-projects\financial\server\src\service\loan\editloaninfo.js:2
+module.exports = asycn(data) => {
+                 ^^^^^^^^^^
+
+SyntaxError: Malformed arrow function parameter list
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1088:15)
+    at Module._compile (node:internal/modules/cjs/loader:1123:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (D:\personal\personal-projects\financial\server\src\controller\loan\editloaninfo.js:1:15)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+[2023-05-15T18:10:47.962] [DEBUG] default - 未知错误 D:\personal\personal-projects\financial\server\src\service\loan\editloaninfo.js:2
+module.exports = asycn(data) => {
+                 ^^^^^^^^^^
+
+SyntaxError: Malformed arrow function parameter list
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1088:15)
+    at Module._compile (node:internal/modules/cjs/loader:1123:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (D:\personal\personal-projects\financial\server\src\controller\loan\editloaninfo.js:1:15)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+[2023-05-15T18:10:50.410] [DEBUG] default - 服务启动成功
+[2023-05-15T18:12:40.632] [DEBUG] default - 服务启动成功
+[2023-05-15T18:14:58.695] [DEBUG] default - 服务启动成功
+[2023-05-15T18:16:19.058] [DEBUG] default - 服务启动成功
+[2023-05-15T18:17:10.395] [DEBUG] default - 服务启动成功
+[2023-05-15T18:17:27.706] [DEBUG] default - 服务启动成功
+[2023-05-15T18:17:30.201] [DEBUG] default - 服务启动成功
+[2023-05-15T18:17:49.500] [DEBUG] default - 服务启动成功
+[2023-05-15T18:18:07.549] [DEBUG] default - 服务启动成功
+[2023-05-15T18:19:00.090] [DEBUG] default - 服务启动成功
+[2023-05-15T18:19:51.315] [DEBUG] default - 服务启动成功
+[2023-05-15T18:20:10.180] [DEBUG] default - 未知错误 ReferenceError: loanname is not defined
+    at editLoanInfo (D:\personal\personal-projects\financial\server\src\mapper\loan\index.js:51:7)
+    at module.exports (D:\personal\personal-projects\financial\server\src\service\loan\editloaninfo.js:5:28)
+    at module.exports (D:\personal\personal-projects\financial\server\src\controller\loan\editloaninfo.js:3:22)
+    at D:\personal\personal-projects\financial\server\src\router\loans\index.js:35:52
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+    at D:\personal\personal-projects\financial\server\node_modules\@koa\router\lib\router.js:425:16
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+    at D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:34:12
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\@koa\router\lib\router.js:430:31)
+    at dispatch (D:\personal\personal-projects\financial\server\node_modules\koa-compose\index.js:42:32)
+[2023-05-15T18:20:41.990] [DEBUG] default - 服务启动成功
+[2023-05-15T18:21:55.480] [DEBUG] default - 服务启动成功
