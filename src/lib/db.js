@@ -1,17 +1,16 @@
 /*
  * @Author: HHG
  * @Date: 2023-02-12 11:37:58
- * @LastEditTime: 2023-05-09 11:02:45
+ * @LastEditTime: 2023-04-17 22:31:53
  * @LastEditors: 韩宏广
- * @FilePath: \server\src\lib\db.js
+ * @FilePath: /server/src/lib/db.js
  * @文件说明: 
  */
 const mongoose = require('mongoose');
 const errorMiddlware = require('@/middleware/error.js')
 module.exports = async (resolve, reject) => {
   mongoose.set("strictQuery", false);
-  await mongoose.connect('mongodb://frp-hip.top:13552/financialtest', {
-    // await mongoose.connect('mongodb://192.168.0.101:27017/financialtest', {
+  await mongoose.connect('mongodb://192.168.0.101:27017/financial', {
     // await mongoose.connect('mongodb://frp-hip.top:13552/financial', {
     // await mongoose.connect('mongodb://127.0.0.1:27017/financial', {
     // mongoose.connect('mongodb://mywebsite:han1314.@118.31.79.83:27017/my_website', {
